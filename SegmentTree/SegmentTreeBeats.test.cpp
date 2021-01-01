@@ -32,6 +32,9 @@ istream &operator>>(istream &is,vector<T>&v){
     return is;
 }
 
+#define PROBLEM "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum"
+
+// ref: https://smijake3.hatenablog.com/entry/2019/04/28/021457
 
 struct Beats{
     private:
@@ -115,7 +118,7 @@ struct Beats{
     }
     
     public:
-    
+
     Beats(int n){
         sz=1;
         while(sz<n)sz<<=1;
