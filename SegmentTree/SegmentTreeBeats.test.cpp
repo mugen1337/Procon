@@ -36,38 +36,39 @@ istream &operator>>(istream &is,vector<T>&v){
 
 // ref: https://smijake3.hatenablog.com/entry/2019/04/28/021457
 
+template<typename T>
 struct Beats{
     private:
 
-    const ll inf=LLONG_MAX;
-    vector<ll> mx,smx,mxc,mi,smi,mic,sum,lval,ladd;
+    const T inf=numeric_limits<T>::max()/4;
+    vector<T> mx,smx,mxc,mi,smi,mic,sum,lval,ladd;
     int sz;
     // smx[k]<x<mx[k]の部分の更新
-    void update_node_max(int k,ll x){
+    void update_node_max(int k,T x){
         sum[k]+=(x-mx[k])*mxc[k];
         if(mx[k]==mi[k]) mx[k]=x,mi[k]=x;
         else if(mx[k]==smi[k]) mx[k]=x,smi[k]=x;
         else mx[k]=x;
         if(lval[k]!=inf and x<lval[k]) lval[k]=x;
     }
-    void update_node_min(int k,ll x){
+    void update_node_min(int k,T x){
         sum[k]+=(x-mi[k])*mic[k];
         if(mx[k]==mi[k]) mx[k]=x,mi[k]=x;
         else if(smx[k]==mi[k]) smx[k]=x,mi[k]=x;
         else mi[k]=x;
         if(lval[k]!=inf and lval[k]<x) lval[k]=x;
     }
-    void update_node_add(int k,ll len,ll x){
+    void update_node_add(int k,int len,T x){
         mx[k]+=x;
         if(smx[k]!=-inf)smx[k]+=x;
         mi[k]+=x;
         if(smi[k]!=inf) smi[k]+=x;
-        sum[k]+=x*len;
+        sum[k]+=x*T(len);
         if(lval[k]!=inf)lval[k]+=x;
         else            ladd[k]+=x;
     }
     // 遅延分を処理，node-kは今の値，子は古い値かもしれない
-    void push(int k,ll len){
+    void push(int k,int len){
         if(k>=sz) return ;
         if(lval[k]!=inf){
             update_all(2*k,len/2,lval[k]);
@@ -110,7 +111,7 @@ struct Beats{
             smi[k]=min(smi[2*k],smi[2*k+1]);
         }
     }
-    void update_all(int k,ll len,ll x){
+    void update_all(int k,int len,T x){
         mx[k]=x,smx[k]=-inf,mi[k]=x,smi[k]=inf;
         mxc[k]=len,mic[k]=len;
         sum[k]=x*len;
@@ -126,7 +127,7 @@ struct Beats{
         mi.resize(2*sz,inf);smi.resize(2*sz,inf);mic.resize(2*sz,0);
         sum.resize(2*sz,0);ladd.resize(2*sz,0);lval.resize(2*sz,inf);
     }
-    void set(int k,ll x){
+    void set(int k,T x){
         mx[k+sz]=x;mxc[k+sz]=1;
         mi[k+sz]=x;mic[k+sz]=1;
         sum[k+sz]=x;
@@ -135,7 +136,7 @@ struct Beats{
         for(int i=sz-1;i;i--) update_from_children(i);
     }
     // [a,b)を更新，[l,r)探索区間，k-node
-    void chmin(int a,int b,ll x,int k=1,int l=0,int r=-1){
+    void chmin(int a,int b,T x,int k=1,int l=0,int r=-1){
         if(r==-1) r=sz;
         if(r<=a or b<=l or mx[k]<=x) return ;
         if(a<=l and r<=b and smx[k]<x){
@@ -147,7 +148,7 @@ struct Beats{
         chmin(a,b,x,2*k+1,(l+r)/2,r);
         update_from_children(k);
     }
-    void chmax(int a,int b,ll x,int k=1,int l=0,int r=-1){
+    void chmax(int a,int b,T x,int k=1,int l=0,int r=-1){
         if(r==-1) r=sz;
         if(r<=a or b<=l or mi[k]>=x) return ;
         if(a<=l and r<=b and smi[k]>x){
@@ -159,7 +160,7 @@ struct Beats{
         chmax(a,b,x,2*k+1,(l+r)/2,r);
         update_from_children(k);
     }
-    void add(int a,int b,ll x,int k=1,int l=0,int r=-1){
+    void add(int a,int b,T x,int k=1,int l=0,int r=-1){
         if(r==-1) r=sz;
         if(r<=a or b<=l) return ;
         if(a<=l and r<=b){
@@ -171,7 +172,7 @@ struct Beats{
         add(a,b,x,2*k+1,(l+r)/2,r);
         update_from_children(k);
     }
-    void update(int a,int b,ll x,int k=1,int l=0,int r=-1){
+    void update(int a,int b,T x,int k=1,int l=0,int r=-1){
         if(r==-1)r=sz;
         if(r<=a or b<=l) return ;
         if(a<=l and r<=b){
@@ -183,31 +184,31 @@ struct Beats{
         update(a,b,x,2*k+1,(l+r)/2,r);
         update_from_children(k);
     }
-    ll query_sum(int a,int b,int k=1,int l=0,int r=-1){
+    T query_sum(int a,int b,int k=1,int l=0,int r=-1){
         if(r==-1)r=sz;
         if(r<=a or b<=l)return 0;
         if(a<=l and r<=b) return sum[k];
         push(k,r-l);
-        ll lsum=query_sum(a,b,2*k,l,(l+r)/2);
-        ll rsum=query_sum(a,b,2*k+1,(l+r)/2,r);
+        T lsum=query_sum(a,b,2*k,l,(l+r)/2);
+        T rsum=query_sum(a,b,2*k+1,(l+r)/2,r);
         return lsum+rsum;
     }
-    ll query_min(int a,int b,int k=1,int l=0,int r=-1){
+    T query_min(int a,int b,int k=1,int l=0,int r=-1){
         if(r==-1)r=sz;
         if(b<=l or r<=a) return inf;
         if(a<=l and r<=b) return mi[k];
         push(k,r-l);
-        ll lmin=query_min(a,b,2*k,l,(l+r)/2);
-        ll rmin=query_min(a,b,2*k+1,(l+r)/2,r);
+        T lmin=query_min(a,b,2*k,l,(l+r)/2);
+        T rmin=query_min(a,b,2*k+1,(l+r)/2,r);
         return min(lmin,rmin);
     }
-    ll query_max(int a,int b,int k=1,int l=0,int r=-1){
+    T query_max(int a,int b,int k=1,int l=0,int r=-1){
         if(r==-1)r=sz;
         if(b<=l or r<=a) return -inf;
         if(a<=l and r<=b) return mx[k];
         push(k,r-l);
-        ll lmax=query_max(a,b,2*k,l,(l+r)/2);
-        ll rmax=query_max(a,b,2*k+1,(l+r)/2,r);
+        T lmax=query_max(a,b,2*k,l,(l+r)/2);
+        T rmax=query_max(a,b,2*k+1,(l+r)/2,r);
         return max(lmax,rmax);
     }
 };
@@ -215,7 +216,7 @@ struct Beats{
 
 signed main(){
     int n,q;cin>>n>>q;
-    Beats seg(n);
+    Beats<ll> seg(n);
     rep(i,n){
         ll a;cin>>a;seg.set(i,a);
     }
