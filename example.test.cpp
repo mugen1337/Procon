@@ -6,7 +6,7 @@
 #define ALL(x) std::begin(x), std::end(x)
 using namespace std;
 
-int main() {
+signed main() {
     int n; cin >> n;
     vector<int> s(n);
     REP (i, n) {
