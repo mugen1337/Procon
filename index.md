@@ -17,6 +17,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.test.cpp
       title: Graph/TreeHash.test.cpp
+  - name: Other
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Other/Parser.test.cpp
+      title: Other/Parser.test.cpp
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
