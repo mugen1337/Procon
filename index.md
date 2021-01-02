@@ -38,6 +38,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFindUndo.test.cpp
       title: UnionFind/UnionFindUndo.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: UnionFind/WeightedUnionFind.test.cpp
+      title: UnionFind/WeightedUnionFind.test.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
