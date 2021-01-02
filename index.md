@@ -30,6 +30,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.test.cpp
       title: SegmentTree/SegmentTreeBeats.test.cpp
+  - name: String
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: String/PalindromicTree.test.cpp
+      title: String/PalindromicTree.test.cpp
   - name: UnionFind
     pages:
     - icon: ':heavy_check_mark:'
