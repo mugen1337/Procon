@@ -15,9 +15,6 @@ data:
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: DataStructure/RangeSet.test.cpp
-      title: DataStructure/RangeSet.test.cpp
-    - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.test.cpp
       title: DataStructure/SlidingWindowAgregation.test.cpp
   - name: Graph
