@@ -7,6 +7,9 @@ data:
     title: test/yosupo_Unionfind_undo.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_2292.test.cpp
+    title: test/AOJ_2292.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -67,6 +70,7 @@ data:
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_scc.test.cpp
+  - test/AOJ_2292.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

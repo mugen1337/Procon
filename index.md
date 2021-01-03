@@ -25,6 +25,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.cpp
       title: SegmentTree/SegmentTreeBeats.cpp
+  - name: String
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: String/PalindromicTree.cpp
+      title: String/PalindromicTree.cpp
+    - icon: ':heavy_check_mark:'
+      path: String/RollingHash.cpp
+      title: String/RollingHash.cpp
   - name: UnionFind
     pages:
     - icon: ':heavy_check_mark:'
@@ -79,6 +87,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_2292.test.cpp
+      title: test/AOJ_2292.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
