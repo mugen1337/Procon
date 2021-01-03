@@ -11,29 +11,10 @@ int dx[]={1,0,-1,0},dy[]={0,1,0,-1};
 // ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}
 template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}
 template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}
- 
-struct IOSetup{
-    IOSetup(){
-        cin.tie(0);
-        ios::sync_with_stdio(0);
-        cout<<fixed<<setprecision(12);
-    }
-} iosetup;
-
-template<typename T>
-ostream &operator<<(ostream &os,const vector<T>&v){
-    for(int i=0;i<(int)v.size();i++) os<<v[i]<<(i+1==(int)v.size()?"":" ");
-    return os;
-}
-
-template<typename T>
-istream &operator>>(istream &is,vector<T>&v){
-    for(T &x:v)is>>x;
-    return is;
-}
 
 
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
+// @docs docs/SegmentTree.md
 
 template<typename Monoid>
 struct SegmentTree{
