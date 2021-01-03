@@ -3,9 +3,14 @@ data:
   libraryCategories:
   - name: DataStructure
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/RangeSet.cpp
       title: DataStructure/RangeSet.cpp
+  - name: .
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: template.cpp
+      title: template.cpp
   verificationCategories:
   - name: BinarySearchTree
     pages:
@@ -61,7 +66,7 @@ data:
       title: example.test.cpp
   - name: test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
 layout: toppage

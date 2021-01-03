@@ -2,9 +2,12 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yuki1601.test.cpp
+    title: test/yuki1601.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/RangeSet.cpp\"\n// \u9589\u533A\u9593\u306E\
@@ -101,8 +104,9 @@ data:
   path: DataStructure/RangeSet.cpp
   requiredBy: []
   timestamp: '2021-01-03 22:50:05+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yuki1601.test.cpp
 documentation_of: DataStructure/RangeSet.cpp
 layout: document
 redirect_from:
