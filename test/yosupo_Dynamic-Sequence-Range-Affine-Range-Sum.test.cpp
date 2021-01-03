@@ -5,7 +5,7 @@
 #include "../BinarySearchTree/ImplicitTreap.cpp"
 
 #include "../type/modint.cpp"
-using mint=ModInt<mod>;
+using mint=ModInt<998244353>;
 
 using M=pair<mint,mint>;
 using OM=pair<mint,mint>;
