@@ -10,7 +10,8 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: DataStructure/RangeSet.cpp
-      title: DataStructure/RangeSet.cpp
+      title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
+        \u3064"
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
