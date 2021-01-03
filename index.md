@@ -15,6 +15,9 @@ data:
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: Graph/StronglyConnectedComponents.test.cpp
+      title: Graph/StronglyConnectedComponents.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.test.cpp
       title: Graph/TreeHash.test.cpp
   - name: Other
