@@ -57,5 +57,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: example.test.cpp
       title: example.test.cpp
+  - name: test
+    pages:
+    - icon: ':x:'
+      path: test/yuki1601.test.cpp
+      title: test/yuki1601.test.cpp
 layout: toppage
 ---
