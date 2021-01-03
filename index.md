@@ -38,7 +38,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFind.cpp
       title: UnionFind/UnionFind.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFindUndo.cpp
       title: UnionFind/UnionFindUndo.cpp
     - icon: ':heavy_check_mark:'
@@ -49,11 +49,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
-  - name: test
-    pages:
-    - icon: ':warning:'
-      path: test/yosupo_Unionfind_undo.cpp
-      title: test/yosupo_Unionfind_undo.cpp
   - name: type
     pages:
     - icon: ':heavy_check_mark:'
@@ -100,6 +95,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind.test.cpp
       title: test/yosupo_Unionfind.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Unionfind_undo.test.cpp
+      title: test/yosupo_Unionfind_undo.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp

@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/yosupo_Unionfind_undo.cpp
-    title: test/yosupo_Unionfind_undo.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Unionfind_undo.test.cpp
+    title: test/yosupo_Unionfind_undo.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"UnionFind/UnionFindUndo.cpp\"\n// \u7D4C\u8DEF\u5727\u7E2E\
@@ -48,11 +48,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: UnionFind/UnionFindUndo.cpp
-  requiredBy:
-  - test/yosupo_Unionfind_undo.cpp
+  requiredBy: []
   timestamp: '2021-01-04 00:35:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo_Unionfind_undo.test.cpp
 documentation_of: UnionFind/UnionFindUndo.cpp
 layout: document
 redirect_from:
