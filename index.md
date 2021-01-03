@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: BinarySearchTree
+    pages:
+    - icon: ':warning:'
+      path: BinarySearchTree/ImplicitTreap.cpp
+      title: BinarySearchTree/ImplicitTreap.cpp
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -19,12 +24,17 @@ data:
     - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
-  verificationCategories:
-  - name: BinarySearchTree
+  - name: test
     pages:
-    - icon: ':heavy_check_mark:'
-      path: BinarySearchTree/ImplicitTreap.test.cpp
-      title: BinarySearchTree/ImplicitTreap.test.cpp
+    - icon: ':warning:'
+      path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+      title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+  - name: type
+    pages:
+    - icon: ':warning:'
+      path: type/modint.cpp
+      title: type/modint.cpp
+  verificationCategories:
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'

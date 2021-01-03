@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+    title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
@@ -45,7 +48,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.cpp
-  requiredBy: []
+  requiredBy:
+  - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
