@@ -45,8 +45,8 @@ data:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
 documentation_of: SegmentTree/SegmentTree.cpp
 layout: document
-redirect_from:
-- /library/SegmentTree/SegmentTree.cpp
-- /library/SegmentTree/SegmentTree.cpp.html
-title: SegmentTree/SegmentTree.cpp
+title: Segment Tree
 ---
+
+## 概要  
+Segment Tree (再起)

@@ -16,11 +16,11 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
+    PROBLEM: https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum
     links:
-    - https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
+    - https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum
   bundledCode: "#line 1 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
-    \n#define PROBLEM \"https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum\"\
+    \n#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum\"\
     \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
@@ -128,7 +128,7 @@ data:
     \        seg.update(l,r,{b,c});\n        }else{\n            int l,r;cin>>l>>r;\n\
     \            cout<<seg.query(l,r).first<<endl;\n        }\n    }\n    return 0;\n\
     }\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../BinarySearchTree/ImplicitTreap.cpp\"\
     \n\n#include \"../type/modint.cpp\"\nusing mint=ModInt<mod>;\n\nusing M=pair<mint,mint>;\n\
     using OM=pair<mint,mint>;\nconst M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M\
@@ -151,7 +151,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-03 23:56:29+09:00'
+  timestamp: '2021-01-04 00:10:35+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

@@ -16,7 +16,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTree.cpp
-      title: SegmentTree/SegmentTree.cpp
+      title: Segment Tree
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.cpp
       title: SegmentTree/SegmentTreeBeats.cpp

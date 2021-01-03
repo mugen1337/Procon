@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: SegmentTree/SegmentTree.cpp
-    title: SegmentTree/SegmentTree.cpp
+    title: Segment Tree
   - icon: ':question:'
     path: template.cpp
     title: template.cpp
