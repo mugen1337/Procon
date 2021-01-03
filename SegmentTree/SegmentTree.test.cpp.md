@@ -8,6 +8,7 @@ data:
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/point_add_range_sum
+    _deprecated_at_docs: docs/SegmentTree.md
     links:
     - https://judge.yosupo.jp/problem/point_add_range_sum
   bundledCode: "#line 1 \"SegmentTree/SegmentTree.test.cpp\"\n#include<bits/stdc++.h>\n\
@@ -17,14 +18,9 @@ data:
     \ ll LINF=1001002003004005006ll;\nint dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll\
     \ gcd(ll a,ll b){return b?gcd(b,a%b):a;}\ntemplate<class T>bool chmax(T &a,const\
     \ T &b){if(a<b){a=b;return true;}return false;}\ntemplate<class T>bool chmin(T\
-    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n \nstruct IOSetup{\n\
-    \    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n     \
-    \   cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n\ntemplate<typename T>\n\
-    ostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
-    \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\n\ntemplate<typename\
-    \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\
-    \n\ntemplate<typename Monoid>\nstruct SegmentTree{\n    int sz;\n    vector<Monoid>\
+    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n\n\n#define PROBLEM\
+    \ \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n// @docs docs/SegmentTree.md\n\
+    \ntemplate<typename Monoid>\nstruct SegmentTree{\n    int sz;\n    vector<Monoid>\
     \ seg;\n    Monoid M0;// \u30E2\u30CE\u30A4\u30C9\u306E\u5143\n    using F=function<Monoid(Monoid,Monoid)>;\n\
     \    F f;\n    SegmentTree(int n,Monoid M0,F f):M0(M0),f(f){\n        sz=1;\n\
     \        while(sz<n)sz<<=1;\n        seg.assign(2*sz,M0);\n    }\n    void set(int\
@@ -48,14 +44,9 @@ data:
     const int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\nint dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n\
     // ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\ntemplate<class T>bool chmax(T &a,const\
     \ T &b){if(a<b){a=b;return true;}return false;}\ntemplate<class T>bool chmin(T\
-    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n \nstruct IOSetup{\n\
-    \    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n     \
-    \   cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n\ntemplate<typename T>\n\
-    ostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
-    \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\n\ntemplate<typename\
-    \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\
-    \n\ntemplate<typename Monoid>\nstruct SegmentTree{\n    int sz;\n    vector<Monoid>\
+    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n\n\n#define PROBLEM\
+    \ \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n// @docs docs/SegmentTree.md\n\
+    \ntemplate<typename Monoid>\nstruct SegmentTree{\n    int sz;\n    vector<Monoid>\
     \ seg;\n    Monoid M0;// \u30E2\u30CE\u30A4\u30C9\u306E\u5143\n    using F=function<Monoid(Monoid,Monoid)>;\n\
     \    F f;\n    SegmentTree(int n,Monoid M0,F f):M0(M0),f(f){\n        sz=1;\n\
     \        while(sz<n)sz<<=1;\n        seg.assign(2*sz,M0);\n    }\n    void set(int\
@@ -77,7 +68,7 @@ data:
   isVerificationFile: true
   path: SegmentTree/SegmentTree.test.cpp
   requiredBy: []
-  timestamp: '2021-01-01 23:56:14+09:00'
+  timestamp: '2021-01-03 22:34:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: SegmentTree/SegmentTree.test.cpp
@@ -87,3 +78,5 @@ redirect_from:
 - /verify/SegmentTree/SegmentTree.test.cpp.html
 title: SegmentTree/SegmentTree.test.cpp
 ---
+## 概要  
+Segment Tree  
