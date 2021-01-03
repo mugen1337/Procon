@@ -10,5 +10,6 @@
 "UnionFind/UnionFind.test.cpp": "2021-01-02 03:44:26 +0900",
 "UnionFind/UnionFindUndo.test.cpp": "2021-01-02 17:06:11 +0900",
 "UnionFind/WeightedUnionFind.test.cpp": "2021-01-02 18:25:09 +0900",
-"example.test.cpp": "2021-01-01 23:21:35 +0900"
+"example.test.cpp": "2021-01-01 23:21:35 +0900",
+"test/yuki1601.test.cpp": "2021-01-03 23:01:13 +0900"
 }
