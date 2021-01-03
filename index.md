@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: DataStructure
+    pages:
+    - icon: ':warning:'
+      path: DataStructure/RangeSet.cpp
+      title: DataStructure/RangeSet.cpp
   verificationCategories:
   - name: BinarySearchTree
     pages:
