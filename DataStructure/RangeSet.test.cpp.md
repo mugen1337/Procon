@@ -4,7 +4,7 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://yukicoder.me/problems/1601
     links:
@@ -123,7 +123,7 @@ data:
   path: DataStructure/RangeSet.test.cpp
   requiredBy: []
   timestamp: '2021-01-03 22:03:40+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: DataStructure/RangeSet.test.cpp
 layout: document

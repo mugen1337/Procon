@@ -9,7 +9,7 @@ data:
       title: BinarySearchTree/ImplicitTreap.test.cpp
   - name: DataStructure
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/RangeSet.test.cpp
       title: DataStructure/RangeSet.test.cpp
     - icon: ':heavy_check_mark:'
