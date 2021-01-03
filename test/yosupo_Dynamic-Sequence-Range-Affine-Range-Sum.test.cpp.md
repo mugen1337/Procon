@@ -1,23 +1,25 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: BinarySearchTree/ImplicitTreap.cpp
     title: BinarySearchTree/ImplicitTreap.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
     links:
     - https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
-  bundledCode: "#line 1 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp\"\
+  bundledCode: "#line 1 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum\"\
     \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
@@ -31,7 +33,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
     \n\n#line 1 \"BinarySearchTree/ImplicitTreap.cpp\"\ntemplate<typename Monoid,typename\
     \ OperatorMonoid>\nstruct ImplicitTreap{\n\n    private:\n\n    inline int xorshift(){\n\
     \        static int x=122312555;\n        static int y=336261662;\n        static\
@@ -90,9 +92,9 @@ data:
     \ r,const OperatorMonoid &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n\
     \        vector<Monoid> ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n\
     \        return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
-    };\n#line 6 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp\"\n\n#line\
-    \ 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long x;\n\
-    \    ModInt():x(0){}\n    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n\
+    };\n#line 6 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\n\
+    \n#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long\
+    \ x;\n    ModInt():x(0){}\n    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n\
     \    ModInt &operator+=(const ModInt &p){\n        if((x+=p.x)>=Mod) x-=Mod;\n\
     \        return *this;\n    }\n    ModInt &operator-=(const ModInt &p){\n    \
     \    if((x+=Mod-p.x)>=Mod)x-=Mod;\n        return *this;\n    }\n    ModInt &operator*=(const\
@@ -111,7 +113,7 @@ data:
     \     mul*=mul;n>>=1;\n        }\n        return ret;\n    }\n    friend ostream\
     \ &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend istream\
     \ &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
-    \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 8 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp\"\
+    \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 8 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
     \nusing mint=ModInt<mod>;\n\nusing M=pair<mint,mint>;\nusing OM=pair<mint,mint>;\n\
     const M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M a,M b){\n    return M(a.first+b.first,a.second+b.second);\n\
     }\nM segg(M a,OM b){\n    return M(a.first*b.first+a.second*b.second,a.second);\n\
@@ -146,16 +148,16 @@ data:
   - template.cpp
   - BinarySearchTree/ImplicitTreap.cpp
   - type/modint.cpp
-  isVerificationFile: false
-  path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+  isVerificationFile: true
+  path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-03 23:50:56+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2021-01-03 23:56:29+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 layout: document
 redirect_from:
-- /library/test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
-- /library/test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp.html
-title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+- /verify/test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+- /verify/test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp.html
+title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 ---

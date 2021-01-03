@@ -1,11 +1,11 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
-    title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+    title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
     title: test/yosupo_Point-Add-Range-Sum.test.cpp
@@ -16,7 +16,7 @@ data:
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -48,14 +48,14 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.cpp
-  requiredBy:
-  - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+  requiredBy: []
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
+  - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: template.cpp
 layout: document
 redirect_from:

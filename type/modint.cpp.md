@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
-    title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+    title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n  \
@@ -54,11 +54,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: type/modint.cpp
-  requiredBy:
-  - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.cpp
+  requiredBy: []
   timestamp: '2021-01-03 23:50:56+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: type/modint.cpp
 layout: document
 redirect_from:
