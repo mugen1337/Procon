@@ -1,19 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ALL(x) begin(x),end(x)
-#define rep(i,n) for(int i=0;i<(n);i++)
-#define debug(v) cout<<#v<<":";for(auto x:v){cout<<x<<' ';}cout<<endl;
-#define mod 1000000007
-using ll=long long;
-const int INF=1000000000;
-const ll LINF=1001002003004005006ll;
-int dx[]={1,0,-1,0},dy[]={0,1,0,-1};
-// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}
-template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}
-template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}
-
-#define PROBLEM "https://judge.yosupo.jp/problem/scc"
-
 struct StronglyConnectedComponents{
     private:
     vector<vector<int>> g,rg;
@@ -64,24 +48,3 @@ struct StronglyConnectedComponents{
         return compressed;
     }
 };
-
-
-
-signed main(){
-    int n,m;cin>>n>>m;
-    vector<vector<int>> g(n);
-    rep(i,m){
-        int u,v;cin>>u>>v;
-        g[u].push_back(v);
-    }
-
-    StronglyConnectedComponents scc(g);
-    scc.build();
-    cout<<scc.group.size()<<"\n";
-    rep(i,(int)scc.group.size()){
-        cout<<scc.group[i].size();
-        for(auto x:scc.group[i]) cout<<" "<<x;
-        cout<<"\n";
-    }
-    return 0;
-}
