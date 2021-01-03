@@ -1,8 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/yosupo_Unionfind_undo.cpp
+    title: test/yosupo_Unionfind_undo.cpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DSL_1_B.test.cpp
+    title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
@@ -12,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
     title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Unionfind.test.cpp
+    title: test/yosupo_Unionfind.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_scc.test.cpp
     title: test/yosupo_scc.test.cpp
@@ -51,7 +60,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.cpp
-  requiredBy: []
+  requiredBy:
+  - test/yosupo_Unionfind_undo.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
@@ -60,6 +70,8 @@ data:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - test/yosupo_Unionfind.test.cpp
+  - test/AOJ_DSL_1_B.test.cpp
 documentation_of: template.cpp
 layout: document
 redirect_from:

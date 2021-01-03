@@ -25,11 +25,27 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.cpp
       title: SegmentTree/SegmentTreeBeats.cpp
+  - name: UnionFind
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: UnionFind/UnionFind.cpp
+      title: UnionFind/UnionFind.cpp
+    - icon: ':warning:'
+      path: UnionFind/UnionFindUndo.cpp
+      title: UnionFind/UnionFindUndo.cpp
+    - icon: ':heavy_check_mark:'
+      path: UnionFind/WeightedUnionFind.cpp
+      title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
+  - name: test
+    pages:
+    - icon: ':warning:'
+      path: test/yosupo_Unionfind_undo.cpp
+      title: test/yosupo_Unionfind_undo.cpp
   - name: type
     pages:
     - icon: ':heavy_check_mark:'
@@ -56,17 +72,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/PalindromicTree.test.cpp
       title: String/PalindromicTree.test.cpp
-  - name: UnionFind
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/UnionFind.test.cpp
-      title: UnionFind/UnionFind.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/UnionFindUndo.test.cpp
-      title: UnionFind/UnionFindUndo.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/WeightedUnionFind.test.cpp
-      title: UnionFind/WeightedUnionFind.test.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
@@ -74,6 +79,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DSL_1_B.test.cpp
+      title: test/AOJ_DSL_1_B.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
@@ -83,6 +91,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
       title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Unionfind.test.cpp
+      title: test/yosupo_Unionfind.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp
