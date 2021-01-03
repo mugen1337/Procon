@@ -1,19 +1,19 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: BinarySearchTree/ImplicitTreap.cpp
     title: BinarySearchTree/ImplicitTreap.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum
@@ -114,7 +114,7 @@ data:
     \ &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend istream\
     \ &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 8 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
-    \nusing mint=ModInt<mod>;\n\nusing M=pair<mint,mint>;\nusing OM=pair<mint,mint>;\n\
+    \nusing mint=ModInt<998244353>;\n\nusing M=pair<mint,mint>;\nusing OM=pair<mint,mint>;\n\
     const M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M a,M b){\n    return M(a.first+b.first,a.second+b.second);\n\
     }\nM segg(M a,OM b){\n    return M(a.first*b.first+a.second*b.second,a.second);\n\
     }\nOM segh(OM a,OM b){\n    return OM(a.first*b.first,a.second*b.first+b.second);\n\
@@ -130,7 +130,7 @@ data:
     }\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../BinarySearchTree/ImplicitTreap.cpp\"\
-    \n\n#include \"../type/modint.cpp\"\nusing mint=ModInt<mod>;\n\nusing M=pair<mint,mint>;\n\
+    \n\n#include \"../type/modint.cpp\"\nusing mint=ModInt<998244353>;\n\nusing M=pair<mint,mint>;\n\
     using OM=pair<mint,mint>;\nconst M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M\
     \ a,M b){\n    return M(a.first+b.first,a.second+b.second);\n}\nM segg(M a,OM\
     \ b){\n    return M(a.first*b.first+a.second*b.second,a.second);\n}\nOM segh(OM\
@@ -151,8 +151,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:10:35+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-01-04 00:14:41+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 layout: document

@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: BinarySearchTree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: BinarySearchTree/ImplicitTreap.cpp
       title: BinarySearchTree/ImplicitTreap.cpp
   - name: DataStructure
@@ -22,12 +22,12 @@ data:
       title: SegmentTree/SegmentTreeBeats.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: type
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
@@ -72,7 +72,7 @@ data:
       title: example.test.cpp
   - name: test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
