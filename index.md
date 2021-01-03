@@ -11,6 +11,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTree.cpp
       title: SegmentTree/SegmentTree.cpp
+    - icon: ':heavy_check_mark:'
+      path: SegmentTree/SegmentTreeBeats.cpp
+      title: SegmentTree/SegmentTreeBeats.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
@@ -40,11 +43,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: Other/Parser.test.cpp
       title: Other/Parser.test.cpp
-  - name: SegmentTree
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: SegmentTree/SegmentTreeBeats.test.cpp
-      title: SegmentTree/SegmentTreeBeats.test.cpp
   - name: String
     pages:
     - icon: ':heavy_check_mark:'
@@ -71,6 +69,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
+      title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
