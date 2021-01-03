@@ -13,6 +13,9 @@ data:
     path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
     title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_scc.test.cpp
+    title: test/yosupo_scc.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   _pathExtension: cpp
@@ -53,6 +56,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
+  - test/yosupo_scc.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
