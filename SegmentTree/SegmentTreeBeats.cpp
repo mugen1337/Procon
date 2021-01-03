@@ -1,43 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ALL(x) x.begin(),x.end()
-#define rep(i,n) for(int i=0;i<(n);i++)
-#define debug(v) cout<<#v<<":";for(auto x:v){cout<<x<<' ';}cout<<endl;
-#define mod 1000000007
-using ll=long long;
-const int INF=1000000000;
-const ll LINF=1001002003004005006ll;
-int dx[]={1,0,-1,0},dy[]={0,1,0,-1};
-// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}
-template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}
-template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}
- 
-struct IOSetup{
-    IOSetup(){
-        cin.tie(0);
-        ios::sync_with_stdio(0);
-        cout<<fixed<<setprecision(12);
-    }
-} iosetup;
-
 template<typename T>
-ostream &operator<<(ostream &os,const vector<T>&v){
-    for(int i=0;i<(int)v.size();i++) os<<v[i]<<(i+1==(int)v.size()?"":" ");
-    return os;
-}
-
-template<typename T>
-istream &operator>>(istream &is,vector<T>&v){
-    for(T &x:v)is>>x;
-    return is;
-}
-
-#define PROBLEM "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum"
-
-// ref: https://smijake3.hatenablog.com/entry/2019/04/28/021457
-
-template<typename T>
-struct Beats{
+struct SegmentTreeBeats{
     private:
 
     const T inf=numeric_limits<T>::max()/4;
@@ -120,7 +82,7 @@ struct Beats{
     
     public:
 
-    Beats(int n){
+    SegmentTreeBeats(int n){
         sz=1;
         while(sz<n)sz<<=1;
         mx.resize(2*sz,-inf);smx.resize(2*sz,-inf);mxc.resize(2*sz,0);
@@ -212,29 +174,3 @@ struct Beats{
         return max(lmax,rmax);
     }
 };
-
-
-signed main(){
-    int n,q;cin>>n>>q;
-    Beats<ll> seg(n);
-    rep(i,n){
-        ll a;cin>>a;seg.set(i,a);
-    }
-    seg.build();
-    while(q--){
-        int t,l,r;cin>>t>>l>>r;
-        if(t==0){
-            ll b;cin>>b;
-            seg.chmin(l,r,b);
-        }else if(t==1){
-            ll b;cin>>b;
-            seg.chmax(l,r,b);
-        }else if(t==2){
-            ll b;cin>>b;
-            seg.add(l,r,b);
-        }else{
-            cout<<seg.query_sum(l,r)<<endl;
-        }
-    }
-    return 0;
-}
