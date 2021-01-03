@@ -75,11 +75,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: Other/Parser.test.cpp
       title: Other/Parser.test.cpp
-  - name: String
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: String/PalindromicTree.test.cpp
-      title: String/PalindromicTree.test.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
