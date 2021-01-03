@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Point-Add-Range-Sum.test.cpp
+    title: test/yosupo_Point-Add-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   _pathExtension: cpp
@@ -43,6 +46,7 @@ data:
   timestamp: '2021-01-03 23:01:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
 documentation_of: template.cpp
 layout: document

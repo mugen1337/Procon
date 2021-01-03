@@ -6,6 +6,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/RangeSet.cpp
       title: DataStructure/RangeSet.cpp
+  - name: SegmentTree
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: SegmentTree/SegmentTree.cpp
+      title: SegmentTree/SegmentTree.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
@@ -63,7 +68,7 @@ data:
       title: example.test.cpp
   - name: test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
