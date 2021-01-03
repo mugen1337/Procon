@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_2821.test.cpp
+    title: test/AOJ_2821.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Unionfind.test.cpp
     title: test/yosupo_Unionfind.test.cpp
   _pathExtension: cpp
@@ -33,6 +36,7 @@ data:
   timestamp: '2021-01-04 00:35:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/AOJ_2821.test.cpp
   - test/yosupo_Unionfind.test.cpp
 documentation_of: UnionFind/UnionFind.cpp
 layout: document

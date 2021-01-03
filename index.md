@@ -17,6 +17,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.cpp
       title: Graph/StronglyConnectedComponents.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph/TreeHash.cpp
+      title: Graph/TreeHash.cpp
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
@@ -60,11 +63,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.test.cpp
       title: DataStructure/SlidingWindowAgregation.test.cpp
-  - name: Graph
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: Graph/TreeHash.test.cpp
-      title: Graph/TreeHash.test.cpp
   - name: Other
     pages:
     - icon: ':heavy_check_mark:'
@@ -80,6 +78,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_2821.test.cpp
+      title: test/AOJ_2821.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp

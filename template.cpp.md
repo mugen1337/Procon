@@ -7,6 +7,9 @@ data:
     path: test/AOJ_2292.test.cpp
     title: test/AOJ_2292.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_2821.test.cpp
+    title: test/AOJ_2821.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -74,6 +77,7 @@ data:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - test/AOJ_2821.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
 documentation_of: template.cpp
