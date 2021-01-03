@@ -38,9 +38,6 @@ data:
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
-      path: SegmentTree/SegmentTree.test.cpp
-      title: SegmentTree/SegmentTree.test.cpp
-    - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.test.cpp
       title: SegmentTree/SegmentTreeBeats.test.cpp
   - name: String
@@ -66,6 +63,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':x:'
+      path: test/yosupo_Point-Add-Range-Sum.test.cpp
+      title: test/yosupo_Point-Add-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
