@@ -30,17 +30,18 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Unionfind.test.cpp\"\n\n#line 1 \"\
-    UnionFind/UnionFind.cpp\"\nstruct UnionFind{\n    int con;\n    vector<int> par,siz;\n\
-    \    UnionFind(int n):con(n),par(n),siz(n,1){\n        iota(begin(par),end(par),0);\n\
-    \    }\n    int root(int x){\n        return (par[x]==x?x:(par[x]=root(par[x])));\n\
-    \    }\n    bool sameroot(int x,int y){\n        return root(x)==root(y);\n  \
-    \  }\n    bool unite(int x,int y){\n        x=root(x);y=root(y);\n        if(x==y)\
-    \ return false;\n        if(siz[x]<siz[y])swap(x,y);\n        siz[x]+=siz[y];\n\
-    \        par[y]=x;\n        con--;\n        return true;\n    }\n    int size(int\
-    \ x){\n        return siz[root(x)];\n    }\n};\n#line 6 \"test/yosupo_Unionfind.test.cpp\"\
-    \n\nsigned main(){\n    int n,q;cin>>n>>q;\n    UnionFind uf(n);\n    while(q--){\n\
-    \        int t,u,v;cin>>t>>u>>v;\n        if(t) cout<<uf.sameroot(u,v)<<endl;\n\
-    \        else  uf.unite(u,v);\n    }\n    return 0;\n}\n"
+    UnionFind/UnionFind.cpp\"\nstruct UnionFind{\n    private:\n    vector<int> par,siz;\n\
+    \n    public:\n    int con;\n    UnionFind(int n):par(n),siz(n,1),con(n){\n  \
+    \      iota(begin(par),end(par),0);\n    }\n    int root(int x){\n        return\
+    \ (par[x]==x?x:(par[x]=root(par[x])));\n    }\n    bool sameroot(int x,int y){\n\
+    \        return root(x)==root(y);\n    }\n    bool unite(int x,int y){\n     \
+    \   x=root(x);y=root(y);\n        if(x==y) return false;\n        if(siz[x]<siz[y])swap(x,y);\n\
+    \        siz[x]+=siz[y];\n        par[y]=x;\n        con--;\n        return true;\n\
+    \    }\n    int size(int x){\n        return siz[root(x)];\n    }\n};\n#line 6\
+    \ \"test/yosupo_Unionfind.test.cpp\"\n\nsigned main(){\n    int n,q;cin>>n>>q;\n\
+    \    UnionFind uf(n);\n    while(q--){\n        int t,u,v;cin>>t>>u>>v;\n    \
+    \    if(t) cout<<uf.sameroot(u,v)<<endl;\n        else  uf.unite(u,v);\n    }\n\
+    \    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include\
     \ \"../template.cpp\"\n\n#include \"../UnionFind/UnionFind.cpp\"\n\nsigned main(){\n\
     \    int n,q;cin>>n>>q;\n    UnionFind uf(n);\n    while(q--){\n        int t,u,v;cin>>t>>u>>v;\n\
@@ -52,7 +53,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:35:48+09:00'
+  timestamp: '2021-01-04 16:08:06+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Unionfind.test.cpp

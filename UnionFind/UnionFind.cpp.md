@@ -13,19 +13,19 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"UnionFind/UnionFind.cpp\"\nstruct UnionFind{\n    int con;\n\
-    \    vector<int> par,siz;\n    UnionFind(int n):con(n),par(n),siz(n,1){\n    \
-    \    iota(begin(par),end(par),0);\n    }\n    int root(int x){\n        return\
+  bundledCode: "#line 1 \"UnionFind/UnionFind.cpp\"\nstruct UnionFind{\n    private:\n\
+    \    vector<int> par,siz;\n\n    public:\n    int con;\n    UnionFind(int n):par(n),siz(n,1),con(n){\n\
+    \        iota(begin(par),end(par),0);\n    }\n    int root(int x){\n        return\
     \ (par[x]==x?x:(par[x]=root(par[x])));\n    }\n    bool sameroot(int x,int y){\n\
     \        return root(x)==root(y);\n    }\n    bool unite(int x,int y){\n     \
     \   x=root(x);y=root(y);\n        if(x==y) return false;\n        if(siz[x]<siz[y])swap(x,y);\n\
     \        siz[x]+=siz[y];\n        par[y]=x;\n        con--;\n        return true;\n\
     \    }\n    int size(int x){\n        return siz[root(x)];\n    }\n};\n"
-  code: "struct UnionFind{\n    int con;\n    vector<int> par,siz;\n    UnionFind(int\
-    \ n):con(n),par(n),siz(n,1){\n        iota(begin(par),end(par),0);\n    }\n  \
-    \  int root(int x){\n        return (par[x]==x?x:(par[x]=root(par[x])));\n   \
-    \ }\n    bool sameroot(int x,int y){\n        return root(x)==root(y);\n    }\n\
-    \    bool unite(int x,int y){\n        x=root(x);y=root(y);\n        if(x==y)\
+  code: "struct UnionFind{\n    private:\n    vector<int> par,siz;\n\n    public:\n\
+    \    int con;\n    UnionFind(int n):par(n),siz(n,1),con(n){\n        iota(begin(par),end(par),0);\n\
+    \    }\n    int root(int x){\n        return (par[x]==x?x:(par[x]=root(par[x])));\n\
+    \    }\n    bool sameroot(int x,int y){\n        return root(x)==root(y);\n  \
+    \  }\n    bool unite(int x,int y){\n        x=root(x);y=root(y);\n        if(x==y)\
     \ return false;\n        if(siz[x]<siz[y])swap(x,y);\n        siz[x]+=siz[y];\n\
     \        par[y]=x;\n        con--;\n        return true;\n    }\n    int size(int\
     \ x){\n        return siz[root(x)];\n    }\n};"
@@ -33,7 +33,7 @@ data:
   isVerificationFile: false
   path: UnionFind/UnionFind.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:35:48+09:00'
+  timestamp: '2021-01-04 16:08:06+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_2821.test.cpp
