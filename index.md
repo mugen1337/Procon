@@ -46,6 +46,9 @@ data:
       title: String/RollingHash.cpp
   - name: UnionFind
     pages:
+    - icon: ':warning:'
+      path: UnionFind/DynamicConnectivityOffline.cpp
+      title: UnionFind/DynamicConnectivityOffline.cpp
     - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFind.cpp
       title: UnionFind/UnionFind.cpp
