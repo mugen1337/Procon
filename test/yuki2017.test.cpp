@@ -3,8 +3,8 @@
 #include "../template.cpp"
 
 #include "../type/ModInt.cpp"
-#include "../Math/Precalc.cpp"
-#include "../Math/FormalPowerSeriesNaive.cpp"
+#include "../Math_/Precalc.cpp"
+#include "../Math_/FormalPowerSeriesNaive.cpp"
 
 using mint=ModInt<1000000007>;
 Precalc<mint> F(500000);
