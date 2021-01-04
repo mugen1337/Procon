@@ -1,16 +1,16 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: DataStructure/SlidingWindowAgregation.cpp
     title: DataStructure/SlidingWindowAgregation.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/queue_operate_all_composite
@@ -46,22 +46,22 @@ data:
     \        return fr.size()+ba.size();\n    }\n    bool empty(){\n        return\
     \ size()==0;\n    }\n};\n#line 6 \"test/yosupo_queue_operate_all_composite.test.cpp\"\
     \n\n\nsigned main(){    \n    auto swagfunc=[](pair<ll,ll> p1,pair<ll,ll> p2){\n\
-    \        return make_pair(p1.first*p2.first%mod,(p2.first*p1.second%mod+p2.second)%mod);\n\
+    \        return make_pair(p1.first*p2.first%998244353,(p2.first*p1.second%998244353+p2.second)%998244353);\n\
     \    };\n\n    SWAG<pair<ll,ll>> que(swagfunc,make_pair(1ll,0ll));\n\n    int\
     \ q;cin>>q;\n    while(q--){\n        int t;cin>>t;\n        if(t==0){\n     \
     \       ll a,b;cin>>a>>b;\n            que.push(make_pair(a,b));\n        }else\
     \ if(t==1){\n            que.pop();\n        }else{\n            ll x;cin>>x;\n\
-    \            auto p=que.get();\n            cout<<(p.first*x%mod+p.second)%mod<<endl;\n\
+    \            auto p=que.get();\n            cout<<(p.first*x%998244353+p.second)%998244353<<endl;\n\
     \        }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/queue_operate_all_composite\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/SlidingWindowAgregation.cpp\"\
     \n\n\nsigned main(){    \n    auto swagfunc=[](pair<ll,ll> p1,pair<ll,ll> p2){\n\
-    \        return make_pair(p1.first*p2.first%mod,(p2.first*p1.second%mod+p2.second)%mod);\n\
+    \        return make_pair(p1.first*p2.first%998244353,(p2.first*p1.second%998244353+p2.second)%998244353);\n\
     \    };\n\n    SWAG<pair<ll,ll>> que(swagfunc,make_pair(1ll,0ll));\n\n    int\
     \ q;cin>>q;\n    while(q--){\n        int t;cin>>t;\n        if(t==0){\n     \
     \       ll a,b;cin>>a>>b;\n            que.push(make_pair(a,b));\n        }else\
     \ if(t==1){\n            que.pop();\n        }else{\n            ll x;cin>>x;\n\
-    \            auto p=que.get();\n            cout<<(p.first*x%mod+p.second)%mod<<endl;\n\
+    \            auto p=que.get();\n            cout<<(p.first*x%998244353+p.second)%998244353<<endl;\n\
     \        }\n    }\n    return 0;\n}"
   dependsOn:
   - template.cpp
@@ -69,8 +69,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_queue_operate_all_composite.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 13:38:24+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-01-04 13:44:10+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_queue_operate_all_composite.test.cpp
 layout: document

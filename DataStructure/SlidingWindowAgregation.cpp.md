@@ -3,11 +3,11 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_queue_operate_all_composite.test.cpp
     title: test/yosupo_queue_operate_all_composite.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/SlidingWindowAgregation.cpp\"\n// Monoid Sliding-Window-AGregation\n\
@@ -42,7 +42,7 @@ data:
   path: DataStructure/SlidingWindowAgregation.cpp
   requiredBy: []
   timestamp: '2021-01-04 13:35:11+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_queue_operate_all_composite.test.cpp
 documentation_of: DataStructure/SlidingWindowAgregation.cpp

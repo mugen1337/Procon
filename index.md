@@ -12,7 +12,7 @@ data:
       path: DataStructure/RangeSet.cpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
   - name: Graph
@@ -57,7 +57,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: type
@@ -100,7 +100,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_queue_operate_all_composite.test.cpp
       title: test/yosupo_queue_operate_all_composite.test.cpp
     - icon: ':heavy_check_mark:'
