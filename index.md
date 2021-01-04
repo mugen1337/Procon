@@ -62,15 +62,13 @@ data:
       title: template.cpp
   - name: type
     pages:
+    - icon: ':warning:'
+      path: type/Fraction.cpp
+      title: type/Fraction.cpp
     - icon: ':heavy_check_mark:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
-  - name: .
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
   - name: test
     pages:
     - icon: ':heavy_check_mark:'
