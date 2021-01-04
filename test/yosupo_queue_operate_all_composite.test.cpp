@@ -7,7 +7,7 @@
 
 signed main(){    
     auto swagfunc=[](pair<ll,ll> p1,pair<ll,ll> p2){
-        return make_pair(p1.first*p2.first%mod,(p2.first*p1.second%mod+p2.second)%mod);
+        return make_pair(p1.first*p2.first%998244353,(p2.first*p1.second%998244353+p2.second)%998244353);
     };
 
     SWAG<pair<ll,ll>> que(swagfunc,make_pair(1ll,0ll));
@@ -23,7 +23,7 @@ signed main(){
         }else{
             ll x;cin>>x;
             auto p=que.get();
-            cout<<(p.first*x%mod+p.second)%mod<<endl;
+            cout<<(p.first*x%998244353+p.second)%998244353<<endl;
         }
     }
     return 0;
