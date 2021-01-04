@@ -13,21 +13,21 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/0109
+    PROBLEM: https://judge.yosupo.jp/problem/queue_operate_all_composite
     links:
-    - https://onlinejudge.u-aizu.ac.jp/problems/0109
+    - https://judge.yosupo.jp/problem/queue_operate_all_composite
   bundledCode: "#line 1 \"test/yosupo_queue_operate_all_composite.test.cpp\"\n#define\
-    \ PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/0109\"\n\n#line 1 \"template.cpp\"\
-    \n#include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
-    #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
-    \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
-    const int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\nint dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n\
-    // ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\ntemplate<class T>bool chmax(T &a,const\
-    \ T &b){if(a<b){a=b;return true;}return false;}\ntemplate<class T>bool chmin(T\
-    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n\nstruct IOSetup{\n\
-    \    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n     \
-    \   cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n \ntemplate<typename T>\n\
-    ostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
+    \ PROBLEM \"https://judge.yosupo.jp/problem/queue_operate_all_composite\"\n\n\
+    #line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n#define\
+    \ ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v)\
+    \ cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\n\
+    using ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
+    int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
+    template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
+    template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
+    \nstruct IOSetup{\n    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n\
+    \        cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n \ntemplate<typename\
+    \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_queue_operate_all_composite.test.cpp\"\
@@ -53,8 +53,8 @@ data:
     \ if(t==1){\n            que.pop();\n        }else{\n            ll x;cin>>x;\n\
     \            auto p=que.get();\n            cout<<(p.first*x%mod+p.second)%mod<<endl;\n\
     \        }\n    }\n    return 0;\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/0109\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../DataStructure/SlidingWindowAgregation.cpp\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/queue_operate_all_composite\"\
+    \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/SlidingWindowAgregation.cpp\"\
     \n\n\nsigned main(){    \n    auto swagfunc=[](pair<ll,ll> p1,pair<ll,ll> p2){\n\
     \        return make_pair(p1.first*p2.first%mod,(p2.first*p1.second%mod+p2.second)%mod);\n\
     \    };\n\n    SWAG<pair<ll,ll>> que(swagfunc,make_pair(1ll,0ll));\n\n    int\
@@ -69,7 +69,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_queue_operate_all_composite.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 13:35:11+09:00'
+  timestamp: '2021-01-04 13:38:24+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_queue_operate_all_composite.test.cpp
