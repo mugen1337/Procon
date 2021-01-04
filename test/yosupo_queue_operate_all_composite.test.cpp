@@ -1,4 +1,4 @@
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/0109"
+#define PROBLEM "https://judge.yosupo.jp/problem/queue_operate_all_composite"
 
 #include "../template.cpp"
 
