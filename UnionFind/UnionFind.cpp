@@ -1,7 +1,10 @@
 struct UnionFind{
-    int con;
+    private:
     vector<int> par,siz;
-    UnionFind(int n):con(n),par(n),siz(n,1){
+
+    public:
+    int con;
+    UnionFind(int n):par(n),siz(n,1),con(n){
         iota(begin(par),end(par),0);
     }
     int root(int x){
