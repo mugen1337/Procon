@@ -12,6 +12,9 @@ data:
       path: DataStructure/RangeSet.cpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
+    - icon: ':x:'
+      path: DataStructure/SlidingWindowAgregation.cpp
+      title: DataStructure/SlidingWindowAgregation.cpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -20,6 +23,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.cpp
       title: Graph/TreeHash.cpp
+  - name: Other
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Other/Parser.cpp
+      title: Other/Parser.cpp
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
@@ -49,7 +57,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: type
@@ -58,16 +66,6 @@ data:
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
-  - name: DataStructure
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/SlidingWindowAgregation.test.cpp
-      title: DataStructure/SlidingWindowAgregation.test.cpp
-  - name: Other
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: Other/Parser.test.cpp
-      title: Other/Parser.test.cpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
@@ -75,6 +73,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_0109.test.cpp
+      title: test/AOJ_0109.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
@@ -99,6 +100,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_queue_operate_all_composite.test.cpp
+      title: test/yosupo_queue_operate_all_composite.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp

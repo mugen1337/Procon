@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_0109.test.cpp
+    title: test/AOJ_0109.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_2292.test.cpp
     title: test/AOJ_2292.test.cpp
   - icon: ':heavy_check_mark:'
@@ -27,6 +30,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Unionfind_undo.test.cpp
     title: test/yosupo_Unionfind_undo.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_queue_operate_all_composite.test.cpp
+    title: test/yosupo_queue_operate_all_composite.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_scc.test.cpp
     title: test/yosupo_scc.test.cpp
@@ -34,7 +40,7 @@ data:
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -68,13 +74,15 @@ data:
   path: template.cpp
   requiredBy: []
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp
   - test/yosupo_scc.test.cpp
   - test/AOJ_2292.test.cpp
+  - test/yosupo_queue_operate_all_composite.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
+  - test/AOJ_0109.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_2821.test.cpp
