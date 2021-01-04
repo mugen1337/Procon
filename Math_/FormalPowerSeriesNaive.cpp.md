@@ -10,7 +10,7 @@ data:
     - http://q.c.titech.ac.jp/docs/progs/polynomial_division.html
     - https://atcoder.jp/contests/aising2020/submissions/15300636
     - https://qiita.com/hotman78/items/f0e6d2265badd84d429a
-  bundledCode: "#line 1 \"Math/FormalPowerSeriesNaive.cpp\"\ntemplate<typename T>\n\
+  bundledCode: "#line 1 \"Math_/FormalPowerSeriesNaive.cpp\"\ntemplate<typename T>\n\
     struct FormalPowerSeriesNaive:vector<T>{\n    using vector<T>::vector;\n    using\
     \ P=FormalPowerSeriesNaive;\n\n    function<P(P,P)> multiply(const P &lhs,const\
     \ P &rhs){\n        auto ret=FPS((int)lhs.size()+rhs.size()-1);\n        for(int\
@@ -123,15 +123,15 @@ data:
     \    }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: Math/FormalPowerSeriesNaive.cpp
+  path: Math_/FormalPowerSeriesNaive.cpp
   requiredBy: []
-  timestamp: '2021-01-05 02:05:35+09:00'
+  timestamp: '2021-01-05 02:12:25+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Math/FormalPowerSeriesNaive.cpp
+documentation_of: Math_/FormalPowerSeriesNaive.cpp
 layout: document
 redirect_from:
-- /library/Math/FormalPowerSeriesNaive.cpp
-- /library/Math/FormalPowerSeriesNaive.cpp.html
-title: Math/FormalPowerSeriesNaive.cpp
+- /library/Math_/FormalPowerSeriesNaive.cpp
+- /library/Math_/FormalPowerSeriesNaive.cpp.html
+title: Math_/FormalPowerSeriesNaive.cpp
 ---

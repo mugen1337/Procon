@@ -8,7 +8,7 @@ data:
   attributes:
     links:
     - https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja
-  bundledCode: "#line 1 \"Math/Precalc.cpp\"\ntemplate<typename T>\nstruct Precalc{\n\
+  bundledCode: "#line 1 \"Math_/Precalc.cpp\"\ntemplate<typename T>\nstruct Precalc{\n\
     \    vector<T> fact,finv,inv;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX){\n\
     \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
     \      for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n         \
@@ -47,15 +47,15 @@ data:
     \        ret/=T(n+1);\n        return ret;\n    }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: Math/Precalc.cpp
+  path: Math_/Precalc.cpp
   requiredBy: []
-  timestamp: '2021-01-05 02:05:35+09:00'
+  timestamp: '2021-01-05 02:12:25+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Math/Precalc.cpp
+documentation_of: Math_/Precalc.cpp
 layout: document
 redirect_from:
-- /library/Math/Precalc.cpp
-- /library/Math/Precalc.cpp.html
-title: Math/Precalc.cpp
+- /library/Math_/Precalc.cpp
+- /library/Math_/Precalc.cpp.html
+title: Math_/Precalc.cpp
 ---

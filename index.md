@@ -23,14 +23,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.cpp
       title: Graph/TreeHash.cpp
-  - name: Math
+  - name: Math_
     pages:
     - icon: ':warning:'
-      path: Math/FormalPowerSeriesNaive.cpp
-      title: Math/FormalPowerSeriesNaive.cpp
+      path: Math_/FormalPowerSeriesNaive.cpp
+      title: Math_/FormalPowerSeriesNaive.cpp
     - icon: ':warning:'
-      path: Math/Precalc.cpp
-      title: Math/Precalc.cpp
+      path: Math_/Precalc.cpp
+      title: Math_/Precalc.cpp
   - name: Other
     pages:
     - icon: ':heavy_check_mark:'
