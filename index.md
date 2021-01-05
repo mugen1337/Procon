@@ -76,6 +76,9 @@ data:
     - icon: ':warning:'
       path: type/Fraction.cpp
       title: type/Fraction.cpp
+    - icon: ':warning:'
+      path: type/Matrix.cpp
+      title: type/Matrix.cpp
     - icon: ':heavy_check_mark:'
       path: type/modint.cpp
       title: type/modint.cpp
@@ -109,6 +112,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_det.test.cpp
+      title: test/yosupo_det.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_queue_operate_all_composite.test.cpp
       title: test/yosupo_queue_operate_all_composite.test.cpp
