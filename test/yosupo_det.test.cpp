@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../type/ModInt.cpp"
+#include "../type/modint.cpp"
 using mint=ModInt<998244353>;
 
 #include "../type/Matrix.cpp"
