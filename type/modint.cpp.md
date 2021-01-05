@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_det.test.cpp
+    title: test/yosupo_det.test.cpp
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -58,6 +61,7 @@ data:
   timestamp: '2021-01-03 23:50:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yosupo_det.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: type/modint.cpp
 layout: document

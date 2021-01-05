@@ -2,9 +2,12 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_det.test.cpp
+    title: test/yosupo_det.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"type/Matrix.cpp\"\ntemplate<typename T>\nstruct Matrix{\n\
@@ -72,8 +75,9 @@ data:
   path: type/Matrix.cpp
   requiredBy: []
   timestamp: '2021-01-06 01:27:08+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo_det.test.cpp
 documentation_of: type/Matrix.cpp
 layout: document
 redirect_from:

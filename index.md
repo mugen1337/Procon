@@ -76,7 +76,7 @@ data:
     - icon: ':warning:'
       path: type/Fraction.cpp
       title: type/Fraction.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: type/Matrix.cpp
       title: type/Matrix.cpp
     - icon: ':heavy_check_mark:'
@@ -112,7 +112,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_det.test.cpp
       title: test/yosupo_det.test.cpp
     - icon: ':heavy_check_mark:'

@@ -31,6 +31,9 @@ data:
     path: test/yosupo_Unionfind_undo.test.cpp
     title: test/yosupo_Unionfind_undo.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_det.test.cpp
+    title: test/yosupo_det.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_queue_operate_all_composite.test.cpp
     title: test/yosupo_queue_operate_all_composite.test.cpp
   - icon: ':heavy_check_mark:'
@@ -84,6 +87,7 @@ data:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/AOJ_0109.test.cpp
   - test/yuki1601.test.cpp
+  - test/yosupo_det.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_2821.test.cpp
   - test/yosupo_Unionfind.test.cpp
