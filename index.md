@@ -25,10 +25,10 @@ data:
       title: Graph/TreeHash.cpp
   - name: Math
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Math/Precalc.cpp
   - name: Other
@@ -124,5 +124,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki2017.test.cpp
+      title: test/yuki2017.test.cpp
 layout: toppage
 ---

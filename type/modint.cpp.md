@@ -9,6 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_det.test.cpp
     title: test/yosupo_det.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki2017.test.cpp
+    title: test/yuki2017.test.cpp
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -61,6 +64,7 @@ data:
   timestamp: '2021-01-03 23:50:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki2017.test.cpp
   - test/yosupo_det.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: type/modint.cpp

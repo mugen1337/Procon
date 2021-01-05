@@ -2,9 +2,12 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yuki2017.test.cpp
+    title: test/yuki2017.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - http://q.c.titech.ac.jp/docs/progs/polynomial_division.html
@@ -126,8 +129,9 @@ data:
   path: Math/FormalPowerSeriesNaive.cpp
   requiredBy: []
   timestamp: '2021-01-05 02:18:47+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yuki2017.test.cpp
 documentation_of: Math/FormalPowerSeriesNaive.cpp
 layout: document
 redirect_from:
