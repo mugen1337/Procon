@@ -17,6 +17,9 @@ data:
       title: DataStructure/SlidingWindowAgregation.cpp
   - name: Graph
     pages:
+    - icon: ':x:'
+      path: Graph/Dijkstra.cpp
+      title: Graph/Dijkstra.cpp
     - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.cpp
       title: Graph/StronglyConnectedComponents.cpp
@@ -68,7 +71,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: type
@@ -106,6 +109,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
       title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_Shortest_Path.test.cpp
+      title: test/yosupo_Shortest_Path.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind.test.cpp
       title: test/yosupo_Unionfind.test.cpp
