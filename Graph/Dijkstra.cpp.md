@@ -3,11 +3,11 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Shortest_Path.test.cpp
     title: test/yosupo_Shortest_Path.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph/Dijkstra.cpp\"\ntemplate<typename T>\nstruct Dijkstra{\n\
@@ -48,7 +48,7 @@ data:
   path: Graph/Dijkstra.cpp
   requiredBy: []
   timestamp: '2021-01-09 19:32:58+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_Shortest_Path.test.cpp
 documentation_of: Graph/Dijkstra.cpp
