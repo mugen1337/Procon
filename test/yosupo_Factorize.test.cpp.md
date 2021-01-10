@@ -34,11 +34,11 @@ data:
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Factorize.test.cpp\"\n\n#line 1 \"\
     type/int128.cpp\"\n// 2^127 = 170141183460469231731687303715884105728 ~ 10^38\n\
-    \ \nostream &operator<<(ostream &os,const __int128 n){\n    if(n==0){\n      \
-    \  os<<0;\n        return os;\n    }\n    __int128 num=n;\n    bool neg=false;\n\
+    \ \nostream &operator<<(ostream &os,const __int128 &n){\n    if(n==0){\n     \
+    \   os<<0;\n        return os;\n    }\n    __int128 num=n;\n    bool neg=false;\n\
     \    if(num<0)neg=true,num=-num;\n    string res=\"\";\n    while(num>0){\n  \
     \      res.push_back('0'+num%10);\n        num/=10;\n    }\n    if(neg) res.push_back('-');\n\
-    \    reverse(begin(res),end(res));\n    os<<res;\n    return os;\n}\n \nistream\
+    \    reverse(begin(res),end(res));\n    os<<res;\n    return os;\n}\n\nistream\
     \ &operator>>(istream &is,__int128 &n){\n    string s;\n    is>>s;\n    int idx=0;\n\
     \    bool neg=false;\n    if(s[0]=='-')neg=true,idx++;\n    n=0;\n    for(;idx<(int)s.size();idx++){\n\
     \        n=10*n+s[idx]-'0';\n    }\n    if(neg) n=-n;\n    return is;\n}\n\n__int128\
@@ -81,7 +81,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Factorize.test.cpp
   requiredBy: []
-  timestamp: '2021-01-10 13:28:38+09:00'
+  timestamp: '2021-01-10 14:11:32+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Factorize.test.cpp
