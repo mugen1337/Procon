@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: tips/CountSubpermutation.cpp
+    title: tips/CountSubpermutation.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_0109.test.cpp
@@ -123,7 +126,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.cpp
-  requiredBy: []
+  requiredBy:
+  - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

@@ -51,6 +51,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Other/Parser.cpp
       title: Other/Parser.cpp
+    - icon: ':warning:'
+      path: Other/RandomNumberGenerator.cpp
+      title: Other/RandomNumberGenerator.cpp
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
@@ -86,6 +89,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
+  - name: tips
+    pages:
+    - icon: ':warning:'
+      path: tips/CountSubpermutation.cpp
+      title: tips/CountSubpermutation.cpp
   - name: type
     pages:
     - icon: ':warning:'
