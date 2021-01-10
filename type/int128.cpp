@@ -1,6 +1,6 @@
 // 2^127 = 170141183460469231731687303715884105728 ~ 10^38
  
-ostream &operator<<(ostream &os,const __int128 n){
+ostream &operator<<(ostream &os,const __int128 &n){
     if(n==0){
         os<<0;
         return os;
@@ -18,7 +18,7 @@ ostream &operator<<(ostream &os,const __int128 n){
     os<<res;
     return os;
 }
- 
+
 istream &operator>>(istream &is,__int128 &n){
     string s;
     is>>s;
