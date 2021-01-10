@@ -14,11 +14,11 @@ Precalc<mint> F(500000);
 玉: 区別しない
 箱: 区別しない
 入れ方: 箱ごと1個以上
-
 */
 
 signed main(){
     int n,k;cin>>n>>k;
-    cout<<F.partition_function(n-k,k)<<endl;
+    if(n<k) cout<<0<<endl;
+    else cout<<F.partition_function(n-k,k)<<endl;
     return 0;
 }
