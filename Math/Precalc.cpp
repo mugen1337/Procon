@@ -46,6 +46,19 @@ struct Precalc{
         for(int i=1;i<=k;i++) ret+=Stirling_number(n,i);
         return ret;
     }
+    T partition_function(int n,int k){
+        auto table=partition_function_table(n,k);
+        return table[n][k];
+    }
+    vector<vector<T>> partition_function_table(int n,int k){
+        vector<vector<T>> ret(n+1,vector<T>(k+1,0));
+        ret[0][0]=1;
+        for(int i=0;i<=n;i++)for(int j=1;j<=k;j++)if(i or j){
+            ret[i][j]=ret[i][j-1];
+            if(i-j>=0) ret[i][j]+=ret[i-j][j];
+        }
+        return ret;
+    }
     /* sum combination(n+x, x), x=l to r
        https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja 
        check n+x < [COM_PRECALC_MAX]    */
