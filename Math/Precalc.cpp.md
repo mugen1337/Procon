@@ -4,6 +4,15 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_A.test.cpp
+    title: test/AOJ_DPL_5_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_B.test.cpp
+    title: test/AOJ_DPL_5_B.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_C.test.cpp
+    title: test/AOJ_DPL_5_C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
@@ -56,6 +65,9 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_A.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document
 redirect_from:

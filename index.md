@@ -113,6 +113,15 @@ data:
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_5_A.test.cpp
+      title: test/AOJ_DPL_5_A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_5_B.test.cpp
+      title: test/AOJ_DPL_5_B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_5_C.test.cpp
+      title: test/AOJ_DPL_5_C.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
     - icon: ':heavy_check_mark:'

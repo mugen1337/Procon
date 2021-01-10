@@ -13,6 +13,15 @@ data:
     path: test/AOJ_2821.test.cpp
     title: test/AOJ_2821.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_A.test.cpp
+    title: test/AOJ_DPL_5_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_B.test.cpp
+    title: test/AOJ_DPL_5_B.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_C.test.cpp
+    title: test/AOJ_DPL_5_C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -103,11 +112,14 @@ data:
   - test/yuki1601.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_2821.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
+  - test/AOJ_DPL_5_A.test.cpp
 documentation_of: template.cpp
 layout: document
 redirect_from:
