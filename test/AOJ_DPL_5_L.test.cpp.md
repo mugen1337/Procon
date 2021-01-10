@@ -16,10 +16,10 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_K
+    PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L
     links:
-    - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_K
-  bundledCode: "#line 1 \"test/AOJ_DPL_5_L.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_K\"\
+    - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L
+  bundledCode: "#line 1 \"test/AOJ_DPL_5_L.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L\"\
     \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
@@ -90,7 +90,7 @@ data:
     \u308C\u65B9: \u7BB1\u3054\u30681\u500B\u4EE5\u4E0A\n*/\n\nsigned main(){\n  \
     \  int n,k;cin>>n>>k;\n    cout<<F.partition_function(n-k,k)<<endl;\n    return\
     \ 0;\n}\n"
-  code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_K\"\
+  code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../type/modint.cpp\"\n\n#include\
     \ \"../Math/Precalc.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\
     \n/*\n\u7389: \u533A\u5225\u3057\u306A\u3044\n\u7BB1: \u533A\u5225\u3057\u306A\
@@ -104,7 +104,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_L.test.cpp
   requiredBy: []
-  timestamp: '2021-01-10 16:25:09+09:00'
+  timestamp: '2021-01-10 16:29:27+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_L.test.cpp
