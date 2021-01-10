@@ -34,6 +34,12 @@ data:
     path: test/AOJ_DPL_5_G.test.cpp
     title: test/AOJ_DPL_5_G.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_H.test.cpp
+    title: test/AOJ_DPL_5_H.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_I.test.cpp
+    title: test/AOJ_DPL_5_I.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -124,6 +130,7 @@ data:
   - test/yuki2017.test.cpp
   - test/yuki1601.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
@@ -136,6 +143,7 @@ data:
   - test/AOJ_DSL_1_B.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
 documentation_of: template.cpp
 layout: document
 redirect_from:

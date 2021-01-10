@@ -25,6 +25,12 @@ data:
     path: test/AOJ_DPL_5_G.test.cpp
     title: test/AOJ_DPL_5_G.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_H.test.cpp
+    title: test/AOJ_DPL_5_H.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_I.test.cpp
+    title: test/AOJ_DPL_5_I.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
@@ -97,11 +103,13 @@ data:
   - test/AOJ_DPL_5_F.test.cpp
   - test/yuki2017.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document
 redirect_from:
