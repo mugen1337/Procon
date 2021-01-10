@@ -22,6 +22,9 @@ data:
     path: test/AOJ_DPL_5_F.test.cpp
     title: test/AOJ_DPL_5_F.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_G.test.cpp
+    title: test/AOJ_DPL_5_G.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_And_Convolution.test.cpp
     title: test/yosupo_Bitwise_And_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -91,6 +94,7 @@ data:
   - test/AOJ_DPL_5_F.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/AOJ_DPL_5_D.test.cpp

@@ -22,6 +22,9 @@ data:
     path: test/AOJ_DPL_5_F.test.cpp
     title: test/AOJ_DPL_5_F.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_G.test.cpp
+    title: test/AOJ_DPL_5_G.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
@@ -44,7 +47,16 @@ data:
     \        if(n<k)return T(0);\n        T ret=0;\n        for(int i=0;i<=k;i++){\n\
     \            T add=com(k,i)*(T(i).pow(n));\n            if((k-i)%2) ret-=add;\n\
     \            else        ret+=add;\n        }\n        return ret;\n    }\n  \
-    \  /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
+    \  // \u533A\u5225\u3067\u304D\u308Bn\u4EBA\u3092k\u30C1\u30FC\u30E0\u306B\u308F\
+    \u3051\u308B\uFF0C\u30C1\u30FC\u30E0\u306B\u306F\u6700\u4F4E1\u4EBA\u5C5E\u3059\
+    \u308B\n    // \u30D9\u30F3\u56F3\u3092\u30A4\u30E1\u30FC\u30B8, \u5305\u9664\n\
+    \    // require : T(num).pow(k)\n    T Stirling_number(int n,int k){\n       \
+    \ T ret=0;\n        for(int i=0;i<=k;i++) ret+=com(k,i)*T(i).pow(n)*((k-i)%2?(-1):1);\n\
+    \        return ret/T(fac(k));\n    }\n    // \u533A\u5225\u3067\u304D\u308Bn\u4EBA\
+    \u3092k\u30C1\u30FC\u30E0\u4EE5\u4E0B\u306B\u308F\u3051\u308B\n    T Bell_number(int\
+    \ n,int k){\n        T ret=0;\n        for(int i=1;i<=k;i++) ret+=Stirling_number(n,i);\n\
+    \        return ret;\n    }\n    /* sum combination(n+x, x), x=l to r\n      \
+    \ https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
     \        ret/=T(n+1);\n        return ret;\n    }\n};\n"
@@ -62,7 +74,16 @@ data:
     \        if(n<k)return T(0);\n        T ret=0;\n        for(int i=0;i<=k;i++){\n\
     \            T add=com(k,i)*(T(i).pow(n));\n            if((k-i)%2) ret-=add;\n\
     \            else        ret+=add;\n        }\n        return ret;\n    }\n  \
-    \  /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
+    \  // \u533A\u5225\u3067\u304D\u308Bn\u4EBA\u3092k\u30C1\u30FC\u30E0\u306B\u308F\
+    \u3051\u308B\uFF0C\u30C1\u30FC\u30E0\u306B\u306F\u6700\u4F4E1\u4EBA\u5C5E\u3059\
+    \u308B\n    // \u30D9\u30F3\u56F3\u3092\u30A4\u30E1\u30FC\u30B8, \u5305\u9664\n\
+    \    // require : T(num).pow(k)\n    T Stirling_number(int n,int k){\n       \
+    \ T ret=0;\n        for(int i=0;i<=k;i++) ret+=com(k,i)*T(i).pow(n)*((k-i)%2?(-1):1);\n\
+    \        return ret/T(fac(k));\n    }\n    // \u533A\u5225\u3067\u304D\u308Bn\u4EBA\
+    \u3092k\u30C1\u30FC\u30E0\u4EE5\u4E0B\u306B\u308F\u3051\u308B\n    T Bell_number(int\
+    \ n,int k){\n        T ret=0;\n        for(int i=1;i<=k;i++) ret+=Stirling_number(n,i);\n\
+    \        return ret;\n    }\n    /* sum combination(n+x, x), x=l to r\n      \
+    \ https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
     \        ret/=T(n+1);\n        return ret;\n    }\n};"
@@ -70,11 +91,12 @@ data:
   isVerificationFile: false
   path: Math/Precalc.cpp
   requiredBy: []
-  timestamp: '2021-01-05 02:18:47+09:00'
+  timestamp: '2021-01-10 15:57:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_DPL_5_F.test.cpp
   - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
