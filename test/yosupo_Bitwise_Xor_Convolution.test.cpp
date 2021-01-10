@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../type/ModInt.cpp"
+#include "../type/modint.cpp"
 
 #include "../Math/XorConvolution.cpp"
 
