@@ -40,7 +40,7 @@ data:
     - icon: ':warning:'
       path: Math/PollardRho.cpp
       title: Math/PollardRho.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Math/Precalc.cpp
       title: Math/Precalc.cpp
     - icon: ':heavy_check_mark:'
@@ -83,7 +83,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: type
@@ -97,7 +97,7 @@ data:
     - icon: ':warning:'
       path: type/int128.cpp
       title: type/int128.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
@@ -139,6 +139,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_I.test.cpp
       title: test/AOJ_DPL_5_I.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_5_J.test.cpp
+      title: test/AOJ_DPL_5_J.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_5_K.test.cpp
+      title: test/AOJ_DPL_5_K.test.cpp
+    - icon: ':x:'
+      path: test/AOJ_DPL_5_L.test.cpp
+      title: test/AOJ_DPL_5_L.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp

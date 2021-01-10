@@ -31,6 +31,15 @@ data:
     path: test/AOJ_DPL_5_I.test.cpp
     title: test/AOJ_DPL_5_I.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_J.test.cpp
+    title: test/AOJ_DPL_5_J.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_K.test.cpp
+    title: test/AOJ_DPL_5_K.test.cpp
+  - icon: ':x:'
+    path: test/AOJ_DPL_5_L.test.cpp
+    title: test/AOJ_DPL_5_L.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_And_Convolution.test.cpp
     title: test/yosupo_Bitwise_And_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -46,7 +55,7 @@ data:
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n  \
@@ -95,9 +104,10 @@ data:
   path: type/modint.cpp
   requiredBy: []
   timestamp: '2021-01-03 23:50:56+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/AOJ_DPL_5_F.test.cpp
+  - test/AOJ_DPL_5_J.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
@@ -105,10 +115,12 @@ data:
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_L.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_K.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
 documentation_of: type/modint.cpp

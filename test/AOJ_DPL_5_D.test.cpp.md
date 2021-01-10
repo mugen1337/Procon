@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Math/Precalc.cpp
     title: Math/Precalc.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
@@ -75,8 +75,13 @@ data:
     \        return ret/T(fac(k));\n    }\n    // \u533A\u5225\u3067\u304D\u308Bn\u4EBA\
     \u3092k\u30C1\u30FC\u30E0\u4EE5\u4E0B\u306B\u308F\u3051\u308B\n    T Bell_number(int\
     \ n,int k){\n        T ret=0;\n        for(int i=1;i<=k;i++) ret+=Stirling_number(n,i);\n\
-    \        return ret;\n    }\n    /* sum combination(n+x, x), x=l to r\n      \
-    \ https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
+    \        return ret;\n    }\n    T partition_function(int n,int k){\n        auto\
+    \ table=partition_function_table(n,k);\n        return table[n][k];\n    }\n \
+    \   vector<vector<T>> partition_function_table(int n,int k){\n        vector<vector<T>>\
+    \ ret(n+1,vector<T>(k+1,0));\n        ret[0][0]=1;\n        for(int i=0;i<=n;i++)for(int\
+    \ j=1;j<=k;j++)if(i or j){\n            ret[i][j]=ret[i][j-1];\n            if(i-j>=0)\
+    \ ret[i][j]+=ret[i-j][j];\n        }\n        return ret;\n    }\n    /* sum combination(n+x,\
+    \ x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
     \        ret/=T(n+1);\n        return ret;\n    }\n};\n#line 8 \"test/AOJ_DPL_5_D.test.cpp\"\
@@ -97,7 +102,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_D.test.cpp
   requiredBy: []
-  timestamp: '2021-01-10 15:57:55+09:00'
+  timestamp: '2021-01-10 16:25:09+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_D.test.cpp

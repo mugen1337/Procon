@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   - icon: ':heavy_check_mark:'
     path: type/Matrix.cpp
     title: type/Matrix.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
