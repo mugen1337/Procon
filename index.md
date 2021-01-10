@@ -34,7 +34,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Math/Precalc.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Math/XorConvolution.cpp
       title: Math/XorConvolution.cpp
   - name: Other
@@ -103,7 +103,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
       title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     - icon: ':heavy_check_mark:'

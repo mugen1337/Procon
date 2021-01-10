@@ -2,9 +2,12 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
+    title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/XorConvolution.cpp\"\n// ret_k = sum a_i * b_j, i^j=k\n\
@@ -32,8 +35,9 @@ data:
   path: Math/XorConvolution.cpp
   requiredBy: []
   timestamp: '2021-01-10 12:53:29+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo_Bitwise_Xor_Convolution.test.cpp
 documentation_of: Math/XorConvolution.cpp
 layout: document
 redirect_from:
