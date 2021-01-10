@@ -16,6 +16,9 @@ data:
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Bitwise_And_Convolution.test.cpp
+    title: test/yosupo_Bitwise_And_Convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -98,6 +101,7 @@ data:
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
   - test/yuki1601.test.cpp
+  - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_2821.test.cpp

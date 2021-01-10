@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Bitwise_And_Convolution.test.cpp
+    title: test/yosupo_Bitwise_And_Convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -69,6 +72,7 @@ data:
   verifiedWith:
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
+  - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: type/modint.cpp

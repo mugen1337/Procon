@@ -29,8 +29,14 @@ data:
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
+      path: Math/AndConvolution.cpp
+      title: Math/AndConvolution.cpp
+    - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
+    - icon: ':warning:'
+      path: Math/OrConvolution.cpp
+      title: Math/OrConvolution.cpp
     - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Math/Precalc.cpp
@@ -103,6 +109,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Bitwise_And_Convolution.test.cpp
+      title: test/yosupo_Bitwise_And_Convolution.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
       title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
