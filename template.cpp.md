@@ -22,6 +22,15 @@ data:
     path: test/AOJ_DPL_5_C.test.cpp
     title: test/AOJ_DPL_5_C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_D.test.cpp
+    title: test/AOJ_DPL_5_D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_E.test.cpp
+    title: test/AOJ_DPL_5_E.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_F.test.cpp
+    title: test/AOJ_DPL_5_F.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -102,6 +111,7 @@ data:
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp
+  - test/AOJ_DPL_5_F.test.cpp
   - test/yosupo_scc.test.cpp
   - test/AOJ_2292.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
@@ -112,6 +122,8 @@ data:
   - test/yuki1601.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
+  - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_DPL_5_C.test.cpp

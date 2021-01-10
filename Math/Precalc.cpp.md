@@ -13,6 +13,15 @@ data:
     path: test/AOJ_DPL_5_C.test.cpp
     title: test/AOJ_DPL_5_C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_D.test.cpp
+    title: test/AOJ_DPL_5_D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_E.test.cpp
+    title: test/AOJ_DPL_5_E.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_F.test.cpp
+    title: test/AOJ_DPL_5_F.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
@@ -64,7 +73,10 @@ data:
   timestamp: '2021-01-05 02:18:47+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/AOJ_DPL_5_F.test.cpp
   - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_DPL_5_A.test.cpp

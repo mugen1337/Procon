@@ -13,6 +13,15 @@ data:
     path: test/AOJ_DPL_5_C.test.cpp
     title: test/AOJ_DPL_5_C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_D.test.cpp
+    title: test/AOJ_DPL_5_D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_E.test.cpp
+    title: test/AOJ_DPL_5_E.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_DPL_5_F.test.cpp
+    title: test/AOJ_DPL_5_F.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_And_Convolution.test.cpp
     title: test/yosupo_Bitwise_And_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -79,10 +88,13 @@ data:
   timestamp: '2021-01-03 23:50:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/AOJ_DPL_5_F.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
+  - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
