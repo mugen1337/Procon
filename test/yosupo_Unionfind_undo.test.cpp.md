@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: UnionFind/UnionFindUndo.cpp
     title: UnionFind/UnionFindUndo.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

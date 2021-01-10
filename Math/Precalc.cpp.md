@@ -36,14 +36,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_K.test.cpp
     title: test/AOJ_DPL_5_K.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_L.test.cpp
     title: test/AOJ_DPL_5_L.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja
@@ -117,7 +117,7 @@ data:
   path: Math/Precalc.cpp
   requiredBy: []
   timestamp: '2021-01-10 16:25:09+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_DPL_5_F.test.cpp
   - test/AOJ_DPL_5_J.test.cpp

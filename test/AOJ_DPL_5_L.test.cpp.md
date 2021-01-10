@@ -1,19 +1,19 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Math/Precalc.cpp
     title: Precalc (Twelvefold way)
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L
@@ -87,15 +87,15 @@ data:
     \        ret/=T(n+1);\n        return ret;\n    }\n};\n#line 8 \"test/AOJ_DPL_5_L.test.cpp\"\
     \n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\n/*\n\u7389:\
     \ \u533A\u5225\u3057\u306A\u3044\n\u7BB1: \u533A\u5225\u3057\u306A\u3044\n\u5165\
-    \u308C\u65B9: \u7BB1\u3054\u30681\u500B\u4EE5\u4E0A\n\n*/\n\nsigned main(){\n\
-    \    int n,k;cin>>n>>k;\n    cout<<F.partition_function(n-k,k)<<endl;\n    return\
-    \ 0;\n}\n"
+    \u308C\u65B9: \u7BB1\u3054\u30681\u500B\u4EE5\u4E0A\n*/\n\nsigned main(){\n  \
+    \  int n,k;cin>>n>>k;\n    if(n<k) cout<<0<<endl;\n    else cout<<F.partition_function(n-k,k)<<endl;\n\
+    \    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_L\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../type/modint.cpp\"\n\n#include\
     \ \"../Math/Precalc.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\
     \n/*\n\u7389: \u533A\u5225\u3057\u306A\u3044\n\u7BB1: \u533A\u5225\u3057\u306A\
-    \u3044\n\u5165\u308C\u65B9: \u7BB1\u3054\u30681\u500B\u4EE5\u4E0A\n\n*/\n\nsigned\
-    \ main(){\n    int n,k;cin>>n>>k;\n    cout<<F.partition_function(n-k,k)<<endl;\n\
+    \u3044\n\u5165\u308C\u65B9: \u7BB1\u3054\u30681\u500B\u4EE5\u4E0A\n*/\n\nsigned\
+    \ main(){\n    int n,k;cin>>n>>k;\n    if(n<k) cout<<0<<endl;\n    else cout<<F.partition_function(n-k,k)<<endl;\n\
     \    return 0;\n}"
   dependsOn:
   - template.cpp
@@ -104,8 +104,8 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_L.test.cpp
   requiredBy: []
-  timestamp: '2021-01-10 16:41:49+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-01-10 16:45:16+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_L.test.cpp
 layout: document
