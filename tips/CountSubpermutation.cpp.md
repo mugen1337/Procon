@@ -70,8 +70,14 @@ data:
   verifiedWith: []
 documentation_of: tips/CountSubpermutation.cpp
 layout: document
-redirect_from:
-- /library/tips/CountSubpermutation.cpp
-- /library/tips/CountSubpermutation.cpp.html
-title: tips/CountSubpermutation.cpp
+title: "\u9806\u5217\u3067\u3042\u308B\u9023\u7D9A\u90E8\u5206\u5217\u306E\u6570\u3048\
+  \u4E0A\u3052"
 ---
+
+## 概要  
+https://codeforces.com/contest/1175/problem/F  
+https://kmjp.hatenablog.jp/entry/2019/09/02/0930  
+
+ある部分列が順列であるかどうかを判定するためにはhashが速い．  
+他には区間種類数+区間maxもあるが，hashが爆速だし，オンラインにもなる．  
+
