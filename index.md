@@ -34,6 +34,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Math/Precalc.cpp
+    - icon: ':warning:'
+      path: Math/XorConvolution.cpp
+      title: Math/XorConvolution.cpp
   - name: Other
     pages:
     - icon: ':heavy_check_mark:'
@@ -100,6 +103,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
+      title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
