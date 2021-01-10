@@ -32,6 +32,20 @@ struct Precalc{
         }
         return ret;
     }
+    // 区別できるn人をkチームにわける，チームには最低1人属する
+    // ベン図をイメージ, 包除
+    // require : T(num).pow(k)
+    T Stirling_number(int n,int k){
+        T ret=0;
+        for(int i=0;i<=k;i++) ret+=com(k,i)*T(i).pow(n)*((k-i)%2?(-1):1);
+        return ret/T(fac(k));
+    }
+    // 区別できるn人をkチーム以下にわける
+    T Bell_number(int n,int k){
+        T ret=0;
+        for(int i=1;i<=k;i++) ret+=Stirling_number(n,i);
+        return ret;
+    }
     /* sum combination(n+x, x), x=l to r
        https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja 
        check n+x < [COM_PRECALC_MAX]    */
