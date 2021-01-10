@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':question:'
     path: Math/Precalc.cpp
-    title: Math/Precalc.cpp
+    title: Precalc (Twelvefold way)
   - icon: ':question:'
     path: template.cpp
     title: template.cpp

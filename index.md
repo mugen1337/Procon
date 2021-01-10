@@ -42,7 +42,7 @@ data:
       title: Math/PollardRho.cpp
     - icon: ':question:'
       path: Math/Precalc.cpp
-      title: Math/Precalc.cpp
+      title: Precalc (Twelvefold way)
     - icon: ':heavy_check_mark:'
       path: Math/XorConvolution.cpp
       title: Math/XorConvolution.cpp
