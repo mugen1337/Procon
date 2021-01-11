@@ -9,6 +9,9 @@ data:
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
+      path: DataStructure/LiChaoTree.cpp
+      title: DataStructure/LiChaoTree.cpp
+    - icon: ':heavy_check_mark:'
       path: DataStructure/RangeSet.cpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
@@ -196,6 +199,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki1948.test.cpp
+      title: test/yuki1948.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki2017.test.cpp
       title: test/yuki2017.test.cpp

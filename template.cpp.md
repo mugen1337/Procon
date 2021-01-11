@@ -92,6 +92,9 @@ data:
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki1948.test.cpp
+    title: test/yuki1948.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
@@ -140,6 +143,7 @@ data:
   - test/AOJ_2292.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
+  - test/yuki1948.test.cpp
   - test/AOJ_0109.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yuki2017.test.cpp
