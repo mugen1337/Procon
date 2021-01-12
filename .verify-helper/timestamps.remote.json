@@ -20,6 +20,7 @@
 "test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp": "2021-01-04 00:14:41 +0900",
 "test/yosupo_Point-Add-Range-Sum.test.cpp": "2021-01-03 23:15:09 +0900",
 "test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp": "2021-01-03 23:38:23 +0900",
+"test/yosupo_Rectangle_Sum.test.cpp": "2021-01-12 16:43:06 +0900",
 "test/yosupo_Shortest_Path.test.cpp": "2021-01-09 19:35:23 +0900",
 "test/yosupo_Unionfind.test.cpp": "2021-01-04 16:08:06 +0900",
 "test/yosupo_Unionfind_undo.test.cpp": "2021-01-04 00:45:32 +0900",
