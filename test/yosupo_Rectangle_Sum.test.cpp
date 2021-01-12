@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../datastructure/RangeTree.cpp"
+#include "../DataStructure/RangeTree.cpp"
 
 signed main(){
     int n,q;cin>>n>>q;
