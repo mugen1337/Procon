@@ -15,7 +15,7 @@ data:
       path: DataStructure/RangeSet.cpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/RangeTree.cpp
       title: DataStructure/RangeTree.cpp
     - icon: ':heavy_check_mark:'
@@ -181,7 +181,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
       title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Rectangle_Sum.test.cpp
       title: test/yosupo_Rectangle_Sum.test.cpp
     - icon: ':heavy_check_mark:'

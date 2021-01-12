@@ -71,6 +71,9 @@ data:
     path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
     title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Rectangle_Sum.test.cpp
+    title: test/yosupo_Rectangle_Sum.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Shortest_Path.test.cpp
     title: test/yosupo_Shortest_Path.test.cpp
   - icon: ':heavy_check_mark:'
@@ -150,6 +153,7 @@ data:
   - test/yuki1601.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
   - test/AOJ_DPL_5_I.test.cpp
+  - test/yosupo_Rectangle_Sum.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/yosupo_det.test.cpp
   - test/AOJ_DPL_5_D.test.cpp

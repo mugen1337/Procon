@@ -2,9 +2,12 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Rectangle_Sum.test.cpp
+    title: test/yosupo_Rectangle_Sum.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/RangeTree.cpp\"\n// Range Tree (Weighted)\n\
@@ -78,8 +81,9 @@ data:
   path: DataStructure/RangeTree.cpp
   requiredBy: []
   timestamp: '2021-01-12 16:40:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo_Rectangle_Sum.test.cpp
 documentation_of: DataStructure/RangeTree.cpp
 layout: document
 redirect_from:
