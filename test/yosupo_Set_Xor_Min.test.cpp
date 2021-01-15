@@ -1,4 +1,4 @@
-#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B"
+#define PROBLEM "https://judge.yosupo.jp/problem/set_xor_min"
 
 #include "../template.cpp"
 
