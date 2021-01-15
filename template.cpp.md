@@ -76,6 +76,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Rectangle_Sum.test.cpp
     title: test/yosupo_Rectangle_Sum.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_Set_Xor_Min.test.cpp
+    title: test/yosupo_Set_Xor_Min.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Shortest_Path.test.cpp
     title: test/yosupo_Shortest_Path.test.cpp
@@ -104,7 +107,7 @@ data:
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -139,7 +142,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_Rectangle_Sum.test.cpp
   - test/AOJ_2821.test.cpp
@@ -161,6 +164,7 @@ data:
   - test/AOJ_DPL_5_B.test.cpp
   - test/yuki1948.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
+  - test/yosupo_Set_Xor_Min.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp

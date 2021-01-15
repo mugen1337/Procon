@@ -6,8 +6,11 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_B.test.cpp
     title: test/AOJ_DSL_2_B.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_Set_Xor_Min.test.cpp
+    title: test/yosupo_Set_Xor_Min.test.cpp
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/BinaryTrie.cpp\"\ntemplate<typename BitType,int\
@@ -74,8 +77,9 @@ data:
   path: DataStructure/BinaryTrie.cpp
   requiredBy: []
   timestamp: '2021-01-16 01:06:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/yosupo_Set_Xor_Min.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
 documentation_of: DataStructure/BinaryTrie.cpp
 layout: document
