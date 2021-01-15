@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: DataStructure/BinaryTrie.cpp
     title: DataStructure/BinaryTrie.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

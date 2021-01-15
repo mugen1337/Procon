@@ -8,7 +8,7 @@ data:
       title: BinarySearchTree/ImplicitTreap.cpp
   - name: DataStructure
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryTrie.cpp
       title: DataStructure/BinaryTrie.cpp
     - icon: ':heavy_check_mark:'
@@ -95,7 +95,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -190,7 +190,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Rectangle_Sum.test.cpp
       title: test/yosupo_Rectangle_Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Set_Xor_Min.test.cpp
       title: test/yosupo_Set_Xor_Min.test.cpp
     - icon: ':heavy_check_mark:'

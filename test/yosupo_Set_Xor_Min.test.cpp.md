@@ -1,22 +1,22 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: DataStructure/BinaryTrie.cpp
     title: DataStructure/BinaryTrie.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B
+    PROBLEM: https://judge.yosupo.jp/problem/set_xor_min
     links:
-    - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B
-  bundledCode: "#line 1 \"test/yosupo_Set_Xor_Min.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B\"\
+    - https://judge.yosupo.jp/problem/set_xor_min
+  bundledCode: "#line 1 \"test/yosupo_Set_Xor_Min.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/set_xor_min\"\
     \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
@@ -65,9 +65,9 @@ data:
     \        }else if(t==1){\n            if(trie.count(x)) trie.erase(x,1);\n   \
     \     }else{\n            cout<<trie.min_element(x)<<\"\\n\";\n        }\n   \
     \ }\n    return 0;\n}\n"
-  code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/BinaryTrie.cpp\"\
-    \n\nsigned main(){\n    BinaryTrie<int,31> trie;\n    int q;cin>>q;\n    while(q--){\n\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/set_xor_min\"\n\n#include\
+    \ \"../template.cpp\"\n\n#include \"../DataStructure/BinaryTrie.cpp\"\n\nsigned\
+    \ main(){\n    BinaryTrie<int,31> trie;\n    int q;cin>>q;\n    while(q--){\n\
     \        int t,x;cin>>t>>x;\n        if(t==0){\n            if(trie.count(x)==0)\
     \ trie.add(x);\n        }else if(t==1){\n            if(trie.count(x)) trie.erase(x,1);\n\
     \        }else{\n            cout<<trie.min_element(x)<<\"\\n\";\n        }\n\
@@ -78,8 +78,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_Set_Xor_Min.test.cpp
   requiredBy: []
-  timestamp: '2021-01-16 01:11:47+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-01-16 01:13:53+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Set_Xor_Min.test.cpp
 layout: document
