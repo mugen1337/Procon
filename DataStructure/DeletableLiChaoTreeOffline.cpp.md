@@ -101,8 +101,18 @@ data:
   verifiedWith: []
 documentation_of: DataStructure/DeletableLiChaoTreeOffline.cpp
 layout: document
-redirect_from:
-- /library/DataStructure/DeletableLiChaoTreeOffline.cpp
-- /library/DataStructure/DeletableLiChaoTreeOffline.cpp.html
-title: DataStructure/DeletableLiChaoTreeOffline.cpp
+title: "\u30AA\u30D5\u30E9\u30A4\u30F3 \u524A\u9664\u53EF\u80FD Convex Hull Trick"
 ---
+
+## 概要  
+Dynamic Connectivityをセグメント木で解くのとほとんど一緒．  
+LiChaoTreeをUndo可能に編集して実装しているのでlogが2個ついてしまっている．  
+LiChaoTreeを永続化させるとlog1個落ちるんじゃないだろうか．永続化についてあまり知らないのでちょっとよくわかってない．  
+
+verify問題，コドフォ以外にないかな  
+
+## 使い方  
+queryのインデックス順に直線追加，直線削除をぶち込む．　　
+buildをして，execute.  
+
+buildを忘れない  

@@ -17,7 +17,8 @@ data:
         \u4F5C\u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
     - icon: ':warning:'
       path: DataStructure/DeletableLiChaoTreeOffline.cpp
-      title: DataStructure/DeletableLiChaoTreeOffline.cpp
+      title: "\u30AA\u30D5\u30E9\u30A4\u30F3 \u524A\u9664\u53EF\u80FD Convex Hull\
+        \ Trick"
     - icon: ':heavy_check_mark:'
       path: DataStructure/LiChaoTree.cpp
       title: DataStructure/LiChaoTree.cpp
