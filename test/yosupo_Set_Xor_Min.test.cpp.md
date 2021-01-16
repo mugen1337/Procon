@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: DataStructure/BinaryTrie.cpp
-    title: DataStructure/BinaryTrie.cpp
+    title: Binary Trie
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp

@@ -10,7 +10,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryTrie.cpp
-      title: DataStructure/BinaryTrie.cpp
+      title: Binary Trie
     - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryTrieMonoid.cpp
       title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\
