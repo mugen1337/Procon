@@ -68,6 +68,9 @@ data:
     path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_CycleDetection.test.cpp
+    title: test/yosupo_CycleDetection.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
@@ -174,6 +177,7 @@ data:
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
   - test/yosupo_det.test.cpp
+  - test/yosupo_CycleDetection.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
   - test/yosupo_scc.test.cpp
   - test/AOJ_2292.test.cpp

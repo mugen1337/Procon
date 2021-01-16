@@ -1,0 +1,78 @@
+---
+data:
+  _extendedDependsOn:
+  - icon: ':heavy_check_mark:'
+    path: Graph/CycleDetection.cpp
+    title: Graph/CycleDetection.cpp
+  - icon: ':heavy_check_mark:'
+    path: template.cpp
+    title: template.cpp
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _pathExtension: cpp
+  _verificationStatusIcon: ':heavy_check_mark:'
+  attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/cycle_detection
+    links:
+    - https://judge.yosupo.jp/problem/cycle_detection
+  bundledCode: "#line 1 \"test/yosupo_CycleDetection.test.cpp\"\n#define PROBLEM \"\
+    https://judge.yosupo.jp/problem/cycle_detection\"\n\n#line 1 \"template.cpp\"\n\
+    #include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
+    #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
+    \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
+    const int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\nint dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n\
+    // ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\ntemplate<class T>bool chmax(T &a,const\
+    \ T &b){if(a<b){a=b;return true;}return false;}\ntemplate<class T>bool chmin(T\
+    \ &a,const T &b){if(b<a){a=b;return true;}return false;}\n\nstruct IOSetup{\n\
+    \    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n     \
+    \   cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n \ntemplate<typename T>\n\
+    ostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
+    \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
+    \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
+    \   return is;\n}\n\n#line 4 \"test/yosupo_CycleDetection.test.cpp\"\n\n#line\
+    \ 1 \"Graph/CycleDetection.cpp\"\nvector<int> CycleDetection(vector<vector<int>>\
+    \ &g){\n    int n=(int)g.size();\n    vector<int> check(n,0),cyc,pre(n,-1);\n\n\
+    \    function<bool(int)> dfs=[&](int cur){\n        check[cur]=1;\n        for(auto\
+    \ &to:g[cur]){\n            if(check[to]==0){\n                pre[to]=cur;\n\
+    \                if(dfs(to)) return true;\n            }else if(check[to]==1){//\
+    \ detect\n                int v=cur;\n                while(v!=to){\n        \
+    \            cyc.push_back(v);\n                    v=pre[v];\n              \
+    \  }\n                cyc.push_back(v);\n                return true;\n      \
+    \      }\n        }\n        check[cur]=2;\n        return false;\n    };\n\n\
+    \    rep(i,n){\n        if(check[i]==0){\n            if(dfs(i)){\n          \
+    \      reverse(begin(cyc),end(cyc));\n                return cyc;\n          \
+    \  }\n        }\n    }\n    return {};\n}\n#line 6 \"test/yosupo_CycleDetection.test.cpp\"\
+    \n\nsigned main(){\n    int n,m;cin>>n>>m;\n    vector<vector<int>> g(n);\n  \
+    \  map<pair<int,int>,int> id;\n    rep(i,m){\n        int u,v;cin>>u>>v;\n   \
+    \     id[{u,v}]=i;\n        g[u].push_back(v);\n    }\n    auto res=CycleDetection(g);\n\
+    \    if(res.empty()){\n        cout<<-1<<endl;\n        return 0;\n    }\n   \
+    \ int p=res[0];\n    vector<int> ans;\n    for(int i=1;i<(int)res.size();i++){\n\
+    \        ans.push_back(id[{p,res[i]}]);\n        p=res[i];\n    }\n    ans.push_back(id[{p,res[0]}]);\n\
+    \    cout<<ans.size()<<\"\\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return\
+    \ 0;\n}\n"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/cycle_detection\"\n\n#include\
+    \ \"../template.cpp\"\n\n#include \"../Graph/CycleDetection.cpp\"\n\nsigned main(){\n\
+    \    int n,m;cin>>n>>m;\n    vector<vector<int>> g(n);\n    map<pair<int,int>,int>\
+    \ id;\n    rep(i,m){\n        int u,v;cin>>u>>v;\n        id[{u,v}]=i;\n     \
+    \   g[u].push_back(v);\n    }\n    auto res=CycleDetection(g);\n    if(res.empty()){\n\
+    \        cout<<-1<<endl;\n        return 0;\n    }\n    int p=res[0];\n    vector<int>\
+    \ ans;\n    for(int i=1;i<(int)res.size();i++){\n        ans.push_back(id[{p,res[i]}]);\n\
+    \        p=res[i];\n    }\n    ans.push_back(id[{p,res[0]}]);\n    cout<<ans.size()<<\"\
+    \\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return 0;\n}\n"
+  dependsOn:
+  - template.cpp
+  - Graph/CycleDetection.cpp
+  isVerificationFile: true
+  path: test/yosupo_CycleDetection.test.cpp
+  requiredBy: []
+  timestamp: '2021-01-16 20:39:38+09:00'
+  verificationStatus: TEST_ACCEPTED
+  verifiedWith: []
+documentation_of: test/yosupo_CycleDetection.test.cpp
+layout: document
+redirect_from:
+- /verify/test/yosupo_CycleDetection.test.cpp
+- /verify/test/yosupo_CycleDetection.test.cpp.html
+title: test/yosupo_CycleDetection.test.cpp
+---

@@ -31,6 +31,9 @@ data:
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: Graph/CycleDetection.cpp
+      title: Graph/CycleDetection.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph/Dijkstra.cpp
       title: Graph/Dijkstra.cpp
     - icon: ':heavy_check_mark:'
@@ -59,6 +62,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/XorConvolution.cpp
       title: Math/XorConvolution.cpp
+    - icon: ':warning:'
+      path: Math/pow_mod.cpp
+      title: Math/pow_mod.cpp
   - name: Other
     pages:
     - icon: ':heavy_check_mark:'
@@ -185,6 +191,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
       title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_CycleDetection.test.cpp
+      title: test/yosupo_CycleDetection.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
