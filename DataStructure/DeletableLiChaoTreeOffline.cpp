@@ -5,6 +5,7 @@
 // min
 template<typename T>
 struct LiChaoTreeUndo{
+    private:
     struct Line{
         T a,b;
         Line(T a,T b):a(a),b(b){}
@@ -29,6 +30,8 @@ struct LiChaoTreeUndo{
         else add(li,2*k+1,m,r,h);
         return ;
     }
+
+    public:
 
     LiChaoTreeUndo(const vector<T> &x,T TINF):xs(x){
         sort(begin(xs),end(xs));
@@ -107,19 +110,12 @@ struct DeletableConvexHullTrickOffline{
         for(auto [t,li]:es) add_seg(t.first,t.second,li,1,0,sz);
     }
     void execute(function<void(int)> &f,int k=1){
-        for(auto li:seg[k]){
-            lct.add(li.first,li.second);
-        }
+        for(auto li:seg[k]) lct.add(li.first,li.second);
         if(k<sz){
             execute(f,2*k);
             execute(f,2*k+1);
         }
-        else if(k-sz<query_size){
-            f(k-sz);
-        }
-        for(auto li:seg[k]){
-            assert(!lct.history.empty());
-            lct.undo();
-        }
+        else if(k-sz<query_size) f(k-sz);
+        for(auto li:seg[k]) lct.undo();
     }
 };
