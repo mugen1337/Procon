@@ -56,6 +56,9 @@ data:
     path: test/AOJ_DSL_1_B.test.cpp
     title: test/AOJ_DSL_1_B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_DSL_2_A.test.cpp
+    title: test/AOJ_DSL_2_A.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_B.test.cpp
     title: test/AOJ_DSL_2_B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -165,6 +168,7 @@ data:
   - test/yuki1948.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
   - test/yosupo_Set_Xor_Min.test.cpp
+  - test/AOJ_DSL_2_A.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp

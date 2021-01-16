@@ -12,6 +12,9 @@ data:
       path: DataStructure/BinaryTrie.cpp
       title: DataStructure/BinaryTrie.cpp
     - icon: ':heavy_check_mark:'
+      path: DataStructure/BinaryTrieMonoid.cpp
+      title: DataStructure/BinaryTrieMonoid.cpp
+    - icon: ':heavy_check_mark:'
       path: DataStructure/LiChaoTree.cpp
       title: DataStructure/LiChaoTree.cpp
     - icon: ':heavy_check_mark:'
@@ -169,6 +172,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DSL_2_A.test.cpp
+      title: test/AOJ_DSL_2_A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_2_B.test.cpp
       title: test/AOJ_DSL_2_B.test.cpp
