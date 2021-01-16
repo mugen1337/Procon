@@ -64,8 +64,11 @@ data:
   - test/AOJ_DSL_2_A.test.cpp
 documentation_of: DataStructure/BinaryTrieMonoid.cpp
 layout: document
-redirect_from:
-- /library/DataStructure/BinaryTrieMonoid.cpp
-- /library/DataStructure/BinaryTrieMonoid.cpp.html
-title: DataStructure/BinaryTrieMonoid.cpp
+title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\u4F5C\
+  \u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
 ---
+
+## 概要  
+Binary Trieの容量でMonoidを管理すると必要な所だけ作るセグメント木が書ける  
+ここら辺を参照すると必要な所だけ作るセグメント木のイメージがわかる https://www.slideshare.net/iwiwi/2-12188757  
+
