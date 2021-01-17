@@ -4,6 +4,8 @@
 
 #include "../Math/PollardRho.cpp"
 
+#include "../type/int128.cpp"
+
 signed main(){
     FastPrime<int128> F;
 
