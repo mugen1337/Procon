@@ -64,6 +64,9 @@ data:
       path: Math/Precalc.cpp
       title: Precalc (Twelvefold way)
     - icon: ':heavy_check_mark:'
+      path: Math/Sieve.cpp
+      title: Math/Sieve.cpp
+    - icon: ':heavy_check_mark:'
       path: Math/XorConvolution.cpp
       title: Math/XorConvolution.cpp
     - icon: ':warning:'
@@ -243,5 +246,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2017.test.cpp
       title: test/yuki2017.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki2855.test.cpp
+      title: test/yuki2855.test.cpp
 layout: toppage
 ---

@@ -115,6 +115,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki2855.test.cpp
+    title: test/yuki2855.test.cpp
   _pathExtension: cpp
   _verificationStatusIcon: ':question:'
   attributes:
@@ -170,6 +173,7 @@ data:
   - test/AOJ_DPL_5_D.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
+  - test/yuki2855.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/yuki1948.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
