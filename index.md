@@ -57,7 +57,7 @@ data:
     - icon: ':warning:'
       path: Math/OrConvolution.cpp
       title: Math/OrConvolution.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Math/PollardRho.cpp
       title: Math/PollardRho.cpp
     - icon: ':heavy_check_mark:'
@@ -109,7 +109,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -201,6 +201,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_Factorize.test.cpp
+      title: test/yosupo_Factorize.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp
