@@ -129,7 +129,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: type/Matrix.cpp
       title: type/Matrix.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: type/int128.cpp
       title: type/int128.cpp
     - icon: ':heavy_check_mark:'

@@ -7,6 +7,9 @@ data:
   - icon: ':question:'
     path: template.cpp
     title: template.cpp
+  - icon: ':x:'
+    path: type/int128.cpp
+    title: type/int128.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
@@ -51,21 +54,34 @@ data:
     \ T x=pollard_rho_single(n);\n        if(x==n) return {x};\n        vector<T>\
     \ l=factorize(x);\n        vector<T> r=factorize(n/x);\n        l.insert(l.end(),r.begin(),r.end());\n\
     \        return l;\n    }\n};\n#line 6 \"test/yosupo_Factorize.test.cpp\"\n\n\
-    signed main(){\n    FastPrime<int128> F;\n\n    int q;cin>>q;\n    while(q--){\n\
-    \        int128 x;cin>>x;\n        auto res=F.factorize(x);\n        sort(ALL(res));\n\
+    #line 1 \"type/int128.cpp\"\n// 2^127 = 170141183460469231731687303715884105728\
+    \ ~ 10^38\n \nostream &operator<<(ostream &os,const __int128 &n){\n    if(n==0){\n\
+    \        os<<0;\n        return os;\n    }\n    __int128 num=n;\n    bool neg=false;\n\
+    \    if(num<0)neg=true,num=-num;\n    string res=\"\";\n    while(num>0){\n  \
+    \      res.push_back('0'+num%10);\n        num/=10;\n    }\n    if(neg) res.push_back('-');\n\
+    \    reverse(begin(res),end(res));\n    os<<res;\n    return os;\n}\n\nistream\
+    \ &operator>>(istream &is,__int128 &n){\n    string s;\n    is>>s;\n    int idx=0;\n\
+    \    bool neg=false;\n    if(s[0]=='-')neg=true,idx++;\n    n=0;\n    for(;idx<(int)s.size();idx++){\n\
+    \        n=10*n+s[idx]-'0';\n    }\n    if(neg) n=-n;\n    return is;\n}\n\n__int128\
+    \ abs128(__int128 x){\n    return x<0?-x:x;\n}\n \n__int128 gcd128(__int128 a,__int128\
+    \ b){\n    if(a==0) return b;\n    if(b==0) return a;\n    return b>0?gcd128(b,a%b):a;\n\
+    }\nusing int128=__int128;\n#line 8 \"test/yosupo_Factorize.test.cpp\"\n\nsigned\
+    \ main(){\n    FastPrime<int128> F;\n\n    int q;cin>>q;\n    while(q--){\n  \
+    \      int128 x;cin>>x;\n        auto res=F.factorize(x);\n        sort(ALL(res));\n\
     \        cout<<res.size()<<\" \"<<res<<\"\\n\";\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/factorize\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../Math/PollardRho.cpp\"\n\nsigned main(){\n\
-    \    FastPrime<int128> F;\n\n    int q;cin>>q;\n    while(q--){\n        int128\
-    \ x;cin>>x;\n        auto res=F.factorize(x);\n        sort(ALL(res));\n     \
-    \   cout<<res.size()<<\" \"<<res<<\"\\n\";\n    }\n    return 0;\n}"
+    \ \"../template.cpp\"\n\n#include \"../Math/PollardRho.cpp\"\n\n#include \"../type/int128.cpp\"\
+    \n\nsigned main(){\n    FastPrime<int128> F;\n\n    int q;cin>>q;\n    while(q--){\n\
+    \        int128 x;cin>>x;\n        auto res=F.factorize(x);\n        sort(ALL(res));\n\
+    \        cout<<res.size()<<\" \"<<res<<\"\\n\";\n    }\n    return 0;\n}"
   dependsOn:
   - template.cpp
   - Math/PollardRho.cpp
+  - type/int128.cpp
   isVerificationFile: true
   path: test/yosupo_Factorize.test.cpp
   requiredBy: []
-  timestamp: '2021-01-17 15:06:51+09:00'
+  timestamp: '2021-01-17 15:21:30+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Factorize.test.cpp
