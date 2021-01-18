@@ -3,8 +3,8 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
-    path: Graph/Rerooting.cpp
-    title: Graph/Rerooting.cpp
+    path: Graph2/Rerooting.cpp
+    title: Graph2/Rerooting.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
@@ -14,9 +14,10 @@ data:
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
-  bundledCode: "#line 1 \"Graph/GraphTemplate.cpp\"\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.cpp\n\
-    template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
-    \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
+  bundledCode: "#line 1 \"Graph2/GraphTemplate.cpp\"\n// graph template\n// ref :\
+    \ https://ei1333.github.io/library/graph/graph-template.cpp\ntemplate<typename\
+    \ T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n    Edge()=default;\n\
+    \    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
     \ Graph{\n    vector<vector<Edge<T>>> g;\n    int V,E;\n    Graph()=default;\n\
     \    Graph(int n):g(n),V(n),E(0){}\n\n    size_t size(){\n        return g.size();\n\
@@ -48,17 +49,17 @@ data:
     \            else         add_edge(u,v,w);\n        }\n    }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/GraphTemplate.cpp
+  path: Graph2/GraphTemplate.cpp
   requiredBy:
-  - Graph/Rerooting.cpp
-  timestamp: '2021-01-18 14:50:32+09:00'
+  - Graph2/Rerooting.cpp
+  timestamp: '2021-01-18 16:29:40+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki5436.test.cpp
-documentation_of: Graph/GraphTemplate.cpp
+documentation_of: Graph2/GraphTemplate.cpp
 layout: document
 redirect_from:
-- /library/Graph/GraphTemplate.cpp
-- /library/Graph/GraphTemplate.cpp.html
-title: Graph/GraphTemplate.cpp
+- /library/Graph2/GraphTemplate.cpp
+- /library/Graph2/GraphTemplate.cpp.html
+title: Graph2/GraphTemplate.cpp
 ---

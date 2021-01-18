@@ -2,8 +2,8 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: Graph/GraphTemplate.cpp
-    title: Graph/GraphTemplate.cpp
+    path: Graph2/GraphTemplate.cpp
+    title: Graph2/GraphTemplate.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
@@ -13,9 +13,10 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/GraphTemplate.cpp\"\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.cpp\n\
-    template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
-    \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
+  bundledCode: "#line 1 \"Graph2/GraphTemplate.cpp\"\n// graph template\n// ref :\
+    \ https://ei1333.github.io/library/graph/graph-template.cpp\ntemplate<typename\
+    \ T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n    Edge()=default;\n\
+    \    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
     \ Graph{\n    vector<vector<Edge<T>>> g;\n    int V,E;\n    Graph()=default;\n\
     \    Graph(int n):g(n),V(n),E(0){}\n\n    size_t size(){\n        return g.size();\n\
@@ -28,7 +29,7 @@ data:
     \ weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n      \
     \      int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph/Rerooting.cpp\"\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Rerooting.cpp\"\
     \n\ntemplate<typename T,typename GT=int>\nstruct Rerooting{\n    using E=function<T(T,Edge<GT>)>;//\u96C6\
     \u5408\uFF0C\u9802\u70B9\u756A\u53F7\n    using M=function<T(T,T)>;\n    using\
     \ F=function<T(T,int)>;\n    \n    Graph<GT> g;\n    // dp_v = fix(merge(f(dp_c1,edge(v,c1)),...,f(dp_ck,edge(v,ck))),v)\n\
@@ -81,18 +82,18 @@ data:
     \ ans[i]=merge(ans[i],f(dp[i][j],g[i][j]));\n            ans[i]=fix(ans[i],i);\n\
     \        }\n    }\n};"
   dependsOn:
-  - Graph/GraphTemplate.cpp
+  - Graph2/GraphTemplate.cpp
   isVerificationFile: false
-  path: Graph/Rerooting.cpp
+  path: Graph2/Rerooting.cpp
   requiredBy: []
-  timestamp: '2021-01-18 14:50:32+09:00'
+  timestamp: '2021-01-18 16:29:40+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki5436.test.cpp
-documentation_of: Graph/Rerooting.cpp
+documentation_of: Graph2/Rerooting.cpp
 layout: document
 redirect_from:
-- /library/Graph/Rerooting.cpp
-- /library/Graph/Rerooting.cpp.html
-title: Graph/Rerooting.cpp
+- /library/Graph2/Rerooting.cpp
+- /library/Graph2/Rerooting.cpp.html
+title: Graph2/Rerooting.cpp
 ---

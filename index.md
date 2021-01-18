@@ -41,17 +41,19 @@ data:
       path: Graph/Dijkstra.cpp
       title: Graph/Dijkstra.cpp
     - icon: ':heavy_check_mark:'
-      path: Graph/GraphTemplate.cpp
-      title: Graph/GraphTemplate.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph/Rerooting.cpp
-      title: Graph/Rerooting.cpp
-    - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.cpp
       title: Graph/StronglyConnectedComponents.cpp
     - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.cpp
       title: Graph/TreeHash.cpp
+  - name: Graph2
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Graph2/GraphTemplate.cpp
+      title: Graph2/GraphTemplate.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph2/Rerooting.cpp
+      title: Graph2/Rerooting.cpp
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
