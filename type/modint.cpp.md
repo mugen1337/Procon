@@ -54,6 +54,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki5436.test.cpp
+    title: test/yuki5436.test.cpp
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -108,6 +111,7 @@ data:
   verifiedWith:
   - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
+  - test/yuki5436.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
   - test/AOJ_DPL_5_J.test.cpp
   - test/AOJ_DPL_5_E.test.cpp

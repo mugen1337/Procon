@@ -41,6 +41,12 @@ data:
       path: Graph/Dijkstra.cpp
       title: Graph/Dijkstra.cpp
     - icon: ':heavy_check_mark:'
+      path: Graph/GraphTemplate.cpp
+      title: Graph/GraphTemplate.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph/Rerooting.cpp
+      title: Graph/Rerooting.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.cpp
       title: Graph/StronglyConnectedComponents.cpp
     - icon: ':heavy_check_mark:'
@@ -246,5 +252,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki5436.test.cpp
+      title: test/yuki5436.test.cpp
 layout: toppage
 ---
