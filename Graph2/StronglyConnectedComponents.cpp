@@ -1,5 +1,8 @@
 #include "./GraphTemplate.cpp"
 
+// scc.comp[i]    : strongly connected components i belongs 
+// scc.group[i]   : vertice i-th strongly connected component has
+// scc.compressed : compressed Graph, DAG
 template<typename T=int>
 struct StronglyConnectedComponents{
     private:
@@ -26,9 +29,10 @@ struct StronglyConnectedComponents{
     
     StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),comp(g.size(),-1){
         for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
+        build();
     }
     // return compressed graph
-    Graph<T> build(){
+    void build(){
         vector<int> ord;
         for(int i=0;i<(int)g.size();i++)if(!check[i]){
             check[i]=true;
@@ -49,6 +53,6 @@ struct StronglyConnectedComponents{
                 if(u!=v) compressed.add_directed_edge(u,v,e.w);
             }
         }
-        return compressed;
+        return ;
     }
 };

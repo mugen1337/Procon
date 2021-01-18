@@ -10,7 +10,7 @@ signed main(){
     g.read(m,0,false,true);
 
     StronglyConnectedComponents scc(g);
-    scc.build();
+
     cout<<scc.group.size()<<"\n";
     rep(i,(int)scc.group.size()){
         cout<<scc.group[i].size();
