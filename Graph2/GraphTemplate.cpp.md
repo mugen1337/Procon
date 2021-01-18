@@ -3,9 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: Graph2/CycleDetection.cpp
+    title: Graph2/CycleDetection.cpp
+  - icon: ':heavy_check_mark:'
     path: Graph2/Rerooting.cpp
     title: Graph2/Rerooting.cpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_CycleDetection2.test.cpp
+    title: test/yosupo_CycleDetection2.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
@@ -51,11 +57,13 @@ data:
   isVerificationFile: false
   path: Graph2/GraphTemplate.cpp
   requiredBy:
+  - Graph2/CycleDetection.cpp
   - Graph2/Rerooting.cpp
   timestamp: '2021-01-18 16:29:40+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki5436.test.cpp
+  - test/yosupo_CycleDetection2.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp
 layout: document
 redirect_from:

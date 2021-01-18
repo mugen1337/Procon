@@ -49,6 +49,9 @@ data:
   - name: Graph2
     pages:
     - icon: ':heavy_check_mark:'
+      path: Graph2/CycleDetection.cpp
+      title: Graph2/CycleDetection.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
@@ -209,6 +212,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_CycleDetection.test.cpp
       title: test/yosupo_CycleDetection.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_CycleDetection2.test.cpp
+      title: test/yosupo_CycleDetection2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

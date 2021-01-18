@@ -71,6 +71,9 @@ data:
     path: test/yosupo_CycleDetection.test.cpp
     title: test/yosupo_CycleDetection.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_CycleDetection2.test.cpp
+    title: test/yosupo_CycleDetection2.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
@@ -167,6 +170,7 @@ data:
   - test/yuki1601.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
   - test/AOJ_DPL_5_J.test.cpp
+  - test/yosupo_CycleDetection2.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
