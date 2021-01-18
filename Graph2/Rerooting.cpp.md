@@ -20,14 +20,14 @@ data:
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
     \ Graph{\n    vector<vector<Edge<T>>> g;\n    int V,E;\n    Graph()=default;\n\
     \    Graph(int n):g(n),V(n),E(0){}\n\n    size_t size(){\n        return g.size();\n\
-    \    }\n    inline const vector<Edge<T>> &operator[](int k)const{\n        return\
-    \ (g.at(k));\n    }\n    inline vector<Edge<T>> &operator[](int k){\n        return\
-    \ (g.at(k));\n    }\n    void add_directed_edge(int from,int to,T cost=1){\n \
-    \       g[from].emplace_back(from,to,cost,E++);\n    }\n    void add_edge(int\
-    \ from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E);\n    \
-    \    g[to].emplace_back(to,from,cost,E++);\n    }\n    void read(int m,int pad=-1,bool\
-    \ weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n      \
-    \      int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
+    \    }\n    void resize(int k){\n        g.resize(k);\n    }\n    inline const\
+    \ vector<Edge<T>> &operator[](int k)const{\n        return (g.at(k));\n    }\n\
+    \    inline vector<Edge<T>> &operator[](int k){\n        return (g.at(k));\n \
+    \   }\n    void add_directed_edge(int from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E++);\n\
+    \    }\n    void add_edge(int from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E);\n\
+    \        g[to].emplace_back(to,from,cost,E++);\n    }\n    void read(int m,int\
+    \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
+    \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
     \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Rerooting.cpp\"\
     \n\ntemplate<typename T,typename GT=int>\nstruct Rerooting{\n    using E=function<T(T,Edge<GT>)>;//\u96C6\
@@ -86,7 +86,7 @@ data:
   isVerificationFile: false
   path: Graph2/Rerooting.cpp
   requiredBy: []
-  timestamp: '2021-01-18 16:29:40+09:00'
+  timestamp: '2021-01-18 16:50:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki5436.test.cpp

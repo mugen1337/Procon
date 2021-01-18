@@ -57,6 +57,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/Rerooting.cpp
       title: Graph2/Rerooting.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph2/StronglyConnectedComponents.cpp
+      title: Graph2/StronglyConnectedComponents.cpp
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
@@ -248,6 +251,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_scc2.test.cpp
+      title: test/yosupo_scc2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp

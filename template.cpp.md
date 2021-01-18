@@ -107,6 +107,9 @@ data:
     path: test/yosupo_scc.test.cpp
     title: test/yosupo_scc.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_scc2.test.cpp
+    title: test/yosupo_scc2.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   - icon: ':heavy_check_mark:'
@@ -194,6 +197,7 @@ data:
   - test/yosupo_scc.test.cpp
   - test/AOJ_2292.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
+  - test/yosupo_scc2.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/AOJ_DPL_5_I.test.cpp
