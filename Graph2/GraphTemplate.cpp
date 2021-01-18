@@ -20,6 +20,9 @@ struct Graph{
     size_t size(){
         return g.size();
     }
+    void resize(int k){
+        g.resize(k);
+    }
     inline const vector<Edge<T>> &operator[](int k)const{
         return (g.at(k));
     }
