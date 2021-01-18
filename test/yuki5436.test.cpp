@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../Graph/Rerooting.cpp"
+#include "../Graph2/Rerooting.cpp"
 
 #include "../type/modint.cpp"
 
