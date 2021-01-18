@@ -20,6 +20,7 @@
 "test/yosupo_Bitwise_And_Convolution.test.cpp": "2021-01-10 13:03:52 +0900",
 "test/yosupo_Bitwise_Xor_Convolution.test.cpp": "2021-01-10 12:58:00 +0900",
 "test/yosupo_CycleDetection.test.cpp": "2021-01-16 20:39:38 +0900",
+"test/yosupo_CycleDetection2.test.cpp": "2021-01-18 16:35:57 +0900",
 "test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp": "2021-01-04 00:14:41 +0900",
 "test/yosupo_Point-Add-Range-Sum.test.cpp": "2021-01-03 23:15:09 +0900",
 "test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp": "2021-01-03 23:38:23 +0900",
