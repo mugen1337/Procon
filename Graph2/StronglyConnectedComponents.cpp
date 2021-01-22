@@ -1,10 +1,9 @@
 #include "./GraphTemplate.cpp"
-
-// scc.comp[i]    : strongly connected components i belongs 
-// scc.group[i]   : vertice i-th strongly connected component has
+// scc.belong[i]    : strongly connected belongonents i belongs 
+// scc.group[i]   : vertice i-th strongly connected belongonent has
 // scc.compressed : compressed Graph, DAG
 template<typename T=int>
-struct StronglyConnectedComponents{
+struct StronglyConnectedbelongonents{
     private:
     Graph<T> g,rg;
     vector<int> check;
@@ -16,8 +15,8 @@ struct StronglyConnectedComponents{
         ord.push_back(cur);
     }
     void rdfs(int cur,int p){
-        for(auto &to:rg[cur])if(comp[to]==-1){
-            comp[to]=p;
+        for(auto &to:rg[cur])if(belong[to]==-1){
+            belong[to]=p;
             rdfs(to,p);
         }
     }
@@ -29,17 +28,17 @@ struct StronglyConnectedComponents{
             dfs(i,ord);
         }
         int ptr=0;;
-        for(int i=(int)ord.size()-1;i>=0;i--)if(comp[ord[i]]==-1){
-            comp[ord[i]]=ptr;
+        for(int i=(int)ord.size()-1;i>=0;i--)if(belong[ord[i]]==-1){
+            belong[ord[i]]=ptr;
             rdfs(ord[i],ptr);ptr++;
         }
         compressed.resize(ptr);
         group.resize(ptr);
         for(int i=0;i<(int)g.size();i++){
-            int u=comp[i];
+            int u=belong[i];
             group[u].push_back(i);
             for(auto &e:g[i]){
-                int v=comp[e];
+                int v=belong[e];
                 if(u!=v) compressed.add_directed_edge(u,v,e.w);
             }
         }
@@ -47,11 +46,11 @@ struct StronglyConnectedComponents{
     }
 
     public:
-    vector<int> comp;
+    vector<int> belong;
     vector<vector<int>> group;
     Graph<T> compressed;
     
-    StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),comp(g.size(),-1){
+    StronglyConnectedbelongonents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){
         for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
         build();
     }
