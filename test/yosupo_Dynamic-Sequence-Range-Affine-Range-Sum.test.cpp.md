@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: BinarySearchTree/ImplicitTreap.cpp
     title: BinarySearchTree/ImplicitTreap.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   - icon: ':heavy_check_mark:'

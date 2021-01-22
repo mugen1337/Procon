@@ -8,22 +8,22 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Rerooting.cpp
     title: Graph2/Rerooting.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/StronglyConnectedComponents.cpp
     title: Graph2/StronglyConnectedComponents.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
@@ -68,7 +68,7 @@ data:
   - Graph2/Rerooting.cpp
   - Graph2/CycleDetection.cpp
   timestamp: '2021-01-18 16:50:41+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_scc2.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
