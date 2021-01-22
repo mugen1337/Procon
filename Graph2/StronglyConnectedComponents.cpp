@@ -1,9 +1,9 @@
 #include "./GraphTemplate.cpp"
-// scc.belong[i]    : strongly connected belongonents i belongs 
-// scc.group[i]   : vertice i-th strongly connected belongonent has
+// scc.belong[i]    : strongly connected components i belongs 
+// scc.group[i]   : vertice i-th strongly connected component has
 // scc.compressed : compressed Graph, DAG
 template<typename T=int>
-struct StronglyConnectedbelongonents{
+struct StronglyConnectedComponents{
     private:
     Graph<T> g,rg;
     vector<int> check;
@@ -50,7 +50,7 @@ struct StronglyConnectedbelongonents{
     vector<vector<int>> group;
     Graph<T> compressed;
     
-    StronglyConnectedbelongonents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){
+    StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){
         for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
         build();
     }
