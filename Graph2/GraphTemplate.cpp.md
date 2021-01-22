@@ -10,7 +10,7 @@ data:
     title: Graph2/Rerooting.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/StronglyConnectedComponents.cpp
-    title: Graph2/StronglyConnectedComponents.cpp
+    title: Strongly Connected Components
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
