@@ -22,16 +22,6 @@ struct StronglyConnectedComponents{
         }
     }
 
-    public:
-    vector<int> comp;
-    vector<vector<int>> group;
-    Graph<T> compressed;
-    
-    StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),comp(g.size(),-1){
-        for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
-        build();
-    }
-    // return compressed graph
     void build(){
         vector<int> ord;
         for(int i=0;i<(int)g.size();i++)if(!check[i]){
@@ -54,5 +44,15 @@ struct StronglyConnectedComponents{
             }
         }
         return ;
+    }
+
+    public:
+    vector<int> comp;
+    vector<vector<int>> group;
+    Graph<T> compressed;
+    
+    StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),comp(g.size(),-1){
+        for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
+        build();
     }
 };
