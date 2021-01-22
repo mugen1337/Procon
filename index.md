@@ -83,6 +83,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/XorConvolution.cpp
       title: Math/XorConvolution.cpp
+    - icon: ':heavy_check_mark:'
+      path: Math/ceil_floor.cpp
+      title: Math/ceil_floor.cpp
     - icon: ':warning:'
       path: Math/pow_mod.cpp
       title: Math/pow_mod.cpp
@@ -266,6 +269,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki4459.test.cpp
+      title: test/yuki4459.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
