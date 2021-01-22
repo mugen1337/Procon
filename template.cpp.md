@@ -106,7 +106,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_scc.test.cpp
     title: test/yosupo_scc.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
   - icon: ':heavy_check_mark:'
@@ -127,8 +127,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -163,7 +164,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp

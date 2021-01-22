@@ -1,19 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/StronglyConnectedComponents.cpp
     title: Graph2/StronglyConnectedComponents.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/scc
@@ -49,30 +50,31 @@ data:
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
     \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/StronglyConnectedComponents.cpp\"\
-    \n\n// scc.comp[i]    : strongly connected components i belongs \n// scc.group[i]\
-    \   : vertice i-th strongly connected component has\n// scc.compressed : compressed\
-    \ Graph, DAG\ntemplate<typename T=int>\nstruct StronglyConnectedComponents{\n\
+    \n// scc.belong[i]    : strongly connected belongonents i belongs \n// scc.group[i]\
+    \   : vertice i-th strongly connected belongonent has\n// scc.compressed : compressed\
+    \ Graph, DAG\ntemplate<typename T=int>\nstruct StronglyConnectedbelongonents{\n\
     \    private:\n    Graph<T> g,rg;\n    vector<int> check;\n    void dfs(int cur,vector<int>\
     \ &ord){\n        for(auto &to:g[cur])if(!check[to]){\n            check[to]=true;\n\
     \            dfs(to,ord);\n        }\n        ord.push_back(cur);\n    }\n   \
-    \ void rdfs(int cur,int p){\n        for(auto &to:rg[cur])if(comp[to]==-1){\n\
-    \            comp[to]=p;\n            rdfs(to,p);\n        }\n    }\n\n    void\
+    \ void rdfs(int cur,int p){\n        for(auto &to:rg[cur])if(belong[to]==-1){\n\
+    \            belong[to]=p;\n            rdfs(to,p);\n        }\n    }\n\n    void\
     \ build(){\n        vector<int> ord;\n        for(int i=0;i<(int)g.size();i++)if(!check[i]){\n\
     \            check[i]=true;\n            dfs(i,ord);\n        }\n        int ptr=0;;\n\
-    \        for(int i=(int)ord.size()-1;i>=0;i--)if(comp[ord[i]]==-1){\n        \
-    \    comp[ord[i]]=ptr;\n            rdfs(ord[i],ptr);ptr++;\n        }\n     \
-    \   compressed.resize(ptr);\n        group.resize(ptr);\n        for(int i=0;i<(int)g.size();i++){\n\
-    \            int u=comp[i];\n            group[u].push_back(i);\n            for(auto\
-    \ &e:g[i]){\n                int v=comp[e];\n                if(u!=v) compressed.add_directed_edge(u,v,e.w);\n\
-    \            }\n        }\n        return ;\n    }\n\n    public:\n    vector<int>\
-    \ comp;\n    vector<vector<int>> group;\n    Graph<T> compressed;\n    \n    StronglyConnectedComponents(Graph<T>\
-    \ &g):g(g),rg(g.size()),check(g.size()),comp(g.size(),-1){\n        for(int i=0;i<(int)g.size();i++)for(auto\
-    \ &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);\n        build();\n    }\n};\n\
-    #line 6 \"test/yosupo_scc2.test.cpp\"\n\nsigned main(){\n    int n,m;cin>>n>>m;\n\
-    \    Graph g(n);\n    g.read(m,0,false,true);\n\n    StronglyConnectedComponents\
-    \ scc(g);\n\n    cout<<scc.group.size()<<\"\\n\";\n    rep(i,(int)scc.group.size()){\n\
-    \        cout<<scc.group[i].size();\n        for(auto x:scc.group[i]) cout<<\"\
-    \ \"<<x;\n        cout<<\"\\n\";\n    }\n    return 0;\n}\n"
+    \        for(int i=(int)ord.size()-1;i>=0;i--)if(belong[ord[i]]==-1){\n      \
+    \      belong[ord[i]]=ptr;\n            rdfs(ord[i],ptr);ptr++;\n        }\n \
+    \       compressed.resize(ptr);\n        group.resize(ptr);\n        for(int i=0;i<(int)g.size();i++){\n\
+    \            int u=belong[i];\n            group[u].push_back(i);\n          \
+    \  for(auto &e:g[i]){\n                int v=belong[e];\n                if(u!=v)\
+    \ compressed.add_directed_edge(u,v,e.w);\n            }\n        }\n        return\
+    \ ;\n    }\n\n    public:\n    vector<int> belong;\n    vector<vector<int>> group;\n\
+    \    Graph<T> compressed;\n    \n    StronglyConnectedbelongonents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){\n\
+    \        for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);\n\
+    \        build();\n    }\n};\n#line 6 \"test/yosupo_scc2.test.cpp\"\n\nsigned\
+    \ main(){\n    int n,m;cin>>n>>m;\n    Graph g(n);\n    g.read(m,0,false,true);\n\
+    \n    StronglyConnectedComponents scc(g);\n\n    cout<<scc.group.size()<<\"\\\
+    n\";\n    rep(i,(int)scc.group.size()){\n        cout<<scc.group[i].size();\n\
+    \        for(auto x:scc.group[i]) cout<<\" \"<<x;\n        cout<<\"\\n\";\n  \
+    \  }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\n\n#include \"../template.cpp\"\
     \n\n#include \"../Graph2/StronglyConnectedComponents.cpp\"\n\nsigned main(){\n\
     \    int n,m;cin>>n>>m;\n    Graph g(n);\n    g.read(m,0,false,true);\n\n    StronglyConnectedComponents\
@@ -86,8 +88,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_scc2.test.cpp
   requiredBy: []
-  timestamp: '2021-01-23 00:46:44+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2021-01-23 03:24:42+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_scc2.test.cpp
 layout: document

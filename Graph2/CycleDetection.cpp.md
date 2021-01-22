@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
   _extendedRequiredBy: []
@@ -9,6 +9,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
+  _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:

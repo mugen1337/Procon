@@ -4,14 +4,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/CycleDetection.cpp
     title: Graph2/CycleDetection.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:

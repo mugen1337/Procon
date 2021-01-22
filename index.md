@@ -51,13 +51,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/CycleDetection.cpp
       title: Graph2/CycleDetection.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/Rerooting.cpp
       title: Graph2/Rerooting.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: Graph2/StronglyConnectedComponents.cpp
       title: Graph2/StronglyConnectedComponents.cpp
   - name: Math
@@ -129,7 +129,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -254,7 +254,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_scc2.test.cpp
       title: test/yosupo_scc2.test.cpp
     - icon: ':heavy_check_mark:'

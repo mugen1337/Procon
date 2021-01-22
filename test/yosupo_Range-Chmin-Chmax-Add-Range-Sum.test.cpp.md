@@ -4,11 +4,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: SegmentTree/SegmentTreeBeats.cpp
     title: SegmentTree/SegmentTreeBeats.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
