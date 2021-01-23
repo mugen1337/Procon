@@ -6,6 +6,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: BinarySearchTree/ImplicitTreap.cpp
       title: BinarySearchTree/ImplicitTreap.cpp
+  - name: DP
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: DP/LargestRectangle.cpp
+      title: DP/LargestRectangle.cpp
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -167,6 +172,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_DPL_3_c.test.cpp
+      title: test/AOJ_DPL_3_c.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_A.test.cpp
       title: test/AOJ_DPL_5_A.test.cpp
