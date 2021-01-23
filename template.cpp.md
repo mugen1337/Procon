@@ -62,6 +62,9 @@ data:
     path: test/AOJ_DSL_2_B.test.cpp
     title: test/AOJ_DSL_2_B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_NTL_1_A.test.cpp
+    title: test/AOJ_NTL_1_A.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_And_Convolution.test.cpp
     title: test/yosupo_Bitwise_And_Convolution.test.cpp
   - icon: ':heavy_check_mark:'
@@ -202,6 +205,7 @@ data:
   - test/yosupo_CycleDetection.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
+  - test/AOJ_NTL_1_A.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
   - test/AOJ_DSL_2_B.test.cpp

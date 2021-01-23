@@ -66,6 +66,9 @@ data:
       path: Math/AndConvolution.cpp
       title: Math/AndConvolution.cpp
     - icon: ':heavy_check_mark:'
+      path: Math/Factorize.cpp
+      title: Math/Factorize.cpp
+    - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
     - icon: ':warning:'
@@ -209,6 +212,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_2_B.test.cpp
       title: test/AOJ_DSL_2_B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_NTL_1_A.test.cpp
+      title: test/AOJ_NTL_1_A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Bitwise_And_Convolution.test.cpp
       title: test/yosupo_Bitwise_And_Convolution.test.cpp
