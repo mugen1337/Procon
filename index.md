@@ -143,6 +143,9 @@ data:
   - name: tips
     pages:
     - icon: ':warning:'
+      path: tips/AlienDP.cpp
+      title: tips/AlienDP.cpp
+    - icon: ':warning:'
       path: tips/CountSubpermutation.cpp
       title: "\u9806\u5217\u3067\u3042\u308B\u9023\u7D9A\u90E8\u5206\u5217\u306E\u6570\
         \u3048\u4E0A\u3052"
