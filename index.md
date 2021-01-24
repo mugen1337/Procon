@@ -35,6 +35,9 @@ data:
       path: DataStructure/RangeTree.cpp
       title: DataStructure/RangeTree.cpp
     - icon: ':heavy_check_mark:'
+      path: DataStructure/RectangleUnion.cpp
+      title: DataStructure/RectangleUnion.cpp
+    - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
   - name: Graph
@@ -283,6 +286,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2017.test.cpp
       title: test/yuki2017.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki2577.test.cpp
+      title: test/yuki2577.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp

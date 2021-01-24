@@ -125,6 +125,9 @@ data:
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki2577.test.cpp
+    title: test/yuki2577.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2855.test.cpp
     title: test/yuki2855.test.cpp
   - icon: ':heavy_check_mark:'
@@ -204,6 +207,7 @@ data:
   - test/yosupo_Set_Xor_Min.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
+  - test/yuki2577.test.cpp
   - test/AOJ_2821.test.cpp
   - test/yosupo_CycleDetection.test.cpp
   - test/yosupo_Unionfind.test.cpp
