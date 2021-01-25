@@ -50,10 +50,11 @@ data:
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
     \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/StronglyConnectedComponents.cpp\"\
-    \n// scc.belong[i]    : strongly connected components i belongs \n// scc.group[i]\
+    \n// scc.belong[i]  : strongly connected components i belongs \n// scc.group[i]\
     \   : vertice i-th strongly connected component has\n// scc.compressed : compressed\
-    \ Graph, DAG\ntemplate<typename T=int>\nstruct StronglyConnectedComponents{\n\
-    \    private:\n    Graph<T> g,rg;\n    vector<int> check;\n    void dfs(int cur,vector<int>\
+    \ Graph, DAG\n// Longest Path verified : https://atcoder.jp/contests/abc135/submissions/19684261\n\
+    template<typename T=int>\nstruct StronglyConnectedComponents{\n    private:\n\
+    \    Graph<T> g,rg;\n    vector<int> check;\n    void dfs(int cur,vector<int>\
     \ &ord){\n        for(auto &to:g[cur])if(!check[to]){\n            check[to]=true;\n\
     \            dfs(to,ord);\n        }\n        ord.push_back(cur);\n    }\n   \
     \ void rdfs(int cur,int p){\n        for(auto &to:rg[cur])if(belong[to]==-1){\n\
@@ -69,8 +70,15 @@ data:
     \ ;\n    }\n\n    public:\n    vector<int> belong;\n    vector<vector<int>> group;\n\
     \    Graph<T> compressed;\n    \n    StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){\n\
     \        for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);\n\
-    \        build();\n    }\n};\n#line 6 \"test/yosupo_scc2.test.cpp\"\n\nsigned\
-    \ main(){\n    int n,m;cin>>n>>m;\n    Graph g(n);\n    g.read(m,0,false,true);\n\
+    \        build();\n    }\n\n    // topological sort\n    vector<int> get_DAG_order(){\n\
+    \        vector<int> ret;\n        for(int i=0;i<(int)group.size();i++)for(auto\
+    \ &j:group[i]) ret.push_back(j);\n        return ret;\n    }\n\n    // g is not\
+    \ DAG or contain self-loop, return inf\n    T LongestPath(){\n        for(int\
+    \ i=0;i<(int)g.size();i++){\n            for(auto &e:g[i]){\n                if(belong[i]==belong[e])\
+    \ return -1;                \n            }\n        }\n        vector<int> ord=get_DAG_order();\n\
+    \        vector<T> dp(g.size(),0);\n        for(auto i:ord)for(auto &e:g[i]) dp[e]=max(dp[e],dp[i]+e.w);\n\
+    \        return (*max_element(begin(dp),end(dp)));\n    }\n};\n#line 6 \"test/yosupo_scc2.test.cpp\"\
+    \n\nsigned main(){\n    int n,m;cin>>n>>m;\n    Graph g(n);\n    g.read(m,0,false,true);\n\
     \n    StronglyConnectedComponents scc(g);\n\n    cout<<scc.group.size()<<\"\\\
     n\";\n    rep(i,(int)scc.group.size()){\n        cout<<scc.group[i].size();\n\
     \        for(auto x:scc.group[i]) cout<<\" \"<<x;\n        cout<<\"\\n\";\n  \
@@ -88,7 +96,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_scc2.test.cpp
   requiredBy: []
-  timestamp: '2021-01-23 03:52:26+09:00'
+  timestamp: '2021-01-25 11:15:00+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_scc2.test.cpp
