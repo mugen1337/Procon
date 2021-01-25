@@ -1,7 +1,8 @@
 #include "./GraphTemplate.cpp"
-// scc.belong[i]    : strongly connected components i belongs 
+// scc.belong[i]  : strongly connected components i belongs 
 // scc.group[i]   : vertice i-th strongly connected component has
 // scc.compressed : compressed Graph, DAG
+// Longest Path verified : https://atcoder.jp/contests/abc135/submissions/19684261
 template<typename T=int>
 struct StronglyConnectedComponents{
     private:
@@ -53,5 +54,25 @@ struct StronglyConnectedComponents{
     StronglyConnectedComponents(Graph<T> &g):g(g),rg(g.size()),check(g.size()),belong(g.size(),-1){
         for(int i=0;i<(int)g.size();i++)for(auto &e:g[i]) rg.add_directed_edge(e.to,e.from,e.w);
         build();
+    }
+
+    // topological sort
+    vector<int> get_DAG_order(){
+        vector<int> ret;
+        for(int i=0;i<(int)group.size();i++)for(auto &j:group[i]) ret.push_back(j);
+        return ret;
+    }
+
+    // g is not DAG or contain self-loop, return inf
+    T LongestPath(){
+        for(int i=0;i<(int)g.size();i++){
+            for(auto &e:g[i]){
+                if(belong[i]==belong[e]) return -1;                
+            }
+        }
+        vector<int> ord=get_DAG_order();
+        vector<T> dp(g.size(),0);
+        for(auto i:ord)for(auto &e:g[i]) dp[e]=max(dp[e],dp[i]+e.w);
+        return (*max_element(begin(dp),end(dp)));
     }
 };
