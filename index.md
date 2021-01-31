@@ -9,6 +9,9 @@ data:
   - name: DP
     pages:
     - icon: ':heavy_check_mark:'
+      path: DP/InversionNumber.cpp
+      title: DP/InversionNumber.cpp
+    - icon: ':heavy_check_mark:'
       path: DP/LargestRectangle.cpp
       title: DP/LargestRectangle.cpp
   - name: DataStructure
@@ -178,6 +181,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_ALDS1_5_D.test.cpp
+      title: test/AOJ_ALDS1_5_D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_3_c.test.cpp
       title: test/AOJ_DPL_3_c.test.cpp

@@ -71,8 +71,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_scc2.test.cpp
-  - test/yosupo_CycleDetection2.test.cpp
   - test/yuki5436.test.cpp
+  - test/yosupo_CycleDetection2.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp
 layout: document
 redirect_from:
