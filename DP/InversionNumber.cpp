@@ -3,7 +3,7 @@ long long InversionNumber(vector<T> v){
     vector<T> ord=v;
     sort(begin(ord),end(ord));
     ord.erase(unique(begin(ord),end(ord)),end(ord));
-    vector<T> bit(ord.size()+1,0);
+    vector<long long> bit(ord.size()+1,0);
     long long ret=0;
     for(int i=0;i<(int)v.size();i++){
         int p=lower_bound(begin(ord),end(ord),v[i])-begin(ord)+1;
