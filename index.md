@@ -119,6 +119,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.cpp
       title: SegmentTree/SegmentTreeBeats.cpp
+  - name: Sort
+    pages:
+    - icon: ':warning:'
+      path: Sort/MergeSort.cpp
+      title: Sort/MergeSort.cpp
   - name: String
     pages:
     - icon: ':heavy_check_mark:'
