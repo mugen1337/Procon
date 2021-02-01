@@ -68,6 +68,9 @@ data:
     path: test/AOJ_DSL_2_B.test.cpp
     title: test/AOJ_DSL_2_B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_GRL_1_A.test.cpp
+    title: test/AOJ_GRL_1_A.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_NTL_1_A.test.cpp
     title: test/AOJ_NTL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
@@ -205,6 +208,7 @@ data:
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/AOJ_NTL_1_A.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
+  - test/AOJ_GRL_1_A.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
   - test/AOJ_DPL_5_B.test.cpp

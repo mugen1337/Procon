@@ -6,12 +6,18 @@ data:
     path: Graph2/CycleDetection.cpp
     title: Graph2/CycleDetection.cpp
   - icon: ':heavy_check_mark:'
+    path: Graph2/Dijkstra.cpp
+    title: Graph2/Dijkstra.cpp
+  - icon: ':heavy_check_mark:'
     path: Graph2/Rerooting.cpp
     title: Graph2/Rerooting.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/StronglyConnectedComponents.cpp
     title: Strongly Connected Components
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_GRL_1_A.test.cpp
+    title: test/AOJ_GRL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
@@ -64,6 +70,7 @@ data:
   isVerificationFile: false
   path: Graph2/GraphTemplate.cpp
   requiredBy:
+  - Graph2/Dijkstra.cpp
   - Graph2/StronglyConnectedComponents.cpp
   - Graph2/Rerooting.cpp
   - Graph2/CycleDetection.cpp
@@ -73,6 +80,7 @@ data:
   - test/yosupo_scc2.test.cpp
   - test/yuki5436.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
+  - test/AOJ_GRL_1_A.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp
 layout: document
 redirect_from:

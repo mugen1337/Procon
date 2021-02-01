@@ -63,6 +63,9 @@ data:
       path: Graph2/CycleDetection.cpp
       title: Graph2/CycleDetection.cpp
     - icon: ':heavy_check_mark:'
+      path: Graph2/Dijkstra.cpp
+      title: Graph2/Dijkstra.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
@@ -237,6 +240,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_2_B.test.cpp
       title: test/AOJ_DSL_2_B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_GRL_1_A.test.cpp
+      title: test/AOJ_GRL_1_A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_NTL_1_A.test.cpp
       title: test/AOJ_NTL_1_A.test.cpp
