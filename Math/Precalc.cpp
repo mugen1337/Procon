@@ -1,11 +1,12 @@
 template<typename T>
 struct Precalc{
     vector<T> fact,finv,inv;
-    Precalc(int MX):fact(MX),finv(MX),inv(MX){
+    int Mod;
+    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){
         fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);
         for(int i=2;i<MX;i++){
             fact[i]=fact[i-1]*T(i);
-            inv[i]=T(0)-inv[mod%i]*(T(mod/i));
+            inv[i]=T(0)-inv[Mod%i]*(T(Mod/i));
             finv[i]=finv[i-1]*inv[i];
         }
     }
