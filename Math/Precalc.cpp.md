@@ -49,10 +49,10 @@ data:
     links:
     - https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja
   bundledCode: "#line 1 \"Math/Precalc.cpp\"\ntemplate<typename T>\nstruct Precalc{\n\
-    \    vector<T> fact,finv,inv;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX){\n\
+    \    vector<T> fact,finv,inv;\n    int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
     \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
     \      for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n         \
-    \   inv[i]=T(0)-inv[mod%i]*(T(mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
+    \   inv[i]=T(0)-inv[Mod%i]*(T(Mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
     \        }\n    }\n    T com(int n,int k){\n        if(n<k) return T(0);\n   \
     \     if(n<0 or k<0) return T(0);\n        return fact[n]*(finv[k]*finv[n-k]);\n\
     \    }\n    T fac(int n){\n        return fact[n];\n    }\n    // \u91CD\u8907\
@@ -82,9 +82,10 @@ data:
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
     \        ret/=T(n+1);\n        return ret;\n    }\n};\n"
   code: "template<typename T>\nstruct Precalc{\n    vector<T> fact,finv,inv;\n   \
-    \ Precalc(int MX):fact(MX),finv(MX),inv(MX){\n        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n\
-    \        for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n       \
-    \     inv[i]=T(0)-inv[mod%i]*(T(mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
+    \ int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
+    \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
+    \      for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n         \
+    \   inv[i]=T(0)-inv[Mod%i]*(T(Mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
     \        }\n    }\n    T com(int n,int k){\n        if(n<k) return T(0);\n   \
     \     if(n<0 or k<0) return T(0);\n        return fact[n]*(finv[k]*finv[n-k]);\n\
     \    }\n    T fac(int n){\n        return fact[n];\n    }\n    // \u91CD\u8907\
@@ -117,22 +118,22 @@ data:
   isVerificationFile: false
   path: Math/Precalc.cpp
   requiredBy: []
-  timestamp: '2021-01-10 16:25:09+09:00'
+  timestamp: '2021-02-13 00:19:09+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_F.test.cpp
+  - test/AOJ_DPL_5_J.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
+  - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_K.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
-  - test/yuki2017.test.cpp
-  - test/AOJ_DPL_5_K.test.cpp
-  - test/AOJ_DPL_5_C.test.cpp
-  - test/AOJ_DPL_5_I.test.cpp
-  - test/AOJ_DPL_5_F.test.cpp
-  - test/AOJ_DPL_5_H.test.cpp
-  - test/AOJ_DPL_5_B.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
-  - test/AOJ_DPL_5_D.test.cpp
-  - test/AOJ_DPL_5_J.test.cpp
-  - test/AOJ_DPL_5_G.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document
 title: Precalc (Twelvefold way)

@@ -55,9 +55,10 @@ data:
     \ istream &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 6 \"test/AOJ_DPL_5_I.test.cpp\"\
     \n\n#line 1 \"Math/Precalc.cpp\"\ntemplate<typename T>\nstruct Precalc{\n    vector<T>\
-    \ fact,finv,inv;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX){\n        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n\
-    \        for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n       \
-    \     inv[i]=T(0)-inv[mod%i]*(T(mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
+    \ fact,finv,inv;\n    int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
+    \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
+    \      for(int i=2;i<MX;i++){\n            fact[i]=fact[i-1]*T(i);\n         \
+    \   inv[i]=T(0)-inv[Mod%i]*(T(Mod/i));\n            finv[i]=finv[i-1]*inv[i];\n\
     \        }\n    }\n    T com(int n,int k){\n        if(n<k) return T(0);\n   \
     \     if(n<0 or k<0) return T(0);\n        return fact[n]*(finv[k]*finv[n-k]);\n\
     \    }\n    T fac(int n){\n        return fact[n];\n    }\n    // \u91CD\u8907\
@@ -104,7 +105,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_I.test.cpp
   requiredBy: []
-  timestamp: '2021-01-10 16:25:09+09:00'
+  timestamp: '2021-02-13 00:19:09+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_I.test.cpp
