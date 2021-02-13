@@ -42,6 +42,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki5125.test.cpp
+    title: test/yuki5125.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -133,6 +136,7 @@ data:
   - test/AOJ_DPL_5_I.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
+  - test/yuki5125.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document

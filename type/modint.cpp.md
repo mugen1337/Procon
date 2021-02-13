@@ -55,6 +55,9 @@ data:
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki5125.test.cpp
+    title: test/yuki5125.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
   _isVerificationFailed: false
@@ -124,6 +127,7 @@ data:
   - test/AOJ_DPL_5_I.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
+  - test/yuki5125.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/yuki5436.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp

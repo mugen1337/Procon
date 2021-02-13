@@ -112,6 +112,9 @@ data:
   - name: Other
     pages:
     - icon: ':heavy_check_mark:'
+      path: Other/CyclePartition.cpp
+      title: Other/CyclePartition.cpp
+    - icon: ':heavy_check_mark:'
       path: Other/Parser.cpp
       title: Other/Parser.cpp
     - icon: ':warning:'
@@ -315,6 +318,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki4459.test.cpp
       title: test/yuki4459.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki5125.test.cpp
+      title: test/yuki5125.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
