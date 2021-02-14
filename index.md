@@ -124,7 +124,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/LazySegmentTree.cpp
-      title: SegmentTree/LazySegmentTree.cpp
+      title: Lazy Segment Tree
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTree.cpp
       title: Segment Tree
