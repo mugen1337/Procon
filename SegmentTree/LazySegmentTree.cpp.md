@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/yuki4374.test.cpp
+    title: test/yuki4374.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
   _isVerificationFailed: false
@@ -107,6 +110,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki899.test.cpp
+  - test/yuki4374.test.cpp
 documentation_of: SegmentTree/LazySegmentTree.cpp
 layout: document
 redirect_from:

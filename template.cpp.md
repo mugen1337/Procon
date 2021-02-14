@@ -137,6 +137,9 @@ data:
     path: test/yuki2855.test.cpp
     title: test/yuki2855.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki4374.test.cpp
+    title: test/yuki4374.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki4459.test.cpp
     title: test/yuki4459.test.cpp
   - icon: ':heavy_check_mark:'
@@ -203,6 +206,7 @@ data:
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
+  - test/yuki4374.test.cpp
   - test/AOJ_2821.test.cpp
   - test/yosupo_scc2.test.cpp
   - test/AOJ_0109.test.cpp

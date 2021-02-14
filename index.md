@@ -319,6 +319,9 @@ data:
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/yuki4374.test.cpp
+      title: test/yuki4374.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/yuki4459.test.cpp
       title: test/yuki4459.test.cpp
     - icon: ':heavy_check_mark:'
