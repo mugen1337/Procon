@@ -123,6 +123,9 @@ data:
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
+      path: SegmentTree/LazySegmentTree.cpp
+      title: SegmentTree/LazySegmentTree.cpp
+    - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTree.cpp
       title: Segment Tree
     - icon: ':heavy_check_mark:'
@@ -324,5 +327,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki899.test.cpp
+      title: test/yuki899.test.cpp
 layout: toppage
 ---

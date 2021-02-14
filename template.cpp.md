@@ -145,6 +145,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki899.test.cpp
+    title: test/yuki899.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -192,6 +195,7 @@ data:
   - test/AOJ_DPL_5_F.test.cpp
   - test/AOJ_DPL_3_c.test.cpp
   - test/AOJ_DPL_5_J.test.cpp
+  - test/yuki899.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
