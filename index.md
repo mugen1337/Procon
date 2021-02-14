@@ -130,7 +130,7 @@ data:
       title: Segment Tree
     - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.cpp
-      title: SegmentTree/SegmentTreeBeats.cpp
+      title: Segment Tree Beats
   - name: Sort
     pages:
     - icon: ':warning:'
