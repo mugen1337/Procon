@@ -60,6 +60,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/TreeHash.cpp
       title: Graph/TreeHash.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph/WarshallFloyd.cpp
+      title: Graph/WarshallFloyd.cpp
   - name: Graph2
     pages:
     - icon: ':heavy_check_mark:'
@@ -330,6 +333,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki5764.test.cpp
+      title: test/yuki5764.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki899.test.cpp
       title: test/yuki899.test.cpp
