@@ -11,7 +11,7 @@ signed main(){
         return a+b;
     };
     
-    SegmentTree<ll> seg(n,0,segfunc);
+    SegmentTree<ll> seg(n,segfunc,0);
     rep(i,n){
         ll a;cin>>a;
         seg.set(i,a);
