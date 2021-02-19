@@ -190,6 +190,11 @@ data:
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
+  - name: Math
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Math/yuki473.test.cpp
+      title: Math/yuki473.test.cpp
   - name: test
     pages:
     - icon: ':heavy_check_mark:'
@@ -327,6 +332,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki4459.test.cpp
       title: test/yuki4459.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki473.test.cpp
+      title: test/yuki473.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki5125.test.cpp
       title: test/yuki5125.test.cpp
