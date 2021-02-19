@@ -3,8 +3,8 @@ struct FormalPowerSeriesNaive:vector<T>{
     using vector<T>::vector;
     using P=FormalPowerSeriesNaive;
 
-    function<P(P,P)> multiply(const P &lhs,const P &rhs){
-        auto ret=FPS((int)lhs.size()+rhs.size()-1);
+    P multiply(const P &lhs,const P &rhs){
+        auto ret=P((int)lhs.size()+rhs.size()-1);
         for(int i=0;i<(int)lhs.size();i++)for(int j=0;j<(int)rhs.size();j++) ret[i+j]+=lhs[i]*rhs[j];
         return ret;
     }
@@ -51,7 +51,9 @@ struct FormalPowerSeriesNaive:vector<T>{
             this->clear();
             return (*this);
         }
-        return (*this)=multiply(*this,rhs);
+        auto ret=multiply(*this,rhs);
+        (*this)=ret;
+        return (*this);
     }
     P &operator%=(const P &rhs){return (*this)-=(*this)/rhs*rhs;}
     P operator-()const{
@@ -125,7 +127,8 @@ struct FormalPowerSeriesNaive:vector<T>{
     */
     T nth_term(P q,ll k){
         if(k==0) return (*this)[0]/q[0];
-        P p(*this),q_=q;
+        P p(*this);
+        P q_=q;
         for(int i=1;i<(int)q_.size();i+=2) q_[i]*=-1;
         q*=q_;p*=q_;// qは奇数項が消える
         return p.slice(k%2,p.size(),2).nth_term(q.slice(0,q.size(),2),k/2);
