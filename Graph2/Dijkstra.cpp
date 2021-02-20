@@ -33,7 +33,7 @@ struct Dijkstra{
     vector<int> get_path(int gl){
         vector<int> ret;
         if(d[g]==inf) return ret;
-        for(;g!=-1;g=prev[g]) ret.push_back(g);
+        for(;gl!=-1;gl=prev[gl]) ret.push_back(gl);
         reverse(ret.begin(),ret.end());
         return ret;
     }
