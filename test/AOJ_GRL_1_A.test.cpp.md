@@ -61,7 +61,7 @@ data:
     \         prev[e]=cur;\n                    que.emplace(d[e],e);\n           \
     \     }\n            }\n        }\n        return d;\n    }\n    \n    vector<int>\
     \ get_path(int gl){\n        vector<int> ret;\n        if(d[g]==inf) return ret;\n\
-    \        for(;g!=-1;g=prev[g]) ret.push_back(g);\n        reverse(ret.begin(),ret.end());\n\
+    \        for(;gl!=-1;gl=prev[gl]) ret.push_back(gl);\n        reverse(ret.begin(),ret.end());\n\
     \        return ret;\n    }\n};\n#line 6 \"test/AOJ_GRL_1_A.test.cpp\"\n\nsigned\
     \ main(){\n    int n,m,s;cin>>n>>m>>s;\n    Graph<ll> g(n);\n    g.read(m,0,true,true);\n\
     \    Dijkstra dij(g);\n    for(auto x:dij.build(s)){\n        if(x==dij.inf) cout<<\"\
@@ -78,7 +78,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_GRL_1_A.test.cpp
   requiredBy: []
-  timestamp: '2021-02-02 01:04:57+09:00'
+  timestamp: '2021-02-20 14:27:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_GRL_1_A.test.cpp
