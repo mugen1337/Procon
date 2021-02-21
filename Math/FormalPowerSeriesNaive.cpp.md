@@ -4,9 +4,6 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Math/yuki473.test.cpp
-    title: Math/yuki473.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
@@ -142,7 +139,6 @@ data:
   verifiedWith:
   - test/yuki473.test.cpp
   - test/yuki2017.test.cpp
-  - Math/yuki473.test.cpp
 documentation_of: Math/FormalPowerSeriesNaive.cpp
 layout: document
 redirect_from:

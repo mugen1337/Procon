@@ -8,9 +8,6 @@ data:
       \u3048\u4E0A\u3052"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Math/yuki473.test.cpp
-    title: Math/yuki473.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/AOJ_0109.test.cpp
     title: test/AOJ_0109.test.cpp
   - icon: ':heavy_check_mark:'
@@ -128,6 +125,9 @@ data:
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki1917.test.cpp
+    title: test/yuki1917.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1948.test.cpp
     title: test/yuki1948.test.cpp
   - icon: ':heavy_check_mark:'
@@ -233,6 +233,7 @@ data:
   - test/AOJ_DPL_5_K.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
   - test/yosupo_det.test.cpp
+  - test/yuki1917.test.cpp
   - test/AOJ_DPL_5_I.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
@@ -249,7 +250,6 @@ data:
   - test/yosupo_CycleDetection2.test.cpp
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
-  - Math/yuki473.test.cpp
 documentation_of: template.cpp
 layout: document
 redirect_from:

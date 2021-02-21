@@ -4,9 +4,6 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Math/yuki473.test.cpp
-    title: Math/yuki473.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_A.test.cpp
     title: test/AOJ_DPL_5_A.test.cpp
   - icon: ':heavy_check_mark:'
@@ -54,6 +51,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_det.test.cpp
     title: test/yosupo_det.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki1917.test.cpp
+    title: test/yuki1917.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
@@ -131,6 +131,7 @@ data:
   - test/AOJ_DPL_5_G.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
   - test/yosupo_det.test.cpp
+  - test/yuki1917.test.cpp
   - test/AOJ_DPL_5_I.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
@@ -139,7 +140,6 @@ data:
   - test/yuki5436.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
-  - Math/yuki473.test.cpp
 documentation_of: type/modint.cpp
 layout: document
 redirect_from:

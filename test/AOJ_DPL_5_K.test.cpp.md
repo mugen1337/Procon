@@ -82,8 +82,16 @@ data:
     \   vector<vector<T>> partition_function_table(int n,int k){\n        vector<vector<T>>\
     \ ret(n+1,vector<T>(k+1,0));\n        ret[0][0]=1;\n        for(int i=0;i<=n;i++)for(int\
     \ j=1;j<=k;j++)if(i or j){\n            ret[i][j]=ret[i][j-1];\n            if(i-j>=0)\
-    \ ret[i][j]+=ret[i-j][j];\n        }\n        return ret;\n    }\n    /* sum combination(n+x,\
-    \ x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
+    \ ret[i][j]+=ret[i-j][j];\n        }\n        return ret;\n    }\n    // n = y.size\
+    \ - 1\n    // n\u6B21\u306E\u591A\u9805\u5F0Ff, f(0), f(k)\u306E\u5024\u304C\u308F\
+    \u304B\u3063\u3066\u3044\u308C\u3070f(t)\u304C\u6C42\u307E\u308B\n    // 1^k +\
+    \ ... n^k \u306Fk+1\u6B21\u591A\u9805\u5F0F\uFF0Ck=1\u306A\u3089n(n+1)/2\n   \
+    \ T LagrangePolynomial(vector<T> y,long long t){\n        int n=(int)y.size()-1;\n\
+    \        if(t<=n) return y[t];\n        T ret=T(0);\n        vector<T> l(n+1,1),r(n+1,1);\n\
+    \        for(int i=0;i<n;i++) l[i+1]=l[i]*(t-i);\n        for(int i=n;i>0;i--)\
+    \ r[i-1]=r[i]*(t-i);\n        for(int i=0;i<=n;i++){\n            T add=y[i]*l[i]*r[i]*finv[i]*finv[n-i];\n\
+    \            ret+=((n-i)%2?-add:add);\n        }\n        return ret;\n    }\n\
+    \    /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
     \        ret/=T(n+1);\n        return ret;\n    }\n};\n#line 8 \"test/AOJ_DPL_5_K.test.cpp\"\
@@ -104,7 +112,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_K.test.cpp
   requiredBy: []
-  timestamp: '2021-02-13 00:19:09+09:00'
+  timestamp: '2021-02-21 14:43:11+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_K.test.cpp
