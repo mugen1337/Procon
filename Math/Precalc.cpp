@@ -60,6 +60,22 @@ struct Precalc{
         }
         return ret;
     }
+    // n = y.size - 1
+    // n次の多項式f, f(0), f(k)の値がわかっていればf(t)が求まる
+    // 1^k + ... n^k はk+1次多項式，k=1ならn(n+1)/2
+    T LagrangePolynomial(vector<T> y,long long t){
+        int n=(int)y.size()-1;
+        if(t<=n) return y[t];
+        T ret=T(0);
+        vector<T> l(n+1,1),r(n+1,1);
+        for(int i=0;i<n;i++) l[i+1]=l[i]*(t-i);
+        for(int i=n;i>0;i--) r[i-1]=r[i]*(t-i);
+        for(int i=0;i<=n;i++){
+            T add=y[i]*l[i]*r[i]*finv[i]*finv[n-i];
+            ret+=((n-i)%2?-add:add);
+        }
+        return ret;
+    }
     /* sum combination(n+x, x), x=l to r
        https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja 
        check n+x < [COM_PRECALC_MAX]    */
