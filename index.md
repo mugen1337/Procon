@@ -46,6 +46,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
+  - name: Flow
+    pages:
+    - icon: ':x:'
+      path: Flow/Dinic.cpp
+      title: Flow/Dinic.cpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -163,7 +168,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -198,6 +203,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
+    - icon: ':x:'
+      path: test/AOJ_2313.test.cpp
+      title: test/AOJ_2313.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp

@@ -13,6 +13,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2292.test.cpp
     title: test/AOJ_2292.test.cpp
+  - icon: ':x:'
+    path: test/AOJ_2313.test.cpp
+    title: test/AOJ_2313.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2821.test.cpp
     title: test/AOJ_2821.test.cpp
@@ -160,9 +163,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -197,12 +200,13 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yuki473.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/yuki2017.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_2313.test.cpp
   - test/AOJ_2292.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
