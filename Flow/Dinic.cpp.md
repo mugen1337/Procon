@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_2313.test.cpp
     title: test/AOJ_2313.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Flow/Dinic.cpp\"\ntemplate<typename T>\nstruct Dinic{\n\
@@ -48,19 +48,7 @@ data:
     \        if(v!=t and cap!=0) max_flow(t,v,cap);\n        return cap;\n    }\n\
     \    // u -> v\u306E\u5BB9\u91CF\u3092f\u3060\u3051\u5897\u3084\u3059\n    T add(int\
     \ s,int t,int u,int v,T f,int idx=-1){\n        add_edge(u,v,f,idx);\n       \
-    \ return max_flow(s,t,f);\n    }\n};#include<bits/stdc++.h>\nusing namespace std;\n\
-    #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
-    \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
-    \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
-    int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
-    template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
-    template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
-    \nstruct IOSetup{\n    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n\
-    \        cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n \ntemplate<typename\
-    \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
-    \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
-    \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\nsigned main(){\n\n    return 0;\n}\n"
+    \ return max_flow(s,t,f);\n    }\n};\n"
   code: "template<typename T>\nstruct Dinic{\n    private:\n    vector<int> lv,iter;\n\
     \    // \u5897\u52A0\u9053\n    bool bfs(int s,int t){\n        lv.assign(g.size(),-1);\n\
     \        queue<int> que;\n        lv[s]=0;\n        que.push(s);\n        while(!que.empty()\
@@ -97,25 +85,13 @@ data:
     \        if(v!=t and cap!=0) max_flow(t,v,cap);\n        return cap;\n    }\n\
     \    // u -> v\u306E\u5BB9\u91CF\u3092f\u3060\u3051\u5897\u3084\u3059\n    T add(int\
     \ s,int t,int u,int v,T f,int idx=-1){\n        add_edge(u,v,f,idx);\n       \
-    \ return max_flow(s,t,f);\n    }\n};#include<bits/stdc++.h>\nusing namespace std;\n\
-    #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
-    \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
-    \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
-    int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
-    template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
-    template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
-    \nstruct IOSetup{\n    IOSetup(){\n        cin.tie(0);\n        ios::sync_with_stdio(0);\n\
-    \        cout<<fixed<<setprecision(12);\n    }\n} iosetup;\n \ntemplate<typename\
-    \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
-    \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
-    \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\nsigned main(){\n\n    return 0;\n}\n"
+    \ return max_flow(s,t,f);\n    }\n};"
   dependsOn: []
   isVerificationFile: false
   path: Flow/Dinic.cpp
   requiredBy: []
-  timestamp: '2021-02-23 21:31:25+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2021-02-23 21:34:31+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_2313.test.cpp
 documentation_of: Flow/Dinic.cpp
