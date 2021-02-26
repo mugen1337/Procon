@@ -6,7 +6,7 @@ data:
     title: Math/inv_mod.cpp
   - icon: ':heavy_check_mark:'
     path: Math/log_mod.cpp
-    title: Math/log_mod.cpp
+    title: "\u96E2\u6563\u5BFE\u6570 (log mod)"
   - icon: ':heavy_check_mark:'
     path: Math/pow_mod.cpp
     title: Math/pow_mod.cpp
