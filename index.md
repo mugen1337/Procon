@@ -85,6 +85,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/StronglyConnectedComponents.cpp
       title: Strongly Connected Components
+    - icon: ':heavy_check_mark:'
+      path: Graph2/TreeDiameter.cpp
+      title: Graph2/TreeDiameter.cpp
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
@@ -296,6 +299,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Shortest_Path.test.cpp
       title: test/yosupo_Shortest_Path.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_TreeDiameter.test.cpp
+      title: test/yosupo_TreeDiameter.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind.test.cpp
       title: test/yosupo_Unionfind.test.cpp

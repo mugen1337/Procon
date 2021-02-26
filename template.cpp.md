@@ -107,6 +107,9 @@ data:
     path: test/yosupo_Shortest_Path.test.cpp
     title: test/yosupo_Shortest_Path.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_TreeDiameter.test.cpp
+    title: test/yosupo_TreeDiameter.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Unionfind.test.cpp
     title: test/yosupo_Unionfind.test.cpp
   - icon: ':heavy_check_mark:'
@@ -202,6 +205,7 @@ data:
   timestamp: '2021-01-03 23:01:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yosupo_TreeDiameter.test.cpp
   - test/yuki473.test.cpp
   - test/yosupo_Unionfind.test.cpp
   - test/yuki2017.test.cpp

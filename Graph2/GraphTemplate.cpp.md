@@ -14,6 +14,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/StronglyConnectedComponents.cpp
     title: Strongly Connected Components
+  - icon: ':heavy_check_mark:'
+    path: Graph2/TreeDiameter.cpp
+    title: Graph2/TreeDiameter.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_1_A.test.cpp
@@ -21,6 +24,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_TreeDiameter.test.cpp
+    title: test/yosupo_TreeDiameter.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
@@ -74,9 +80,11 @@ data:
   - Graph2/Dijkstra.cpp
   - Graph2/Rerooting.cpp
   - Graph2/StronglyConnectedComponents.cpp
+  - Graph2/TreeDiameter.cpp
   timestamp: '2021-01-18 16:50:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yosupo_TreeDiameter.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/yosupo_scc2.test.cpp
   - test/yuki5436.test.cpp
