@@ -89,6 +89,9 @@ data:
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_DiscreteLog.test.cpp
+    title: test/yosupo_DiscreteLog.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
@@ -224,6 +227,7 @@ data:
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
+  - test/yosupo_DiscreteLog.test.cpp
   - test/yuki4374.test.cpp
   - test/AOJ_2821.test.cpp
   - test/yosupo_scc2.test.cpp

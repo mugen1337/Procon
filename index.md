@@ -117,7 +117,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/ceil_floor.cpp
       title: Math/ceil_floor.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
+      path: Math/inv_mod.cpp
+      title: Math/inv_mod.cpp
+    - icon: ':heavy_check_mark:'
+      path: Math/log_mod.cpp
+      title: Math/log_mod.cpp
+    - icon: ':heavy_check_mark:'
       path: Math/pow_mod.cpp
       title: Math/pow_mod.cpp
   - name: Other
@@ -281,6 +287,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_CycleDetection2.test.cpp
       title: test/yosupo_CycleDetection2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_DiscreteLog.test.cpp
+      title: test/yosupo_DiscreteLog.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

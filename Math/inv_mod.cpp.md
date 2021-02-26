@@ -14,25 +14,25 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Math/pow_mod.cpp\"\n// a^n (mod m)\nll pow_mod(ll a,ll n,ll\
-    \ m){\n    ll ret=1;\n    while(n){\n        if(n&1) ret=ret*a%m;\n        a=(a*a)%m;\n\
-    \        n/=2;\n    }\n    return ret;\n}\n"
-  code: "// a^n (mod m)\nll pow_mod(ll a,ll n,ll m){\n    ll ret=1;\n    while(n){\n\
-    \        if(n&1) ret=ret*a%m;\n        a=(a*a)%m;\n        n/=2;\n    }\n    return\
-    \ ret;\n}"
+  bundledCode: "#line 1 \"Math/inv_mod.cpp\"\nll inv_mod(ll a,ll m){\n    ll b=m,u=1,v=0,t;\n\
+    \    while(b){\n        t=a/b;\n        swap(a-=t*b,b);swap(u-=t*v,v);\n    }\n\
+    \    u%=m;\n    if(u<0) u+=m;\n    return u;\n}\n"
+  code: "ll inv_mod(ll a,ll m){\n    ll b=m,u=1,v=0,t;\n    while(b){\n        t=a/b;\n\
+    \        swap(a-=t*b,b);swap(u-=t*v,v);\n    }\n    u%=m;\n    if(u<0) u+=m;\n\
+    \    return u;\n}"
   dependsOn: []
   isVerificationFile: false
-  path: Math/pow_mod.cpp
+  path: Math/inv_mod.cpp
   requiredBy:
   - Math/log_mod.cpp
-  timestamp: '2021-01-16 20:39:38+09:00'
+  timestamp: '2021-02-27 00:20:16+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_DiscreteLog.test.cpp
-documentation_of: Math/pow_mod.cpp
+documentation_of: Math/inv_mod.cpp
 layout: document
 redirect_from:
-- /library/Math/pow_mod.cpp
-- /library/Math/pow_mod.cpp.html
-title: Math/pow_mod.cpp
+- /library/Math/inv_mod.cpp
+- /library/Math/inv_mod.cpp.html
+title: Math/inv_mod.cpp
 ---
