@@ -155,6 +155,9 @@ data:
     path: test/yuki4459.test.cpp
     title: test/yuki4459.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki447.test.cpp
+    title: test/yuki447.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki473.test.cpp
     title: test/yuki473.test.cpp
   - icon: ':heavy_check_mark:'
@@ -224,6 +227,7 @@ data:
   - test/yosupo_Bitwise_Xor_Convolution.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
   - test/yosupo_Set_Xor_Min.test.cpp
+  - test/yuki447.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_B.test.cpp

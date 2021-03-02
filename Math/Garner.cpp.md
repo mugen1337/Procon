@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki447.test.cpp
     title: test/yuki447.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/Garner.cpp\"\n// (val, mod)\npair<ll,ll> Garner(const\
@@ -42,7 +42,7 @@ data:
   path: Math/Garner.cpp
   requiredBy: []
   timestamp: '2021-03-02 23:29:56+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki447.test.cpp
 documentation_of: Math/Garner.cpp
