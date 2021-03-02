@@ -100,6 +100,9 @@ data:
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
     - icon: ':warning:'
+      path: Math/Garner.cpp
+      title: Math/Garner.cpp
+    - icon: ':warning:'
       path: Math/OrConvolution.cpp
       title: Math/OrConvolution.cpp
     - icon: ':warning:'
