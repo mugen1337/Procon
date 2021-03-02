@@ -99,7 +99,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Math/Garner.cpp
       title: Math/Garner.cpp
     - icon: ':warning:'
@@ -356,6 +356,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki4459.test.cpp
       title: test/yuki4459.test.cpp
+    - icon: ':x:'
+      path: test/yuki447.test.cpp
+      title: test/yuki447.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki473.test.cpp
       title: test/yuki473.test.cpp
