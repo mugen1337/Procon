@@ -1,5 +1,7 @@
 #define PROBLEM "https://yukicoder.me/problems/447"
 
+#include "../template.cpp"
+
 #include "../Math/Garner.cpp"
 
 signed main(){
