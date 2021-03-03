@@ -112,7 +112,7 @@ data:
       title: Math/FormalPowerSeriesNaive.cpp
     - icon: ':heavy_check_mark:'
       path: Math/Garner.cpp
-      title: Math/Garner.cpp
+      title: "Garner (\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406)"
     - icon: ':warning:'
       path: Math/OrConvolution.cpp
       title: Math/OrConvolution.cpp

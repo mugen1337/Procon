@@ -47,8 +47,8 @@ data:
   - test/yuki447.test.cpp
 documentation_of: Math/Garner.cpp
 layout: document
-redirect_from:
-- /library/Math/Garner.cpp
-- /library/Math/Garner.cpp.html
-title: Math/Garner.cpp
+title: "Garner (\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406)"
 ---
+
+# 概要  
+x s.t. \forall i . x = rems[i] (mod mods[i])  
