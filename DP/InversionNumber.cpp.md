@@ -33,8 +33,10 @@ data:
   - test/AOJ_ALDS1_5_D.test.cpp
 documentation_of: DP/InversionNumber.cpp
 layout: document
-redirect_from:
-- /library/DP/InversionNumber.cpp
-- /library/DP/InversionNumber.cpp.html
-title: DP/InversionNumber.cpp
+title: "Inversion Number (\u8EE2\u5012\u6570)"
 ---
+
+# 概要  
+転倒数を返す  
+中でBinary Indexed Treeの処理をしているだけ  
+配列の長さをNとしたとき，O(NlogN)  

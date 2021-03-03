@@ -10,7 +10,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: DP/InversionNumber.cpp
-      title: DP/InversionNumber.cpp
+      title: "Inversion Number (\u8EE2\u5012\u6570)"
     - icon: ':heavy_check_mark:'
       path: DP/LargestRectangle.cpp
       title: DP/LargestRectangle.cpp
