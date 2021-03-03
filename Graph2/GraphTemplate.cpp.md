@@ -9,6 +9,9 @@ data:
     path: Graph2/Dijkstra.cpp
     title: Graph2/Dijkstra.cpp
   - icon: ':heavy_check_mark:'
+    path: Graph2/LowLink.cpp
+    title: Graph2/LowLink.cpp
+  - icon: ':heavy_check_mark:'
     path: Graph2/Rerooting.cpp
     title: Graph2/Rerooting.cpp
   - icon: ':heavy_check_mark:'
@@ -21,6 +24,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_1_A.test.cpp
     title: test/AOJ_GRL_1_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_GRL_3_A.test.cpp
+    title: test/AOJ_GRL_3_A.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
@@ -78,6 +84,7 @@ data:
   requiredBy:
   - Graph2/CycleDetection.cpp
   - Graph2/Dijkstra.cpp
+  - Graph2/LowLink.cpp
   - Graph2/Rerooting.cpp
   - Graph2/StronglyConnectedComponents.cpp
   - Graph2/TreeDiameter.cpp
@@ -87,6 +94,7 @@ data:
   - test/yosupo_TreeDiameter.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/yosupo_scc2.test.cpp
+  - test/AOJ_GRL_3_A.test.cpp
   - test/yuki5436.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp

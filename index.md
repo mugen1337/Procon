@@ -80,6 +80,9 @@ data:
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
+      path: Graph2/LowLink.cpp
+      title: Graph2/LowLink.cpp
+    - icon: ':heavy_check_mark:'
       path: Graph2/Rerooting.cpp
       title: Graph2/Rerooting.cpp
     - icon: ':heavy_check_mark:'
@@ -275,6 +278,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_GRL_1_A.test.cpp
       title: test/AOJ_GRL_1_A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_GRL_3_A.test.cpp
+      title: test/AOJ_GRL_3_A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_NTL_1_A.test.cpp
       title: test/AOJ_NTL_1_A.test.cpp

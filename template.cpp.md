@@ -74,6 +74,9 @@ data:
     path: test/AOJ_GRL_1_A.test.cpp
     title: test/AOJ_GRL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_GRL_3_A.test.cpp
+    title: test/AOJ_GRL_3_A.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_NTL_1_A.test.cpp
     title: test/AOJ_NTL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
@@ -251,6 +254,7 @@ data:
   - test/yosupo_det.test.cpp
   - test/yuki1917.test.cpp
   - test/AOJ_DPL_5_I.test.cpp
+  - test/AOJ_GRL_3_A.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
   - test/AOJ_DPL_5_L.test.cpp
   - test/yuki2855.test.cpp
