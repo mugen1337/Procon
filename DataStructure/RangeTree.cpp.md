@@ -87,8 +87,14 @@ data:
   - test/yosupo_Rectangle_Sum.test.cpp
 documentation_of: DataStructure/RangeTree.cpp
 layout: document
-redirect_from:
-- /library/DataStructure/RangeTree.cpp
-- /library/DataStructure/RangeTree.cpp.html
-title: DataStructure/RangeTree.cpp
+title: "Range Tree (\u9818\u57DF\u6728)"
 ---
+
+## 概要  
+2次元空間に点の追加，長方形領域のクエリを処理する．  
+
+## 仕様  
+- build(vector<X,Y,V>)  構築, (X,Y)の頂点がV個  
+- build(vector<X,Y>)    構築, (X,Y)の頂点が1個  
+- query(x1, y1, x2, y2) カウントクエリ [x1, x2) * [y1, y2)  
+

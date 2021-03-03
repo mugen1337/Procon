@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: DataStructure/RangeTree.cpp
-    title: DataStructure/RangeTree.cpp
+    title: "Range Tree (\u9818\u57DF\u6728)"
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp

@@ -39,7 +39,7 @@ data:
         \u3064"
     - icon: ':heavy_check_mark:'
       path: DataStructure/RangeTree.cpp
-      title: DataStructure/RangeTree.cpp
+      title: "Range Tree (\u9818\u57DF\u6728)"
     - icon: ':heavy_check_mark:'
       path: DataStructure/RectangleUnion.cpp
       title: DataStructure/RectangleUnion.cpp
