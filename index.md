@@ -91,6 +91,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/TreeDiameter.cpp
       title: Graph2/TreeDiameter.cpp
+  - name: Heap
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Heap/LeftistHeap.cpp
+      title: Heap/LeftistHeap.cpp
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
@@ -227,6 +232,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_ALDS1_5_D.test.cpp
       title: test/AOJ_ALDS1_5_D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_ALDS1_9_C.test.cpp
+      title: test/AOJ_ALDS1_9_C.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_3_c.test.cpp
       title: test/AOJ_DPL_3_c.test.cpp
