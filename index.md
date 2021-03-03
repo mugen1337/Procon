@@ -96,6 +96,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Heap/LeftistHeap.cpp
       title: Leftist Heap
+    - icon: ':warning:'
+      path: Heap/PersistentLeftistHeap.cpp
+      title: Heap/PersistentLeftistHeap.cpp
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'
