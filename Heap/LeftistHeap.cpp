@@ -9,13 +9,8 @@ struct LeftistHeap{
     Node *root;
     LeftistHeap(Node *t=nullptr):root(t){}
 
-    virtual Node *clone(Node *t){
-        return t;
-    }
-
     Node *meld(Node *a,Node *b){
         if(!a or !b) return (a?a:b);
-        a=clone(a);
         if((a->val>b->val)^(!less)) swap(a,b);
         a->r=meld(a->r,b);
         if(!a->l or a->l->s<a->r->s) swap(a->l,a->r);
