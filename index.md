@@ -81,7 +81,7 @@ data:
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/LowLink.cpp
-      title: Graph2/LowLink.cpp
+      title: Low Link
     - icon: ':heavy_check_mark:'
       path: Graph2/Rerooting.cpp
       title: Graph2/Rerooting.cpp
