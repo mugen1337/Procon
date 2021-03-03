@@ -95,7 +95,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: Heap/LeftistHeap.cpp
-      title: Heap/LeftistHeap.cpp
+      title: Leftist Heap
   - name: Math
     pages:
     - icon: ':heavy_check_mark:'

@@ -46,8 +46,10 @@ data:
   - test/AOJ_ALDS1_9_C.test.cpp
 documentation_of: Heap/LeftistHeap.cpp
 layout: document
-redirect_from:
-- /library/Heap/LeftistHeap.cpp
-- /library/Heap/LeftistHeap.cpp.html
-title: Heap/LeftistHeap.cpp
+title: Leftist Heap
 ---
+
+## 概要  
+http://hos.ac/blog/#blog0001  
+
+heapの併合，meldが可能
