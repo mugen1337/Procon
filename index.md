@@ -75,7 +75,7 @@ data:
       title: Graph2/CycleDetection.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/Dijkstra.cpp
-      title: Graph2/Dijkstra.cpp
+      title: Dijkstra
     - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp

@@ -69,8 +69,16 @@ data:
   - test/AOJ_GRL_1_A.test.cpp
 documentation_of: Graph2/Dijkstra.cpp
 layout: document
-redirect_from:
-- /library/Graph2/Dijkstra.cpp
-- /library/Graph2/Dijkstra.cpp.html
-title: Graph2/Dijkstra.cpp
+title: Dijkstra
 ---
+
+# 概要  
+Dijkstra法  
+O((E+V)logV)  
+
+# 仕様  
+- build(st) 始点をstとして構築  
+- get_path(gl) st-glのパス上の頂点が入ったvectorを返す  
+
+# あ  
+これ書いてて思ったのですが，get_path, 辺のvectorを返す方が情報量多くていいかもしれないのでいつかそうするかもしれない  
