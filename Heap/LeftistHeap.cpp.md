@@ -14,9 +14,8 @@ data:
   bundledCode: "#line 1 \"Heap/LeftistHeap.cpp\"\ntemplate<typename T,bool less=true>\n\
     struct LeftistHeap{\n    struct Node{\n        Node *l,*r;\n        int s;\n \
     \       T val;\n        Node(T val):l(nullptr),r(nullptr),s(1),val(val){}\n  \
-    \  };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    virtual\
-    \ Node *clone(Node *t){\n        return t;\n    }\n\n    Node *meld(Node *a,Node\
-    \ *b){\n        if(!a or !b) return (a?a:b);\n        a=clone(a);\n        if((a->val>b->val)^(!less))\
+    \  };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    Node\
+    \ *meld(Node *a,Node *b){\n        if(!a or !b) return (a?a:b);\n        if((a->val>b->val)^(!less))\
     \ swap(a,b);\n        a->r=meld(a->r,b);\n        if(!a->l or a->l->s<a->r->s)\
     \ swap(a->l,a->r);\n        a->s=(a->r?a->r->s:0)+1;\n        return a;\n    }\n\
     \    void meld(LeftistHeap b){\n        root=meld(root,b.root);\n    }\n    void\
@@ -26,9 +25,8 @@ data:
     \      return root->val;\n    }\n};\n"
   code: "template<typename T,bool less=true>\nstruct LeftistHeap{\n    struct Node{\n\
     \        Node *l,*r;\n        int s;\n        T val;\n        Node(T val):l(nullptr),r(nullptr),s(1),val(val){}\n\
-    \    };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    virtual\
-    \ Node *clone(Node *t){\n        return t;\n    }\n\n    Node *meld(Node *a,Node\
-    \ *b){\n        if(!a or !b) return (a?a:b);\n        a=clone(a);\n        if((a->val>b->val)^(!less))\
+    \    };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    Node\
+    \ *meld(Node *a,Node *b){\n        if(!a or !b) return (a?a:b);\n        if((a->val>b->val)^(!less))\
     \ swap(a,b);\n        a->r=meld(a->r,b);\n        if(!a->l or a->l->s<a->r->s)\
     \ swap(a->l,a->r);\n        a->s=(a->r?a->r->s:0)+1;\n        return a;\n    }\n\
     \    void meld(LeftistHeap b){\n        root=meld(root,b.root);\n    }\n    void\
@@ -40,7 +38,7 @@ data:
   isVerificationFile: false
   path: Heap/LeftistHeap.cpp
   requiredBy: []
-  timestamp: '2021-03-03 23:39:40+09:00'
+  timestamp: '2021-03-04 00:00:10+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_ALDS1_9_C.test.cpp
