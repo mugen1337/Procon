@@ -22,7 +22,7 @@ data:
     title: Graph2/TreeDiameter.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/Yen.cpp
-    title: Graph2/Yen.cpp
+    title: Yen's Algorithm (K-Shortest-Path)
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_1_A.test.cpp

@@ -93,7 +93,7 @@ data:
       title: Graph2/TreeDiameter.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/Yen.cpp
-      title: Graph2/Yen.cpp
+      title: Yen's Algorithm (K-Shortest-Path)
   - name: Heap
     pages:
     - icon: ':heavy_check_mark:'
