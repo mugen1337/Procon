@@ -91,6 +91,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/TreeDiameter.cpp
       title: Graph2/TreeDiameter.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph2/Yen.cpp
+      title: Graph2/Yen.cpp
   - name: Heap
     pages:
     - icon: ':heavy_check_mark:'
@@ -367,6 +370,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki4227.test.cpp
+      title: test/yuki4227.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki4374.test.cpp
       title: test/yuki4374.test.cpp

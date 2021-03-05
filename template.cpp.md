@@ -155,6 +155,9 @@ data:
     path: test/yuki2855.test.cpp
     title: test/yuki2855.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki4227.test.cpp
+    title: test/yuki4227.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki4374.test.cpp
     title: test/yuki4374.test.cpp
   - icon: ':heavy_check_mark:'
@@ -241,6 +244,7 @@ data:
   - test/yosupo_CycleDetection.test.cpp
   - test/yuki1601.test.cpp
   - test/yosupo_DiscreteLog.test.cpp
+  - test/yuki4227.test.cpp
   - test/yuki473.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
