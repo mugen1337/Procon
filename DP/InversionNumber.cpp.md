@@ -36,7 +36,10 @@ layout: document
 title: "Inversion Number (\u8EE2\u5012\u6570)"
 ---
 
-# 概要  
+## 概要  
 転倒数を返す  
-中でBinary Indexed Treeの処理をしているだけ  
-配列の長さをNとしたとき，O(NlogN)  
+中でBinary Indexed Treeの処理をしている  
+
+
+## 計算量  
+配列の長さをNとしたとき，O(N logN)
