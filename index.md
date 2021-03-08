@@ -76,10 +76,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/Dijkstra.cpp
       title: Dijkstra
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/Eppstein.cpp
       title: Graph2/Eppstein.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
@@ -197,7 +197,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -319,7 +319,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_KSW.test.cpp
       title: test/yosupo_KSW.test.cpp
     - icon: ':heavy_check_mark:'

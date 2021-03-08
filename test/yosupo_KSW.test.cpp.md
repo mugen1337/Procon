@@ -1,27 +1,30 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/Eppstein.cpp
     title: Graph2/Eppstein.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    links: []
-  bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
-    \ std;\n#define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n\
-    #define debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define\
-    \ mod 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
+    PROBLEM: https://judge.yosupo.jp/problem/k_shortest_walk
+    links:
+    - https://judge.yosupo.jp/problem/k_shortest_walk
+  bundledCode: "#line 1 \"test/yosupo_KSW.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/k_shortest_walk\"\
+    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
+    \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
+    \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
     int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
     template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
     template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
@@ -30,7 +33,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 2 \"test/yosupo_KSW.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yosupo_KSW.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.cpp\"\
     \n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.cpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
@@ -92,13 +95,14 @@ data:
     \            if(H_G[to].root) que.emplace(cost+H_G[to].root->val.first,H_G[to].root);\n\
     \n            if(cur->l) que.emplace(cost+cur->l->val.first-cur->val.first,cur->l);\n\
     \            if(cur->r) que.emplace(cost+cur->r->val.first-cur->val.first,cur->r);\n\
-    \        }\n    }\n    return ret;\n}\n#line 4 \"test/yosupo_KSW.test.cpp\"\n\n\
+    \        }\n    }\n    return ret;\n}\n#line 6 \"test/yosupo_KSW.test.cpp\"\n\n\
     signed main(){\n    int n,m,s,t,k;cin>>n>>m>>s>>t>>k;\n    Graph<ll> g(n);\n \
     \   g.read(m,0,true,true);\n    auto res=Eppstein(g,s,t,k);\n    rep(i,k){\n \
     \       if(i<(int)res.size())   cout<<res[i]<<endl;\n        else            \
     \        cout<<-1<<endl;\n    }\n    return 0;\n}\n"
-  code: "#include \"../template.cpp\"\n\n#include \"../Graph2/Eppstein.cpp\"\n\nsigned\
-    \ main(){\n    int n,m,s,t,k;cin>>n>>m>>s>>t>>k;\n    Graph<ll> g(n);\n    g.read(m,0,true,true);\n\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/k_shortest_walk\"\n\n#include\
+    \ \"../template.cpp\"\n\n#include \"../Graph2/Eppstein.cpp\"\n\nsigned main(){\n\
+    \    int n,m,s,t,k;cin>>n>>m>>s>>t>>k;\n    Graph<ll> g(n);\n    g.read(m,0,true,true);\n\
     \    auto res=Eppstein(g,s,t,k);\n    rep(i,k){\n        if(i<(int)res.size())\
     \   cout<<res[i]<<endl;\n        else                    cout<<-1<<endl;\n   \
     \ }\n    return 0;\n}\n"
@@ -109,8 +113,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_KSW.test.cpp
   requiredBy: []
-  timestamp: '2021-03-09 00:02:25+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-03-09 00:05:03+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_KSW.test.cpp
 layout: document
