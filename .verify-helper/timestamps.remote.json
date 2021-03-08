@@ -30,6 +30,7 @@
 "test/yosupo_CycleDetection2.test.cpp": "2021-01-18 16:50:41 +0900",
 "test/yosupo_DiscreteLog.test.cpp": "2021-02-27 00:20:16 +0900",
 "test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp": "2021-01-04 00:14:41 +0900",
+"test/yosupo_KSW.test.cpp": "2021-03-09 00:05:03 +0900",
 "test/yosupo_Point-Add-Range-Sum.test.cpp": "2021-02-16 15:19:41 +0900",
 "test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp": "2021-01-03 23:38:23 +0900",
 "test/yosupo_Rectangle_Sum.test.cpp": "2021-01-12 16:43:06 +0900",
