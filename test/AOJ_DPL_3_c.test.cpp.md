@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: DP/LargestRectangle.cpp
     title: DP/LargestRectangle.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

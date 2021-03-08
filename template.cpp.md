@@ -100,6 +100,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_KSW.test.cpp
+    title: test/yosupo_KSW.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
     title: test/yosupo_Point-Add-Range-Sum.test.cpp
@@ -181,9 +184,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -218,7 +221,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yuki4374.test.cpp
   - test/yosupo_Shortest_Path.test.cpp
@@ -234,6 +237,7 @@ data:
   - test/yuki1917.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
+  - test/yosupo_KSW.test.cpp
   - test/yuki5436.test.cpp
   - test/yuki4459.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp

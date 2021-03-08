@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Dijkstra.cpp
     title: Dijkstra
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

@@ -8,6 +8,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Dijkstra.cpp
     title: Dijkstra
+  - icon: ':x:'
+    path: Graph2/Eppstein.cpp
+    title: Graph2/Eppstein.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
@@ -33,6 +36,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_KSW.test.cpp
+    title: test/yosupo_KSW.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
@@ -45,9 +51,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
@@ -90,14 +96,16 @@ data:
   requiredBy:
   - Graph2/TreeDiameter.cpp
   - Graph2/Rerooting.cpp
+  - Graph2/Eppstein.cpp
   - Graph2/StronglyConnectedComponents.cpp
   - Graph2/Yen.cpp
   - Graph2/Dijkstra.cpp
   - Graph2/LowLink.cpp
   - Graph2/CycleDetection.cpp
   timestamp: '2021-01-18 16:50:41+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/yosupo_KSW.test.cpp
   - test/yuki5436.test.cpp
   - test/yuki4227.test.cpp
   - test/yosupo_scc2.test.cpp
