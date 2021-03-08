@@ -1,3 +1,5 @@
+#define PROBLEM "https://judge.yosupo.jp/problem/k_shortest_walk"
+
 #include "../template.cpp"
 
 #include "../Graph2/Eppstein.cpp"
