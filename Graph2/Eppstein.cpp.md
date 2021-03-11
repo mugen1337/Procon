@@ -135,8 +135,16 @@ data:
   - test/yosupo_KSW.test.cpp
 documentation_of: Graph2/Eppstein.cpp
 layout: document
-redirect_from:
-- /library/Graph2/Eppstein.cpp
-- /library/Graph2/Eppstein.cpp.html
-title: Graph2/Eppstein.cpp
+title: Eppstein's Algorithm (K-Shortest-Walk)
 ---
+
+## 概要  
+Eppstein's Algorithmです．  
+同じ店を何度通ってもいいようなs-tパスを距離の小さい方からk個列挙します．  
+
+## 仕様  
+有向グラフのみに使える．  
+無向グラフで使いたいなら辺番号を振りなおすこと．  
+
+## 計算量  
+O(M + NlogN + KlogK)  

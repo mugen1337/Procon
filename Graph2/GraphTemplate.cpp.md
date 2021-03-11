@@ -10,7 +10,7 @@ data:
     title: Dijkstra
   - icon: ':heavy_check_mark:'
     path: Graph2/Eppstein.cpp
-    title: Graph2/Eppstein.cpp
+    title: Eppstein's Algorithm (K-Shortest-Walk)
   - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
