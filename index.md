@@ -186,6 +186,9 @@ data:
     - icon: ':warning:'
       path: UnionFind/DynamicConnectivityOffline.cpp
       title: UnionFind/DynamicConnectivityOffline.cpp
+    - icon: ':warning:'
+      path: UnionFind/PartiallyPersistentUnionFind.cpp
+      title: UnionFind/PartiallyPersistentUnionFind.cpp
     - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFind.cpp
       title: UnionFind/UnionFind.cpp
