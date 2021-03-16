@@ -31,7 +31,7 @@ data:
   - test/AOJ_1379.test.cpp
 documentation_of: Other/EnumerateSubset.cpp
 layout: document
-title: "Inversion Number (\u8EE2\u5012\u6570)"
+title: "\u90E8\u5206\u96C6\u5408\u306E\u5217\u6319 (Enumerate Subset)"
 ---
 
 ## 概要  
