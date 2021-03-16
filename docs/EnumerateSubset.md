@@ -1,5 +1,5 @@
 ---
-title: Inversion Number (転倒数)
+title: 部分集合の列挙 (Enumerate Subset)
 documentation_of: //Other/EnumerateSubset.cpp
 ---
 
