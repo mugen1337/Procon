@@ -153,7 +153,7 @@ data:
       title: Other/CyclePartition.cpp
     - icon: ':heavy_check_mark:'
       path: Other/EnumerateSubset.cpp
-      title: Other/EnumerateSubset.cpp
+      title: "Inversion Number (\u8EE2\u5012\u6570)"
     - icon: ':heavy_check_mark:'
       path: Other/Parser.cpp
       title: Other/Parser.cpp
