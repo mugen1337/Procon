@@ -152,6 +152,9 @@ data:
       path: Other/CyclePartition.cpp
       title: Other/CyclePartition.cpp
     - icon: ':heavy_check_mark:'
+      path: Other/EnumerateSubset.cpp
+      title: Other/EnumerateSubset.cpp
+    - icon: ':heavy_check_mark:'
       path: Other/Parser.cpp
       title: Other/Parser.cpp
     - icon: ':warning:'
@@ -232,6 +235,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_0109.test.cpp
       title: test/AOJ_0109.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_1379.test.cpp
+      title: test/AOJ_1379.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp

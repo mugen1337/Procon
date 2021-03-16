@@ -11,6 +11,9 @@ data:
     path: test/AOJ_0109.test.cpp
     title: test/AOJ_0109.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_1379.test.cpp
+    title: test/AOJ_1379.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_2292.test.cpp
     title: test/AOJ_2292.test.cpp
   - icon: ':heavy_check_mark:'
@@ -280,6 +283,7 @@ data:
   - test/yuki2577.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
+  - test/AOJ_1379.test.cpp
   - test/AOJ_DPL_5_H.test.cpp
   - test/AOJ_2313.test.cpp
 documentation_of: template.cpp
