@@ -151,6 +151,11 @@ struct ImplicitTreap{
 
     void insert(int k,const Monoid &x){insert(root,k,x);}
     void erase(int k){erase(root,k);}
+    void erase(int l,int r){
+        auto x=split(root,l);
+        auto y=split(x.second,r-l);
+        root=merge(x.first,y.second);
+    }
     void reverse(int l,int r){reverse(root,l,r);}
     Monoid query(int l,int r){return query(root,l,r);}
     void update(int l,int r,const OperatorMonoid &x){update(root,l,r,x);}
