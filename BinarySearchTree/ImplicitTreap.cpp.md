@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki5398.test.cpp
+    title: test/yuki5398.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -64,11 +67,13 @@ data:
     \    bool empty(){return !root;}\n\n    void build(const vector<Monoid> &v){\n\
     \        if(v.empty()) return ;\n        for(int i=(int)v.size()-1;i>=0;i--) insert(0,v[i]);\n\
     \    }\n\n    void insert(int k,const Monoid &x){insert(root,k,x);}\n    void\
-    \ erase(int k){erase(root,k);}\n    void reverse(int l,int r){reverse(root,l,r);}\n\
-    \    Monoid query(int l,int r){return query(root,l,r);}\n    void update(int l,int\
-    \ r,const OperatorMonoid &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n\
-    \        vector<Monoid> ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n\
-    \        return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
+    \ erase(int k){erase(root,k);}\n    void erase(int l,int r){\n        auto x=split(root,l);\n\
+    \        auto y=split(x.second,r-l);\n        root=merge(x.first,y.second);\n\
+    \    }\n    void reverse(int l,int r){reverse(root,l,r);}\n    Monoid query(int\
+    \ l,int r){return query(root,l,r);}\n    void update(int l,int r,const OperatorMonoid\
+    \ &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n        vector<Monoid>\
+    \ ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n      \
+    \  return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
     };\n"
   code: "template<typename Monoid,typename OperatorMonoid>\nstruct ImplicitTreap{\n\
     \n    private:\n\n    inline int xorshift(){\n        static int x=122312555;\n\
@@ -122,19 +127,22 @@ data:
     \    bool empty(){return !root;}\n\n    void build(const vector<Monoid> &v){\n\
     \        if(v.empty()) return ;\n        for(int i=(int)v.size()-1;i>=0;i--) insert(0,v[i]);\n\
     \    }\n\n    void insert(int k,const Monoid &x){insert(root,k,x);}\n    void\
-    \ erase(int k){erase(root,k);}\n    void reverse(int l,int r){reverse(root,l,r);}\n\
-    \    Monoid query(int l,int r){return query(root,l,r);}\n    void update(int l,int\
-    \ r,const OperatorMonoid &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n\
-    \        vector<Monoid> ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n\
-    \        return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
+    \ erase(int k){erase(root,k);}\n    void erase(int l,int r){\n        auto x=split(root,l);\n\
+    \        auto y=split(x.second,r-l);\n        root=merge(x.first,y.second);\n\
+    \    }\n    void reverse(int l,int r){reverse(root,l,r);}\n    Monoid query(int\
+    \ l,int r){return query(root,l,r);}\n    void update(int l,int r,const OperatorMonoid\
+    \ &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n        vector<Monoid>\
+    \ ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n      \
+    \  return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
     };"
   dependsOn: []
   isVerificationFile: false
   path: BinarySearchTree/ImplicitTreap.cpp
   requiredBy: []
-  timestamp: '2021-01-03 23:50:56+09:00'
+  timestamp: '2021-03-27 01:28:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki5398.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 documentation_of: BinarySearchTree/ImplicitTreap.cpp
 layout: document

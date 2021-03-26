@@ -88,11 +88,13 @@ data:
     \    bool empty(){return !root;}\n\n    void build(const vector<Monoid> &v){\n\
     \        if(v.empty()) return ;\n        for(int i=(int)v.size()-1;i>=0;i--) insert(0,v[i]);\n\
     \    }\n\n    void insert(int k,const Monoid &x){insert(root,k,x);}\n    void\
-    \ erase(int k){erase(root,k);}\n    void reverse(int l,int r){reverse(root,l,r);}\n\
-    \    Monoid query(int l,int r){return query(root,l,r);}\n    void update(int l,int\
-    \ r,const OperatorMonoid &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n\
-    \        vector<Monoid> ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n\
-    \        return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
+    \ erase(int k){erase(root,k);}\n    void erase(int l,int r){\n        auto x=split(root,l);\n\
+    \        auto y=split(x.second,r-l);\n        root=merge(x.first,y.second);\n\
+    \    }\n    void reverse(int l,int r){reverse(root,l,r);}\n    Monoid query(int\
+    \ l,int r){return query(root,l,r);}\n    void update(int l,int r,const OperatorMonoid\
+    \ &x){update(root,l,r,x);}\n    vector<Monoid> dump(){\n        vector<Monoid>\
+    \ ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n      \
+    \  return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
     };\n#line 6 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\n\
     \n#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long\
     \ x;\n    ModInt():x(0){}\n    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n\
@@ -152,7 +154,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:14:41+09:00'
+  timestamp: '2021-03-27 01:28:45+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

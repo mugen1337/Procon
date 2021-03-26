@@ -404,6 +404,9 @@ data:
       path: test/yuki5125.test.cpp
       title: test/yuki5125.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/yuki5398.test.cpp
+      title: test/yuki5398.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
     - icon: ':heavy_check_mark:'
