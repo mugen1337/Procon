@@ -42,8 +42,11 @@ data:
   - test/AOJ_ALDS1_10_c.test.cpp
 documentation_of: DP/LongestCommonSubsequence.cpp
 layout: document
-redirect_from:
-- /library/DP/LongestCommonSubsequence.cpp
-- /library/DP/LongestCommonSubsequence.cpp.html
-title: DP/LongestCommonSubsequence.cpp
+title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217)"
 ---
+
+## 概要  
+最長共通部分列を求める．復元して返す．  
+
+## 計算量  
+列A, 列Bに対し，O ( |A| * |B| )

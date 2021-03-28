@@ -3,7 +3,8 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: DP/LongestCommonSubsequence.cpp
-    title: DP/LongestCommonSubsequence.cpp
+    title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
+      )"
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp

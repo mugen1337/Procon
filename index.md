@@ -16,7 +16,8 @@ data:
       title: DP/LargestRectangle.cpp
     - icon: ':heavy_check_mark:'
       path: DP/LongestCommonSubsequence.cpp
-      title: DP/LongestCommonSubsequence.cpp
+      title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
+        )"
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
