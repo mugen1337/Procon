@@ -57,28 +57,28 @@ data:
       title: Flow/Dinic.cpp
   - name: Geometry
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/CounterClockWise.cpp
       title: Geometry/CounterClockWise.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/Cross.cpp
       title: Geometry/Cross.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/Distance.cpp
       title: Geometry/Distance.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/Dot.cpp
       title: Geometry/Dot.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/Intersect.cpp
       title: Geometry/Intersect.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/Projection.cpp
       title: Geometry/Projection.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/include.cpp
       title: Geometry/include.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Geometry/template.cpp
       title: Geometry/template.cpp
   - name: Graph
@@ -233,7 +233,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -268,9 +268,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_1379.test.cpp
       title: test/AOJ_1379.test.cpp
-    - icon: ':x:'
-      path: test/AOJ_2173.test.cpp
-      title: test/AOJ_2173.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
