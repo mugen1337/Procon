@@ -13,7 +13,7 @@ data:
       title: "Inversion Number (\u8EE2\u5012\u6570)"
     - icon: ':heavy_check_mark:'
       path: DP/LargestRectangle.cpp
-      title: DP/LargestRectangle.cpp
+      title: "Largest Rectangle (\u6700\u5927\u9577\u65B9\u5F62)"
     - icon: ':heavy_check_mark:'
       path: DP/LongestCommonSubsequence.cpp
       title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\

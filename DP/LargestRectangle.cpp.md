@@ -37,8 +37,11 @@ data:
   - test/AOJ_DPL_3_c.test.cpp
 documentation_of: DP/LargestRectangle.cpp
 layout: document
-redirect_from:
-- /library/DP/LargestRectangle.cpp
-- /library/DP/LargestRectangle.cpp.html
-title: DP/LargestRectangle.cpp
+title: "Largest Rectangle (\u6700\u5927\u9577\u65B9\u5F62)"
 ---
+
+## 概要  
+ヒストグラムHにないに存在する最大長方形を求める．  
+
+## 計算量  
+O(|H|)

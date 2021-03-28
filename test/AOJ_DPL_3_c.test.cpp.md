@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: DP/LargestRectangle.cpp
-    title: DP/LargestRectangle.cpp
+    title: "Largest Rectangle (\u6700\u5927\u9577\u65B9\u5F62)"
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
