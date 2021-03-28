@@ -2,11 +2,11 @@
 
 #include "../template.cpp"
 
-#include "../DP/LongestCommonSubstring.cpp"
+#include "../DP/LongestCommonSubsequence.cpp"
 
 void solve(){
     string a,b;cin>>a>>b;
-    auto res=LongestCommonSubsecence(a,b);
+    auto res=LongestCommonSubsequence(a,b);
     // cout<<res<<endl;
     cout<<res.size()<<endl;
 }
