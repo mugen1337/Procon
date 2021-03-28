@@ -1,5 +1,5 @@
 template<typename S>
-S LongestCommonSubsecence(S a,S b){
+S LongestCommonSubsequence(S a,S b){
     int n=(int)a.size(),m=(int)b.size();
     vector<vector<int>> dp(n+1,vector<int>(m+1,0)),pre(n+1,vector<int>(m+1,-1));
     for(int i=0;i<=n;i++)for(int j=0;j<=m;j++){
