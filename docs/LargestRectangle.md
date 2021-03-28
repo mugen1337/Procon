@@ -4,7 +4,7 @@ documentation_of: //DP/LargestRectangle.cpp
 ---
 
 ## 概要  
-ヒストグラムHにないに存在する最大長方形を求める．  
+ヒストグラムH内に存在する最大長方形を求める．  
 
 ## 計算量  
 O(|H|)
