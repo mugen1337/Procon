@@ -14,6 +14,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DP/LargestRectangle.cpp
       title: DP/LargestRectangle.cpp
+    - icon: ':heavy_check_mark:'
+      path: DP/LongestCommonSubstring.cpp
+      title: DP/LongestCommonSubstring.cpp
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -247,6 +250,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_ALDS1_10_c.test.cpp
+      title: test/AOJ_ALDS1_10_c.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_ALDS1_5_D.test.cpp
       title: test/AOJ_ALDS1_5_D.test.cpp
