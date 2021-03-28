@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: BinarySearchTree/ImplicitTreap.cpp
-      title: BinarySearchTree/ImplicitTreap.cpp
+      title: Implicit Treap
   - name: DP
     pages:
     - icon: ':heavy_check_mark:'

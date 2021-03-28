@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: BinarySearchTree/ImplicitTreap.cpp
-    title: BinarySearchTree/ImplicitTreap.cpp
+    title: Implicit Treap
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
