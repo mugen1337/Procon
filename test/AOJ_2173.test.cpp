@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2173"
-#define ERROR 0.0000001
+#define ERROR 0.000001
 
 #include "../template.cpp"
 
