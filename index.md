@@ -55,6 +55,32 @@ data:
     - icon: ':heavy_check_mark:'
       path: Flow/Dinic.cpp
       title: Flow/Dinic.cpp
+  - name: Geometry
+    pages:
+    - icon: ':x:'
+      path: Geometry/CounterClockWise.cpp
+      title: Geometry/CounterClockWise.cpp
+    - icon: ':x:'
+      path: Geometry/Cross.cpp
+      title: Geometry/Cross.cpp
+    - icon: ':x:'
+      path: Geometry/Distance.cpp
+      title: Geometry/Distance.cpp
+    - icon: ':x:'
+      path: Geometry/Dot.cpp
+      title: Geometry/Dot.cpp
+    - icon: ':x:'
+      path: Geometry/Intersect.cpp
+      title: Geometry/Intersect.cpp
+    - icon: ':x:'
+      path: Geometry/Projection.cpp
+      title: Geometry/Projection.cpp
+    - icon: ':x:'
+      path: Geometry/include.cpp
+      title: Geometry/include.cpp
+    - icon: ':x:'
+      path: Geometry/template.cpp
+      title: Geometry/template.cpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -207,7 +233,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -242,6 +268,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_1379.test.cpp
       title: test/AOJ_1379.test.cpp
+    - icon: ':x:'
+      path: test/AOJ_2173.test.cpp
+      title: test/AOJ_2173.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
