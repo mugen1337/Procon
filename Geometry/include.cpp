@@ -1,0 +1,7 @@
+#include "./template.cpp"
+#include "./Dot.cpp"
+#include "./Cross.cpp"
+#include "./CounterClockWise.cpp"
+#include "./Projection.cpp"
+#include "./Intersect.cpp"
+#include "./Distance.cpp"
