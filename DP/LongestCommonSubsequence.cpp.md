@@ -2,14 +2,17 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_ALDS1_10_c.test.cpp
+    title: test/AOJ_ALDS1_10_c.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"DP/LongestCommonSubseqience.cpp\"\ntemplate<typename S>\n\
-    S LongestCommonSubsecence(S a,S b){\n    int n=(int)a.size(),m=(int)b.size();\n\
+  bundledCode: "#line 1 \"DP/LongestCommonSubsequence.cpp\"\ntemplate<typename S>\n\
+    S LongestCommonSubsequence(S a,S b){\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    vector<vector<int>> dp(n+1,vector<int>(m+1,0)),pre(n+1,vector<int>(m+1,-1));\n\
     \    for(int i=0;i<=n;i++)for(int j=0;j<=m;j++){\n        if(i<n and j<m and a[i]==b[j]){\n\
     \            if(chmax(dp[i+1][j+1],dp[i][j]+1)) pre[i+1][j+1]=1;\n        }\n\
@@ -19,7 +22,7 @@ data:
     \ ret.push_back(a[i]);\n        }\n        else if(pre[i][j]==2) i--;\n      \
     \  else if(pre[i][j]==3) j--;\n    }\n\n    reverse(begin(ret),end(ret));\n  \
     \  return ret;\n}\n"
-  code: "template<typename S>\nS LongestCommonSubsecence(S a,S b){\n    int n=(int)a.size(),m=(int)b.size();\n\
+  code: "template<typename S>\nS LongestCommonSubsequence(S a,S b){\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    vector<vector<int>> dp(n+1,vector<int>(m+1,0)),pre(n+1,vector<int>(m+1,-1));\n\
     \    for(int i=0;i<=n;i++)for(int j=0;j<=m;j++){\n        if(i<n and j<m and a[i]==b[j]){\n\
     \            if(chmax(dp[i+1][j+1],dp[i][j]+1)) pre[i+1][j+1]=1;\n        }\n\
@@ -31,15 +34,16 @@ data:
     \  return ret;\n}\n"
   dependsOn: []
   isVerificationFile: false
-  path: DP/LongestCommonSubseqience.cpp
+  path: DP/LongestCommonSubsequence.cpp
   requiredBy: []
-  timestamp: '2021-03-28 16:18:08+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DP/LongestCommonSubseqience.cpp
+  timestamp: '2021-03-28 16:18:47+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/AOJ_ALDS1_10_c.test.cpp
+documentation_of: DP/LongestCommonSubsequence.cpp
 layout: document
 redirect_from:
-- /library/DP/LongestCommonSubseqience.cpp
-- /library/DP/LongestCommonSubseqience.cpp.html
-title: DP/LongestCommonSubseqience.cpp
+- /library/DP/LongestCommonSubsequence.cpp
+- /library/DP/LongestCommonSubsequence.cpp.html
+title: DP/LongestCommonSubsequence.cpp
 ---

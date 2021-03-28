@@ -14,9 +14,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DP/LargestRectangle.cpp
       title: DP/LargestRectangle.cpp
-    - icon: ':warning:'
-      path: DP/LongestCommonSubseqience.cpp
-      title: DP/LongestCommonSubseqience.cpp
+    - icon: ':heavy_check_mark:'
+      path: DP/LongestCommonSubsequence.cpp
+      title: DP/LongestCommonSubsequence.cpp
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -250,7 +250,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_ALDS1_10_c.test.cpp
       title: test/AOJ_ALDS1_10_c.test.cpp
     - icon: ':heavy_check_mark:'
