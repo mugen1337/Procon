@@ -24,7 +24,7 @@ void solve(){
     vector<vector<Real>> d(n,vector<Real>(n));
     rep(i,n)rep(j,n) d[i][j]=dis(poly[i],poly[j]);
     rep(k,n)rep(i,n)rep(j,n) chmin(d[i][j],d[i][k]+d[k][j]);
-    cout<<d[0][1]<<endl;
+    cout<<d[0][1]<<"\n";
 }
 
 signed main(){
