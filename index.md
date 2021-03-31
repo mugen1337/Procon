@@ -18,6 +18,9 @@ data:
       path: DP/LongestCommonSubsequence.cpp
       title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
         )"
+    - icon: ':heavy_check_mark:'
+      path: DP/LongestIncreasingSubsequence.cpp
+      title: DP/LongestIncreasingSubsequence.cpp
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -57,28 +60,28 @@ data:
       title: Flow/Dinic.cpp
   - name: Geometry
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/CounterClockWise.cpp
       title: Geometry/CounterClockWise.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/Cross.cpp
       title: Geometry/Cross.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/Distance.cpp
       title: Geometry/Distance.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/Dot.cpp
       title: Geometry/Dot.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/Intersect.cpp
       title: Geometry/Intersect.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/Projection.cpp
       title: Geometry/Projection.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/include.cpp
       title: Geometry/include.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Geometry/template.cpp
       title: Geometry/template.cpp
   - name: Graph
@@ -233,7 +236,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -268,6 +271,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_1379.test.cpp
       title: test/AOJ_1379.test.cpp
+    - icon: ':x:'
+      path: test/AOJ_2173.test.cpp
+      title: test/AOJ_2173.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2292.test.cpp
       title: test/AOJ_2292.test.cpp
@@ -418,6 +424,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki3784.test.cpp
+      title: test/yuki3784.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki4227.test.cpp
       title: test/yuki4227.test.cpp

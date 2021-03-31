@@ -1,32 +1,35 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/CounterClockWise.cpp
     title: Geometry/CounterClockWise.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/Cross.cpp
     title: Geometry/Cross.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/Distance.cpp
     title: Geometry/Distance.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/Dot.cpp
     title: Geometry/Dot.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/Intersect.cpp
     title: Geometry/Intersect.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/Projection.cpp
     title: Geometry/Projection.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/template.cpp
     title: Geometry/template.cpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/AOJ_2173.test.cpp
+    title: test/AOJ_2173.test.cpp
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Geometry/template.cpp\"\n// Real\nusing Real=double;\nconst\
@@ -123,8 +126,9 @@ data:
   path: Geometry/include.cpp
   requiredBy: []
   timestamp: '2021-03-29 03:23:41+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/AOJ_2173.test.cpp
 documentation_of: Geometry/include.cpp
 layout: document
 redirect_from:

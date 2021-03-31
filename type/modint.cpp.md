@@ -58,6 +58,9 @@ data:
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki3784.test.cpp
+    title: test/yuki3784.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki473.test.cpp
     title: test/yuki473.test.cpp
   - icon: ':heavy_check_mark:'
@@ -119,6 +122,7 @@ data:
   timestamp: '2021-01-03 23:50:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki3784.test.cpp
   - test/yuki1917.test.cpp
   - test/yosupo_Bitwise_And_Convolution.test.cpp
   - test/AOJ_DPL_5_A.test.cpp

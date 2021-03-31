@@ -2,13 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Geometry/include.cpp
     title: Geometry/include.cpp
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/AOJ_2173.test.cpp
+    title: test/AOJ_2173.test.cpp
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Geometry/Dot.cpp\"\n// Dot\nReal dot(Point a,Point b) {\n\
@@ -21,8 +24,9 @@ data:
   requiredBy:
   - Geometry/include.cpp
   timestamp: '2021-03-29 03:23:41+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/AOJ_2173.test.cpp
 documentation_of: Geometry/Dot.cpp
 layout: document
 redirect_from:
