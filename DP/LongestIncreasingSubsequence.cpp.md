@@ -28,8 +28,16 @@ data:
   verifiedWith: []
 documentation_of: DP/LongestIncreasingSubsequence.cpp
 layout: document
-redirect_from:
-- /library/DP/LongestIncreasingSubsequence.cpp
-- /library/DP/LongestIncreasingSubsequence.cpp.html
-title: DP/LongestIncreasingSubsequence.cpp
+title: "Longest Increasing Subsequence (\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217\
+  )"
 ---
+
+## 概要  
+最長増加列の長さを返す．
+
+## 計算量  
+配列の長さをNとすると  
+O(NlogN)
+
+## tips  
+- 最長増加列の数え上げ : https://yukicoder.me/problems/no/992  
