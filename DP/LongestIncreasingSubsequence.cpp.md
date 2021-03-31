@@ -2,13 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/yuki3784.test.cpp
-    title: test/yuki3784.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DP/LongestIncreasingSubsequence.cpp\"\ntemplate<typename\
@@ -27,9 +24,8 @@ data:
   path: DP/LongestIncreasingSubsequence.cpp
   requiredBy: []
   timestamp: '2021-03-31 19:57:19+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/yuki3784.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: DP/LongestIncreasingSubsequence.cpp
 layout: document
 redirect_from:

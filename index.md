@@ -18,7 +18,7 @@ data:
       path: DP/LongestCommonSubsequence.cpp
       title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
         )"
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: DP/LongestIncreasingSubsequence.cpp
       title: DP/LongestIncreasingSubsequence.cpp
   - name: DataStructure
@@ -424,9 +424,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/yuki3784.test.cpp
-      title: test/yuki3784.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki4227.test.cpp
       title: test/yuki4227.test.cpp

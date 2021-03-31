@@ -167,9 +167,6 @@ data:
     path: test/yuki2855.test.cpp
     title: test/yuki2855.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/yuki3784.test.cpp
-    title: test/yuki3784.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/yuki4227.test.cpp
     title: test/yuki4227.test.cpp
   - icon: ':heavy_check_mark:'
@@ -239,7 +236,6 @@ data:
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_CycleDetection.test.cpp
-  - test/yuki3784.test.cpp
   - test/yuki1917.test.cpp
   - test/yuki2855.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
