@@ -2,16 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ':warning:'
     path: Geometry/include.cpp
     title: Geometry/include.cpp
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: test/AOJ_2173.test.cpp
-    title: test/AOJ_2173.test.cpp
-  _isVerificationFailed: true
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Geometry/Cross.cpp\"\n// Cross\nReal cross(Point a,Point\
@@ -24,9 +21,8 @@ data:
   requiredBy:
   - Geometry/include.cpp
   timestamp: '2021-03-29 03:23:41+09:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - test/AOJ_2173.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: Geometry/Cross.cpp
 layout: document
 redirect_from:

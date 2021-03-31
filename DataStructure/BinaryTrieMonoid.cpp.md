@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_A.test.cpp
     title: test/AOJ_DSL_2_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki3784.test.cpp
+    title: test/yuki3784.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -62,6 +65,7 @@ data:
   timestamp: '2021-01-16 17:21:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki3784.test.cpp
   - test/AOJ_DSL_2_A.test.cpp
 documentation_of: DataStructure/BinaryTrieMonoid.cpp
 layout: document

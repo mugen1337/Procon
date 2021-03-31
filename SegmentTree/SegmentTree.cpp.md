@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
     title: test/yosupo_Point-Add-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki3784.test.cpp
+    title: test/yuki3784.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -88,6 +91,7 @@ data:
   timestamp: '2021-02-16 15:19:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yuki3784.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
 documentation_of: SegmentTree/SegmentTree.cpp
 layout: document
