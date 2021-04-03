@@ -54,6 +54,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
+    - icon: ':warning:'
+      path: DataStructure/SlopeTrick.cpp
+      title: DataStructure/SlopeTrick.cpp
   - name: Flow
     pages:
     - icon: ':heavy_check_mark:'
