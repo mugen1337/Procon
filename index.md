@@ -152,7 +152,7 @@ data:
       title: Math/Factorize.cpp
     - icon: ':warning:'
       path: Math/FactorizeQueries.cpp
-      title: "osa_k\u6CD5 (Factorize Queries)"
+      title: "osa_k\u6CD5 (Factoriz Queries)"
     - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp

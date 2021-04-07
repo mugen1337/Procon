@@ -34,7 +34,7 @@ data:
   verifiedWith: []
 documentation_of: Math/FactorizeQueries.cpp
 layout: document
-title: "osa_k\u6CD5 (Factorize Queries)"
+title: "osa_k\u6CD5 (Factoriz Queries)"
 ---
 
 ## 概要  
