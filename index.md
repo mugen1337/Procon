@@ -150,6 +150,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/Factorize.cpp
       title: Math/Factorize.cpp
+    - icon: ':warning:'
+      path: Math/FactorizeQueries.cpp
+      title: Math/FactorizeQueries.cpp
     - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
