@@ -1,5 +1,5 @@
 ---
-title: osa_k法 (Factoriz Queries)
+title: osa_k法 (Factorization Queries)
 documentation_of: //Math/FactorizeQueries.cpp
 ---
 
