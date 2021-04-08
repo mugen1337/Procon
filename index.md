@@ -54,7 +54,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: DataStructure/Slope.cpp
       title: DataStructure/Slope.cpp
   - name: Flow
@@ -243,7 +243,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips

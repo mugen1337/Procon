@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yuki5061.test.cpp
+    title: test/yuki5061.test.cpp
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://ei1333.github.io/library/structure/others/slope-queue.cpp
@@ -80,8 +83,9 @@ data:
   path: DataStructure/Slope.cpp
   requiredBy: []
   timestamp: '2021-04-08 12:51:10+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yuki5061.test.cpp
 documentation_of: DataStructure/Slope.cpp
 layout: document
 redirect_from:
