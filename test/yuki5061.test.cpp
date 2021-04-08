@@ -1,4 +1,4 @@
-#define PROBLEM https://yukicoder.me/problems/5061
+#define PROBLEM "https://yukicoder.me/problems/5061"
 
 #include "../template.cpp"
 
