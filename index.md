@@ -54,7 +54,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/Slope.cpp
       title: DataStructure/Slope.cpp
   - name: Flow
@@ -243,7 +243,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -446,7 +446,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki473.test.cpp
       title: test/yuki473.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5061.test.cpp
       title: test/yuki5061.test.cpp
     - icon: ':heavy_check_mark:'
