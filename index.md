@@ -54,6 +54,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.cpp
       title: DataStructure/SlidingWindowAgregation.cpp
+    - icon: ':warning:'
+      path: DataStructure/Slope.cpp
+      title: DataStructure/Slope.cpp
   - name: Flow
     pages:
     - icon: ':heavy_check_mark:'
@@ -443,6 +446,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki473.test.cpp
       title: test/yuki473.test.cpp
+    - icon: ':x:'
+      path: test/yuki5061.test.cpp
+      title: test/yuki5061.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki5125.test.cpp
       title: test/yuki5125.test.cpp
