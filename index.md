@@ -56,7 +56,7 @@ data:
       title: DataStructure/SlidingWindowAgregation.cpp
     - icon: ':heavy_check_mark:'
       path: DataStructure/Slope.cpp
-      title: DataStructure/Slope.cpp
+      title: Slope
   - name: Flow
     pages:
     - icon: ':heavy_check_mark:'
