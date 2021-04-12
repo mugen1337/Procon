@@ -13,8 +13,8 @@ data:
     links: []
   bundledCode: "#line 1 \"type/Matrix.cpp\"\ntemplate<typename T>\nstruct Matrix{\n\
     \    vector<vector<T>> a;\n\n    Matrix(){}\n    Matrix(int n):a(n,vector<T>(n,0)){}\n\
-    \    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\n    int h(){return (int)a.size();}\n\
-    \    int w(){return (int)a[0].size();}\n\n    const vector<T> &operator[](int\
+    \    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\n    int h()const{return (int)a.size();}\n\
+    \    int w()const{return (int)a[0].size();}\n\n    const vector<T> &operator[](int\
     \ k)const{\n        return a.at(k);// reference   \n    }\n    vector<T> &operator[](int\
     \ k){\n        return a.at(k);\n    }\n\n    Matrix id(int n){\n        Matrix\
     \ ret(n);\n        for(int i=0;i<n;i++) ret[i][i]=1;\n        return ret;\n  \
@@ -43,8 +43,8 @@ data:
     \            }\n        }\n        return ret;\n    }\n};\n"
   code: "template<typename T>\nstruct Matrix{\n    vector<vector<T>> a;\n\n    Matrix(){}\n\
     \    Matrix(int n):a(n,vector<T>(n,0)){}\n    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\
-    \n    int h(){return (int)a.size();}\n    int w(){return (int)a[0].size();}\n\n\
-    \    const vector<T> &operator[](int k)const{\n        return a.at(k);// reference\
+    \n    int h()const{return (int)a.size();}\n    int w()const{return (int)a[0].size();}\n\
+    \n    const vector<T> &operator[](int k)const{\n        return a.at(k);// reference\
     \   \n    }\n    vector<T> &operator[](int k){\n        return a.at(k);\n    }\n\
     \n    Matrix id(int n){\n        Matrix ret(n);\n        for(int i=0;i<n;i++)\
     \ ret[i][i]=1;\n        return ret;\n    }\n\n    Matrix &operator+=(const Matrix\
@@ -70,12 +70,12 @@ data:
     \            }\n            T b=x[i][i];\n            ret*=b;\n            for(int\
     \ j=0;j<w();j++) x[i][j]/=b;\n            for(int j=i+1;j<w();j++){\n        \
     \        T t=x[j][i];\n                for(int k=0;k<w();k++) x[j][k]-=x[i][k]*t;\n\
-    \            }\n        }\n        return ret;\n    }\n};"
+    \            }\n        }\n        return ret;\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: type/Matrix.cpp
   requiredBy: []
-  timestamp: '2021-01-06 01:27:08+09:00'
+  timestamp: '2021-04-12 12:44:01+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_det.test.cpp

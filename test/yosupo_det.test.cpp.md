@@ -57,8 +57,8 @@ data:
     \nusing mint=ModInt<998244353>;\n\n#line 1 \"type/Matrix.cpp\"\ntemplate<typename\
     \ T>\nstruct Matrix{\n    vector<vector<T>> a;\n\n    Matrix(){}\n    Matrix(int\
     \ n):a(n,vector<T>(n,0)){}\n    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\n\
-    \    int h(){return (int)a.size();}\n    int w(){return (int)a[0].size();}\n\n\
-    \    const vector<T> &operator[](int k)const{\n        return a.at(k);// reference\
+    \    int h()const{return (int)a.size();}\n    int w()const{return (int)a[0].size();}\n\
+    \n    const vector<T> &operator[](int k)const{\n        return a.at(k);// reference\
     \   \n    }\n    vector<T> &operator[](int k){\n        return a.at(k);\n    }\n\
     \n    Matrix id(int n){\n        Matrix ret(n);\n        for(int i=0;i<n;i++)\
     \ ret[i][i]=1;\n        return ret;\n    }\n\n    Matrix &operator+=(const Matrix\
@@ -99,7 +99,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_det.test.cpp
   requiredBy: []
-  timestamp: '2021-01-06 01:30:03+09:00'
+  timestamp: '2021-04-12 12:44:01+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_det.test.cpp
