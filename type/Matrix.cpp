@@ -48,7 +48,7 @@ struct Matrix{
         Matrix ret=Matrix::id(h());
         Matrix b=Matrix(*this);
         while(k){
-            if(k&1) ret*=(*this);
+            if(k&1) ret*=b;
             b*=b;
             k>>=1;
         }
