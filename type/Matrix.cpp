@@ -6,8 +6,8 @@ struct Matrix{
     Matrix(int n):a(n,vector<T>(n,0)){}
     Matrix(int h,int w):a(h,vector<T>(w,0)){}
 
-    int h(){return (int)a.size();}
-    int w(){return (int)a[0].size();}
+    int h()const{return (int)a.size();}
+    int w()const{return (int)a[0].size();}
 
     const vector<T> &operator[](int k)const{
         return a.at(k);// reference   
