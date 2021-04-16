@@ -128,8 +128,14 @@ data:
   - test/yuki1249.test.cpp
 documentation_of: Graph2/HeavyLightDecomposition.cpp
 layout: document
-redirect_from:
-- /library/Graph2/HeavyLightDecomposition.cpp
-- /library/Graph2/HeavyLightDecomposition.cpp.html
-title: Graph2/HeavyLightDecomposition.cpp
+title: "Heavy Light Decomposition (HL\u5206\u89E3)"
 ---
+
+# 概要  
+HLD
+
+# 仕様  
+コードに書いてある  
+G[i][0] : iから子へと伸びるHeavy Edge  
+となるように並び替えているので， HLD構築時に渡したgとhld.gは構築後に異なる
+
