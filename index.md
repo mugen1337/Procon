@@ -119,6 +119,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
+    - icon: ':warning:'
+      path: Graph2/HeavyLightDecomposition.cpp
+      title: Graph2/HeavyLightDecomposition.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/LowLink.cpp
       title: Low Link
