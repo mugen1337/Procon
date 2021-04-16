@@ -119,7 +119,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/HeavyLightDecomposition.cpp
       title: Graph2/HeavyLightDecomposition.cpp
     - icon: ':heavy_check_mark:'
@@ -413,6 +413,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_scc2.test.cpp
       title: test/yosupo_scc2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki1249.test.cpp
+      title: test/yuki1249.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp

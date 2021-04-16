@@ -146,6 +146,9 @@ data:
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki1249.test.cpp
+    title: test/yuki1249.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   - icon: ':heavy_check_mark:'
@@ -286,6 +289,7 @@ data:
   - test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   - test/yosupo_TreeDiameter.test.cpp
   - test/AOJ_ALDS1_10_c.test.cpp
+  - test/yuki1249.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_B.test.cpp
   - test/AOJ_DPL_5_J.test.cpp

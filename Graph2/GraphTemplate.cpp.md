@@ -11,7 +11,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Eppstein.cpp
     title: Eppstein's Algorithm (K-Shortest-Walk)
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/HeavyLightDecomposition.cpp
     title: Graph2/HeavyLightDecomposition.cpp
   - icon: ':heavy_check_mark:'
@@ -48,6 +48,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yuki1249.test.cpp
+    title: test/yuki1249.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki4227.test.cpp
     title: test/yuki4227.test.cpp
@@ -116,6 +119,7 @@ data:
   - test/AOJ_GRL_3_A.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
   - test/yosupo_TreeDiameter.test.cpp
+  - test/yuki1249.test.cpp
   - test/yosupo_scc2.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp
 layout: document

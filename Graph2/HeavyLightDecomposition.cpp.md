@@ -5,10 +5,13 @@ data:
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yuki1249.test.cpp
+    title: test/yuki1249.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.cpp
@@ -120,8 +123,9 @@ data:
   path: Graph2/HeavyLightDecomposition.cpp
   requiredBy: []
   timestamp: '2021-04-16 15:53:09+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yuki1249.test.cpp
 documentation_of: Graph2/HeavyLightDecomposition.cpp
 layout: document
 redirect_from:
