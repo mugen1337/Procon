@@ -125,6 +125,9 @@ data:
     path: test/yosupo_Shortest_Path.test.cpp
     title: test/yosupo_Shortest_Path.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Static_Range_Inversions_Query.test.cpp
+    title: test/yosupo_Static_Range_Inversions_Query.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
   - icon: ':heavy_check_mark:'
@@ -261,6 +264,7 @@ data:
   - test/yosupo_Shortest_Path.test.cpp
   - test/AOJ_ALDS1_9_C.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
+  - test/yosupo_Static_Range_Inversions_Query.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
   - test/yosupo_KSW.test.cpp
   - test/AOJ_DPL_5_I.test.cpp

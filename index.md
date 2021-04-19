@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: Algorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Algorithm/Mo.cpp
+      title: Algorithm/Mo.cpp
   - name: BinarySearchTree
     pages:
     - icon: ':heavy_check_mark:'
@@ -24,6 +29,9 @@ data:
         \u5217)"
   - name: DataStructure
     pages:
+    - icon: ':heavy_check_mark:'
+      path: DataStructure/BinaryIndexedTree.cpp
+      title: DataStructure/BinaryIndexedTree.cpp
     - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryTrie.cpp
       title: Binary Trie
@@ -392,6 +400,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Shortest_Path.test.cpp
       title: test/yosupo_Shortest_Path.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Static_Range_Inversions_Query.test.cpp
+      title: test/yosupo_Static_Range_Inversions_Query.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_TreeDiameter.test.cpp
       title: test/yosupo_TreeDiameter.test.cpp

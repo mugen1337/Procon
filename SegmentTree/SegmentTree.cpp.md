@@ -43,7 +43,8 @@ data:
     \        for(int k=sz-1;k>0;k--) seg[k]=f(seg[2*k],seg[2*k+1]);\n    }\n    void\
     \ update(int k,Monoid x){\n        k+=sz;\n        seg[k]=x;\n        k>>=1;\n\
     \        for(;k;k>>=1) seg[k]=f(seg[2*k],seg[2*k+1]);\n    }\n    Monoid query(int\
-    \ a,int b){\n        return query(a,b,1,0,sz);\n    }\n\n    // http://codeforces.com/contest/914/submission/107505449\n\
+    \ a,int b){\n        return query(a,b,1,0,sz);\n    }\n    Monoid operator[](const\
+    \ int &k)const{\n        return seg[k+sz];\n    }\n\n    // http://codeforces.com/contest/914/submission/107505449\n\
     \    // max x, check(query(a, x)) = true \n    template<typename C>\n    int find_first(int\
     \ a,const C &check){\n        Monoid val=M0;\n        return find_first(a,check,val,1,0,sz);\n\
     \    }\n    // http://codeforces.com/contest/914/submission/107505582\n    //\
@@ -77,7 +78,8 @@ data:
     \ k=sz-1;k>0;k--) seg[k]=f(seg[2*k],seg[2*k+1]);\n    }\n    void update(int k,Monoid\
     \ x){\n        k+=sz;\n        seg[k]=x;\n        k>>=1;\n        for(;k;k>>=1)\
     \ seg[k]=f(seg[2*k],seg[2*k+1]);\n    }\n    Monoid query(int a,int b){\n    \
-    \    return query(a,b,1,0,sz);\n    }\n\n    // http://codeforces.com/contest/914/submission/107505449\n\
+    \    return query(a,b,1,0,sz);\n    }\n    Monoid operator[](const int &k)const{\n\
+    \        return seg[k+sz];\n    }\n\n    // http://codeforces.com/contest/914/submission/107505449\n\
     \    // max x, check(query(a, x)) = true \n    template<typename C>\n    int find_first(int\
     \ a,const C &check){\n        Monoid val=M0;\n        return find_first(a,check,val,1,0,sz);\n\
     \    }\n    // http://codeforces.com/contest/914/submission/107505582\n    //\
@@ -88,7 +90,7 @@ data:
   isVerificationFile: false
   path: SegmentTree/SegmentTree.cpp
   requiredBy: []
-  timestamp: '2021-02-16 15:19:41+09:00'
+  timestamp: '2021-04-19 13:27:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki3784.test.cpp
