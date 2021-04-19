@@ -167,6 +167,9 @@ data:
     path: test/yuki2577.test.cpp
     title: test/yuki2577.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki2600.test.cpp
+    title: test/yuki2600.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki2855.test.cpp
     title: test/yuki2855.test.cpp
   - icon: ':heavy_check_mark:'
@@ -280,6 +283,7 @@ data:
   - test/yuki2017.test.cpp
   - test/yuki5398.test.cpp
   - test/AOJ_DPL_5_G.test.cpp
+  - test/yuki2600.test.cpp
   - test/yosupo_queue_operate_all_composite.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
   - test/AOJ_DPL_3_c.test.cpp

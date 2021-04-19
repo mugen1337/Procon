@@ -30,6 +30,9 @@ data:
   - name: DataStructure
     pages:
     - icon: ':heavy_check_mark:'
+      path: DataStructure/AbsoluteSum.cpp
+      title: DataStructure/AbsoluteSum.cpp
+    - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryIndexedTree.cpp
       title: DataStructure/BinaryIndexedTree.cpp
     - icon: ':heavy_check_mark:'
@@ -442,6 +445,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki2577.test.cpp
       title: test/yuki2577.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki2600.test.cpp
+      title: test/yuki2600.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
