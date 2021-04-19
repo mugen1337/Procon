@@ -72,6 +72,9 @@ struct SegmentTree{
     Monoid query(int a,int b){
         return query(a,b,1,0,sz);
     }
+    Monoid operator[](const int &k)const{
+        return seg[k+sz];
+    }
 
     // http://codeforces.com/contest/914/submission/107505449
     // max x, check(query(a, x)) = true 
