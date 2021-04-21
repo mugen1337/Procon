@@ -132,25 +132,37 @@ public:
         auto x=split(t,a);
         auto y=split(x.second,b-a);
         y.first->rev^=true;
-        t=merge(merge(x.first,y.first),y.second);
+        return merge(x.first,merge(y.first,y.second));
+    }
+
+    // rotate v[l] <- v[m]
+    Node *rotate(Node *t,int a,int m,int b){
+        t=reverse(t,a,b);
+        t=reverse(t,a,a+b-m);
+        t=reverse(t,a+b-m,b);
         return t;
     }
 
 private:
 
     Node *build(int l,int r,const vector<Monoid> &v){
-        // if(l>=r) return nullptr;
         if(l+1==r) return new Node(v[l]);
         int m=(l+r)/2;
         return merge(build(l,m,v),build(m,r,v));
     }
-    Node *get_left(Node *cur)const{
-        while(cur->l) cur=cur->l;
-        return cur;
+    Node *get_left(Node *cur){
+        while(true){
+            push(cur);
+            if(!cur->l) return cur;
+            cur=cur->l;
+        }
     }
-    Node *get_right(Node *cur)const{
-        while(cur->r) cur=cur->r;
-        return cur;
+    Node *get_right(Node *cur){
+        while(true){
+            push(cur);
+            if(!cur->r) return cur;
+            cur=cur->r;
+        }
     }
     // tを1個上に，右回転
     void rotr(Node *cur){
@@ -202,16 +214,12 @@ private:
     }
 
     void push(Node *t){
-        if(t->rev){
-            if(t->l) toggle(t->l);
-            if(t->r) toggle(t->r);
+        if(t and t->rev){
+            swap(t->l,t->r);
+            if(t->l) t->l->rev^=true;
+            if(t->r) t->r->rev^=true;
             t->rev=false;
         }
-    }
-
-    void toggle(Node *t){
-        swap(t->l,t->r);
-        t->rev^=true;
     }
     void splay(Node *cur){
         push(cur);
