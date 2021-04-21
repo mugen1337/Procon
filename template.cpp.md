@@ -200,6 +200,9 @@ data:
     path: test/yuki5398.test.cpp
     title: test/yuki5398.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki5398_2.test.cpp
+    title: test/yuki5398_2.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
   - icon: ':heavy_check_mark:'
@@ -261,6 +264,7 @@ data:
   - test/yuki4374.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki5764.test.cpp
+  - test/yuki5398_2.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
   - test/AOJ_DSL_2_A.test.cpp
   - test/AOJ_1379.test.cpp

@@ -11,6 +11,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: BinarySearchTree/ImplicitTreap.cpp
       title: Implicit Treap
+    - icon: ':heavy_check_mark:'
+      path: BinarySearchTree/SplayTree.cpp
+      title: BinarySearchTree/SplayTree.cpp
+    - icon: ':warning:'
+      path: BinarySearchTree/SplayTree_dev.cpp
+      title: BinarySearchTree/SplayTree_dev.cpp
   - name: DP
     pages:
     - icon: ':heavy_check_mark:'
@@ -478,6 +484,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki5398.test.cpp
       title: test/yuki5398.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki5398_2.test.cpp
+      title: test/yuki5398_2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
