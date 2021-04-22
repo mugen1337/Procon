@@ -5,11 +5,11 @@ struct LinkCutTree{
     using G=function<Monoid(Monoid)>;
 
     LinkCutTree(int n,F f,Monoid e,G flip=nullptr):f(f),e(e),flip(flip){
-        for(int i=0;i<n;i++) nodes.push_back(new Node(e));
+        for(int i=0;i<n;i++) nodes.push_back(new Node(e,i));
     }
 
     LinkCutTree(const vector<Monoid> &v,F f,Monoid e,G flip=nullptr):f(f),e(e),flip(flip){
-        for(const auto &x:v) nodes.push_back(new Node(x));
+        for(int i=0;i<(int)v.size();i++) nodes.push_back(new Node(v[i],i));
     }
 
     // v を root に
@@ -62,18 +62,49 @@ struct LinkCutTree{
         recalc(nodes[v]);
     }
     
+    // verified
+    int get_root(int v){
+        Node *cur=nodes[v];
+        expose(cur);
+        while(cur->l){
+            push(cur);
+            cur=cur->l;
+        }
+        return cur->idx;
+    }
+    
+    // verified
+    int lca(int u,int v){
+        if(get_root(u)!=get_root(v)) return -1;
+        expose(nodes[u]);
+        return expose(nodes[v]);
+    }
+
+    // 未verify
+    int depth(int v){
+        expose(nodes[v]);
+        return size(nodes[v])-1;
+    }
+    // 未verify
+    // ヤバかったらpath queryで各頂点1をのせろ
+    int distance(int u,int v){
+        int p=lca(u,v);
+        if(p<0) return -1;
+        return depth(u)+depth(v)-depth(p)*2;
+    }
+    
 private:
     struct Node{
         Node *l,*r,*p;
         Monoid val,sum;
-        int sz;
+        int sz,idx;
         bool rev;
         bool is_root()const{
             return (!p or (p->l!=(this) and p->r!=(this)));
         }
-        Node(const Monoid &x)
+        Node(const Monoid &x,int idx)
             :l(nullptr),r(nullptr),p(nullptr),
-            val(x),sum(x),sz(1),rev(false){}
+            val(x),sum(x),sz(1),idx(idx),rev(false){}
     };
 
     const Monoid e;
@@ -81,8 +112,7 @@ private:
     const G flip;
     vector<Node *> nodes;
 
-    // root から v へのパスを確保, 外から触らない
-    void expose(Node *t){
+    int expose(Node *t){
         Node *pre=nullptr;
         for(Node *cur=t;cur;cur=cur->p){
             splay(cur);
@@ -91,6 +121,7 @@ private:
             pre=cur;
         }
         splay(t);
+        return pre->idx;
     }
     // tを1個上に，右回転
     void rotr(Node *t){
