@@ -142,8 +142,8 @@ data:
   timestamp: '2021-03-27 01:28:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yuki5398.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - test/yuki5398.test.cpp
 documentation_of: BinarySearchTree/ImplicitTreap.cpp
 layout: document
 title: Implicit Treap
