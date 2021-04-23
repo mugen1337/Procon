@@ -139,7 +139,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/HeavyLightDecomposition.cpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/LinkCutTree.cpp
       title: Graph2/LinkCutTree.cpp
     - icon: ':heavy_check_mark:'
@@ -394,6 +394,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+      title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_KSW.test.cpp
       title: test/yosupo_KSW.test.cpp

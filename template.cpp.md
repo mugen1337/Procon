@@ -107,6 +107,9 @@ data:
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+    title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
   - icon: ':heavy_check_mark:'
@@ -317,6 +320,7 @@ data:
   - test/AOJ_0109.test.cpp
   - test/yuki5436.test.cpp
   - test/yuki5398_2.test.cpp
+  - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
 documentation_of: template.cpp
 layout: document

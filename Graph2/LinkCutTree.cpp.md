@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+    title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph2/LinkCutTree.cpp\"\ntemplate<typename Monoid>\nstruct\
@@ -158,8 +161,9 @@ data:
   path: Graph2/LinkCutTree.cpp
   requiredBy: []
   timestamp: '2021-04-22 23:00:47+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
 documentation_of: Graph2/LinkCutTree.cpp
 layout: document
 redirect_from:
