@@ -141,7 +141,7 @@ data:
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
       path: Graph2/LinkCutTree.cpp
-      title: Graph2/LinkCutTree.cpp
+      title: Link Cut Tree
     - icon: ':heavy_check_mark:'
       path: Graph2/LowLink.cpp
       title: Low Link

@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: Graph2/LinkCutTree.cpp
-    title: Graph2/LinkCutTree.cpp
+    title: Link Cut Tree
   - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
