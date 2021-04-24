@@ -62,7 +62,6 @@ struct LinkCutTree{
         recalc(nodes[v]);
     }
     
-    // verified
     int get_root(int v){
         Node *cur=nodes[v];
         expose(cur);
@@ -74,11 +73,19 @@ struct LinkCutTree{
         return cur->idx;
     }
     
-    // verified
+    // not connected -> return -1
     int lca(int u,int v){
-        if(get_root(u)!=get_root(v)) return -1;
+        if(!is_connected(u,v)) return -1;
         expose(nodes[u]);
         return expose(nodes[v]);
+    }
+
+    // faster than get_root(u)==get_root(v)
+    bool is_connected(int u,int v){
+        if(u==v) return true;
+        expose(nodes[u]);
+        expose(nodes[v]);
+        return bool(nodes[u]->p);
     }
 
     // 未verify
@@ -156,7 +163,7 @@ private:
         recalc(rch);
     }
 
-    int size(Node *t){ return (t?t->sz:0); }
+    int size(Node *t) const { return (t?t->sz:0); }
 
     void recalc(Node *t){
         if(!t) return ;
