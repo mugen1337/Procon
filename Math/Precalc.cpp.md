@@ -53,7 +53,9 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
+    - https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja
     - https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja
+    - https://yukicoder.me/problems/no/1489
   bundledCode: "#line 1 \"Math/Precalc.cpp\"\ntemplate<typename T>\nstruct Precalc{\n\
     \    vector<T> fact,finv,inv;\n    int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
     \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
@@ -94,7 +96,10 @@ data:
     \    /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
-    \        ret/=T(n+1);\n        return ret;\n    }\n};\n"
+    \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
+    \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
+    \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n"
   code: "template<typename T>\nstruct Precalc{\n    vector<T> fact,finv,inv;\n   \
     \ int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
     \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
@@ -135,12 +140,15 @@ data:
     \    /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
-    \        ret/=T(n+1);\n        return ret;\n    }\n};"
+    \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
+    \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
+    \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: Math/Precalc.cpp
   requiredBy: []
-  timestamp: '2021-02-21 14:43:11+09:00'
+  timestamp: '2021-04-24 20:23:47+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_DPL_5_B.test.cpp

@@ -94,11 +94,15 @@ data:
     \    /* sum combination(n+x, x), x=l to r\n       https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja\
     \ \n       check n+x < [COM_PRECALC_MAX]    */\n    T sum_of_comb(int n,int l,int\
     \ r){\n        if(l>r)return T(0);\n        T ret=T(r+1)*com(n+r+1,r+1)-T(l)*com(l+n,l);\n\
-    \        ret/=T(n+1);\n        return ret;\n    }\n};\n#line 8 \"test/AOJ_DPL_5_H.test.cpp\"\
-    \n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\n/*\n\u7389:\
-    \ \u533A\u5225\u3059\u308B\n\u7BB1: \u533A\u5225\u3057\u306A\u3044\n\u5165\u308C\
-    \u65B9: \u7BB1\u3054\u30681\u3064\u4EE5\u4E0B\n*/\n\nsigned main(){\n    int n,k;cin>>n>>k;\n\
-    \    cout<<(n<=k)<<endl;\n    return 0;\n}\n"
+    \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
+    \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
+    \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n\
+    #line 8 \"test/AOJ_DPL_5_H.test.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint>\
+    \ F(500000);\n\n/*\n\u7389: \u533A\u5225\u3059\u308B\n\u7BB1: \u533A\u5225\u3057\
+    \u306A\u3044\n\u5165\u308C\u65B9: \u7BB1\u3054\u30681\u3064\u4EE5\u4E0B\n*/\n\n\
+    signed main(){\n    int n,k;cin>>n>>k;\n    cout<<(n<=k)<<endl;\n    return 0;\n\
+    }\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_H\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../type/modint.cpp\"\n\n#include\
     \ \"../Math/Precalc.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\
@@ -112,7 +116,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_H.test.cpp
   requiredBy: []
-  timestamp: '2021-02-21 14:43:11+09:00'
+  timestamp: '2021-04-24 20:23:47+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_H.test.cpp
