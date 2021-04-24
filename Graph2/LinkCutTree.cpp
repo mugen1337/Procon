@@ -70,6 +70,7 @@ struct LinkCutTree{
             push(cur);
             cur=cur->l;
         }
+        splay(cur);
         return cur->idx;
     }
     
@@ -107,8 +108,8 @@ private:
             val(x),sum(x),sz(1),idx(idx),rev(false){}
     };
 
-    const Monoid e;
     const F f;
+    const Monoid e;
     const G flip;
     vector<Node *> nodes;
 
@@ -123,7 +124,7 @@ private:
         splay(t);
         return pre->idx;
     }
-    // tを1個上に，右回転
+    // tを1個下へ
     void rotr(Node *t){
         // ((A) - lch - (B)) - t - (C) 
         Node *lch=t->l;// lch->top
@@ -139,7 +140,6 @@ private:
         recalc(t);
         recalc(lch);
     }
-    // tを1個上に，左回転
     void rotl(Node *t){
         // (C) - t - ((B) - rch - (A) )
         Node *rch=t->r;// lch->top
