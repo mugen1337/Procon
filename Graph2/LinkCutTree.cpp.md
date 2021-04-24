@@ -36,54 +36,53 @@ data:
     \      nodes[v]->val=x;\n        recalc(nodes[v]);\n    }\n    \n    // verified\n\
     \    int get_root(int v){\n        Node *cur=nodes[v];\n        expose(cur);\n\
     \        while(cur->l){\n            push(cur);\n            cur=cur->l;\n   \
-    \     }\n        return cur->idx;\n    }\n    \n    // verified\n    int lca(int\
-    \ u,int v){\n        if(get_root(u)!=get_root(v)) return -1;\n        expose(nodes[u]);\n\
-    \        return expose(nodes[v]);\n    }\n\n    // \u672Averify\n    int depth(int\
-    \ v){\n        expose(nodes[v]);\n        return size(nodes[v])-1;\n    }\n  \
-    \  // \u672Averify\n    // \u30E4\u30D0\u304B\u3063\u305F\u3089path query\u3067\
-    \u5404\u9802\u70B91\u3092\u306E\u305B\u308D\n    int distance(int u,int v){\n\
-    \        int p=lca(u,v);\n        if(p<0) return -1;\n        return depth(u)+depth(v)-depth(p)*2;\n\
-    \    }\n    \nprivate:\n    struct Node{\n        Node *l,*r,*p;\n        Monoid\
-    \ val,sum;\n        int sz,idx;\n        bool rev;\n        bool is_root()const{\n\
-    \            return (!p or (p->l!=(this) and p->r!=(this)));\n        }\n    \
-    \    Node(const Monoid &x,int idx)\n            :l(nullptr),r(nullptr),p(nullptr),\n\
-    \            val(x),sum(x),sz(1),idx(idx),rev(false){}\n    };\n\n    const Monoid\
-    \ e;\n    const F f;\n    const G flip;\n    vector<Node *> nodes;\n\n    int\
-    \ expose(Node *t){\n        Node *pre=nullptr;\n        for(Node *cur=t;cur;cur=cur->p){\n\
-    \            splay(cur);\n            cur->r=pre;\n            recalc(cur);\n\
-    \            pre=cur;\n        }\n        splay(t);\n        return pre->idx;\n\
-    \    }\n    // t\u30921\u500B\u4E0A\u306B\uFF0C\u53F3\u56DE\u8EE2\n    void rotr(Node\
-    \ *t){\n        // ((A) - lch - (B)) - t - (C) \n        Node *lch=t->l;// lch->top\n\
-    \        t->l=lch->r;\n        if(lch->r) lch->r->p=t;// B\n        lch->p=t->p;\n\
-    \        if(t->p){\n            if(t->p->l==t) t->p->l=lch;\n            if(t->p->r==t)\
-    \ t->p->r=lch;\n        }\n        lch->r=t;\n        t->p=lch;\n        recalc(t);\n\
-    \        recalc(lch);\n    }\n    // t\u30921\u500B\u4E0A\u306B\uFF0C\u5DE6\u56DE\
-    \u8EE2\n    void rotl(Node *t){\n        // (C) - t - ((B) - rch - (A) )\n   \
-    \     Node *rch=t->r;// lch->top\n        t->r=rch->l;\n        if(rch->l) rch->l->p=t;//\
-    \ B\n        rch->p=t->p;\n        if(t->p){\n            if(t->p->l==t) t->p->l=rch;\n\
-    \            if(t->p->r==t) t->p->r=rch;\n        }\n        rch->l=t;\n     \
-    \   t->p=rch;\n        recalc(t);\n        recalc(rch);\n    }\n\n    int size(Node\
-    \ *t){ return (t?t->sz:0); }\n\n    void recalc(Node *t){\n        if(!t) return\
-    \ ;\n        t->sz=size(t->l)+1+size(t->r);\n        t->sum=t->val;\n        if(t->l)\
-    \ t->sum=f(t->l->sum,t->sum);\n        if(t->r) t->sum=f(t->sum,t->r->sum);\n\
-    \    }\n\n    void push(Node *t){\n        if(t->rev){\n            if(t->l) reverse(t->l);\n\
-    \            if(t->r) reverse(t->r);\n            t->rev=false;\n        }\n \
-    \   }\n\n    void reverse(Node *t){\n        swap(t->l,t->r);\n        if(flip)\
-    \ t->sum=flip(t->sum);\n        t->rev^=true;\n    }\n    \n    void splay(Node\
-    \ *cur){\n        push(cur);\n        while(!cur->is_root()){\n            Node\
-    \ *par=cur->p;\n            if(par->is_root()){// zig\n                push(par);\n\
-    \                push(cur);\n                if(par->l==cur) rotr(par);\n    \
-    \            else            rotl(par);\n            }else{// zig-zig, zig-zag\n\
-    \                Node *parpar=par->p;\n                push(parpar);\n       \
-    \         push(par);\n                push(cur);\n                if(cur==par->l){\n\
-    \                    if(par==parpar->l){\n                        rotr(parpar);\n\
-    \                        rotr(par);\n                    }else{\n            \
-    \            rotr(par);\n                        rotl(parpar);\n             \
-    \       }\n                }else{\n                    if(par==parpar->l){\n \
-    \                       rotl(par);\n                        rotr(parpar);\n  \
-    \                  }else{\n                        rotl(parpar);\n           \
-    \             rotl(par);\n                    }\n                }\n         \
-    \   }\n        }\n    }\n};\n"
+    \     }\n        splay(cur);\n        return cur->idx;\n    }\n    \n    // verified\n\
+    \    int lca(int u,int v){\n        if(get_root(u)!=get_root(v)) return -1;\n\
+    \        expose(nodes[u]);\n        return expose(nodes[v]);\n    }\n\n    //\
+    \ \u672Averify\n    int depth(int v){\n        expose(nodes[v]);\n        return\
+    \ size(nodes[v])-1;\n    }\n    // \u672Averify\n    // \u30E4\u30D0\u304B\u3063\
+    \u305F\u3089path query\u3067\u5404\u9802\u70B91\u3092\u306E\u305B\u308D\n    int\
+    \ distance(int u,int v){\n        int p=lca(u,v);\n        if(p<0) return -1;\n\
+    \        return depth(u)+depth(v)-depth(p)*2;\n    }\n    \nprivate:\n    struct\
+    \ Node{\n        Node *l,*r,*p;\n        Monoid val,sum;\n        int sz,idx;\n\
+    \        bool rev;\n        bool is_root()const{\n            return (!p or (p->l!=(this)\
+    \ and p->r!=(this)));\n        }\n        Node(const Monoid &x,int idx)\n    \
+    \        :l(nullptr),r(nullptr),p(nullptr),\n            val(x),sum(x),sz(1),idx(idx),rev(false){}\n\
+    \    };\n\n    const F f;\n    const Monoid e;\n    const G flip;\n    vector<Node\
+    \ *> nodes;\n\n    int expose(Node *t){\n        Node *pre=nullptr;\n        for(Node\
+    \ *cur=t;cur;cur=cur->p){\n            splay(cur);\n            cur->r=pre;\n\
+    \            recalc(cur);\n            pre=cur;\n        }\n        splay(t);\n\
+    \        return pre->idx;\n    }\n    // t\u30921\u500B\u4E0B\u3078\n    void\
+    \ rotr(Node *t){\n        // ((A) - lch - (B)) - t - (C) \n        Node *lch=t->l;//\
+    \ lch->top\n        t->l=lch->r;\n        if(lch->r) lch->r->p=t;// B\n      \
+    \  lch->p=t->p;\n        if(t->p){\n            if(t->p->l==t) t->p->l=lch;\n\
+    \            if(t->p->r==t) t->p->r=lch;\n        }\n        lch->r=t;\n     \
+    \   t->p=lch;\n        recalc(t);\n        recalc(lch);\n    }\n    void rotl(Node\
+    \ *t){\n        // (C) - t - ((B) - rch - (A) )\n        Node *rch=t->r;// lch->top\n\
+    \        t->r=rch->l;\n        if(rch->l) rch->l->p=t;// B\n        rch->p=t->p;\n\
+    \        if(t->p){\n            if(t->p->l==t) t->p->l=rch;\n            if(t->p->r==t)\
+    \ t->p->r=rch;\n        }\n        rch->l=t;\n        t->p=rch;\n        recalc(t);\n\
+    \        recalc(rch);\n    }\n\n    int size(Node *t){ return (t?t->sz:0); }\n\
+    \n    void recalc(Node *t){\n        if(!t) return ;\n        t->sz=size(t->l)+1+size(t->r);\n\
+    \        t->sum=t->val;\n        if(t->l) t->sum=f(t->l->sum,t->sum);\n      \
+    \  if(t->r) t->sum=f(t->sum,t->r->sum);\n    }\n\n    void push(Node *t){\n  \
+    \      if(t->rev){\n            if(t->l) reverse(t->l);\n            if(t->r)\
+    \ reverse(t->r);\n            t->rev=false;\n        }\n    }\n\n    void reverse(Node\
+    \ *t){\n        swap(t->l,t->r);\n        if(flip) t->sum=flip(t->sum);\n    \
+    \    t->rev^=true;\n    }\n    \n    void splay(Node *cur){\n        push(cur);\n\
+    \        while(!cur->is_root()){\n            Node *par=cur->p;\n            if(par->is_root()){//\
+    \ zig\n                push(par);\n                push(cur);\n              \
+    \  if(par->l==cur) rotr(par);\n                else            rotl(par);\n  \
+    \          }else{// zig-zig, zig-zag\n                Node *parpar=par->p;\n \
+    \               push(parpar);\n                push(par);\n                push(cur);\n\
+    \                if(cur==par->l){\n                    if(par==parpar->l){\n \
+    \                       rotr(parpar);\n                        rotr(par);\n  \
+    \                  }else{\n                        rotr(par);\n              \
+    \          rotl(parpar);\n                    }\n                }else{\n    \
+    \                if(par==parpar->l){\n                        rotl(par);\n   \
+    \                     rotr(parpar);\n                    }else{\n            \
+    \            rotl(parpar);\n                        rotl(par);\n             \
+    \       }\n                }\n            }\n        }\n    }\n};\n"
   code: "template<typename Monoid>\nstruct LinkCutTree{\n\n    using F=function<Monoid(Monoid,Monoid)>;\n\
     \    using G=function<Monoid(Monoid)>;\n\n    LinkCutTree(int n,F f,Monoid e,G\
     \ flip=nullptr):f(f),e(e),flip(flip){\n        for(int i=0;i<n;i++) nodes.push_back(new\
@@ -108,32 +107,31 @@ data:
     \        expose(nodes[v]);\n        nodes[v]->val=x;\n        recalc(nodes[v]);\n\
     \    }\n    \n    // verified\n    int get_root(int v){\n        Node *cur=nodes[v];\n\
     \        expose(cur);\n        while(cur->l){\n            push(cur);\n      \
-    \      cur=cur->l;\n        }\n        return cur->idx;\n    }\n    \n    // verified\n\
-    \    int lca(int u,int v){\n        if(get_root(u)!=get_root(v)) return -1;\n\
-    \        expose(nodes[u]);\n        return expose(nodes[v]);\n    }\n\n    //\
-    \ \u672Averify\n    int depth(int v){\n        expose(nodes[v]);\n        return\
-    \ size(nodes[v])-1;\n    }\n    // \u672Averify\n    // \u30E4\u30D0\u304B\u3063\
-    \u305F\u3089path query\u3067\u5404\u9802\u70B91\u3092\u306E\u305B\u308D\n    int\
-    \ distance(int u,int v){\n        int p=lca(u,v);\n        if(p<0) return -1;\n\
-    \        return depth(u)+depth(v)-depth(p)*2;\n    }\n    \nprivate:\n    struct\
-    \ Node{\n        Node *l,*r,*p;\n        Monoid val,sum;\n        int sz,idx;\n\
-    \        bool rev;\n        bool is_root()const{\n            return (!p or (p->l!=(this)\
-    \ and p->r!=(this)));\n        }\n        Node(const Monoid &x,int idx)\n    \
-    \        :l(nullptr),r(nullptr),p(nullptr),\n            val(x),sum(x),sz(1),idx(idx),rev(false){}\n\
-    \    };\n\n    const Monoid e;\n    const F f;\n    const G flip;\n    vector<Node\
+    \      cur=cur->l;\n        }\n        splay(cur);\n        return cur->idx;\n\
+    \    }\n    \n    // verified\n    int lca(int u,int v){\n        if(get_root(u)!=get_root(v))\
+    \ return -1;\n        expose(nodes[u]);\n        return expose(nodes[v]);\n  \
+    \  }\n\n    // \u672Averify\n    int depth(int v){\n        expose(nodes[v]);\n\
+    \        return size(nodes[v])-1;\n    }\n    // \u672Averify\n    // \u30E4\u30D0\
+    \u304B\u3063\u305F\u3089path query\u3067\u5404\u9802\u70B91\u3092\u306E\u305B\u308D\
+    \n    int distance(int u,int v){\n        int p=lca(u,v);\n        if(p<0) return\
+    \ -1;\n        return depth(u)+depth(v)-depth(p)*2;\n    }\n    \nprivate:\n \
+    \   struct Node{\n        Node *l,*r,*p;\n        Monoid val,sum;\n        int\
+    \ sz,idx;\n        bool rev;\n        bool is_root()const{\n            return\
+    \ (!p or (p->l!=(this) and p->r!=(this)));\n        }\n        Node(const Monoid\
+    \ &x,int idx)\n            :l(nullptr),r(nullptr),p(nullptr),\n            val(x),sum(x),sz(1),idx(idx),rev(false){}\n\
+    \    };\n\n    const F f;\n    const Monoid e;\n    const G flip;\n    vector<Node\
     \ *> nodes;\n\n    int expose(Node *t){\n        Node *pre=nullptr;\n        for(Node\
     \ *cur=t;cur;cur=cur->p){\n            splay(cur);\n            cur->r=pre;\n\
     \            recalc(cur);\n            pre=cur;\n        }\n        splay(t);\n\
-    \        return pre->idx;\n    }\n    // t\u30921\u500B\u4E0A\u306B\uFF0C\u53F3\
-    \u56DE\u8EE2\n    void rotr(Node *t){\n        // ((A) - lch - (B)) - t - (C)\
-    \ \n        Node *lch=t->l;// lch->top\n        t->l=lch->r;\n        if(lch->r)\
-    \ lch->r->p=t;// B\n        lch->p=t->p;\n        if(t->p){\n            if(t->p->l==t)\
-    \ t->p->l=lch;\n            if(t->p->r==t) t->p->r=lch;\n        }\n        lch->r=t;\n\
-    \        t->p=lch;\n        recalc(t);\n        recalc(lch);\n    }\n    // t\u3092\
-    1\u500B\u4E0A\u306B\uFF0C\u5DE6\u56DE\u8EE2\n    void rotl(Node *t){\n       \
-    \ // (C) - t - ((B) - rch - (A) )\n        Node *rch=t->r;// lch->top\n      \
-    \  t->r=rch->l;\n        if(rch->l) rch->l->p=t;// B\n        rch->p=t->p;\n \
-    \       if(t->p){\n            if(t->p->l==t) t->p->l=rch;\n            if(t->p->r==t)\
+    \        return pre->idx;\n    }\n    // t\u30921\u500B\u4E0B\u3078\n    void\
+    \ rotr(Node *t){\n        // ((A) - lch - (B)) - t - (C) \n        Node *lch=t->l;//\
+    \ lch->top\n        t->l=lch->r;\n        if(lch->r) lch->r->p=t;// B\n      \
+    \  lch->p=t->p;\n        if(t->p){\n            if(t->p->l==t) t->p->l=lch;\n\
+    \            if(t->p->r==t) t->p->r=lch;\n        }\n        lch->r=t;\n     \
+    \   t->p=lch;\n        recalc(t);\n        recalc(lch);\n    }\n    void rotl(Node\
+    \ *t){\n        // (C) - t - ((B) - rch - (A) )\n        Node *rch=t->r;// lch->top\n\
+    \        t->r=rch->l;\n        if(rch->l) rch->l->p=t;// B\n        rch->p=t->p;\n\
+    \        if(t->p){\n            if(t->p->l==t) t->p->l=rch;\n            if(t->p->r==t)\
     \ t->p->r=rch;\n        }\n        rch->l=t;\n        t->p=rch;\n        recalc(t);\n\
     \        recalc(rch);\n    }\n\n    int size(Node *t){ return (t?t->sz:0); }\n\
     \n    void recalc(Node *t){\n        if(!t) return ;\n        t->sz=size(t->l)+1+size(t->r);\n\
@@ -160,7 +158,7 @@ data:
   isVerificationFile: false
   path: Graph2/LinkCutTree.cpp
   requiredBy: []
-  timestamp: '2021-04-22 23:00:47+09:00'
+  timestamp: '2021-04-24 14:10:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
