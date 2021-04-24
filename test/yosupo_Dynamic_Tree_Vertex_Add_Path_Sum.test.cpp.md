@@ -54,12 +54,14 @@ data:
     \u3044\n    Monoid query(int u,int v){\n        evert(u);\n        expose(nodes[v]);\n\
     \        return nodes[v]->sum;\n    }\n\n    Monoid get(int v){ return nodes[v]->val;\
     \ }\n\n    void update(int v,const Monoid &x){\n        expose(nodes[v]);\n  \
-    \      nodes[v]->val=x;\n        recalc(nodes[v]);\n    }\n    \n    // verified\n\
-    \    int get_root(int v){\n        Node *cur=nodes[v];\n        expose(cur);\n\
-    \        while(cur->l){\n            push(cur);\n            cur=cur->l;\n   \
-    \     }\n        splay(cur);\n        return cur->idx;\n    }\n    \n    // verified\n\
-    \    int lca(int u,int v){\n        if(get_root(u)!=get_root(v)) return -1;\n\
-    \        expose(nodes[u]);\n        return expose(nodes[v]);\n    }\n\n    //\
+    \      nodes[v]->val=x;\n        recalc(nodes[v]);\n    }\n    \n    int get_root(int\
+    \ v){\n        Node *cur=nodes[v];\n        expose(cur);\n        while(cur->l){\n\
+    \            push(cur);\n            cur=cur->l;\n        }\n        splay(cur);\n\
+    \        return cur->idx;\n    }\n    \n    // not connected -> return -1\n  \
+    \  int lca(int u,int v){\n        if(!is_connected(u,v)) return -1;\n        expose(nodes[u]);\n\
+    \        return expose(nodes[v]);\n    }\n\n    // faster than get_root(u)==get_root(v)\n\
+    \    bool is_connected(int u,int v){\n        if(u==v) return true;\n        expose(nodes[u]);\n\
+    \        expose(nodes[v]);\n        return bool(nodes[u]->p);\n    }\n\n    //\
     \ \u672Averify\n    int depth(int v){\n        expose(nodes[v]);\n        return\
     \ size(nodes[v])-1;\n    }\n    // \u672Averify\n    // \u30E4\u30D0\u304B\u3063\
     \u305F\u3089path query\u3067\u5404\u9802\u70B91\u3092\u306E\u305B\u308D\n    int\
@@ -83,8 +85,8 @@ data:
     \        t->r=rch->l;\n        if(rch->l) rch->l->p=t;// B\n        rch->p=t->p;\n\
     \        if(t->p){\n            if(t->p->l==t) t->p->l=rch;\n            if(t->p->r==t)\
     \ t->p->r=rch;\n        }\n        rch->l=t;\n        t->p=rch;\n        recalc(t);\n\
-    \        recalc(rch);\n    }\n\n    int size(Node *t){ return (t?t->sz:0); }\n\
-    \n    void recalc(Node *t){\n        if(!t) return ;\n        t->sz=size(t->l)+1+size(t->r);\n\
+    \        recalc(rch);\n    }\n\n    int size(Node *t) const { return (t?t->sz:0);\
+    \ }\n\n    void recalc(Node *t){\n        if(!t) return ;\n        t->sz=size(t->l)+1+size(t->r);\n\
     \        t->sum=t->val;\n        if(t->l) t->sum=f(t->l->sum,t->sum);\n      \
     \  if(t->r) t->sum=f(t->sum,t->r->sum);\n    }\n\n    void push(Node *t){\n  \
     \      if(t->rev){\n            if(t->l) reverse(t->l);\n            if(t->r)\
@@ -129,7 +131,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-04-24 14:10:45+09:00'
+  timestamp: '2021-04-24 14:20:52+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
