@@ -85,4 +85,13 @@ struct Precalc{
         ret/=T(n+1);
         return ret;
     }
+
+    /* 
+    - sum of comb 2
+        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja
+        https://yukicoder.me/problems/no/1489
+        
+        sum binom(i+j,i) i=0 to a-1, j=0 to b-1
+        = ( binom(a+b,a-1)*(b+1)/a ) - 1
+    */
 };
