@@ -48,7 +48,12 @@ data:
     \        auto x=split(move(root),l);\n        auto y=split(move(x.second),r-l);\n\
     \        y.first->rev^=true;\n        root=merge(merge(move(x.first),move(y.first)),move(y.second));\n\
     \    }\n\n    void rotate(int l,int m,int r){\n        reverse(l,r);\n       \
-    \ reverse(l,l+r-m);\n        reverse(l+r-m,r);\n    }\n};\n"
+    \ reverse(l,l+r-m);\n        reverse(l+r-m,r);\n    }\n    // [0, k) and [k, size)\n\
+    \    // cant use this after split\n    pair<Treap<T>,Treap<T>> split(int k){\n\
+    \        auto x=split(move(root),k);\n        return {Treap<T>(move(x.first)),Treap<T>(move(x.second))};\n\
+    \    }  \n    // usage : auto new=l.merge(l, r);\n    // cant use l and r after\
+    \ merge\n    Treap<T> merge(Treap<T> &l,Treap<T> &r){\n        return Treap<T>(merge(move(l.root),move(r.root)));\n\
+    \    }\n};\n"
   code: "template<typename T>\nstruct Treap{\n\nprivate:\n\n    inline int xorshift()\
     \ const {\n        static int x=122312555;\n        static int y=336261662;\n\
     \        static int z=558127122;\n        static int w=917277772;\n        int\
@@ -88,12 +93,17 @@ data:
     \        auto x=split(move(root),l);\n        auto y=split(move(x.second),r-l);\n\
     \        y.first->rev^=true;\n        root=merge(merge(move(x.first),move(y.first)),move(y.second));\n\
     \    }\n\n    void rotate(int l,int m,int r){\n        reverse(l,r);\n       \
-    \ reverse(l,l+r-m);\n        reverse(l+r-m,r);\n    }\n};"
+    \ reverse(l,l+r-m);\n        reverse(l+r-m,r);\n    }\n    // [0, k) and [k, size)\n\
+    \    // cant use this after split\n    pair<Treap<T>,Treap<T>> split(int k){\n\
+    \        auto x=split(move(root),k);\n        return {Treap<T>(move(x.first)),Treap<T>(move(x.second))};\n\
+    \    }  \n    // usage : auto new=l.merge(l, r);\n    // cant use l and r after\
+    \ merge\n    Treap<T> merge(Treap<T> &l,Treap<T> &r){\n        return Treap<T>(merge(move(l.root),move(r.root)));\n\
+    \    }\n};"
   dependsOn: []
   isVerificationFile: false
   path: BinarySearchTree/ImplicitTreap.cpp
   requiredBy: []
-  timestamp: '2021-04-25 22:33:43+09:00'
+  timestamp: '2021-04-25 22:50:16+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: BinarySearchTree/ImplicitTreap.cpp
