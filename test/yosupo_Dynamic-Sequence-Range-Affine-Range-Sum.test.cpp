@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../BinarySearchTree/ImplicitTreap.cpp"
+#include "../BinarySearchTree/ImplicitTreapWithLazy.cpp"
 
 #include "../type/modint.cpp"
 using mint=ModInt<998244353>;

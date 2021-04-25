@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../BinarySearchTree/ImplicitTreap.cpp"
+#include "../BinarySearchTree/ImplicitTreapWithLazy.cpp"
 
 ll f(ll a,ll b){
     return a+b;
