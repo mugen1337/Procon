@@ -35,8 +35,8 @@ struct ImplicitTreap{
     const Monoid M1;
     const OperatorMonoid OM0;
 
-    int count(const Node *t){return t?t->cnt:0;}
-    Monoid acc(const Node *t){return t?t->acc:M1;}
+    int count(const Node *t)const{return t?t->cnt:0;}
+    Monoid acc(const Node *t)const{return t?t->acc:M1;}
 
     Node *update(Node *t){
         t->cnt=count(t->l)+count(t->r)+1;
@@ -141,7 +141,7 @@ struct ImplicitTreap{
     ImplicitTreap(const F &f,const G &g,const H &h,const Monoid &M1,const OperatorMonoid &OM0):
         f(f),g(g),h(h),M1(M1),OM0(OM0){}
 
-    int size(){return count(root);}
+    int size()const{return count(root);}
     bool empty(){return !root;}
 
     void build(const vector<Monoid> &v){
@@ -157,6 +157,7 @@ struct ImplicitTreap{
         root=merge(x.first,y.second);
     }
     void reverse(int l,int r){reverse(root,l,r);}
+    void rotate(int l,int m,int r){rotate(root,l,m,r);}
     Monoid query(int l,int r){return query(root,l,r);}
     void update(int l,int r,const OperatorMonoid &x){update(root,l,r,x);}
     vector<Monoid> dump(){
