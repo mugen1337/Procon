@@ -102,18 +102,15 @@ title: Implicit Treap
 ---
 
 ## 概要  
-あたかも遅延セグメント木か配列かのようなインターフェースのTreap.  
+vectorのようなインターフェースを提供する二分探索木  
+内部はTreap
 
 ## 仕様  
-- build(v) : 配列 v で初期化してbuild
-- insert(k, x) : v[k]=xにして後ろを1個ずつずらす
-- query(l, r) : 遅延セグメント木みたいなクエリ
-- update(l, r, x) : 遅延セグメント木みたいなアップデート
-- erase(l, r) : v[l] ~ v[r-1]を消して間を詰める
-- reverse(l, r) : v[l] ~ v[r-1]を反転する
-- rotate(l, m, r) : v[l]がv[m]になるまでrotateする
+- operator[] : ランダムアクセス
+- insert(k, x) : a[k]<-x, 後ろを1個ずつずらす
+- erase(k) : a[x]を消す, 後ろを1個ずつ詰める
+- reverse(l, r) : a[l] ~ a[r]をreverseする
+- rotate(l, m, r) : a[l]がa[m]になるまでrotateする
+- push_back, push_front, pop_back, pop_front : はい
 
-buildはO(NlogN), それ以外はO(logN)
 
-## Ref  
-https://xuzijian629.hatenablog.com/entry/2018/12/08/000452
