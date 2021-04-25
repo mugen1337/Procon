@@ -1,9 +1,9 @@
-template<typename Monoid,typename OperatorMonoid>
-struct ImplicitTreap{
+template<typename T>
+struct Treap{
 
-    private:
+private:
 
-    inline int xorshift(){
+    inline int xorshift() const {
         static int x=122312555;
         static int y=336261662;
         static int z=558127122;
@@ -14,157 +14,108 @@ struct ImplicitTreap{
         return w=(w^(w>>19))^(t^(t>>8));
     }
 
-    using F=function<Monoid(Monoid,Monoid)>;
-    using G=function<Monoid(Monoid,OperatorMonoid)>;
-    using H=function<OperatorMonoid(OperatorMonoid,OperatorMonoid)>;
+    struct Node;
+    using Ptr=unique_ptr<Node>;
 
     struct Node{
-        Node *l,*r;
-        int cnt,priority;
-        Monoid val,acc;
-        OperatorMonoid lazy;
+        Ptr l,r;
+        int sz,pri;// priority
+        T val;
         bool rev;
         Node()=default;
-        Node(const Monoid &val,const OperatorMonoid &lazy,int priority):
-        l(nullptr),r(nullptr),cnt(1),priority(priority),val(val),acc(val),lazy(lazy),rev(false){}
-    } *root=nullptr;
+        Node(const T &val,int pri):
+        l(nullptr),r(nullptr),sz(1),pri(pri),val(val),rev(false){}
+    };
+    Ptr root;
 
-    const F f;
-    const G g;
-    const H h;
-    const Monoid M1;
-    const OperatorMonoid OM0;
-
-    int count(const Node *t){return t?t->cnt:0;}
-    Monoid acc(const Node *t){return t?t->acc:M1;}
-
-    Node *update(Node *t){
-        t->cnt=count(t->l)+count(t->r)+1;
-        t->acc=f(f(acc(t->l),t->val),acc(t->r));
-        return t;
-    }
-    Node *propagate(Node *t){
-        if(t and t->rev){
-            t->rev=false;
-            swap(t->l,t->r);
-            if(t->l) t->l->rev^=1;
-            if(t->r) t->r->rev^=1;
-        }
-        if(t and t->lazy!=OM0){
-            t->val=g(t->val,t->lazy);
-            if(t->l){
-                t->l->lazy=h(t->l->lazy,t->lazy);
-                t->l->acc=g(t->l->acc,t->lazy);
-            }
-            if(t->r){
-                t->r->lazy=h(t->r->lazy,t->lazy);
-                t->r->acc=g(t->r->acc,t->lazy);
-            }
-            t->lazy=OM0;
-        }
-        return update(t);
-    }
-
-    Node *merge(Node *l,Node *r){
-        if(!l or !r) return l?l:r;
-        if(l->priority>r->priority){
-            l=propagate(l);
-            l->r=merge(l->r,r);
-            return update(l);
+    explicit Treap(Ptr root):root(move(root)){}
+    int size(Ptr &t)const{return (t?t->sz:0);}
+    Ptr merge(Ptr l,Ptr r){
+        if(!l) return move(r);
+        if(!r) return move(l);
+        push(l);push(r);
+        if(l->pri>r->pri){
+            l->r=merge(move(l->r),move(r));
+            l->sz=size(l->l)+1+size(l->r);
+            return move(l);
         }else{
-            r=propagate(r);
-            r->l=merge(l,r->l);
-            return update(r);
+            r->l=merge(move(l),move(r->l));
+            r->sz=size(r->l)+1+size(r->r);
+            return move(r);
         }
     }
-    pair<Node *,Node *> split(Node *t,int k){
+    pair<Ptr,Ptr> split(Ptr t,int k){
         if(!t) return {nullptr,nullptr};
-        t=propagate(t);
-        if(k<=count(t->l)){
-            auto s=split(t->l,k);
-            t->l=s.second;
-            return {s.first,update(t)};
+        push(t);
+        if(k<=size(t->l)){
+            auto x=split(move(t->l),k);
+            t->l=move(x.second);
+            t->sz=size(t->l)+1+size(t->r);
+            return {move(x.first),move(t)};
         }else{
-            auto s=split(t->r,k-count(t->l)-1);
-            t->r=s.first;
-            return {update(t),s.second};
+            auto x=split(move(t->r),k-size(t->l)-1);
+            t->r=move(x.first);
+            t->sz=size(t->l)+1+size(t->r);
+            return {move(t),move(x.second)};
+        }
+    }
+    T &access(Ptr &cur,int k){
+        assert(cur);
+        push(cur);
+        if(k==size(cur->l)) return cur->val;
+        if(k<size(cur->l))  return access(cur->l,k);
+        else                return access(cur->r,k-1-size(cur->l));
+    }
+    void push(Ptr &t){
+        if(t->rev){
+            swap(t->l,t->r);
+            if(t->l) t->l->rev^=true;
+            if(t->r) t->r->rev^=true;
+            t->rev=false;
         }
     }
 
-    void insert(Node *&t,int k,const Monoid &x){
-        auto s=split(t,k);
-        t=merge(merge(s.first,new Node(x,OM0,xorshift())),s.second);
-    }
-    void erase(Node *&t,int k){
-        auto s=split(t,k);
-        t=merge(s.first,split(s.second,1).second);
+public:
+
+    Treap():root(nullptr){}
+
+    void insert(int k,const T &x){
+        auto s=split(move(root),k);
+        Ptr i(new Node(x,xorshift()));
+        root=merge(merge(move(s.first),move(i)),move(s.second));
     }
 
-    Monoid query(Node *&t,int a,int b){
-        if(a>b) return M1;
-        auto x=split(t,a);
-        auto y=split(x.second,b-a);
-        auto ret=acc(y.first);
-        t=merge(x.first,merge(y.first,y.second));
-        return ret;
-    }
-    void update(Node *&t,int a,int b,const OperatorMonoid &o){
-        if(a>b) return ;
-        auto x=split(t,a);
-        auto y=split(x.second,b-a);
-        y.first->lazy=h(y.first->lazy,o);
-        t=merge(x.first,merge(propagate(y.first),y.second));
-    }
-    void reverse(Node *&t,int a,int b){
-        if(a>b) return ;
-        auto x=split(t,a);
-        auto y=split(x.second,b-a);
-        y.first->rev^=1;
-        t=merge(x.first,merge(y.first,y.second));
-    }
-    // [l,r)の先頭がmになるまで左シフト
-    void rotate(Node *&t,int l,int m,int r){
-        reverse(t,l,r);
-        reverse(t,l,l+r-m);
-        reverse(t,l+r-m,r);   
-    }
-    void dump(Node *t,typename vector<Monoid>::iterator &ite){
-        if(!t) return ;
-        t=propagate(t);
-        dump(t->l,ite);
-        *ite=t->val;
-        dump(t->r,++ite);
+    void erase(int k){
+        auto l=split(move(root),k);
+        auto r=split(move(l.second),1);
+        root=merge(move(l.first),move(r.second));
     }
 
-    public:
+    T &operator[](int k){ return access(root,k); }
 
-    ImplicitTreap(const F &f,const G &g,const H &h,const Monoid &M1,const OperatorMonoid &OM0):
-        f(f),g(g),h(h),M1(M1),OM0(OM0){}
+    int size(){ return size(root); }
 
-    int size(){return count(root);}
-    bool empty(){return !root;}
+    void push_back(T x){
+        Ptr b(new Node(x,xorshift()));
+        root=merge(move(root),move(b));
+    }
+    void push_front(T x){
+        Ptr f(new Node(x,xorshift()));
+        root=merge(move(f),move(root));
+    }
+    void pop_back(){ root=split(move(root),1).second; }
+    void pop_front(){ root=split(move(root),size()-1).second; }
 
-    void build(const vector<Monoid> &v){
-        if(v.empty()) return ;
-        for(int i=(int)v.size()-1;i>=0;i--) insert(0,v[i]);
+    void reverse(int l,int r){
+        auto x=split(move(root),l);
+        auto y=split(move(x.second),r-l);
+        y.first->rev^=true;
+        root=merge(merge(move(x.first),move(y.first)),move(y.second));
     }
 
-    void insert(int k,const Monoid &x){insert(root,k,x);}
-    void erase(int k){erase(root,k);}
-    void erase(int l,int r){
-        auto x=split(root,l);
-        auto y=split(x.second,r-l);
-        root=merge(x.first,y.second);
+    void rotate(int l,int m,int r){
+        reverse(l,r);
+        reverse(l,l+r-m);
+        reverse(l+r-m,r);
     }
-    void reverse(int l,int r){reverse(root,l,r);}
-    Monoid query(int l,int r){return query(root,l,r);}
-    void update(int l,int r,const OperatorMonoid &x){update(root,l,r,x);}
-    vector<Monoid> dump(){
-        vector<Monoid> ret(size());
-        auto ite=begin(ret);
-        dump(root,ite);
-        return ret;
-    }
-
-    Monoid operator[](int idx){return query(idx,idx+1);}
 };
