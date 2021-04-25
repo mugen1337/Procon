@@ -118,4 +118,15 @@ public:
         reverse(l,l+r-m);
         reverse(l+r-m,r);
     }
+    // [0, k) and [k, size)
+    // cant use this after split
+    pair<Treap<T>,Treap<T>> split(int k){
+        auto x=split(move(root),k);
+        return {Treap<T>(move(x.first)),Treap<T>(move(x.second))};
+    }  
+    // usage : auto new=l.merge(l, r);
+    // cant use l and r after merge
+    Treap<T> merge(Treap<T> &l,Treap<T> &r){
+        return Treap<T>(merge(move(l.root),move(r.root)));
+    }
 };
