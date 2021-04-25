@@ -8,9 +8,12 @@ data:
       title: Algorithm/Mo.cpp
   - name: BinarySearchTree
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: BinarySearchTree/ImplicitTreap.cpp
       title: Implicit Treap
+    - icon: ':heavy_check_mark:'
+      path: BinarySearchTree/ImplicitTreapWithLazy.cpp
+      title: BinarySearchTree/ImplicitTreapWithLazy.cpp
     - icon: ':heavy_check_mark:'
       path: BinarySearchTree/SplayTree.cpp
       title: BinarySearchTree/SplayTree.cpp
