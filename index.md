@@ -249,10 +249,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: Tree/LazyLinkCutTree.cpp
       title: Tree/LazyLinkCutTree.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Tree/LinkCutTree.cpp
       title: Tree/LinkCutTree.cpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Tree/TreeHash.cpp
       title: Tree/TreeHash.cpp
   - name: UnionFind
@@ -315,7 +315,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2313.test.cpp
       title: test/AOJ_2313.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
     - icon: ':heavy_check_mark:'
@@ -402,7 +402,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
       title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
     - icon: ':heavy_check_mark:'

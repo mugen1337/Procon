@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ_2821.test.cpp
+    title: test/AOJ_2821.test.cpp
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Tree/TreeHash.cpp\"\n// hash type\nusing ull=unsigned long\
@@ -91,8 +94,9 @@ data:
   path: Tree/TreeHash.cpp
   requiredBy: []
   timestamp: '2021-04-27 00:15:57+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/AOJ_2821.test.cpp
 documentation_of: Tree/TreeHash.cpp
 layout: document
 redirect_from:

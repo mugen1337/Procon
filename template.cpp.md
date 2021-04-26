@@ -20,6 +20,9 @@ data:
     path: test/AOJ_2313.test.cpp
     title: test/AOJ_2313.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJ_2821.test.cpp
+    title: test/AOJ_2821.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_ALDS1_10_c.test.cpp
     title: test/AOJ_ALDS1_10_c.test.cpp
   - icon: ':heavy_check_mark:'
@@ -103,6 +106,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+    title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
@@ -276,6 +282,7 @@ data:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_J.test.cpp
+  - test/AOJ_2821.test.cpp
   - test/yosupo_Unionfind_undo.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
   - test/AOJ_NTL_1_A.test.cpp
@@ -317,6 +324,7 @@ data:
   - test/AOJ_0109.test.cpp
   - test/yuki5436.test.cpp
   - test/yuki5398_2.test.cpp
+  - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
 documentation_of: template.cpp
 layout: document
