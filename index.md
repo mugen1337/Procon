@@ -120,9 +120,6 @@ data:
       path: Graph/StronglyConnectedComponents.cpp
       title: Graph/StronglyConnectedComponents.cpp
     - icon: ':heavy_check_mark:'
-      path: Graph/TreeHash.cpp
-      title: Graph/TreeHash.cpp
-    - icon: ':heavy_check_mark:'
       path: Graph/WarshallFloyd.cpp
       title: Graph/WarshallFloyd.cpp
   - name: Graph2
@@ -142,9 +139,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/HeavyLightDecomposition.cpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':heavy_check_mark:'
-      path: Graph2/LinkCutTree.cpp
-      title: Link Cut Tree
     - icon: ':heavy_check_mark:'
       path: Graph2/LowLink.cpp
       title: Low Link
@@ -255,6 +249,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: Tree/LazyLinkCutTree.cpp
       title: Tree/LazyLinkCutTree.cpp
+    - icon: ':warning:'
+      path: Tree/LinkCutTree.cpp
+      title: Tree/LinkCutTree.cpp
+    - icon: ':warning:'
+      path: Tree/TreeHash.cpp
+      title: Tree/TreeHash.cpp
   - name: UnionFind
     pages:
     - icon: ':warning:'
@@ -315,7 +315,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2313.test.cpp
       title: test/AOJ_2313.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
     - icon: ':heavy_check_mark:'
@@ -402,7 +402,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
       title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
     - icon: ':heavy_check_mark:'

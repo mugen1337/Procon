@@ -2,16 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
-    title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph2/LinkCutTree.cpp\"\ntemplate<typename Monoid>\nstruct\
+  bundledCode: "#line 1 \"Tree/LinkCutTree.cpp\"\ntemplate<typename Monoid>\nstruct\
     \ LinkCutTree{\n\n    using F=function<Monoid(Monoid,Monoid)>;\n    using G=function<Monoid(Monoid)>;\n\
     \n    LinkCutTree(int n,F f,Monoid e,G flip=nullptr):f(f),e(e),flip(flip){\n \
     \       for(int i=0;i<n;i++) nodes.push_back(new Node(e,i));\n    }\n\n    LinkCutTree(const\
@@ -161,38 +158,15 @@ data:
     \   }\n        }\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph2/LinkCutTree.cpp
+  path: Tree/LinkCutTree.cpp
   requiredBy: []
-  timestamp: '2021-04-24 14:20:52+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
-documentation_of: Graph2/LinkCutTree.cpp
+  timestamp: '2021-04-27 00:15:57+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: Tree/LinkCutTree.cpp
 layout: document
-title: Link Cut Tree
+redirect_from:
+- /library/Tree/LinkCutTree.cpp
+- /library/Tree/LinkCutTree.cpp.html
+title: Tree/LinkCutTree.cpp
 ---
-
-# 概要  
-Link Cut Tree
-
-# 仕様  
-各操作で根が変わったり変わらなかったりする  
-- evert(v) : vをrootに
-- link(u, v) : u-v辺をはる
-- cut(v) : vとvの親を切る
-- cut(u, v) : u-v辺を切る．あるかチェックもする
-- query(u, v) : path query
-- get_root(u) : 今のrootを返す
-- lca(u, v) : u, vのLeast Common Ancestor
-- deppth(v) : 今の木のrootからみたvの深さ
-- distance(u, v) : 今の木のu-vの距離
-大体どれもならしlogNらしい  
-オリジナルでつけたのでdepth, distanceはまだverifyできていない．
-
-# ref
-https://www.slideshare.net/iwiwi/2-12188845
-https://ei1333.hateblo.jp/entry/2018/05/29/011140
-https://sotanishy.github.io/competitive-programming-library/tree/link_cut_tree.cpp
-
-# todo
-部分木クエリについての理解

@@ -2,16 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/AOJ_2821.test.cpp
-    title: test/AOJ_2821.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/TreeHash.cpp\"\n// hash type\nusing ull=unsigned long\
+  bundledCode: "#line 1 \"Tree/TreeHash.cpp\"\n// hash type\nusing ull=unsigned long\
     \ long;\nstruct TreeHasher{\n    using uint128=__uint128_t;\n    static const\
     \ ull Mod=(1ull<<61ull)-1;\n    static inline ull add(ull a,ull b){if((a+=b)>=Mod)a-=Mod;return\
     \ a;}\n    static inline ull mul(ull a,ull b){uint128 c=(uint128)a*b;return add(c>>61,c&Mod);}\n\
@@ -91,16 +88,15 @@ data:
     \        return (TreeHash(g)==TreeHash(h));\n        }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/TreeHash.cpp
+  path: Tree/TreeHash.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:50:01+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/AOJ_2821.test.cpp
-documentation_of: Graph/TreeHash.cpp
+  timestamp: '2021-04-27 00:15:57+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: Tree/TreeHash.cpp
 layout: document
 redirect_from:
-- /library/Graph/TreeHash.cpp
-- /library/Graph/TreeHash.cpp.html
-title: Graph/TreeHash.cpp
+- /library/Tree/TreeHash.cpp
+- /library/Tree/TreeHash.cpp.html
+title: Tree/TreeHash.cpp
 ---
