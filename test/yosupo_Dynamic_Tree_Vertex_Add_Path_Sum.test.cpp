@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../Graph2/LinkCutTree.cpp"
+#include "../Tree/LinkCutTree.cpp"
 
 signed main(){
     int n,q;cin>>n>>q;
