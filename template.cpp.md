@@ -155,6 +155,9 @@ data:
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/yuki1249_lct.test.cpp
+    title: test/yuki1249_lct.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/yuki1601.test.cpp
     title: test/yuki1601.test.cpp
   - icon: ':heavy_check_mark:'
@@ -305,6 +308,7 @@ data:
   - test/AOJ_DPL_5_L.test.cpp
   - test/yuki3784.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
+  - test/yuki1249_lct.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - test/yosupo_Set_Xor_Min.test.cpp
   - test/yuki473.test.cpp

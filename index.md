@@ -250,6 +250,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
+  - name: Tree
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Tree/LazyLinkCutTree.cpp
+      title: Tree/LazyLinkCutTree.cpp
   - name: UnionFind
     pages:
     - icon: ':warning:'
@@ -445,6 +450,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki1249.test.cpp
       title: test/yuki1249.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yuki1249_lct.test.cpp
+      title: test/yuki1249_lct.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
