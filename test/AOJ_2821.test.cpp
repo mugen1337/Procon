@@ -2,7 +2,7 @@
 
 #include "../template.cpp"
 
-#include "../Graph/TreeHash.cpp"
+#include "../Tree/TreeHash.cpp"
 #include "../UnionFind/UnionFind.cpp"
 
 signed main(){
