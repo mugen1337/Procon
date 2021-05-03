@@ -167,6 +167,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/AndConvolution.cpp
       title: Math/AndConvolution.cpp
+    - icon: ':warning:'
+      path: Math/BinaryBasis.cpp
+      title: Math/BinaryBasis.cpp
     - icon: ':heavy_check_mark:'
       path: Math/Factorize.cpp
       title: Math/Factorize.cpp
