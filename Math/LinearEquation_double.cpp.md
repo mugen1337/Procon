@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Math/PolynomialRestore_double.cpp
+    title: Math/PolynomialRestore_double.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
@@ -34,7 +37,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Math/LinearEquation_double.cpp
-  requiredBy: []
+  requiredBy:
+  - Math/PolynomialRestore_double.cpp
   timestamp: '2021-05-11 22:09:55+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

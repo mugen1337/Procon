@@ -191,6 +191,9 @@ data:
     - icon: ':warning:'
       path: Math/PollardRho.cpp
       title: Math/PollardRho.cpp
+    - icon: ':warning:'
+      path: Math/PolynomialRestore_double.cpp
+      title: Math/PolynomialRestore_double.cpp
     - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Precalc (Twelvefold way)
