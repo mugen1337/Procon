@@ -2,11 +2,20 @@
 data:
   _extendedDependsOn:
   - icon: ':warning:'
+    path: Geometry/Angle.cpp
+    title: Geometry/Angle.cpp
+  - icon: ':warning:'
+    path: Geometry/CircumscribedCircle.cpp
+    title: Geometry/CircumscribedCircle.cpp
+  - icon: ':warning:'
     path: Geometry/CounterClockWise.cpp
     title: Geometry/CounterClockWise.cpp
   - icon: ':warning:'
     path: Geometry/Cross.cpp
     title: Geometry/Cross.cpp
+  - icon: ':warning:'
+    path: Geometry/CrossPoint.cpp
+    title: Geometry/CrossPoint.cpp
   - icon: ':warning:'
     path: Geometry/Distance.cpp
     title: Geometry/Distance.cpp
@@ -14,11 +23,17 @@ data:
     path: Geometry/Dot.cpp
     title: Geometry/Dot.cpp
   - icon: ':warning:'
+    path: Geometry/InscribedCircle.cpp
+    title: Geometry/InscribedCircle.cpp
+  - icon: ':warning:'
     path: Geometry/Intersect.cpp
     title: Geometry/Intersect.cpp
   - icon: ':warning:'
     path: Geometry/Projection.cpp
     title: Geometry/Projection.cpp
+  - icon: ':warning:'
+    path: Geometry/Rotate.cpp
+    title: Geometry/Rotate.cpp
   - icon: ':warning:'
     path: Geometry/template.cpp
     title: Geometry/template.cpp
@@ -43,7 +58,9 @@ data:
     \    Segment()=default;\n    Segment(Point p1,Point p2):Line(p1,p2){}\n};\nstruct\
     \ Circle{\n    Point center;\n    Real r;\n    Circle()=default;\n    Circle(Point\
     \ center,Real r):center(center),r(r){}\n};\n\n// Polygon\nusing Polygon=vector<Point>;\n\
-    #line 1 \"Geometry/Dot.cpp\"\n// Dot\nReal dot(Point a,Point b) {\n    return\
+    #line 1 \"Geometry/Rotate.cpp\"\nPoint rotate(Real theta,Point p){\n    return\
+    \ Point(cos(theta)*real(p)-sin(theta)*imag(p),sin(theta)*real(p)+cos(theta)*imag(p));\n\
+    }\n#line 1 \"Geometry/Dot.cpp\"\n// Dot\nReal dot(Point a,Point b) {\n    return\
     \ real(a)*real(b)+imag(a)*imag(b);\n}\n#line 1 \"Geometry/Cross.cpp\"\n// Cross\n\
     Real cross(Point a,Point b){\n    return real(a)*imag(b)-imag(a)*real(b);\n}\n\
     #line 1 \"Geometry/CounterClockWise.cpp\"\n// ccw (counter clockwise) (Requires:\
@@ -95,8 +112,46 @@ data:
     }\nReal dis(Polygon a,Polygon b){\n    Real ret=-10;\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    for(int i=0;i<n;i++)for(int j=0;j<m;j++){\n        Real d=dis(Segment(a[i],a[(i+1)%n]),Segment(b[j],b[(j+1)%m]));\n\
     \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
-    \ ret;\n}\n#line 8 \"Geometry/include.cpp\"\n"
+    \ ret;\n}\n#line 1 \"Geometry/CrossPoint.cpp\"\n//intersect\u3092\u30C1\u30A7\u30C3\
+    \u30AF\u3059\u308B\u3053\u3068\n//v\nPoint crosspoint(Line l,Line m){\n   Real\
+    \ A=cross(m.p2-m.p1,m.p1-l.p1);\n   Real B=cross(m.p2-m.p1,l.p2-l.p1);\n   if(eq(A,0)\
+    \ and eq(B,0)) return l.p1;\n   if(eq(B,0))             throw \"NAI\";\n   return\
+    \ l.p1+A/B*(l.p2-l.p1);   \n}\nPoint crosspoint(Segment l,Segment m){\n   return\
+    \ crosspoint(Line(l),Line(m));\n}\nvector<Point> crosspoint(Circle c,Line l){\n\
+    \   vector<Point> ret;\n   Point h=projection(l,c.center);\n   Real d=sqrt(c.r*c.r-norm(h-c.center));\n\
+    \   Point e=(l.p2-l.p1)*(1/abs(l.p2-l.p1));\n   if(c.r*c.r+EPS<norm(h-c.center))\
+    \ return ret;\n   if(eq(dis(l,c.center),c.r)){\n       ret.push_back(h);\n   \
+    \    return ret;\n   }\n   ret.push_back(h+e*d);ret.push_back(h-e*d);\n   return\
+    \ ret;\n}\n//\u8981verify\uFF0C\nvector<Point> crosspoint(Circle c,Segment s){\n\
+    \   Line l=Line(s.p1,s.p2);\n   int ko=intersect(c,s);\n   if(ko==2) return crosspoint(c,l);\n\
+    \   vector<Point> ret;\n   if(ko==0) return ret;\n   ret=crosspoint(c,l);\n  \
+    \ if(ret.size()==1) return ret;\n   vector<Point> rret;\n   //\u4EA4\u70B9\u3067\
+    \u631F\u3081\u308B\u65B9\u3092\u8FD4\u3059\n   if(dot(s.p1-ret[0],s.p2-ret[0])<0)\
+    \  rret.push_back(ret[0]);\n   else                                rret.push_back(ret[1]);\n\
+    \   return rret;\n}\n//v\nvector<Point> crosspoint(Circle c1,Circle c2){\n   vector<Point>\
+    \ ret;\n   int isec=intersect(c1,c2);\n   if(isec==0 or isec==4) return ret;\n\
+    \   Real d=abs(c1.center-c2.center);\n   Real a=acos((c1.r*c1.r+d*d-c2.r*c2.r)/(2*c1.r*d));\n\
+    \   Real t=atan2(c2.center.imag()-c1.center.imag(),c2.center.real()-c1.center.real());\n\
+    \   ret.push_back(c1.center+Point(cos(t+a)*c1.r,sin(t+a)*c1.r));\n   ret.push_back(c1.center+Point(cos(t-a)*c1.r,sin(t-a)*c1.r));\n\
+    \   return ret;\n}\n#line 1 \"Geometry/Angle.cpp\"\n// angle of a-b-c\nReal get_smaller_angle(Point\
+    \ a,Point b,Point c){\n    Point v=b-a,w=c-b;\n    auto A=atan2(imag(v),real(v));\n\
+    \    auto B=atan2(imag(w),real(w));\n    if(A>B) swap(A,B);\n    Real res=B-A;\n\
+    \    return min(res,pi*2.0-res);\n}\n#line 1 \"Geometry/InscribedCircle.cpp\"\n\
+    // \u5185\u63A5\u5186\nCircle inscribed_circle(Point a,Point b,Point c){\n   \
+    \ Real A,B;\n    {\n        Point t=c-a;\n        t*=conj(b-a);\n        t/=norm(b-a);\n\
+    \        A=atan2(imag(t),real(t));\n    }\n    {\n        Point t=a-b;\n     \
+    \   t*=conj(c-b);\n        t/=norm(c-b);\n        B=atan2(imag(t),real(t));\n\
+    \    }\n    Line Amid=Line(a,a+rotate(A*0.5,b-a)),Bmid=Line(b,b+rotate(B*0.5,c-b));\n\
+    \    auto center=crosspoint(Amid,Bmid);\n    auto h=projection(Line(a,b),center);\n\
+    \    return Circle(center,dis(h,center));\n}\n#line 1 \"Geometry/CircumscribedCircle.cpp\"\
+    \n// \u5916\u63A5\u5186\nCircle circumscribed_circle(Point a,Point b,Point c){\n\
+    \    Line orth_ab((a+b)*0.5,(a+b)*0.5+Point(-imag(b-a),real(b-a)));\n    Line\
+    \ orth_bc((b+c)*0.5,(b+c)*0.5+Point(-imag(c-b),real(c-b)));\n    Point center=crosspoint(orth_ab,orth_bc);\n\
+    \    Real r=dis(a,center);\n    return Circle(center,r);\n}\n#line 13 \"Geometry/include.cpp\"\
+    \n"
   code: '#include "./template.cpp"
+
+    #include "./Rotate.cpp"
 
     #include "./Dot.cpp"
 
@@ -110,19 +165,32 @@ data:
 
     #include "./Distance.cpp"
 
+    #include "./CrossPoint.cpp"
+
+    #include "./Angle.cpp"
+
+    #include "./InscribedCircle.cpp"
+
+    #include "./CircumscribedCircle.cpp"
+
     '
   dependsOn:
   - Geometry/template.cpp
+  - Geometry/Rotate.cpp
   - Geometry/Dot.cpp
   - Geometry/Cross.cpp
   - Geometry/CounterClockWise.cpp
   - Geometry/Projection.cpp
   - Geometry/Intersect.cpp
   - Geometry/Distance.cpp
+  - Geometry/CrossPoint.cpp
+  - Geometry/Angle.cpp
+  - Geometry/InscribedCircle.cpp
+  - Geometry/CircumscribedCircle.cpp
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-03-29 03:23:41+09:00'
+  timestamp: '2021-05-23 14:57:56+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp

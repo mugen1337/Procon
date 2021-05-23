@@ -85,11 +85,20 @@ data:
   - name: Geometry
     pages:
     - icon: ':warning:'
+      path: Geometry/Angle.cpp
+      title: Geometry/Angle.cpp
+    - icon: ':warning:'
+      path: Geometry/CircumscribedCircle.cpp
+      title: Geometry/CircumscribedCircle.cpp
+    - icon: ':warning:'
       path: Geometry/CounterClockWise.cpp
       title: Geometry/CounterClockWise.cpp
     - icon: ':warning:'
       path: Geometry/Cross.cpp
       title: Geometry/Cross.cpp
+    - icon: ':warning:'
+      path: Geometry/CrossPoint.cpp
+      title: Geometry/CrossPoint.cpp
     - icon: ':warning:'
       path: Geometry/Distance.cpp
       title: Geometry/Distance.cpp
@@ -97,11 +106,17 @@ data:
       path: Geometry/Dot.cpp
       title: Geometry/Dot.cpp
     - icon: ':warning:'
+      path: Geometry/InscribedCircle.cpp
+      title: Geometry/InscribedCircle.cpp
+    - icon: ':warning:'
       path: Geometry/Intersect.cpp
       title: Geometry/Intersect.cpp
     - icon: ':warning:'
       path: Geometry/Projection.cpp
       title: Geometry/Projection.cpp
+    - icon: ':warning:'
+      path: Geometry/Rotate.cpp
+      title: Geometry/Rotate.cpp
     - icon: ':warning:'
       path: Geometry/include.cpp
       title: Geometry/include.cpp
