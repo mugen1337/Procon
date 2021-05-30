@@ -10,3 +10,4 @@
 #include "./Angle.cpp"
 #include "./InscribedCircle.cpp"
 #include "./CircumscribedCircle.cpp"
+#include "./Tangent.cpp"
