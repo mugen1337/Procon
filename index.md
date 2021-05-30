@@ -118,6 +118,9 @@ data:
       path: Geometry/Rotate.cpp
       title: Geometry/Rotate.cpp
     - icon: ':warning:'
+      path: Geometry/Tangent.cpp
+      title: Geometry/Tangent.cpp
+    - icon: ':warning:'
       path: Geometry/include.cpp
       title: Geometry/include.cpp
     - icon: ':warning:'
