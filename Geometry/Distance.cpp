@@ -24,3 +24,13 @@ Real dis(Polygon a,Polygon b){
     }
     return ret;
 }
+Real dis(Polygon poly,Point p){
+    Real ret=-10;
+    int n=(int)poly.size();
+    for(int i=0;i<n;i++){
+        Real d=dis(Segment(poly[i],poly[(i+1)%n]),p);
+        if(ret<0) ret=d;
+        else      ret=min(ret,d);
+    }
+    return ret;
+}
