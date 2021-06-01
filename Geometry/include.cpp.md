@@ -8,6 +8,9 @@ data:
     path: Geometry/CircumscribedCircle.cpp
     title: Geometry/CircumscribedCircle.cpp
   - icon: ':warning:'
+    path: Geometry/Contain.cpp
+    title: Geometry/Contain.cpp
+  - icon: ':warning:'
     path: Geometry/CounterClockWise.cpp
     title: Geometry/CounterClockWise.cpp
   - icon: ':warning:'
@@ -166,7 +169,13 @@ data:
     \     }\n        else if(1-h*h>0){\n            Point uu=u*h,vv=v*sqrt(1-h*h);\n\
     \            ret.push_back(Line(c1.center+(uu+vv)*c1.r,c2.center-(uu+vv)*c2.r*s));\n\
     \            ret.push_back(Line(c1.center+(uu-vv)*c1.r,c2.center-(uu-vv)*c2.r*s));\n\
-    \        }\n    }\n    return ret;\n}\n#line 14 \"Geometry/include.cpp\"\n"
+    \        }\n    }\n    return ret;\n}\n#line 1 \"Geometry/Contain.cpp\"\n// out\
+    \ 0, on 1, in 2\nint contains(Polygon poly,Point p){\n    int res=0;\n    int\
+    \ n=(int)poly.size();\n    for(int i=0;i<n;i++){\n        Point a=poly[i]-p,b=poly[(i+1)%n]-p;\n\
+    \        if(imag(a)>imag(b)) swap(a,b);\n        if(imag(a)<=0 and 0<imag(b) and\
+    \ cross(a,b)<0) res^=1;\n        if(eq(cross(a,b),0) and (dot(a,b)<0 or eq(dot(a,b),0)))\
+    \ return 1;\n    }\n    if(res) res=2;\n    return res;\n}\n#line 15 \"Geometry/include.cpp\"\
+    \n"
   code: '#include "./template.cpp"
 
     #include "./Rotate.cpp"
@@ -193,6 +202,8 @@ data:
 
     #include "./Tangent.cpp"
 
+    #include "./Contain.cpp"
+
     '
   dependsOn:
   - Geometry/template.cpp
@@ -208,10 +219,11 @@ data:
   - Geometry/InscribedCircle.cpp
   - Geometry/CircumscribedCircle.cpp
   - Geometry/Tangent.cpp
+  - Geometry/Contain.cpp
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-06-01 15:12:50+09:00'
+  timestamp: '2021-06-01 15:51:02+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp
