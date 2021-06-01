@@ -20,6 +20,9 @@ data:
     }\nReal dis(Polygon a,Polygon b){\n    Real ret=-10;\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    for(int i=0;i<n;i++)for(int j=0;j<m;j++){\n        Real d=dis(Segment(a[i],a[(i+1)%n]),Segment(b[j],b[(j+1)%m]));\n\
     \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
+    \ ret;\n}\nReal dis(Polygon poly,Point p){\n    Real ret=-10;\n    int n=(int)poly.size();\n\
+    \    for(int i=0;i<n;i++){\n        Real d=dis(Segment(poly[i],poly[(i+1)%n]),p);\n\
+    \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
     \ ret;\n}\n"
   code: "// Distance (Requires: Projection, Intersect)\nReal dis(Point a,Point b){\n\
     \    return abs(a-b);\n}\nReal dis(Line l,Point p){\n    return abs(p-projection(l,p));\n\
@@ -29,13 +32,16 @@ data:
     }\nReal dis(Polygon a,Polygon b){\n    Real ret=-10;\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    for(int i=0;i<n;i++)for(int j=0;j<m;j++){\n        Real d=dis(Segment(a[i],a[(i+1)%n]),Segment(b[j],b[(j+1)%m]));\n\
     \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
-    \ ret;\n}"
+    \ ret;\n}\nReal dis(Polygon poly,Point p){\n    Real ret=-10;\n    int n=(int)poly.size();\n\
+    \    for(int i=0;i<n;i++){\n        Real d=dis(Segment(poly[i],poly[(i+1)%n]),p);\n\
+    \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
+    \ ret;\n}\n"
   dependsOn: []
   isVerificationFile: false
   path: Geometry/Distance.cpp
   requiredBy:
   - Geometry/include.cpp
-  timestamp: '2021-03-29 03:23:41+09:00'
+  timestamp: '2021-06-01 15:12:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/Distance.cpp

@@ -115,6 +115,9 @@ data:
     }\nReal dis(Polygon a,Polygon b){\n    Real ret=-10;\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    for(int i=0;i<n;i++)for(int j=0;j<m;j++){\n        Real d=dis(Segment(a[i],a[(i+1)%n]),Segment(b[j],b[(j+1)%m]));\n\
     \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
+    \ ret;\n}\nReal dis(Polygon poly,Point p){\n    Real ret=-10;\n    int n=(int)poly.size();\n\
+    \    for(int i=0;i<n;i++){\n        Real d=dis(Segment(poly[i],poly[(i+1)%n]),p);\n\
+    \        if(ret<0) ret=d;\n        else      ret=min(ret,d);\n    }\n    return\
     \ ret;\n}\n#line 1 \"Geometry/CrossPoint.cpp\"\n//intersect\u3092\u30C1\u30A7\u30C3\
     \u30AF\u3059\u308B\u3053\u3068\n//v\nPoint crosspoint(Line l,Line m){\n   Real\
     \ A=cross(m.p2-m.p1,m.p1-l.p1);\n   Real B=cross(m.p2-m.p1,l.p2-l.p1);\n   if(eq(A,0)\
@@ -208,7 +211,7 @@ data:
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-05-30 19:44:06+09:00'
+  timestamp: '2021-06-01 15:12:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp
