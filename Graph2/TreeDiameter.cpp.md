@@ -20,11 +20,11 @@ data:
     \    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
     \ Graph{\n    vector<vector<Edge<T>>> g;\n    int V,E;\n    Graph()=default;\n\
-    \    Graph(int n):g(n),V(n),E(0){}\n\n    size_t size(){\n        return g.size();\n\
-    \    }\n    void resize(int k){\n        g.resize(k);\n    }\n    inline const\
-    \ vector<Edge<T>> &operator[](int k)const{\n        return (g.at(k));\n    }\n\
-    \    inline vector<Edge<T>> &operator[](int k){\n        return (g.at(k));\n \
-    \   }\n    void add_directed_edge(int from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E++);\n\
+    \    Graph(int n):g(n),V(n),E(0){}\n\n    int size(){\n        return (int)g.size();\n\
+    \    }\n    void resize(int k){\n        g.resize(k);\n        V=k;\n    }\n \
+    \   inline const vector<Edge<T>> &operator[](int k)const{\n        return (g.at(k));\n\
+    \    }\n    inline vector<Edge<T>> &operator[](int k){\n        return (g.at(k));\n\
+    \    }\n    void add_directed_edge(int from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E++);\n\
     \    }\n    void add_edge(int from,int to,T cost=1){\n        g[from].emplace_back(from,to,cost,E);\n\
     \        g[to].emplace_back(to,from,cost,E++);\n    }\n    void read(int m,int\
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
@@ -54,7 +54,7 @@ data:
   isVerificationFile: false
   path: Graph2/TreeDiameter.cpp
   requiredBy: []
-  timestamp: '2021-02-26 18:51:55+09:00'
+  timestamp: '2021-07-04 13:54:07+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_TreeDiameter.test.cpp

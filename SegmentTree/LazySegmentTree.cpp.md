@@ -112,9 +112,9 @@ data:
   timestamp: '2021-02-14 20:15:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yuki1249.test.cpp
   - test/yuki899.test.cpp
   - test/yuki4374.test.cpp
+  - test/yuki1249.test.cpp
 documentation_of: SegmentTree/LazySegmentTree.cpp
 layout: document
 title: Lazy Segment Tree

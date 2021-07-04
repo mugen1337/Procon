@@ -152,20 +152,20 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_DPL_5_L.test.cpp
-  - test/yuki1917.test.cpp
-  - test/AOJ_DPL_5_E.test.cpp
-  - test/AOJ_DPL_5_C.test.cpp
-  - test/AOJ_DPL_5_B.test.cpp
-  - test/AOJ_DPL_5_H.test.cpp
-  - test/AOJ_DPL_5_G.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
+  - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_A.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
+  - test/yuki1917.test.cpp
+  - test/yuki5125.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
+  - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_J.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
-  - test/yuki5125.test.cpp
-  - test/AOJ_DPL_5_A.test.cpp
-  - test/AOJ_DPL_5_I.test.cpp
-  - test/yuki2017.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document
 title: Precalc (Twelvefold way)
