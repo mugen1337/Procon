@@ -17,11 +17,12 @@ struct Graph{
     Graph()=default;
     Graph(int n):g(n),V(n),E(0){}
 
-    size_t size(){
-        return g.size();
+    int size(){
+        return (int)g.size();
     }
     void resize(int k){
         g.resize(k);
+        V=k;
     }
     inline const vector<Edge<T>> &operator[](int k)const{
         return (g.at(k));
