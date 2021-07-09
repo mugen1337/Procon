@@ -11,6 +11,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Eppstein.cpp
     title: Eppstein's Algorithm (K-Shortest-Walk)
+  - icon: ':warning:'
+    path: Graph2/GraphRelabel.cpp
+    title: Graph2/GraphRelabel.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/HeavyLightDecomposition.cpp
     title: "Heavy Light Decomposition (HL\u5206\u89E3)"
@@ -104,6 +107,7 @@ data:
   - Graph2/Eppstein.cpp
   - Graph2/CycleDetection.cpp
   - Graph2/Rerooting.cpp
+  - Graph2/GraphRelabel.cpp
   - Graph2/TreeDiameter.cpp
   - Graph2/HeavyLightDecomposition.cpp
   - Graph2/LowLink.cpp

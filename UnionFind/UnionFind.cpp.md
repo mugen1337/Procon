@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Graph2/GraphRelabel.cpp
+    title: Graph2/GraphRelabel.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2821.test.cpp
@@ -33,7 +36,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: UnionFind/UnionFind.cpp
-  requiredBy: []
+  requiredBy:
+  - Graph2/GraphRelabel.cpp
   timestamp: '2021-01-04 16:08:06+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

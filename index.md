@@ -154,6 +154,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/Eppstein.cpp
       title: Eppstein's Algorithm (K-Shortest-Walk)
+    - icon: ':warning:'
+      path: Graph2/GraphRelabel.cpp
+      title: Graph2/GraphRelabel.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
