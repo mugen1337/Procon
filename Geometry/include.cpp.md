@@ -143,7 +143,7 @@ data:
     \   Real t=atan2(c2.center.imag()-c1.center.imag(),c2.center.real()-c1.center.real());\n\
     \   ret.push_back(c1.center+Point(cos(t+a)*c1.r,sin(t+a)*c1.r));\n   ret.push_back(c1.center+Point(cos(t-a)*c1.r,sin(t-a)*c1.r));\n\
     \   return ret;\n}\n#line 1 \"Geometry/Angle.cpp\"\n// angle of a-b-c\nReal get_smaller_angle(Point\
-    \ a,Point b,Point c){\n    Point v=b-a,w=c-b;\n    auto A=atan2(imag(v),real(v));\n\
+    \ a,Point b,Point c){\n    Point v=a-b,w=c-b;\n    auto A=atan2(imag(v),real(v));\n\
     \    auto B=atan2(imag(w),real(w));\n    if(A>B) swap(A,B);\n    Real res=B-A;\n\
     \    return min(res,pi*2.0-res);\n}\n#line 1 \"Geometry/InscribedCircle.cpp\"\n\
     // \u5185\u63A5\u5186\nCircle inscribed_circle(Point a,Point b,Point c){\n   \
@@ -223,7 +223,7 @@ data:
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-06-01 15:51:02+09:00'
+  timestamp: '2021-07-12 17:10:40+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp

@@ -12,18 +12,19 @@ data:
   attributes:
     links: []
   bundledCode: "#line 1 \"Geometry/Angle.cpp\"\n// angle of a-b-c\nReal get_smaller_angle(Point\
-    \ a,Point b,Point c){\n    Point v=b-a,w=c-b;\n    auto A=atan2(imag(v),real(v));\n\
+    \ a,Point b,Point c){\n    Point v=a-b,w=c-b;\n    auto A=atan2(imag(v),real(v));\n\
     \    auto B=atan2(imag(w),real(w));\n    if(A>B) swap(A,B);\n    Real res=B-A;\n\
     \    return min(res,pi*2.0-res);\n}\n"
   code: "// angle of a-b-c\nReal get_smaller_angle(Point a,Point b,Point c){\n   \
-    \ Point v=b-a,w=c-b;\n    auto A=atan2(imag(v),real(v));\n    auto B=atan2(imag(w),real(w));\n\
-    \    if(A>B) swap(A,B);\n    Real res=B-A;\n    return min(res,pi*2.0-res);\n}"
+    \ Point v=a-b,w=c-b;\n    auto A=atan2(imag(v),real(v));\n    auto B=atan2(imag(w),real(w));\n\
+    \    if(A>B) swap(A,B);\n    Real res=B-A;\n    return min(res,pi*2.0-res);\n\
+    }\n"
   dependsOn: []
   isVerificationFile: false
   path: Geometry/Angle.cpp
   requiredBy:
   - Geometry/include.cpp
-  timestamp: '2021-05-23 14:57:56+09:00'
+  timestamp: '2021-07-12 17:10:40+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/Angle.cpp
