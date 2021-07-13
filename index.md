@@ -129,6 +129,20 @@ data:
     - icon: ':warning:'
       path: Geometry/template.cpp
       title: Geometry/template.cpp
+  - name: GeometryInt
+    pages:
+    - icon: ':warning:'
+      path: GeometryInt/Area2.cpp
+      title: GeometryInt/Area2.cpp
+    - icon: ':warning:'
+      path: GeometryInt/ConvexHull.cpp
+      title: GeometryInt/ConvexHull.cpp
+    - icon: ':warning:'
+      path: GeometryInt/CountLattice.cpp
+      title: GeometryInt/CountLattice.cpp
+    - icon: ':warning:'
+      path: GeometryInt/template.cpp
+      title: GeometryInt/template.cpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -210,6 +224,9 @@ data:
       path: Math/GcdConvolution.cpp
       title: Math/GcdConvolution.cpp
     - icon: ':warning:'
+      path: Math/LinearEquation_F2.cpp
+      title: Math/LinearEquation_F2.cpp
+    - icon: ':warning:'
       path: Math/LinearEquation_double.cpp
       title: Math/LinearEquation_double.cpp
     - icon: ':warning:'
@@ -250,6 +267,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Other/CyclePartition.cpp
       title: Other/CyclePartition.cpp
+    - icon: ':warning:'
+      path: Other/EnumerateCombination.cpp
+      title: Other/EnumerateCombination.cpp
     - icon: ':heavy_check_mark:'
       path: Other/EnumerateSubset.cpp
       title: "\u90E8\u5206\u96C6\u5408\u306E\u5217\u6319 (Enumerate Subset)"
