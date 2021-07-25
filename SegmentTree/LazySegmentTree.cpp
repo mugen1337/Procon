@@ -148,6 +148,21 @@ struct LazySegmentTree{
 // M segg(M a,OM b){
 //     return M(a.second*b,a.second);
 // }
-// ll segh(ll a,ll b){
+// OM segh(OM a,OM b){
 //     return (b==OM0?a:b);
+// }
+
+// // range add range sum (sum, count)
+// using M=pair<ll,ll>;
+// using OM=ll;
+// const M M1=M(0,0);
+// const OM OM0=0;
+// M segf(M a,M b){
+//     return M(a.first+b.first,a.second+b.second);
+// }
+// M segg(M a,OM b){
+//     return M(a.first+a.second*b,a.second);
+// }
+// OM segh(OM a,OM b){
+//     return a+b;
 // }
