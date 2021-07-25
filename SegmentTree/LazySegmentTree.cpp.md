@@ -59,8 +59,12 @@ data:
     // OM segh(OM a,OM b){\n//     return a+b;\n// }\n \n// // range set range sum\
     \ (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
     // const OM OM0=-LINF;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
-    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// ll\
-    \ segh(ll a,ll b){\n//     return (b==OM0?a:b);\n// }\n"
+    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// OM\
+    \ segh(OM a,OM b){\n//     return (b==OM0?a:b);\n// }\n\n// // range add range\
+    \ sum (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
+    // const OM OM0=0;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
+    // }\n// M segg(M a,OM b){\n//     return M(a.first+a.second*b,a.second);\n//\
+    \ }\n// OM segh(OM a,OM b){\n//     return a+b;\n// }\n"
   code: "template<typename Monoid, typename OperatorMonoid=Monoid>\nstruct LazySegmentTree{\n\
     \    using F=function<Monoid(Monoid,Monoid)>;\n    using G=function<Monoid(Monoid,OperatorMonoid)>;\n\
     \    using H=function<OperatorMonoid(OperatorMonoid,OperatorMonoid)>;\n \n   \
@@ -103,13 +107,17 @@ data:
     // OM segh(OM a,OM b){\n//     return a+b;\n// }\n \n// // range set range sum\
     \ (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
     // const OM OM0=-LINF;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
-    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// ll\
-    \ segh(ll a,ll b){\n//     return (b==OM0?a:b);\n// }"
+    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// OM\
+    \ segh(OM a,OM b){\n//     return (b==OM0?a:b);\n// }\n\n// // range add range\
+    \ sum (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
+    // const OM OM0=0;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
+    // }\n// M segg(M a,OM b){\n//     return M(a.first+a.second*b,a.second);\n//\
+    \ }\n// OM segh(OM a,OM b){\n//     return a+b;\n// }\n"
   dependsOn: []
   isVerificationFile: false
   path: SegmentTree/LazySegmentTree.cpp
   requiredBy: []
-  timestamp: '2021-02-14 20:15:36+09:00'
+  timestamp: '2021-07-25 17:56:20+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki899.test.cpp

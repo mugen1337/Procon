@@ -73,8 +73,12 @@ data:
     // OM segh(OM a,OM b){\n//     return a+b;\n// }\n \n// // range set range sum\
     \ (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
     // const OM OM0=-LINF;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
-    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// ll\
-    \ segh(ll a,ll b){\n//     return (b==OM0?a:b);\n// }\n#line 6 \"test/yuki899.test.cpp\"\
+    // }\n// M segg(M a,OM b){\n//     return M(a.second*b,a.second);\n// }\n// OM\
+    \ segh(OM a,OM b){\n//     return (b==OM0?a:b);\n// }\n\n// // range add range\
+    \ sum (sum, count)\n// using M=pair<ll,ll>;\n// using OM=ll;\n// const M M1=M(0,0);\n\
+    // const OM OM0=0;\n// M segf(M a,M b){\n//     return M(a.first+b.first,a.second+b.second);\n\
+    // }\n// M segg(M a,OM b){\n//     return M(a.first+a.second*b,a.second);\n//\
+    \ }\n// OM segh(OM a,OM b){\n//     return a+b;\n// }\n#line 6 \"test/yuki899.test.cpp\"\
     \n\n// range set range min\nusing M=ll;\nusing OM=ll;\nconst M M1=LINF;\nconst\
     \ OM OM0=-LINF;\nM segf(M a,M b){\n    return (a<b?a:b);\n}\nM segg(M a,OM b){\n\
     \    return (b==OM0?a:b);\n}\nOM segh(OM a,OM b){\n    return (b==OM0?a:b);\n\
@@ -101,7 +105,7 @@ data:
   isVerificationFile: true
   path: test/yuki899.test.cpp
   requiredBy: []
-  timestamp: '2021-02-14 20:15:36+09:00'
+  timestamp: '2021-07-25 17:56:20+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yuki899.test.cpp
