@@ -82,6 +82,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Flow/Dinic.cpp
       title: Flow/Dinic.cpp
+    - icon: ':warning:'
+      path: Flow/PrimalDual.cpp
+      title: Flow/PrimalDual.cpp
   - name: Geometry
     pages:
     - icon: ':warning:'
