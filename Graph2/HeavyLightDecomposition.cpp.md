@@ -33,7 +33,7 @@ data:
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
     \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/HeavyLightDecomposition.cpp\"\
-    \n\n/*\nref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85\n\
+    \n/*\nref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85\n\
     \      https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.cpp\n\
     \nHLD \n    \u5404\u9802\u70B9\u304B\u3089\u9802\u70B9\u3092\u6271\u3044\u3084\
     \u3059\u3044\u3088\u3046\u306B\u4E26\u3073\u66FF\u3048\u305F\u6642\u306E\u756A\
@@ -53,7 +53,7 @@ data:
     \n*/\ntemplate<typename T>\nstruct HeavyLightDecomposition{\nprivate:\n    void\
     \ dfs1(int pre,int cur){\n        par[cur]=pre;\n        sz[cur]=1;\n        if(!g[cur].empty()\
     \ and g[cur][0]==pre) swap(g[cur][0],g[cur].back());\n        for(auto &e:g[cur])if(e!=pre){\n\
-    \            dfs1(cur,e);\n            sz[cur]+=sz[e];\n            dis[e]+=dis[cur]+e.w;\n\
+    \            dis[e]+=dis[cur]+e.w;\n            dfs1(cur,e);\n            sz[cur]+=sz[e];\n\
     \            if(sz[g[cur][0]]<sz[e]) swap(g[cur][0],e);\n        }\n    }\n  \
     \  void dfs2(int pre,int cur,int &t){\n        in[cur]=t++;\n        rev[in[cur]]=cur;\n\
     \        for(auto &e:g[cur])if(e!=pre){\n            head[e]=(g[cur][0]==e?head[cur]:e);\n\
@@ -75,7 +75,7 @@ data:
     \        return ret;\n    }\n    // return one range\n    pair<int,int> get_subtree(int\
     \ u,bool edge=false){\n        return {in[u]+edge,out[u]};\n    }\n    int pos(int\
     \ u){\n        return in[u];\n    }\n};\n"
-  code: "#include \"./GraphTemplate.cpp\"\n\n/*\nref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85\n\
+  code: "#include \"./GraphTemplate.cpp\"\n/*\nref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85\n\
     \      https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.cpp\n\
     \nHLD \n    \u5404\u9802\u70B9\u304B\u3089\u9802\u70B9\u3092\u6271\u3044\u3084\
     \u3059\u3044\u3088\u3046\u306B\u4E26\u3073\u66FF\u3048\u305F\u6642\u306E\u756A\
@@ -95,7 +95,7 @@ data:
     \n*/\ntemplate<typename T>\nstruct HeavyLightDecomposition{\nprivate:\n    void\
     \ dfs1(int pre,int cur){\n        par[cur]=pre;\n        sz[cur]=1;\n        if(!g[cur].empty()\
     \ and g[cur][0]==pre) swap(g[cur][0],g[cur].back());\n        for(auto &e:g[cur])if(e!=pre){\n\
-    \            dfs1(cur,e);\n            sz[cur]+=sz[e];\n            dis[e]+=dis[cur]+e.w;\n\
+    \            dis[e]+=dis[cur]+e.w;\n            dfs1(cur,e);\n            sz[cur]+=sz[e];\n\
     \            if(sz[g[cur][0]]<sz[e]) swap(g[cur][0],e);\n        }\n    }\n  \
     \  void dfs2(int pre,int cur,int &t){\n        in[cur]=t++;\n        rev[in[cur]]=cur;\n\
     \        for(auto &e:g[cur])if(e!=pre){\n            head[e]=(g[cur][0]==e?head[cur]:e);\n\
@@ -122,7 +122,7 @@ data:
   isVerificationFile: false
   path: Graph2/HeavyLightDecomposition.cpp
   requiredBy: []
-  timestamp: '2021-07-04 13:54:07+09:00'
+  timestamp: '2021-07-26 23:34:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki1249.test.cpp
