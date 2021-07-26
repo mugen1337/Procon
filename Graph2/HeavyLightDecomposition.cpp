@@ -1,5 +1,4 @@
 #include "./GraphTemplate.cpp"
-
 /*
 ref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85
       https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.cpp
@@ -28,9 +27,9 @@ private:
         sz[cur]=1;
         if(!g[cur].empty() and g[cur][0]==pre) swap(g[cur][0],g[cur].back());
         for(auto &e:g[cur])if(e!=pre){
+            dis[e]+=dis[cur]+e.w;
             dfs1(cur,e);
             sz[cur]+=sz[e];
-            dis[e]+=dis[cur]+e.w;
             if(sz[g[cur][0]]<sz[e]) swap(g[cur][0],e);
         }
     }
