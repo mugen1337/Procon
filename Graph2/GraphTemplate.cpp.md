@@ -29,6 +29,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/TreeDiameter.cpp
     title: Graph2/TreeDiameter.cpp
+  - icon: ':warning:'
+    path: Graph2/TwoEdgeConnectedComponents.cpp
+    title: Graph2/TwoEdgeConnectedComponents.cpp
+  - icon: ':warning:'
+    path: Graph2/TwoEdgeConnectedComponents.cpp
+    title: Graph2/TwoEdgeConnectedComponents.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/Yen.cpp
     title: Yen's Algorithm (K-Shortest-Path)
@@ -111,6 +117,8 @@ data:
   - Graph2/TreeDiameter.cpp
   - Graph2/HeavyLightDecomposition.cpp
   - Graph2/LowLink.cpp
+  - Graph2/TwoEdgeConnectedComponents.cpp
+  - Graph2/TwoEdgeConnectedComponents.cpp
   - Graph2/Yen.cpp
   - Graph2/Dijkstra.cpp
   timestamp: '2021-07-04 13:54:07+09:00'

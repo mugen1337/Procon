@@ -4,7 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Graph2/TwoEdgeConnectedComponents.cpp
+    title: Graph2/TwoEdgeConnectedComponents.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_3_A.test.cpp
@@ -66,7 +69,8 @@ data:
   - Graph2/GraphTemplate.cpp
   isVerificationFile: false
   path: Graph2/LowLink.cpp
-  requiredBy: []
+  requiredBy:
+  - Graph2/TwoEdgeConnectedComponents.cpp
   timestamp: '2021-07-04 13:54:07+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
