@@ -17,7 +17,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/HeavyLightDecomposition.cpp
     title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/LowLink.cpp
     title: Low Link
   - icon: ':heavy_check_mark:'
@@ -29,10 +29,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/TreeDiameter.cpp
     title: Graph2/TreeDiameter.cpp
-  - icon: ':warning:'
-    path: Graph2/TwoEdgeConnectedComponents.cpp
-    title: Graph2/TwoEdgeConnectedComponents.cpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Graph2/TwoEdgeConnectedComponents.cpp
     title: Graph2/TwoEdgeConnectedComponents.cpp
   - icon: ':heavy_check_mark:'
@@ -51,6 +48,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_TECC.test.cpp
+    title: test/yosupo_TECC.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
@@ -66,9 +66,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
@@ -118,16 +118,16 @@ data:
   - Graph2/HeavyLightDecomposition.cpp
   - Graph2/LowLink.cpp
   - Graph2/TwoEdgeConnectedComponents.cpp
-  - Graph2/TwoEdgeConnectedComponents.cpp
   - Graph2/Yen.cpp
   - Graph2/Dijkstra.cpp
   timestamp: '2021-07-04 13:54:07+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yuki5436.test.cpp
   - test/yosupo_scc2.test.cpp
   - test/yosupo_TreeDiameter.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
+  - test/yosupo_TECC.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/yuki4227.test.cpp
   - test/yuki1249.test.cpp

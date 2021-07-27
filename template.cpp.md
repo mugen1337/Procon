@@ -130,6 +130,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Static_Range_Inversions_Query.test.cpp
     title: test/yosupo_Static_Range_Inversions_Query.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_TECC.test.cpp
+    title: test/yosupo_TECC.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
@@ -217,9 +220,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -254,7 +257,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_Unionfind_undo.test.cpp
   - test/yuki1249_lct.test.cpp
@@ -279,6 +282,7 @@ data:
   - test/yuki2600.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
   - test/yosupo_scc.test.cpp
+  - test/yosupo_TECC.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
   - test/AOJ_DSL_1_B.test.cpp
   - test/AOJ_NTL_1_A.test.cpp

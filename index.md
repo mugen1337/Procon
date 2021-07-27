@@ -174,13 +174,13 @@ data:
     - icon: ':warning:'
       path: Graph2/GraphRelabel.cpp
       title: Graph2/GraphRelabel.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/HeavyLightDecomposition.cpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Graph2/LowLink.cpp
       title: Low Link
     - icon: ':heavy_check_mark:'
@@ -192,7 +192,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/TreeDiameter.cpp
       title: Graph2/TreeDiameter.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Graph2/TwoEdgeConnectedComponents.cpp
       title: Graph2/TwoEdgeConnectedComponents.cpp
     - icon: ':heavy_check_mark:'
@@ -339,7 +339,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -491,6 +491,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Static_Range_Inversions_Query.test.cpp
       title: test/yosupo_Static_Range_Inversions_Query.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_TECC.test.cpp
+      title: test/yosupo_TECC.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_TreeDiameter.test.cpp
       title: test/yosupo_TreeDiameter.test.cpp
