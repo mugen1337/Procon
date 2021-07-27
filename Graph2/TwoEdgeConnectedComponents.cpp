@@ -1,4 +1,3 @@
-#include "./GraphTemplate.cpp"
 #include "./LowLink.cpp"
 
 /*
