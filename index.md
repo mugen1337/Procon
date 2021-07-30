@@ -132,6 +132,11 @@ data:
     - icon: ':warning:'
       path: Geometry/template.cpp
       title: Geometry/template.cpp
+  - name: Geometry3D
+    pages:
+    - icon: ':warning:'
+      path: Geometry3D/all.cpp
+      title: Geometry3D/all.cpp
   - name: GeometryInt
     pages:
     - icon: ':warning:'
