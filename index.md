@@ -167,6 +167,9 @@ data:
       title: Graph/WarshallFloyd.cpp
   - name: Graph2
     pages:
+    - icon: ':warning:'
+      path: Graph2/ChromaticNumber.cpp
+      title: Graph2/ChromaticNumber.cpp
     - icon: ':heavy_check_mark:'
       path: Graph2/CycleDetection.cpp
       title: Graph2/CycleDetection.cpp
