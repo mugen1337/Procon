@@ -17,7 +17,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/HeavyLightDecomposition.cpp
     title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
   - icon: ':heavy_check_mark:'
@@ -29,7 +29,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/TreeDiameter.cpp
     title: Graph2/TreeDiameter.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/TwoEdgeConnectedComponents.cpp
     title: Graph2/TwoEdgeConnectedComponents.cpp
   - icon: ':heavy_check_mark:'
@@ -48,7 +48,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_TECC.test.cpp
     title: test/yosupo_TECC.test.cpp
   - icon: ':heavy_check_mark:'
@@ -66,9 +66,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
@@ -121,7 +121,7 @@ data:
   - Graph2/Eppstein.cpp
   - Graph2/TwoEdgeConnectedComponents.cpp
   timestamp: '2021-07-04 13:54:07+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_TECC.test.cpp
   - test/yosupo_TreeDiameter.test.cpp

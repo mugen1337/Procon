@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_TECC.test.cpp
     title: test/yosupo_TECC.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph2/GraphTemplate.cpp\"\n// graph template\n// ref :\
@@ -84,7 +84,7 @@ data:
   path: Graph2/TwoEdgeConnectedComponents.cpp
   requiredBy: []
   timestamp: '2021-07-28 01:02:35+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_TECC.test.cpp
 documentation_of: Graph2/TwoEdgeConnectedComponents.cpp

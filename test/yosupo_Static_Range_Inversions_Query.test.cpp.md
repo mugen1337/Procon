@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: DataStructure/BinaryIndexedTree.cpp
     title: DataStructure/BinaryIndexedTree.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

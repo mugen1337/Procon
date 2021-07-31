@@ -1,30 +1,33 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.cpp
     title: Graph2/GraphTemplate.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/TwoEdgeConnectedComponents.cpp
     title: Graph2/TwoEdgeConnectedComponents.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    links: []
-  bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
-    \ std;\n#define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n\
-    #define debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define\
-    \ mod 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
+    PROBLEM: https://judge.yosupo.jp/problem/two_edge_connected_components
+    links:
+    - https://judge.yosupo.jp/problem/two_edge_connected_components
+  bundledCode: "#line 1 \"test/yosupo_TECC.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
+    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
+    \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
+    \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
     int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
     template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
     template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
@@ -78,12 +81,13 @@ data:
     \     int k=0;\n        for(int i=0;i<g.size();i++)if(belong[i]==-1) dfs(g,-1,i,k);\n\
     \        group.resize(k);\n        for(int i=0;i<g.size();i++) group[belong[i]].push_back(i);\n\
     \        tree=Graph<T>(k);\n        for(auto &e:LL.bridge) tree.add_edge(belong[e.from],belong[e.to],e.w);\n\
-    \    }\n};\n#line 3 \"test/yosupo_TECC.test.cpp\"\n\nsigned main(){\n    int N,M;cin>>N>>M;\n\
+    \    }\n};\n#line 5 \"test/yosupo_TECC.test.cpp\"\n\nsigned main(){\n    int N,M;cin>>N>>M;\n\
     \    Graph<int> G(N);\n    G.read(M,0);\n\n    TwoEdgeConnectedComponents<int>\
     \ TECC(G);\n    cout<<TECC.group.size()<<\"\\n\";\n    for(auto &w:TECC.group){\n\
     \        cout<<w.size();\n        for(auto &x:w) cout<<\" \"<<x;\n        cout<<\"\
     \\n\";\n    }\n    return 0;\n}\n"
-  code: "#include \"../template.cpp\"\n#include \"../Graph2/TwoEdgeConnectedComponents.cpp\"\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
+    \n\n#include \"../template.cpp\"\n#include \"../Graph2/TwoEdgeConnectedComponents.cpp\"\
     \n\nsigned main(){\n    int N,M;cin>>N>>M;\n    Graph<int> G(N);\n    G.read(M,0);\n\
     \n    TwoEdgeConnectedComponents<int> TECC(G);\n    cout<<TECC.group.size()<<\"\
     \\n\";\n    for(auto &w:TECC.group){\n        cout<<w.size();\n        for(auto\
@@ -96,8 +100,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_TECC.test.cpp
   requiredBy: []
-  timestamp: '2021-07-28 01:02:35+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-08-01 02:50:35+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_TECC.test.cpp
 layout: document
