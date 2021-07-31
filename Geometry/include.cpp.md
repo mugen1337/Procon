@@ -8,8 +8,14 @@ data:
     path: Geometry/CircumscribedCircle.cpp
     title: Geometry/CircumscribedCircle.cpp
   - icon: ':warning:'
+    path: Geometry/ClosestPair.cpp
+    title: Geometry/ClosestPair.cpp
+  - icon: ':warning:'
     path: Geometry/Contain.cpp
     title: Geometry/Contain.cpp
+  - icon: ':warning:'
+    path: Geometry/Convex.cpp
+    title: Geometry/Convex.cpp
   - icon: ':warning:'
     path: Geometry/CounterClockWise.cpp
     title: Geometry/CounterClockWise.cpp
@@ -197,7 +203,36 @@ data:
     \                    //\u6700\u5F8C\u306E1\u70B9\u306E\u6C7A\u5B9A\n         \
     \           for(int k=0;k<j;k++)if(!isIn(v[k])) ret=make_circle3(v[i],v[j],v[k]);\n\
     \                }\n            }\n        }\n    }\n    return ret;\n}\n#line\
-    \ 16 \"Geometry/include.cpp\"\n"
+    \ 1 \"Geometry/ClosestPair.cpp\"\n// \u6700\u8FD1\u70B9\u5BFE\n// O(NlogN)\nReal\
+    \ closest_pair(vector<Point> ps){\n    sort(ALL(ps),[&](Point a,Point b){\n  \
+    \      return real(a)<real(b);\n    });\n    function<Real(int,int)> rec=[&](int\
+    \ l,int r){\n        if(r-l<=1) return 1e18;\n        int m=(l+r)/2;\n       \
+    \ Real x=real(ps[m]);\n        Real ret=min(rec(l,m),rec(m,r));\n        inplace_merge(begin(ps)+l,begin(ps)+m,begin(ps)+r,[&](Point\
+    \ a,Point b){\n            return imag(a)<imag(b);\n        });\n        // \u5206\
+    \u5272\u3092\u8DE8\u3044\u3067\u6700\u5C0F\u8DDD\u96E2\u304C\u3042\u308B\u304B\
+    \u8ABF\u3079\u308B\n        vector<Point> b;\n        for(int i=l;i<r;i++){\n\
+    \            if(abs(real(ps[i])-x)>=ret) continue;\n            for(int j=(int)b.size()-1;j>=0;j--){\n\
+    \                if(abs(imag(ps[i]-b[j]))>=ret) break;\n                ret=min(ret,abs(ps[i]-b[j]));\n\
+    \            }\n            b.push_back(ps[i]);\n        }\n        return ret;\n\
+    \    };\n    return rec(0,(int)ps.size());\n}\n#line 1 \"Geometry/Convex.cpp\"\
+    \n// \u51F8\u591A\u89D2\u5F62\u7CFB\u7D71\n// \u51F8\u591A\u89D2\u5F62\u306E\u9802\
+    \u70B9\u306F\u53CD\u6642\u8A08\u5468\u308A\u306B\u8A2A\u308C\u308B\u9806\u5E8F\
+    \n// v\n// \u9802\u70B9\u306F\u53CD\u6642\u8A08\u5468\u308A\u306B\u8A2A\u308C\u308B\
+    \u9806\u5E8F\uFF0C\u6642\u8A08\u56DE\u308A\u3068\u306A\u308B\u3088\u3046\u306A\
+    3\u70B9\u304C\u3042\u308B\u3068false\nbool is_convex(const vector<Point> &ps){\n\
+    \    int n=(int)ps.size();\n    for(int i=0;i<n;i++)if(ccw(ps[(i+n-1)%n],ps[i],ps[(i+1)%n])==-1)return\
+    \ false;\n    return true;\n}\n\n// \u51F8\u5305\uFF0C\u3042\u3093\u307E\u308A\
+    \u3088\u304F\u308F\u304B\u3063\u3066\u306A\u3044\uFF0E\u76F4\u7DDA\u72B6\u306B\
+    \u9802\u70B9\u3092\u306E\u305B\u306A\u3044\u5834\u5408(\u2191)\uFF0C\u306E\u305B\
+    \u308B\u5834\u5408(\u2193)\nvector<Point> convex_hull(vector<Point> p){\n    int\
+    \ n=(int)p.size(),k=0;\n    if(n<=2)return p;\n    sort(begin(p),end(p),[](Point\
+    \ a,Point b){\n        return real(a)!=real(b)?real(a)<real(b):imag(a)<imag(b);\n\
+    \    });\n    vector<Point>ch(2*n);\n    for(int i=0;i<n;ch[k++]=p[i++]){\n  \
+    \      // while(k>=2 and cross(ch[k-1]-ch[k-2],p[i]-ch[k-1])<EPS)k--;\n      \
+    \  while(k>=2 and cross(ch[k-1]-ch[k-2],p[i]-ch[k-1])<0)k--;\n    }\n    for(int\
+    \ i=n-2,t=k+1;i>=0;ch[k++]=p[i--]){\n        // while(k>=t and cross(ch[k-1]-ch[k-2],p[i]-ch[k-1])<EPS)k--;\n\
+    \        while(k>=t and cross(ch[k-1]-ch[k-2],p[i]-ch[k-1])<0)k--;\n    }\n  \
+    \  ch.resize(k-1);\n    return ch;\n}\n#line 18 \"Geometry/include.cpp\"\n"
   code: '#include "./template.cpp"
 
     #include "./Rotate.cpp"
@@ -228,7 +263,9 @@ data:
 
     #include "./MinimumBoundingCircle.cpp"
 
-    '
+    #include "./ClosestPair.cpp"
+
+    #include "./Convex.cpp"'
   dependsOn:
   - Geometry/template.cpp
   - Geometry/Rotate.cpp
@@ -245,10 +282,12 @@ data:
   - Geometry/Tangent.cpp
   - Geometry/Contain.cpp
   - Geometry/MinimumBoundingCircle.cpp
+  - Geometry/ClosestPair.cpp
+  - Geometry/Convex.cpp
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-08-01 02:40:57+09:00'
+  timestamp: '2021-08-01 02:48:24+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp

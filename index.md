@@ -94,8 +94,14 @@ data:
       path: Geometry/CircumscribedCircle.cpp
       title: Geometry/CircumscribedCircle.cpp
     - icon: ':warning:'
+      path: Geometry/ClosestPair.cpp
+      title: Geometry/ClosestPair.cpp
+    - icon: ':warning:'
       path: Geometry/Contain.cpp
       title: Geometry/Contain.cpp
+    - icon: ':warning:'
+      path: Geometry/Convex.cpp
+      title: Geometry/Convex.cpp
     - icon: ':warning:'
       path: Geometry/CounterClockWise.cpp
       title: Geometry/CounterClockWise.cpp
