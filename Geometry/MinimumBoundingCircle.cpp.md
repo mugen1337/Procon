@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Geometry/include.cpp
+    title: Geometry/include.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
@@ -50,7 +53,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Geometry/MinimumBoundingCircle.cpp
-  requiredBy: []
+  requiredBy:
+  - Geometry/include.cpp
   timestamp: '2021-08-01 02:39:48+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
