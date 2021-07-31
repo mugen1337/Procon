@@ -118,6 +118,9 @@ data:
       path: Geometry/Intersect.cpp
       title: Geometry/Intersect.cpp
     - icon: ':warning:'
+      path: Geometry/MinimumBoundingCircle.cpp
+      title: Geometry/MinimumBoundingCircle.cpp
+    - icon: ':warning:'
       path: Geometry/Projection.cpp
       title: Geometry/Projection.cpp
     - icon: ':warning:'
