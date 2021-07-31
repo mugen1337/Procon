@@ -12,3 +12,4 @@
 #include "./CircumscribedCircle.cpp"
 #include "./Tangent.cpp"
 #include "./Contain.cpp"
+#include "./MinimumBoundingCircle.cpp"
