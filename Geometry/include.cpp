@@ -13,3 +13,5 @@
 #include "./Tangent.cpp"
 #include "./Contain.cpp"
 #include "./MinimumBoundingCircle.cpp"
+#include "./ClosestPair.cpp"
+#include "./Convex.cpp"
