@@ -253,6 +253,9 @@ data:
       path: Math/LinearEquation_double.cpp
       title: Math/LinearEquation_double.cpp
     - icon: ':warning:'
+      path: Math/ManhattanSquareSum.cpp
+      title: Math/ManhattanSquareSum.cpp
+    - icon: ':warning:'
       path: Math/NTTmodint.cpp
       title: Math/NTTmodint.cpp
     - icon: ':warning:'
@@ -302,6 +305,11 @@ data:
     - icon: ':warning:'
       path: Other/RandomNumberGenerator.cpp
       title: Other/RandomNumberGenerator.cpp
+  - name: SAT
+    pages:
+    - icon: ':warning:'
+      path: SAT/HornSAT.cpp
+      title: SAT/HornSAT.cpp
   - name: SegmentTree
     pages:
     - icon: ':heavy_check_mark:'

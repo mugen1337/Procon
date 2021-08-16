@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Math/ManhattanSquareSum.cpp
+    title: Math/ManhattanSquareSum.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
@@ -89,7 +92,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: SegmentTree/SegmentTree.cpp
-  requiredBy: []
+  requiredBy:
+  - Math/ManhattanSquareSum.cpp
   timestamp: '2021-04-19 13:27:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

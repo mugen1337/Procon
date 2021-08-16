@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Math/ManhattanSquareSum.cpp
+    title: Math/ManhattanSquareSum.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_A.test.cpp
@@ -118,7 +121,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: type/modint.cpp
-  requiredBy: []
+  requiredBy:
+  - Math/ManhattanSquareSum.cpp
   timestamp: '2021-01-03 23:50:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
