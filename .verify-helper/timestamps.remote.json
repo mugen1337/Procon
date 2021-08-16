@@ -40,6 +40,7 @@
 "test/yosupo_Set_Xor_Min.test.cpp": "2021-01-16 01:13:53 +0900",
 "test/yosupo_Shortest_Path.test.cpp": "2021-01-09 19:35:23 +0900",
 "test/yosupo_Static_Range_Inversions_Query.test.cpp": "2021-04-19 13:27:55 +0900",
+"test/yosupo_TECC.test.cpp": "2021-08-01 02:50:35 +0900",
 "test/yosupo_TreeDiameter.test.cpp": "2021-07-04 13:54:07 +0900",
 "test/yosupo_Unionfind.test.cpp": "2021-01-04 16:08:06 +0900",
 "test/yosupo_Unionfind_undo.test.cpp": "2021-01-04 00:45:32 +0900",
