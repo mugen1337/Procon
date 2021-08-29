@@ -92,7 +92,7 @@ struct RangeSet{
         return (int)st.size()-2;
     }
     // mex [x,~)
-    int mex(T x=0){
+    T mex(T x=0){
         auto ite=prev(st.lower_bound({x+1,x+1}));
         if(ite->first<=x and x<=ite->second) return ite->second+1;
         else return x;
