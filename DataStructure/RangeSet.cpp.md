@@ -49,7 +49,7 @@ data:
     \            ret+=r-ite->first+1;\n            if(r<ite->second) st.emplace(r+1,ite->second);\n\
     \            st.erase(ite);\n        }\n        return ret;\n    }\n    T erase(T\
     \ x){\n        return erase(x,x);\n    }\n    // number of range\n    int size(){\n\
-    \        return (int)st.size()-2;\n    }\n    // mex [x,~)\n    int mex(T x=0){\n\
+    \        return (int)st.size()-2;\n    }\n    // mex [x,~)\n    T mex(T x=0){\n\
     \        auto ite=prev(st.lower_bound({x+1,x+1}));\n        if(ite->first<=x and\
     \ x<=ite->second) return ite->second+1;\n        else return x;\n    }\n    void\
     \ output(){\n        cout<<\"RangeSet : \";\n        for(auto &p:st){\n      \
@@ -93,18 +93,18 @@ data:
     \            ret+=r-ite->first+1;\n            if(r<ite->second) st.emplace(r+1,ite->second);\n\
     \            st.erase(ite);\n        }\n        return ret;\n    }\n    T erase(T\
     \ x){\n        return erase(x,x);\n    }\n    // number of range\n    int size(){\n\
-    \        return (int)st.size()-2;\n    }\n    // mex [x,~)\n    int mex(T x=0){\n\
+    \        return (int)st.size()-2;\n    }\n    // mex [x,~)\n    T mex(T x=0){\n\
     \        auto ite=prev(st.lower_bound({x+1,x+1}));\n        if(ite->first<=x and\
     \ x<=ite->second) return ite->second+1;\n        else return x;\n    }\n    void\
     \ output(){\n        cout<<\"RangeSet : \";\n        for(auto &p:st){\n      \
     \      if(p.first==-TINF or p.second==TINF) continue;\n            cout<<\"[\"\
     <<p.first<<\", \"<<p.second<<\"] \";\n        }\n        cout<<\"\\n\";\n    }\n\
-    };"
+    };\n"
   dependsOn: []
   isVerificationFile: false
   path: DataStructure/RangeSet.cpp
   requiredBy: []
-  timestamp: '2021-01-03 22:50:05+09:00'
+  timestamp: '2021-08-29 22:23:24+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki1601.test.cpp
