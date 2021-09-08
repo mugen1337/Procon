@@ -14,11 +14,14 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    links: []
-  bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
-    \ std;\n#define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n\
-    #define debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define\
-    \ mod 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
+    PROBLEM: https://judge.yosupo.jp/problem/suffixarray
+    links:
+    - https://judge.yosupo.jp/problem/suffixarray
+  bundledCode: "#line 1 \"test/yosupo_SuffixArray.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/suffixarray\"\
+    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
+    \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
+    \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
     int dx[]={1,0,-1,0},dy[]={0,1,0,-1};\n// ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}\n\
     template<class T>bool chmax(T &a,const T &b){if(a<b){a=b;return true;}return false;}\n\
     template<class T>bool chmin(T &a,const T &b){if(b<a){a=b;return true;}return false;}\n\
@@ -27,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 2 \"test/yosupo_SuffixArray.test.cpp\"\n\n#line 1 \"\
+    \   return is;\n}\n\n#line 4 \"test/yosupo_SuffixArray.test.cpp\"\n\n#line 1 \"\
     String/SuffixArray.cpp\"\n/*\nhttps://ei1333.github.io/library/string/suffix-array.cpp\n\
     SA[i] := S[i ~ |S|)\n*/\nstruct SuffixArray{\n    vector<int> SA;\n    const string\
     \ s;\n\n    SuffixArray(const string &s):s(s){\n        SA.resize(s.size());\n\
@@ -61,21 +64,21 @@ data:
     \   if(h>0) h--;\n            }\n        }\n        if(output){\n            for(int\
     \ i=0;i<size();i++) cout<<i<<\" : lcp = \"<<LCP[i]<<\" : \"<<s.substr(SA[i])<<endl;\n\
     \        }\n        return LCP;\n    }\n\n    void out(){\n        for(int i=0;i<size();i++)\
-    \ cout<<i<<\" : \"<<s.substr(SA[i])<<endl;\n    }\n};\n#line 4 \"test/yosupo_SuffixArray.test.cpp\"\
+    \ cout<<i<<\" : \"<<s.substr(SA[i])<<endl;\n    }\n};\n#line 6 \"test/yosupo_SuffixArray.test.cpp\"\
     \n\nsigned main(){\n    string s;cin>>s;\n    SuffixArray SA(s);\n    rep(i,(int)s.size())\
     \ cout<<SA[i]<<(i+1==(int)s.size()?\"\\n\":\" \");\n\n    SA.LongestCommonPrefixArray(true);\n\
     \    return 0;\n}\n"
-  code: "#include \"../template.cpp\"\n\n#include \"../String/SuffixArray.cpp\"\n\n\
-    signed main(){\n    string s;cin>>s;\n    SuffixArray SA(s);\n    rep(i,(int)s.size())\
-    \ cout<<SA[i]<<(i+1==(int)s.size()?\"\\n\":\" \");\n\n    SA.LongestCommonPrefixArray(true);\n\
-    \    return 0;\n}"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/suffixarray\"\n\n#include\
+    \ \"../template.cpp\"\n\n#include \"../String/SuffixArray.cpp\"\n\nsigned main(){\n\
+    \    string s;cin>>s;\n    SuffixArray SA(s);\n    rep(i,(int)s.size()) cout<<SA[i]<<(i+1==(int)s.size()?\"\
+    \\n\":\" \");\n\n    SA.LongestCommonPrefixArray(true);\n    return 0;\n}"
   dependsOn:
   - template.cpp
   - String/SuffixArray.cpp
   isVerificationFile: true
   path: test/yosupo_SuffixArray.test.cpp
   requiredBy: []
-  timestamp: '2021-09-08 19:40:08+09:00'
+  timestamp: '2021-09-08 19:43:15+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_SuffixArray.test.cpp

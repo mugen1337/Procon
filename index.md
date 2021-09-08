@@ -331,13 +331,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/PalindromicTree.cpp
       title: String/PalindromicTree.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
     - icon: ':x:'
       path: String/SuffixArray.cpp
       title: String/SuffixArray.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: String/Trie.cpp
       title: String/Trie.cpp
   - name: Tree
@@ -393,7 +393,7 @@ data:
     - icon: ':warning:'
       path: type/int128.cpp
       title: type/int128.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
@@ -414,7 +414,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_2863.test.cpp
       title: test/AOJ_2863.test.cpp
     - icon: ':heavy_check_mark:'

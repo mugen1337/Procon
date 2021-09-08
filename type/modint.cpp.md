@@ -6,7 +6,7 @@ data:
     path: Math/ManhattanSquareSum.cpp
     title: Math/ManhattanSquareSum.cpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_2863.test.cpp
     title: test/AOJ_2863.test.cpp
   - icon: ':heavy_check_mark:'
@@ -75,9 +75,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n  \
@@ -127,7 +127,7 @@ data:
   requiredBy:
   - Math/ManhattanSquareSum.cpp
   timestamp: '2021-01-03 23:50:56+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_DPL_5_D.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

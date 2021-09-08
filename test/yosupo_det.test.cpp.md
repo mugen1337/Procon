@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: type/Matrix.cpp
     title: type/Matrix.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []

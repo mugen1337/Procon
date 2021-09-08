@@ -22,7 +22,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2821.test.cpp
     title: test/AOJ_2821.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_2863.test.cpp
     title: test/AOJ_2863.test.cpp
   - icon: ':heavy_check_mark:'
