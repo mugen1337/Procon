@@ -34,7 +34,7 @@ signed main(){
             Sh.push_back(tmp.get(0,S[i].size()));
             Sh_sz.push_back(S[i].size());
         }else{
-            trie.add(S[i],trie.size());
+            trie.add(S[i]);
             add_sz.push_back(S[i].size());
         }
     }
