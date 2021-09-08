@@ -24,7 +24,7 @@ private:
         add(s,id,s_idx+1,nodes[node_idx].nxt[k]);
         nodes[node_idx].cnt++;
     }
-    void query(const string &s,const function<void(int)> &f,int s_idx=0,int node_idx=0){
+    void query(const string &s,const function<void(int)> &f,int s_idx,int node_idx){
         for(auto &idx:nodes[node_idx].accept)f(idx);
         if(s_idx==(int)s.size()) return ;
         else {
