@@ -335,6 +335,9 @@ data:
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
     - icon: ':x:'
+      path: String/SuffixArray.cpp
+      title: String/SuffixArray.cpp
+    - icon: ':x:'
       path: String/Trie.cpp
       title: String/Trie.cpp
   - name: Tree
@@ -522,6 +525,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Static_Range_Inversions_Query.test.cpp
       title: test/yosupo_Static_Range_Inversions_Query.test.cpp
+    - icon: ':x:'
+      path: test/yosupo_SuffixArray.test.cpp
+      title: test/yosupo_SuffixArray.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_TECC.test.cpp
       title: test/yosupo_TECC.test.cpp

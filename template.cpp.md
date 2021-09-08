@@ -133,6 +133,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Static_Range_Inversions_Query.test.cpp
     title: test/yosupo_Static_Range_Inversions_Query.test.cpp
+  - icon: ':x:'
+    path: test/yosupo_SuffixArray.test.cpp
+    title: test/yosupo_SuffixArray.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo_TECC.test.cpp
     title: test/yosupo_TECC.test.cpp
@@ -302,6 +305,7 @@ data:
   - test/AOJ_ALDS1_10_c.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
   - test/AOJ_2292.test.cpp
+  - test/yosupo_SuffixArray.test.cpp
   - test/yuki899.test.cpp
   - test/yosupo_det.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
