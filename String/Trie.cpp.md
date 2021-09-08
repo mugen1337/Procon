@@ -20,11 +20,11 @@ data:
     \        int k=conv(s[s_idx]);\n        if(nodes[node_idx].nxt[k]==-1){\n    \
     \        nodes[node_idx].nxt[k]=(int)nodes.size();\n            nodes.push_back(Node());\n\
     \        }\n        add(s,id,s_idx+1,nodes[node_idx].nxt[k]);\n        nodes[node_idx].cnt++;\n\
-    \    }\n    void query(const string &s,const function<void(int)> &f,int s_idx=0,int\
-    \ node_idx=0){\n        for(auto &idx:nodes[node_idx].accept)f(idx);\n       \
-    \ if(s_idx==(int)s.size()) return ;\n        else {\n            int k=conv(s[s_idx]);\n\
-    \            if(nodes[node_idx].nxt[k]==-1) return;\n            query(s,f,s_idx+1,nodes[node_idx].nxt[k]);\n\
-    \        }\n    }\n\npublic:\n \n    Trie(function<int(char)> conv):conv(conv),root(0){nodes.push_back(Node());}\n\
+    \    }\n    void query(const string &s,const function<void(int)> &f,int s_idx,int\
+    \ node_idx){\n        for(auto &idx:nodes[node_idx].accept)f(idx);\n        if(s_idx==(int)s.size())\
+    \ return ;\n        else {\n            int k=conv(s[s_idx]);\n            if(nodes[node_idx].nxt[k]==-1)\
+    \ return;\n            query(s,f,s_idx+1,nodes[node_idx].nxt[k]);\n        }\n\
+    \    }\n\npublic:\n \n    Trie(function<int(char)> conv):conv(conv),root(0){nodes.push_back(Node());}\n\
     \    void add(const string &s,int idx=-1){\n        if(idx<0) idx=count();\n \
     \       add(s,idx,0,0);\n    }\n    // f(k) := \u6587\u5B57\u5217\u306Eidx\u3092\
     \u901A\u904E\u3059\u308B\u306E\u3067\u305D\u308C\u306B\u5BFE\u3059\u308B\u51E6\
@@ -45,11 +45,11 @@ data:
     \     }\n        int k=conv(s[s_idx]);\n        if(nodes[node_idx].nxt[k]==-1){\n\
     \            nodes[node_idx].nxt[k]=(int)nodes.size();\n            nodes.push_back(Node());\n\
     \        }\n        add(s,id,s_idx+1,nodes[node_idx].nxt[k]);\n        nodes[node_idx].cnt++;\n\
-    \    }\n    void query(const string &s,const function<void(int)> &f,int s_idx=0,int\
-    \ node_idx=0){\n        for(auto &idx:nodes[node_idx].accept)f(idx);\n       \
-    \ if(s_idx==(int)s.size()) return ;\n        else {\n            int k=conv(s[s_idx]);\n\
-    \            if(nodes[node_idx].nxt[k]==-1) return;\n            query(s,f,s_idx+1,nodes[node_idx].nxt[k]);\n\
-    \        }\n    }\n\npublic:\n \n    Trie(function<int(char)> conv):conv(conv),root(0){nodes.push_back(Node());}\n\
+    \    }\n    void query(const string &s,const function<void(int)> &f,int s_idx,int\
+    \ node_idx){\n        for(auto &idx:nodes[node_idx].accept)f(idx);\n        if(s_idx==(int)s.size())\
+    \ return ;\n        else {\n            int k=conv(s[s_idx]);\n            if(nodes[node_idx].nxt[k]==-1)\
+    \ return;\n            query(s,f,s_idx+1,nodes[node_idx].nxt[k]);\n        }\n\
+    \    }\n\npublic:\n \n    Trie(function<int(char)> conv):conv(conv),root(0){nodes.push_back(Node());}\n\
     \    void add(const string &s,int idx=-1){\n        if(idx<0) idx=count();\n \
     \       add(s,idx,0,0);\n    }\n    // f(k) := \u6587\u5B57\u5217\u306Eidx\u3092\
     \u901A\u904E\u3059\u308B\u306E\u3067\u305D\u308C\u306B\u5BFE\u3059\u308B\u51E6\
@@ -66,7 +66,7 @@ data:
   isVerificationFile: false
   path: String/Trie.cpp
   requiredBy: []
-  timestamp: '2021-09-08 18:43:11+09:00'
+  timestamp: '2021-09-08 18:59:44+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/AOJ_2863.test.cpp
