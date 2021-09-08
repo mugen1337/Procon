@@ -37,7 +37,10 @@ private:
 public:
  
     Trie(function<int(char)> conv):conv(conv),root(0){nodes.push_back(Node());}
-    void add(const string &s,int idx=0){ add(s,idx,0,0); }
+    void add(const string &s,int idx=-1){
+        if(idx<0) idx=count();
+        add(s,idx,0,0);
+    }
     // f(k) := 文字列のidxを通過するのでそれに対する処理, s[s_idx]から読み始める
     void query(const string &s,const function<void(int)> &f,int s_idx=0){ query(s,f,s_idx,0); }
 
