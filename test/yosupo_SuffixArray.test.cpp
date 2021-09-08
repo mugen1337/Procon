@@ -1,3 +1,5 @@
+#define PROBLEM "https://judge.yosupo.jp/problem/suffixarray"
+
 #include "../template.cpp"
 
 #include "../String/SuffixArray.cpp"
