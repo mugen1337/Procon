@@ -334,6 +334,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
+    - icon: ':warning:'
+      path: String/Trie.cpp
+      title: String/Trie.cpp
   - name: Tree
     pages:
     - icon: ':heavy_check_mark:'

@@ -77,8 +77,8 @@ data:
   timestamp: '2021-07-04 13:54:07+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo_TECC.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
+  - test/yosupo_TECC.test.cpp
 documentation_of: Graph2/LowLink.cpp
 layout: document
 title: Low Link
