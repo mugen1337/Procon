@@ -331,10 +331,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/PalindromicTree.cpp
       title: String/PalindromicTree.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: String/Trie.cpp
       title: String/Trie.cpp
   - name: Tree
@@ -367,7 +367,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -390,7 +390,7 @@ data:
     - icon: ':warning:'
       path: type/int128.cpp
       title: type/int128.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
@@ -411,6 +411,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2821.test.cpp
       title: test/AOJ_2821.test.cpp
+    - icon: ':x:'
+      path: test/AOJ_2863.test.cpp
+      title: test/AOJ_2863.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_ALDS1_10_c.test.cpp
       title: test/AOJ_ALDS1_10_c.test.cpp

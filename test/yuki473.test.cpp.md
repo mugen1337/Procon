@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Math/FormalPowerSeriesNaive.cpp
     title: Math/FormalPowerSeriesNaive.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []

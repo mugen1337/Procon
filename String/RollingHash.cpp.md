@@ -6,9 +6,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2292.test.cpp
     title: test/AOJ_2292.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: test/AOJ_2863.test.cpp
+    title: test/AOJ_2863.test.cpp
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"String/RollingHash.cpp\"\n// hash type\nusing ull=unsigned\
@@ -62,8 +65,9 @@ data:
   path: String/RollingHash.cpp
   requiredBy: []
   timestamp: '2021-01-04 00:41:25+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/AOJ_2863.test.cpp
   - test/AOJ_2292.test.cpp
 documentation_of: String/RollingHash.cpp
 layout: document
