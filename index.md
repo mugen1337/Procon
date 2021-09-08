@@ -334,7 +334,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/RollingHash.cpp
       title: String/RollingHash.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: String/SuffixArray.cpp
       title: String/SuffixArray.cpp
     - icon: ':heavy_check_mark:'
@@ -370,7 +370,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -525,7 +525,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Static_Range_Inversions_Query.test.cpp
       title: test/yosupo_Static_Range_Inversions_Query.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_SuffixArray.test.cpp
       title: test/yosupo_SuffixArray.test.cpp
     - icon: ':heavy_check_mark:'

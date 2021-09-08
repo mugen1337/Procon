@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: String/SuffixArray.cpp
     title: String/SuffixArray.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/suffixarray
@@ -66,20 +66,19 @@ data:
     \        }\n        return LCP;\n    }\n\n    void out(){\n        for(int i=0;i<size();i++)\
     \ cout<<i<<\" : \"<<s.substr(SA[i])<<endl;\n    }\n};\n#line 6 \"test/yosupo_SuffixArray.test.cpp\"\
     \n\nsigned main(){\n    string s;cin>>s;\n    SuffixArray SA(s);\n    rep(i,(int)s.size())\
-    \ cout<<SA[i]<<(i+1==(int)s.size()?\"\\n\":\" \");\n\n    SA.LongestCommonPrefixArray(true);\n\
-    \    return 0;\n}\n"
+    \ cout<<SA[i]<<(i+1==(int)s.size()?\"\\n\":\" \");\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/suffixarray\"\n\n#include\
     \ \"../template.cpp\"\n\n#include \"../String/SuffixArray.cpp\"\n\nsigned main(){\n\
     \    string s;cin>>s;\n    SuffixArray SA(s);\n    rep(i,(int)s.size()) cout<<SA[i]<<(i+1==(int)s.size()?\"\
-    \\n\":\" \");\n\n    SA.LongestCommonPrefixArray(true);\n    return 0;\n}"
+    \\n\":\" \");\n    return 0;\n}"
   dependsOn:
   - template.cpp
   - String/SuffixArray.cpp
   isVerificationFile: true
   path: test/yosupo_SuffixArray.test.cpp
   requiredBy: []
-  timestamp: '2021-09-08 19:43:15+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-09-08 19:48:42+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_SuffixArray.test.cpp
 layout: document
