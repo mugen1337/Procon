@@ -33,4 +33,7 @@ struct LeftistHeap{
         assert(root!=nullptr);
         return root->val;
     }
+    bool empty(){
+        return root==nullptr;
+    }
 };
