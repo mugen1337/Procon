@@ -387,7 +387,7 @@ data:
         \u3048\u4E0A\u3052"
     - icon: ':warning:'
       path: tips/JOI-Candies.cpp
-      title: tips/JOI-Candies.cpp
+      title: "JOI \u98F4"
   - name: type
     pages:
     - icon: ':warning:'
