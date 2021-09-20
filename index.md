@@ -6,6 +6,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Algorithm/Mo.cpp
       title: Algorithm/Mo.cpp
+    - icon: ':warning:'
+      path: Algorithm/hu_tucker.cpp
+      title: Algorithm/hu_tucker.cpp
   - name: BinarySearchTree
     pages:
     - icon: ':warning:'

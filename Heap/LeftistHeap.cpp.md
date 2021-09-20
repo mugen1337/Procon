@@ -22,7 +22,8 @@ data:
     \ push(T x){\n        root=meld(root,new Node(x));\n    }\n    T pop(){\n    \
     \    assert(root!=nullptr);\n        T ret=root->val;\n        root=meld(root->l,root->r);\n\
     \        return ret;\n    }\n    T top(){\n        assert(root!=nullptr);\n  \
-    \      return root->val;\n    }\n};\n"
+    \      return root->val;\n    }\n    bool empty(){\n        return root==nullptr;\n\
+    \    }\n};\n"
   code: "template<typename T,bool less=true>\nstruct LeftistHeap{\n    struct Node{\n\
     \        Node *l,*r;\n        int s;\n        T val;\n        Node(T val):l(nullptr),r(nullptr),s(1),val(val){}\n\
     \    };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    Node\
@@ -33,12 +34,13 @@ data:
     \ push(T x){\n        root=meld(root,new Node(x));\n    }\n    T pop(){\n    \
     \    assert(root!=nullptr);\n        T ret=root->val;\n        root=meld(root->l,root->r);\n\
     \        return ret;\n    }\n    T top(){\n        assert(root!=nullptr);\n  \
-    \      return root->val;\n    }\n};"
+    \      return root->val;\n    }\n    bool empty(){\n        return root==nullptr;\n\
+    \    }\n};"
   dependsOn: []
   isVerificationFile: false
   path: Heap/LeftistHeap.cpp
   requiredBy: []
-  timestamp: '2021-03-04 00:00:10+09:00'
+  timestamp: '2021-09-20 14:34:24+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_ALDS1_9_C.test.cpp

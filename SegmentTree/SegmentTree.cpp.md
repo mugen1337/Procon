@@ -97,8 +97,8 @@ data:
   timestamp: '2021-04-19 13:27:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yuki3784.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
+  - test/yuki3784.test.cpp
 documentation_of: SegmentTree/SegmentTree.cpp
 layout: document
 title: Segment Tree

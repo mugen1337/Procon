@@ -41,11 +41,11 @@ data:
     \ push(T x){\n        root=meld(root,new Node(x));\n    }\n    T pop(){\n    \
     \    assert(root!=nullptr);\n        T ret=root->val;\n        root=meld(root->l,root->r);\n\
     \        return ret;\n    }\n    T top(){\n        assert(root!=nullptr);\n  \
-    \      return root->val;\n    }\n};\n#line 6 \"test/AOJ_ALDS1_9_C.test.cpp\"\n\
-    \n\nsigned main(){\n    LeftistHeap<int,false> que;\n\n    string s;\n    while(cin>>s,s!=\"\
-    end\"){\n        if(s==\"insert\"){\n            int x;cin>>x;\n            que.push(x);\n\
-    \        }else{\n            cout<<que.pop()<<endl;\n        }\n    }\n    return\
-    \ 0;\n}\n\n"
+    \      return root->val;\n    }\n    bool empty(){\n        return root==nullptr;\n\
+    \    }\n};\n#line 6 \"test/AOJ_ALDS1_9_C.test.cpp\"\n\n\nsigned main(){\n    LeftistHeap<int,false>\
+    \ que;\n\n    string s;\n    while(cin>>s,s!=\"end\"){\n        if(s==\"insert\"\
+    ){\n            int x;cin>>x;\n            que.push(x);\n        }else{\n    \
+    \        cout<<que.pop()<<endl;\n        }\n    }\n    return 0;\n}\n\n"
   code: "#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../Heap/LeftistHeap.cpp\"\n\n\n\
     signed main(){\n    LeftistHeap<int,false> que;\n\n    string s;\n    while(cin>>s,s!=\"\
@@ -58,7 +58,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_ALDS1_9_C.test.cpp
   requiredBy: []
-  timestamp: '2021-03-04 00:00:10+09:00'
+  timestamp: '2021-09-20 14:34:24+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_ALDS1_9_C.test.cpp

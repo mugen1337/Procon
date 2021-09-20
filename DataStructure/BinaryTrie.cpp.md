@@ -80,8 +80,8 @@ data:
   timestamp: '2021-01-16 01:06:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo_Set_Xor_Min.test.cpp
   - test/AOJ_DSL_2_B.test.cpp
+  - test/yosupo_Set_Xor_Min.test.cpp
 documentation_of: DataStructure/BinaryTrie.cpp
 layout: document
 title: Binary Trie
