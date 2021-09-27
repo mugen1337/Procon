@@ -32,10 +32,16 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/TwoEdgeConnectedComponents.cpp
     title: Graph2/TwoEdgeConnectedComponents.cpp
+  - icon: ':x:'
+    path: Graph2/WeightedMaximumIndependentSet.cpp
+    title: Graph2/WeightedMaximumIndependentSet.cpp
   - icon: ':heavy_check_mark:'
     path: Graph2/Yen.cpp
     title: Yen's Algorithm (K-Shortest-Path)
   _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/AOJ_ACPC_day2_I.test.cpp
+    title: test/AOJ_ACPC_day2_I.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_1_A.test.cpp
     title: test/AOJ_GRL_1_A.test.cpp
@@ -66,9 +72,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.cpp
@@ -120,8 +126,9 @@ data:
   - Graph2/Eppstein.cpp
   - Graph2/StronglyConnectedComponents.cpp
   - Graph2/Rerooting.cpp
+  - Graph2/WeightedMaximumIndependentSet.cpp
   timestamp: '2021-07-04 13:54:07+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yosupo_TECC.test.cpp
   - test/yuki1249.test.cpp
@@ -131,6 +138,7 @@ data:
   - test/yuki5436.test.cpp
   - test/yosupo_KSW.test.cpp
   - test/yuki4227.test.cpp
+  - test/AOJ_ACPC_day2_I.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
 documentation_of: Graph2/GraphTemplate.cpp
