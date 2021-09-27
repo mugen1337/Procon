@@ -194,7 +194,7 @@ data:
     - icon: ':warning:'
       path: Graph2/GraphRelabel.cpp
       title: Graph2/GraphRelabel.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.cpp
       title: Graph2/GraphTemplate.cpp
     - icon: ':heavy_check_mark:'
@@ -215,7 +215,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/TwoEdgeConnectedComponents.cpp
       title: Graph2/TwoEdgeConnectedComponents.cpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: Graph2/WeightedMaximumIndependentSet.cpp
       title: Graph2/WeightedMaximumIndependentSet.cpp
     - icon: ':heavy_check_mark:'
@@ -376,7 +376,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -426,9 +426,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_2863.test.cpp
       title: test/AOJ_2863.test.cpp
-    - icon: ':x:'
-      path: test/AOJ_ACPC_day2_I.test.cpp
-      title: test/AOJ_ACPC_day2_I.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_ALDS1_10_c.test.cpp
       title: test/AOJ_ALDS1_10_c.test.cpp

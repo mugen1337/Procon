@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Math/AndConvolution.cpp
     title: Math/AndConvolution.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   - icon: ':heavy_check_mark:'

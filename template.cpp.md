@@ -25,9 +25,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_2863.test.cpp
     title: test/AOJ_2863.test.cpp
-  - icon: ':x:'
-    path: test/AOJ_ACPC_day2_I.test.cpp
-    title: test/AOJ_ACPC_day2_I.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/AOJ_ALDS1_10_c.test.cpp
     title: test/AOJ_ALDS1_10_c.test.cpp
@@ -229,9 +226,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -266,7 +263,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.cpp
   timestamp: '2021-01-03 23:01:13+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_NTL_1_A.test.cpp
   - test/yosupo_Rectangle_Sum.test.cpp
@@ -338,7 +335,6 @@ data:
   - test/AOJ_ALDS1_10_c.test.cpp
   - test/AOJ_ALDS1_9_C.test.cpp
   - test/yuki5398_2.test.cpp
-  - test/AOJ_ACPC_day2_I.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/AOJ_DPL_5_C.test.cpp
