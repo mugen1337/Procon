@@ -1,6 +1,7 @@
 #include "./GraphTemplate.cpp"
 
 /*
+verify: https://onlinejudge.u-aizu.ac.jp/beta/review.html#ACPC2021Day2/5917572
 頂点をグループA, Bに分ける．
 Bでは
 dp_B[S]:= (Sの部分集合のうち，重みの和が最大になる独立集合)
