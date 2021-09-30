@@ -51,17 +51,18 @@ data:
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
     \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Dijkstra.cpp\"\
     \n\ntemplate<typename T>\nstruct Dijkstra{\n    const T inf;\n    Graph<T> g;\n\
-    \    vector<T> d;\n    vector<int> prev;\n    \n    Dijkstra(Graph<T> g):inf(numeric_limits<T>::max()/2),g(g){}\n\
+    \    vector<T> d;\n    vector<int> prev,eid;\n    \n    Dijkstra(Graph<T> g):inf(numeric_limits<T>::max()/4),g(g){}\n\
     \n    vector<T> build(int st){\n        d.assign(g.V,inf);\n        prev.assign(g.V,-1);\n\
-    \        d[st]=0;\n        priority_queue<pair<T,int>,vector<pair<T,int>>,greater<pair<T,int>>>\
+    \        eid.assign(g.V,-1);\n        d[st]=0;\n        priority_queue<pair<T,int>,vector<pair<T,int>>,greater<pair<T,int>>>\
     \ que;\n        que.emplace(d[st],st);\n        while(!que.empty()){\n       \
     \     auto p=que.top();que.pop();\n            int cur=p.second;\n           \
     \ if(d[cur]<p.first) continue;\n            for(auto &e:g[cur]){\n           \
     \     if(d[e]>d[cur]+e.w){\n                    d[e]=d[cur]+e.w;\n           \
     \         prev[e]=cur;\n                    que.emplace(d[e],e);\n           \
-    \     }\n            }\n        }\n        return d;\n    }\n    \n    vector<int>\
-    \ get_path(int gl){\n        vector<int> ret;\n        if(d[g]==inf) return ret;\n\
-    \        for(;gl!=-1;gl=prev[gl]) ret.push_back(gl);\n        reverse(ret.begin(),ret.end());\n\
+    \     }\n            }\n        }\n        return d;\n    }\n\n    // vertex =\
+    \ false :-> edge idx\n    vector<int> get_path(int gl,bool vertex=true){\n   \
+    \     vector<int> ret;\n        if(d[gl]==inf) return ret;\n        for(;gl!=-1;gl=prev[gl]){\n\
+    \            ret.push_back(vertex?gl:eid[gl]);\n        }\n        reverse(ret.begin(),ret.end());\n\
     \        return ret;\n    }\n};\n#line 6 \"test/AOJ_GRL_1_A.test.cpp\"\n\nsigned\
     \ main(){\n    int n,m,s;cin>>n>>m>>s;\n    Graph<ll> g(n);\n    g.read(m,0,true,true);\n\
     \    Dijkstra dij(g);\n    for(auto x:dij.build(s)){\n        if(x==dij.inf) cout<<\"\
@@ -78,7 +79,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_GRL_1_A.test.cpp
   requiredBy: []
-  timestamp: '2021-07-04 13:54:07+09:00'
+  timestamp: '2021-09-30 23:03:26+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_GRL_1_A.test.cpp
