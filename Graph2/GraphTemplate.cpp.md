@@ -22,7 +22,7 @@ data:
     title: Low Link
   - icon: ':warning:'
     path: Graph2/RangeEdgeGraph.cpp
-    title: Graph2/RangeEdgeGraph.cpp
+    title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
   - icon: ':heavy_check_mark:'
     path: Graph2/Rerooting.cpp
     title: Graph2/Rerooting.cpp

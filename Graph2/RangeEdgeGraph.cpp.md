@@ -85,8 +85,9 @@ data:
   verifiedWith: []
 documentation_of: Graph2/RangeEdgeGraph.cpp
 layout: document
-redirect_from:
-- /library/Graph2/RangeEdgeGraph.cpp
-- /library/Graph2/RangeEdgeGraph.cpp.html
-title: Graph2/RangeEdgeGraph.cpp
+title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
 ---
+
+## 概要  
+
+https://lorent-kyopro.hatenablog.com/entry/2020/07/24/170656
