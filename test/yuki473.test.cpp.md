@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Math/FormalPowerSeriesNaive.cpp
     title: Math/FormalPowerSeriesNaive.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.cpp
     title: template.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
@@ -110,11 +110,26 @@ data:
     \        P q_=q;\n        for(int i=1;i<(int)q_.size();i+=2) q_[i]*=-1;\n    \
     \    q*=q_;p*=q_;// q\u306F\u5947\u6570\u9805\u304C\u6D88\u3048\u308B\n      \
     \  return p.slice(k%2,p.size(),2).nth_term(q.slice(0,q.size(),2),k/2);\n    }\n\
-    };\n#line 10 \"test/yuki473.test.cpp\"\n\nusing FPS=FormalPowerSeriesNaive<mint>;\n\
-    \nsigned main(){\n    int n,s,k;cin>>n>>s>>k;\n    s-=n*(n-1)/2*k;\n    if(s<0){\n\
-    \        cout<<0<<endl;\n        return 0;\n    }\n\n    FPS den{1},num{1};\n\
-    \    for(int i=1;i<=n;i++) den-=(den<<i);\n    cout<<num.nth_term(den,s)<<endl;\n\
-    \    return 0;\n}\n"
+    \n\n    /*\n    a_i = sum{j=1}^{d} c_j * a_{i-j}\n    return c\n    */\n    P\
+    \ berlekamp_massey(){\n        int N=(int)this->size();\n        P b={T(-1)},c={T(-1)};\n\
+    \        T y=T(1);\n\n        for(int ed=1;ed<=N;ed++){\n            int l=(int)c.size(),m=(int)b.size();\n\
+    \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
+    \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
+    \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
+    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
+    \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
+    \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
+    \    }\n\n    // this[0], this[1] ... \n    // linear recurrence\n    // -> return\
+    \ Nth term\n    // verified : https://atcoder.jp/contests/kupc2021/submissions/26974136\n\
+    \    T nth_linear_recurrence(long long N){\n        auto q=berlekamp_massey();\n\
+    \        assert(not q.empty() and q[0]!=T(0));\n        if(N<(int)this->size())\
+    \ return (*this)[N];\n        auto p=this->pre((int)q.size()-1)*q;\n        p.resize((int)q.size()-1);\n\
+    \        return p.nth_term(q,N);\n    }\n};\n#line 10 \"test/yuki473.test.cpp\"\
+    \n\nusing FPS=FormalPowerSeriesNaive<mint>;\n\nsigned main(){\n    int n,s,k;cin>>n>>s>>k;\n\
+    \    s-=n*(n-1)/2*k;\n    if(s<0){\n        cout<<0<<endl;\n        return 0;\n\
+    \    }\n\n    FPS den{1},num{1};\n    for(int i=1;i<=n;i++) den-=(den<<i);\n \
+    \   cout<<num.nth_term(den,s)<<endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://yukicoder.me/problems/473\"\n\n#include \"../template.cpp\"\
     \n\n#include \"../type/modint.cpp\"\n\nusing mint=ModInt<1000000007>;\n\n#include\
     \ \"../Math/FormalPowerSeriesNaive.cpp\"\n\nusing FPS=FormalPowerSeriesNaive<mint>;\n\
@@ -129,7 +144,7 @@ data:
   isVerificationFile: true
   path: test/yuki473.test.cpp
   requiredBy: []
-  timestamp: '2021-02-20 02:34:58+09:00'
+  timestamp: '2021-11-01 19:47:42+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yuki473.test.cpp

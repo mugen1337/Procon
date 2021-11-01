@@ -3,19 +3,20 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki473.test.cpp
     title: test/yuki473.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - http://q.c.titech.ac.jp/docs/progs/polynomial_division.html
     - https://atcoder.jp/contests/aising2020/submissions/15300636
+    - https://atcoder.jp/contests/kupc2021/submissions/26974136
     - https://qiita.com/hotman78/items/f0e6d2265badd84d429a
   bundledCode: "#line 1 \"Math/FormalPowerSeriesNaive.cpp\"\ntemplate<typename T>\n\
     struct FormalPowerSeriesNaive:vector<T>{\n    using vector<T>::vector;\n    using\
@@ -73,7 +74,22 @@ data:
     \        P q_=q;\n        for(int i=1;i<(int)q_.size();i+=2) q_[i]*=-1;\n    \
     \    q*=q_;p*=q_;// q\u306F\u5947\u6570\u9805\u304C\u6D88\u3048\u308B\n      \
     \  return p.slice(k%2,p.size(),2).nth_term(q.slice(0,q.size(),2),k/2);\n    }\n\
-    };\n"
+    \n\n    /*\n    a_i = sum{j=1}^{d} c_j * a_{i-j}\n    return c\n    */\n    P\
+    \ berlekamp_massey(){\n        int N=(int)this->size();\n        P b={T(-1)},c={T(-1)};\n\
+    \        T y=T(1);\n\n        for(int ed=1;ed<=N;ed++){\n            int l=(int)c.size(),m=(int)b.size();\n\
+    \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
+    \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
+    \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
+    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
+    \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
+    \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
+    \    }\n\n    // this[0], this[1] ... \n    // linear recurrence\n    // -> return\
+    \ Nth term\n    // verified : https://atcoder.jp/contests/kupc2021/submissions/26974136\n\
+    \    T nth_linear_recurrence(long long N){\n        auto q=berlekamp_massey();\n\
+    \        assert(not q.empty() and q[0]!=T(0));\n        if(N<(int)this->size())\
+    \ return (*this)[N];\n        auto p=this->pre((int)q.size()-1)*q;\n        p.resize((int)q.size()-1);\n\
+    \        return p.nth_term(q,N);\n    }\n};\n"
   code: "template<typename T>\nstruct FormalPowerSeriesNaive:vector<T>{\n    using\
     \ vector<T>::vector;\n    using P=FormalPowerSeriesNaive;\n\n    P multiply(const\
     \ P &lhs,const P &rhs){\n        auto ret=P((int)lhs.size()+rhs.size()-1);\n \
@@ -129,13 +145,28 @@ data:
     \        P q_=q;\n        for(int i=1;i<(int)q_.size();i+=2) q_[i]*=-1;\n    \
     \    q*=q_;p*=q_;// q\u306F\u5947\u6570\u9805\u304C\u6D88\u3048\u308B\n      \
     \  return p.slice(k%2,p.size(),2).nth_term(q.slice(0,q.size(),2),k/2);\n    }\n\
-    };"
+    \n\n    /*\n    a_i = sum{j=1}^{d} c_j * a_{i-j}\n    return c\n    */\n    P\
+    \ berlekamp_massey(){\n        int N=(int)this->size();\n        P b={T(-1)},c={T(-1)};\n\
+    \        T y=T(1);\n\n        for(int ed=1;ed<=N;ed++){\n            int l=(int)c.size(),m=(int)b.size();\n\
+    \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
+    \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
+    \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
+    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
+    \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
+    \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
+    \    }\n\n    // this[0], this[1] ... \n    // linear recurrence\n    // -> return\
+    \ Nth term\n    // verified : https://atcoder.jp/contests/kupc2021/submissions/26974136\n\
+    \    T nth_linear_recurrence(long long N){\n        auto q=berlekamp_massey();\n\
+    \        assert(not q.empty() and q[0]!=T(0));\n        if(N<(int)this->size())\
+    \ return (*this)[N];\n        auto p=this->pre((int)q.size()-1)*q;\n        p.resize((int)q.size()-1);\n\
+    \        return p.nth_term(q,N);\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: Math/FormalPowerSeriesNaive.cpp
   requiredBy: []
-  timestamp: '2021-02-20 02:34:58+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2021-11-01 19:47:42+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yuki2017.test.cpp
   - test/yuki473.test.cpp

@@ -42,15 +42,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki1917.test.cpp
     title: test/yuki1917.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki5125.test.cpp
     title: test/yuki5125.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja
@@ -149,7 +149,7 @@ data:
   path: Math/Precalc.cpp
   requiredBy: []
   timestamp: '2021-04-24 20:23:47+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/AOJ_DPL_5_D.test.cpp
   - test/yuki2017.test.cpp
