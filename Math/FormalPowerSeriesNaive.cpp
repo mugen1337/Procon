@@ -133,4 +133,49 @@ struct FormalPowerSeriesNaive:vector<T>{
         q*=q_;p*=q_;// qは奇数項が消える
         return p.slice(k%2,p.size(),2).nth_term(q.slice(0,q.size(),2),k/2);
     }
+
+
+    /*
+    a_i = sum{j=1}^{d} c_j * a_{i-j}
+    return c
+    */
+    P berlekamp_massey(){
+        int N=(int)this->size();
+        P b={T(-1)},c={T(-1)};
+        T y=T(1);
+
+        for(int ed=1;ed<=N;ed++){
+            int l=(int)c.size(),m=(int)b.size();
+            T x=0;
+            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];
+            b.emplace_back(0);
+            m++;
+            if(x==T(0)) continue;
+            T freq=x/y;
+            if(l<m){
+                auto tmp=c;
+                c.insert(begin(c),m-l,mint(0));
+                for(int i=0;i<m;i++) c[m-1-i]-=freq*b[m-1-i];
+                b=tmp;
+                y=x;
+            }else{
+                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];
+            }
+        }
+        reverse(begin(c),end(c));
+        return c;
+    }
+
+    // this[0], this[1] ... 
+    // linear recurrence
+    // -> return Nth term
+    // verified : https://atcoder.jp/contests/kupc2021/submissions/26974136
+    T nth_linear_recurrence(long long N){
+        auto q=berlekamp_massey();
+        assert(not q.empty() and q[0]!=T(0));
+        if(N<(int)this->size()) return (*this)[N];
+        auto p=this->pre((int)q.size()-1)*q;
+        p.resize((int)q.size()-1);
+        return p.nth_term(q,N);
+    }
 };
