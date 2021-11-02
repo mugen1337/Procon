@@ -191,10 +191,10 @@ data:
     \n    mt19937 mt(time(0));\n    shuffle(v.begin(),v.end(),mt);\n    Circle ret(0,0);\n\
     \n    auto make_circle2=[&](Point a,Point b){\n        return Circle((a+b)*0.5,dis(a,b)/2);\n\
     \    };\n\n    auto make_circle3=[&](Point A,Point B,Point C){\n        Point\
-    \ cent=circumcenter(A,B,C);\n        return Circle(cent,dis(cent,A));\n    };\n\
-    \n    auto isIn=[&](Point a){\n        return dis(ret.center,a)<ret.r+EPS;\n \
-    \   };\n\n    ret=make_circle2(v[0],v[1]);\n    for(int i=2;i<n;i++){\n      \
-    \  //v[i]\u304C\u5186\u306B\u5165\u3063\u3066\u3044\u306A\u3044\u306A\u3089\n\
+    \ cent=circumscribed_circle(A,B,C).center;\n        return Circle(cent,dis(cent,A));\n\
+    \    };\n\n    auto isIn=[&](Point a){\n        return dis(ret.center,a)<ret.r+EPS;\n\
+    \    };\n\n    ret=make_circle2(v[0],v[1]);\n    for(int i=2;i<n;i++){\n     \
+    \   //v[i]\u304C\u5186\u306B\u5165\u3063\u3066\u3044\u306A\u3044\u306A\u3089\n\
     \        if(!isIn(v[i])){\n            //\u5186\u5185\u306B\u306A\u3044\u306A\u3089\
     \u70B9v[i]\u306F\u5FC5\u305A\u5186\u5468\u4E0A\u306B\u6765\u308B\n           \
     \ ret=make_circle2(v[0],v[i]);\n            for(int j=1;j<i;j++){\n          \
@@ -288,7 +288,7 @@ data:
   isVerificationFile: false
   path: Geometry/include.cpp
   requiredBy: []
-  timestamp: '2021-11-02 17:27:27+09:00'
+  timestamp: '2021-11-02 17:29:19+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Geometry/include.cpp
