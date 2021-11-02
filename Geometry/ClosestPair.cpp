@@ -5,7 +5,7 @@ Real closest_pair(vector<Point> ps){
         return real(a)<real(b);
     });
     function<Real(int,int)> rec=[&](int l,int r){
-        if(r-l<=1) return 1e18;
+        if(r-l<=1) return (Real)1e18;
         int m=(l+r)/2;
         Real x=real(ps[m]);
         Real ret=min(rec(l,m),rec(m,r));
