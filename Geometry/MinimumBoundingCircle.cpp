@@ -11,7 +11,7 @@ Circle MinimumBoundingCircle(vector<Point> v){
     };
 
     auto make_circle3=[&](Point A,Point B,Point C){
-        Point cent=circumcenter(A,B,C);
+        Point cent=circumscribed_circle(A,B,C).center;
         return Circle(cent,dis(cent,A));
     };
 
