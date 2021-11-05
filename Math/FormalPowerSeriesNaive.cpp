@@ -154,7 +154,7 @@ struct FormalPowerSeriesNaive:vector<T>{
             T freq=x/y;
             if(l<m){
                 auto tmp=c;
-                c.insert(begin(c),m-l,mint(0));
+                c.insert(begin(c),m-l,T(0));
                 for(int i=0;i<m;i++) c[m-1-i]-=freq*b[m-1-i];
                 b=tmp;
                 y=x;
