@@ -249,7 +249,7 @@ data:
     - icon: ':warning:'
       path: Math/FactorizeQueries.cpp
       title: "osa_k\u6CD5 (Factorization Queries)"
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Math/FormalPowerSeriesNaive.cpp
       title: Math/FormalPowerSeriesNaive.cpp
     - icon: ':heavy_check_mark:'
@@ -279,7 +279,7 @@ data:
     - icon: ':warning:'
       path: Math/PolynomialRestore_double.cpp
       title: Math/PolynomialRestore_double.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Math/Precalc.cpp
       title: Precalc (Twelvefold way)
     - icon: ':heavy_check_mark:'
@@ -382,7 +382,7 @@ data:
       title: UnionFind/WeightedUnionFind.cpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.cpp
       title: template.cpp
   - name: tips
@@ -408,7 +408,7 @@ data:
     - icon: ':warning:'
       path: type/int128.cpp
       title: type/int128.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: type/modint.cpp
       title: type/modint.cpp
   verificationCategories:
@@ -582,7 +582,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki1948.test.cpp
       title: test/yuki1948.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki2017.test.cpp
       title: test/yuki2017.test.cpp
     - icon: ':heavy_check_mark:'

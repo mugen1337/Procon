@@ -67,8 +67,8 @@ data:
   timestamp: '2021-01-04 00:41:25+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJ_2863.test.cpp
   - test/AOJ_2292.test.cpp
+  - test/AOJ_2863.test.cpp
 documentation_of: String/RollingHash.cpp
 layout: document
 redirect_from:

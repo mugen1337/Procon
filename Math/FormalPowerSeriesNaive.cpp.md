@@ -3,15 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yuki473.test.cpp
     title: test/yuki473.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - http://q.c.titech.ac.jp/docs/progs/polynomial_division.html
@@ -80,7 +80,7 @@ data:
     \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
     \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
     \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
-    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \                c.insert(begin(c),m-l,T(0));\n                for(int i=0;i<m;i++)\
     \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
     \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
     \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
@@ -151,7 +151,7 @@ data:
     \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
     \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
     \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
-    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \                c.insert(begin(c),m-l,T(0));\n                for(int i=0;i<m;i++)\
     \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
     \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
     \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
@@ -165,8 +165,8 @@ data:
   isVerificationFile: false
   path: Math/FormalPowerSeriesNaive.cpp
   requiredBy: []
-  timestamp: '2021-11-01 19:47:42+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  timestamp: '2021-11-05 10:18:46+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki2017.test.cpp
   - test/yuki473.test.cpp

@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.cpp
     title: Low Link
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []

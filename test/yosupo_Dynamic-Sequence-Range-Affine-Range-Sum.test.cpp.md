@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: BinarySearchTree/ImplicitTreapWithLazy.cpp
     title: BinarySearchTree/ImplicitTreapWithLazy.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []

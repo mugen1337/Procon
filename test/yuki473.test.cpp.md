@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Math/FormalPowerSeriesNaive.cpp
     title: Math/FormalPowerSeriesNaive.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.cpp
     title: type/modint.cpp
   _extendedRequiredBy: []
@@ -116,7 +116,7 @@ data:
     \            T x=0;\n            for(int i=0;i<l;i++) x+=c[i]*(*this)[ed-l+i];\n\
     \            b.emplace_back(0);\n            m++;\n            if(x==T(0)) continue;\n\
     \            T freq=x/y;\n            if(l<m){\n                auto tmp=c;\n\
-    \                c.insert(begin(c),m-l,mint(0));\n                for(int i=0;i<m;i++)\
+    \                c.insert(begin(c),m-l,T(0));\n                for(int i=0;i<m;i++)\
     \ c[m-1-i]-=freq*b[m-1-i];\n                b=tmp;\n                y=x;\n   \
     \         }else{\n                for(int i=0;i<m;i++) c[l-1-i]-=freq*b[m-1-i];\n\
     \            }\n        }\n        reverse(begin(c),end(c));\n        return c;\n\
@@ -144,7 +144,7 @@ data:
   isVerificationFile: true
   path: test/yuki473.test.cpp
   requiredBy: []
-  timestamp: '2021-11-01 19:47:42+09:00'
+  timestamp: '2021-11-05 10:18:46+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yuki473.test.cpp

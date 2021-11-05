@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/StronglyConnectedComponents.cpp
     title: Strongly Connected Components
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.cpp
     title: template.cpp
   _extendedRequiredBy: []
