@@ -305,6 +305,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Other/CyclePartition.cpp
       title: Other/CyclePartition.cpp
+    - icon: ':heavy_check_mark:'
+      path: Other/Dice.cpp
+      title: Other/Dice.cpp
     - icon: ':warning:'
       path: Other/EnumerateCombination.cpp
       title: Other/EnumerateCombination.cpp
@@ -498,6 +501,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_GRL_3_A.test.cpp
       title: test/AOJ_GRL_3_A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ_ITP_Dice_III.test.cpp
+      title: test/AOJ_ITP_Dice_III.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ_NTL_1_A.test.cpp
       title: test/AOJ_NTL_1_A.test.cpp
