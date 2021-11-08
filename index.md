@@ -308,6 +308,9 @@ data:
     - icon: ':warning:'
       path: Other/EnumerateCombination.cpp
       title: Other/EnumerateCombination.cpp
+    - icon: ':warning:'
+      path: Other/EnumerateDivision.cpp
+      title: Other/EnumerateDivision.cpp
     - icon: ':heavy_check_mark:'
       path: Other/EnumerateSubset.cpp
       title: "\u90E8\u5206\u96C6\u5408\u306E\u5217\u6319 (Enumerate Subset)"
