@@ -1,6 +1,6 @@
 /*
 Nの分割方法の列挙
-N=5 -> 200000 程度
+N=50 -> 200000 程度
 verified : https://atcoder.jp/contests/abc226/submissions/27125989
 */
 vector<vector<int>> enumerate_division(int N){
