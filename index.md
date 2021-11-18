@@ -259,6 +259,9 @@ data:
       path: Math/GcdConvolution.cpp
       title: Math/GcdConvolution.cpp
     - icon: ':warning:'
+      path: Math/HighlyCompositeNumber.cpp
+      title: Math/HighlyCompositeNumber.cpp
+    - icon: ':warning:'
       path: Math/LinearEquation_F2.cpp
       title: Math/LinearEquation_F2.cpp
     - icon: ':warning:'
