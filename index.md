@@ -83,6 +83,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/Slope.cpp
       title: Slope
+    - icon: ':warning:'
+      path: DataStructure/StaticRangeSpanQuery.cpp
+      title: DataStructure/StaticRangeSpanQuery.cpp
   - name: Flow
     pages:
     - icon: ':heavy_check_mark:'
