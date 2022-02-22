@@ -65,8 +65,8 @@ data:
   timestamp: '2021-01-16 17:21:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yuki3784.test.cpp
   - test/AOJ_DSL_2_A.test.cpp
+  - test/yuki3784.test.cpp
 documentation_of: DataStructure/BinaryTrieMonoid.cpp
 layout: document
 title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\u4F5C\

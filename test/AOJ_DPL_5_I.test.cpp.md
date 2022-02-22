@@ -97,12 +97,17 @@ data:
     \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
     \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
     \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
-    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n\
-    #line 8 \"test/AOJ_DPL_5_I.test.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint>\
-    \ F(500000);\n\n/*\n\u7389: \u533A\u5225\u3059\u308B\n\u7BB1: \u533A\u5225\u3057\
-    \u306A\u3044\n\u5165\u308C\u65B9: \u7BB1\u3054\u30681\u3064\u4EE5\u4E0A\n*/\n\n\
-    signed main(){\n    int n,k;cin>>n>>k;\n    cout<<F.Stirling_number(n,k)<<endl;\n\
-    \    return 0;\n}\n"
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n\n\
+    \    // +-1\u3092\u3057\u3066X\u306B\u305F\u3069\u308A\u7740\u304F\u30D1\u30BF\
+    \u30FC\u30F3\u6570\n    T RandomWalk1D(int X, int N){\n        X = abs(X);\n \
+    \       if(X>N or X%2!=N%2) return T(0);\n\n        return com(N, (N+X)/2);\n\
+    \    }\n\n    /*\n    O(1)\n    https://atcoder.jp/contests/abc240/editorial/3423\n\
+    \    */\n    T RandomWalk2D(int X, int Y, int N){\n        return RandomWalk1D(X+Y,\
+    \ N)*RandomWalk1D(X-Y, N);\n    }\n};\n#line 8 \"test/AOJ_DPL_5_I.test.cpp\"\n\
+    \nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\n/*\n\u7389: \u533A\
+    \u5225\u3059\u308B\n\u7BB1: \u533A\u5225\u3057\u306A\u3044\n\u5165\u308C\u65B9\
+    : \u7BB1\u3054\u30681\u3064\u4EE5\u4E0A\n*/\n\nsigned main(){\n    int n,k;cin>>n>>k;\n\
+    \    cout<<F.Stirling_number(n,k)<<endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_I\"\
     \n\n#include \"../template.cpp\"\n\n#include \"../type/modint.cpp\"\n\n#include\
     \ \"../Math/Precalc.cpp\"\n\nusing mint=ModInt<1000000007>;\n\nPrecalc<mint> F(500000);\n\
@@ -117,7 +122,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_I.test.cpp
   requiredBy: []
-  timestamp: '2021-04-24 20:23:47+09:00'
+  timestamp: '2022-02-22 17:20:15+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_I.test.cpp

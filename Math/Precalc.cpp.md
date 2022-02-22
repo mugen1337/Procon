@@ -53,6 +53,7 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
+    - https://atcoder.jp/contests/abc240/editorial/3423
     - https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja
     - https://www.wolframalpha.com/input/?i=sum+combination%28n%2Bx+%2Cx%29%2C+x%3Dl+to+r&lang=ja
     - https://yukicoder.me/problems/no/1489
@@ -99,7 +100,13 @@ data:
     \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
     \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
     \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
-    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n"
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n\n\
+    \    // +-1\u3092\u3057\u3066X\u306B\u305F\u3069\u308A\u7740\u304F\u30D1\u30BF\
+    \u30FC\u30F3\u6570\n    T RandomWalk1D(int X, int N){\n        X = abs(X);\n \
+    \       if(X>N or X%2!=N%2) return T(0);\n\n        return com(N, (N+X)/2);\n\
+    \    }\n\n    /*\n    O(1)\n    https://atcoder.jp/contests/abc240/editorial/3423\n\
+    \    */\n    T RandomWalk2D(int X, int Y, int N){\n        return RandomWalk1D(X+Y,\
+    \ N)*RandomWalk1D(X-Y, N);\n    }\n};\n"
   code: "template<typename T>\nstruct Precalc{\n    vector<T> fact,finv,inv;\n   \
     \ int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
     \        fact[0]=T(1),fact[1]=T(1),finv[0]=T(1),finv[1]=T(1),inv[1]=T(1);\n  \
@@ -143,28 +150,34 @@ data:
     \        ret/=T(n+1);\n        return ret;\n    }\n\n    /* \n    - sum of comb\
     \ 2\n        https://www.wolframalpha.com/input/?i=sum+combination%28i%2Bj%2Ci%29%2C+i%3D0+to+a-1%2C+j%3D0+to+b-1&lang=ja\n\
     \        https://yukicoder.me/problems/no/1489\n        \n        sum binom(i+j,i)\
-    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n};\n"
+    \ i=0 to a-1, j=0 to b-1\n        = ( binom(a+b,a-1)*(b+1)/a ) - 1\n    */\n\n\
+    \    // +-1\u3092\u3057\u3066X\u306B\u305F\u3069\u308A\u7740\u304F\u30D1\u30BF\
+    \u30FC\u30F3\u6570\n    T RandomWalk1D(int X, int N){\n        X = abs(X);\n \
+    \       if(X>N or X%2!=N%2) return T(0);\n\n        return com(N, (N+X)/2);\n\
+    \    }\n\n    /*\n    O(1)\n    https://atcoder.jp/contests/abc240/editorial/3423\n\
+    \    */\n    T RandomWalk2D(int X, int Y, int N){\n        return RandomWalk1D(X+Y,\
+    \ N)*RandomWalk1D(X-Y, N);\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: Math/Precalc.cpp
   requiredBy: []
-  timestamp: '2021-04-24 20:23:47+09:00'
+  timestamp: '2022-02-22 17:20:15+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJ_DPL_5_J.test.cpp
-  - test/AOJ_DPL_5_H.test.cpp
-  - test/AOJ_DPL_5_I.test.cpp
-  - test/AOJ_DPL_5_L.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_E.test.cpp
   - test/AOJ_DPL_5_F.test.cpp
   - test/yuki2017.test.cpp
-  - test/yuki1917.test.cpp
-  - test/AOJ_DPL_5_E.test.cpp
-  - test/AOJ_DPL_5_B.test.cpp
   - test/AOJ_DPL_5_A.test.cpp
+  - test/AOJ_DPL_5_J.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
+  - test/yuki1917.test.cpp
   - test/AOJ_DPL_5_K.test.cpp
-  - test/AOJ_DPL_5_G.test.cpp
   - test/AOJ_DPL_5_D.test.cpp
-  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
+  - test/AOJ_DPL_5_L.test.cpp
   - test/yuki5125.test.cpp
 documentation_of: Math/Precalc.cpp
 layout: document
