@@ -94,4 +94,20 @@ struct Precalc{
         sum binom(i+j,i) i=0 to a-1, j=0 to b-1
         = ( binom(a+b,a-1)*(b+1)/a ) - 1
     */
+
+    // +-1をしてXにたどり着くパターン数
+    T RandomWalk1D(int X, int N){
+        X = abs(X);
+        if(X>N or X%2!=N%2) return T(0);
+
+        return com(N, (N+X)/2);
+    }
+
+    /*
+    O(1)
+    https://atcoder.jp/contests/abc240/editorial/3423
+    */
+    T RandomWalk2D(int X, int Y, int N){
+        return RandomWalk1D(X+Y, N)*RandomWalk1D(X-Y, N);
+    }
 };
