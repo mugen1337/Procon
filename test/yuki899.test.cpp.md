@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: SegmentTree/LazySegmentTree.cpp
+  - icon: ':x:'
+    path: SegmentTree/LazySegmentTree.hpp
     title: Lazy Segment Tree
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://yukicoder.me/problems/899
     links:
     - https://yukicoder.me/problems/899
   bundledCode: "#line 1 \"test/yuki899.test.cpp\"\n#define PROBLEM \"https://yukicoder.me/problems/899\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yuki899.test.cpp\"\n\n#line 1 \"SegmentTree/LazySegmentTree.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yuki899.test.cpp\"\n\n#line 1 \"SegmentTree/LazySegmentTree.hpp\"\
     \ntemplate<typename Monoid, typename OperatorMonoid=Monoid>\nstruct LazySegmentTree{\n\
     \    using F=function<Monoid(Monoid,Monoid)>;\n    using G=function<Monoid(Monoid,OperatorMonoid)>;\n\
     \    using H=function<OperatorMonoid(OperatorMonoid,OperatorMonoid)>;\n \n   \
@@ -88,8 +88,8 @@ data:
     \       else r[x]=max(r[x],i);\n    }\n\n    LazySegmentTree<M,OM> seg(n,segf,segg,segh,M1,OM0);\n\
     \    seg.build();\n    for(auto x:st) seg.update(l[x],r[x]+1,x);\n    rep(i,n)cout<<seg[i]<<(i+1==n?\"\
     \\n\":\" \");\n    return 0;\n}\n"
-  code: "#define PROBLEM \"https://yukicoder.me/problems/899\"\n\n#include \"../template.cpp\"\
-    \n\n#include \"../SegmentTree/LazySegmentTree.cpp\"\n\n// range set range min\n\
+  code: "#define PROBLEM \"https://yukicoder.me/problems/899\"\n\n#include \"../template.hpp\"\
+    \n\n#include \"../SegmentTree/LazySegmentTree.hpp\"\n\n// range set range min\n\
     using M=ll;\nusing OM=ll;\nconst M M1=LINF;\nconst OM OM0=-LINF;\nM segf(M a,M\
     \ b){\n    return (a<b?a:b);\n}\nM segg(M a,OM b){\n    return (b==OM0?a:b);\n\
     }\nOM segh(OM a,OM b){\n    return (b==OM0?a:b);\n}\n\nsigned main(){\n    int\
@@ -100,13 +100,13 @@ data:
     \    seg.build();\n    for(auto x:st) seg.update(l[x],r[x]+1,x);\n    rep(i,n)cout<<seg[i]<<(i+1==n?\"\
     \\n\":\" \");\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - SegmentTree/LazySegmentTree.cpp
+  - template.hpp
+  - SegmentTree/LazySegmentTree.hpp
   isVerificationFile: true
   path: test/yuki899.test.cpp
   requiredBy: []
-  timestamp: '2021-07-25 17:56:20+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yuki899.test.cpp
 layout: document

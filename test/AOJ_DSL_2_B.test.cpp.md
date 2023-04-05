@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/BinaryTrie.cpp
+  - icon: ':x:'
+    path: DataStructure/BinaryTrie.hpp
     title: Binary Trie
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B
   bundledCode: "#line 1 \"test/AOJ_DSL_2_B.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_2_B.test.cpp\"\n\n#line 1 \"DataStructure/BinaryTrie.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_2_B.test.cpp\"\n\n#line 1 \"DataStructure/BinaryTrie.hpp\"\
     \ntemplate<typename BitType,int MAXLOG,typename C=int>\nstruct BinaryTrie{\n \
     \   private:\n    struct Node{\n        Node *nxt[2];\n        C cnt;\n      \
     \  Node():nxt{nullptr,nullptr},cnt(0){}\n    };\n\n    Node *root;\n\n    Node\
@@ -64,19 +64,19 @@ data:
     \        if(c==0) trie.add(x,y);\n        else cout<<trie.count_less(y+1)-trie.count_less(x)<<endl;\n\
     \    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/BinaryTrie.cpp\"\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DataStructure/BinaryTrie.hpp\"\
     \n\nsigned main(){\n    BinaryTrie<int,18> trie;\n    int n,q;cin>>n>>q;\n   \
     \ while(q--){\n        int c,x,y;cin>>c>>x>>y;\n        if(c==0) trie.add(x,y);\n\
     \        else cout<<trie.count_less(y+1)-trie.count_less(x)<<endl;\n    }\n  \
     \  return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DataStructure/BinaryTrie.cpp
+  - template.hpp
+  - DataStructure/BinaryTrie.hpp
   isVerificationFile: true
   path: test/AOJ_DSL_2_B.test.cpp
   requiredBy: []
-  timestamp: '2021-01-16 01:06:22+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_DSL_2_B.test.cpp
 layout: document

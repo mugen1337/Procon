@@ -3,432 +3,432 @@ data:
   libraryCategories:
   - name: Algorithm
     pages:
-    - icon: ':heavy_check_mark:'
-      path: Algorithm/Mo.cpp
-      title: Algorithm/Mo.cpp
+    - icon: ':x:'
+      path: Algorithm/Mo.hpp
+      title: Algorithm/Mo.hpp
     - icon: ':warning:'
-      path: Algorithm/hu_tucker.cpp
-      title: Algorithm/hu_tucker.cpp
+      path: Algorithm/hu_tucker.hpp
+      title: Algorithm/hu_tucker.hpp
   - name: BinarySearchTree
     pages:
     - icon: ':warning:'
-      path: BinarySearchTree/ImplicitTreap.cpp
+      path: BinarySearchTree/ImplicitTreap.hpp
       title: Implicit Treap
-    - icon: ':heavy_check_mark:'
-      path: BinarySearchTree/ImplicitTreapWithLazy.cpp
-      title: BinarySearchTree/ImplicitTreapWithLazy.cpp
-    - icon: ':heavy_check_mark:'
-      path: BinarySearchTree/SplayTree.cpp
-      title: BinarySearchTree/SplayTree.cpp
+    - icon: ':x:'
+      path: BinarySearchTree/ImplicitTreapWithLazy.hpp
+      title: BinarySearchTree/ImplicitTreapWithLazy.hpp
+    - icon: ':x:'
+      path: BinarySearchTree/SplayTree.hpp
+      title: BinarySearchTree/SplayTree.hpp
     - icon: ':warning:'
-      path: BinarySearchTree/SplayTree_dev.cpp
-      title: BinarySearchTree/SplayTree_dev.cpp
+      path: BinarySearchTree/SplayTree_dev.hpp
+      title: BinarySearchTree/SplayTree_dev.hpp
   - name: DP
     pages:
     - icon: ':heavy_check_mark:'
-      path: DP/InversionNumber.cpp
+      path: DP/InversionNumber.hpp
       title: "Inversion Number (\u8EE2\u5012\u6570)"
     - icon: ':heavy_check_mark:'
-      path: DP/LargestRectangle.cpp
+      path: DP/LargestRectangle.hpp
       title: "Largest Rectangle (\u6700\u5927\u9577\u65B9\u5F62)"
     - icon: ':heavy_check_mark:'
-      path: DP/LongestCommonSubsequence.cpp
+      path: DP/LongestCommonSubsequence.hpp
       title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
         )"
-    - icon: ':heavy_check_mark:'
-      path: DP/LongestIncreasingSubsequence.cpp
+    - icon: ':x:'
+      path: DP/LongestIncreasingSubsequence.hpp
       title: "Longest Increasing Subsequence (\u6700\u9577\u5897\u52A0\u90E8\u5206\
         \u5217)"
   - name: DataStructure
     pages:
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/AbsoluteSum.cpp
-      title: DataStructure/AbsoluteSum.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/BinaryIndexedTree.cpp
-      title: DataStructure/BinaryIndexedTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/BinaryTrie.cpp
+    - icon: ':x:'
+      path: DataStructure/AbsoluteSum.hpp
+      title: DataStructure/AbsoluteSum.hpp
+    - icon: ':x:'
+      path: DataStructure/BinaryIndexedTree.hpp
+      title: DataStructure/BinaryIndexedTree.hpp
+    - icon: ':x:'
+      path: DataStructure/BinaryTrie.hpp
       title: Binary Trie
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/BinaryTrieMonoid.cpp
+    - icon: ':x:'
+      path: DataStructure/BinaryTrieMonoid.hpp
       title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\
         \u4F5C\u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
     - icon: ':warning:'
-      path: DataStructure/DancingLinks.cpp
-      title: DataStructure/DancingLinks.cpp
+      path: DataStructure/DancingLinks.hpp
+      title: DataStructure/DancingLinks.hpp
     - icon: ':warning:'
-      path: DataStructure/DeletableLiChaoTreeOffline.cpp
+      path: DataStructure/DeletableLiChaoTreeOffline.hpp
       title: "\u30AA\u30D5\u30E9\u30A4\u30F3 \u524A\u9664\u53EF\u80FD Convex Hull\
         \ Trick"
     - icon: ':warning:'
-      path: DataStructure/KDTree.cpp
-      title: DataStructure/KDTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/LiChaoTree.cpp
-      title: DataStructure/LiChaoTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/RangeSet.cpp
+      path: DataStructure/KDTree.hpp
+      title: DataStructure/KDTree.hpp
+    - icon: ':x:'
+      path: DataStructure/LiChaoTree.hpp
+      title: DataStructure/LiChaoTree.hpp
+    - icon: ':x:'
+      path: DataStructure/RangeSet.hpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/RangeTree.cpp
+    - icon: ':x:'
+      path: DataStructure/RangeTree.hpp
       title: "Range Tree (\u9818\u57DF\u6728)"
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/RectangleUnion.cpp
-      title: DataStructure/RectangleUnion.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/SlidingWindowAgregation.cpp
-      title: DataStructure/SlidingWindowAgregation.cpp
-    - icon: ':heavy_check_mark:'
-      path: DataStructure/Slope.cpp
+    - icon: ':x:'
+      path: DataStructure/RectangleUnion.hpp
+      title: DataStructure/RectangleUnion.hpp
+    - icon: ':x:'
+      path: DataStructure/SlidingWindowAgregation.hpp
+      title: DataStructure/SlidingWindowAgregation.hpp
+    - icon: ':x:'
+      path: DataStructure/Slope.hpp
       title: Slope
     - icon: ':warning:'
-      path: DataStructure/StaticRangeSpanQuery.cpp
-      title: DataStructure/StaticRangeSpanQuery.cpp
+      path: DataStructure/StaticRangeSpanQuery.hpp
+      title: DataStructure/StaticRangeSpanQuery.hpp
   - name: Flow
     pages:
     - icon: ':heavy_check_mark:'
-      path: Flow/Dinic.cpp
-      title: Flow/Dinic.cpp
+      path: Flow/Dinic.hpp
+      title: Flow/Dinic.hpp
     - icon: ':warning:'
-      path: Flow/PrimalDual.cpp
-      title: Flow/PrimalDual.cpp
+      path: Flow/PrimalDual.hpp
+      title: Flow/PrimalDual.hpp
   - name: Geometry
     pages:
     - icon: ':warning:'
-      path: Geometry/Angle.cpp
-      title: Geometry/Angle.cpp
+      path: Geometry/Angle.hpp
+      title: Geometry/Angle.hpp
     - icon: ':warning:'
-      path: Geometry/CircumscribedCircle.cpp
-      title: Geometry/CircumscribedCircle.cpp
+      path: Geometry/CircumscribedCircle.hpp
+      title: Geometry/CircumscribedCircle.hpp
     - icon: ':warning:'
-      path: Geometry/ClosestPair.cpp
-      title: Geometry/ClosestPair.cpp
+      path: Geometry/ClosestPair.hpp
+      title: Geometry/ClosestPair.hpp
     - icon: ':warning:'
-      path: Geometry/Contain.cpp
-      title: Geometry/Contain.cpp
+      path: Geometry/Contain.hpp
+      title: Geometry/Contain.hpp
     - icon: ':warning:'
-      path: Geometry/Convex.cpp
-      title: Geometry/Convex.cpp
+      path: Geometry/Convex.hpp
+      title: Geometry/Convex.hpp
     - icon: ':warning:'
-      path: Geometry/CounterClockWise.cpp
-      title: Geometry/CounterClockWise.cpp
+      path: Geometry/CounterClockWise.hpp
+      title: Geometry/CounterClockWise.hpp
     - icon: ':warning:'
-      path: Geometry/Cross.cpp
-      title: Geometry/Cross.cpp
+      path: Geometry/Cross.hpp
+      title: Geometry/Cross.hpp
     - icon: ':warning:'
-      path: Geometry/CrossPoint.cpp
-      title: Geometry/CrossPoint.cpp
+      path: Geometry/CrossPoint.hpp
+      title: Geometry/CrossPoint.hpp
     - icon: ':warning:'
-      path: Geometry/Distance.cpp
-      title: Geometry/Distance.cpp
+      path: Geometry/Distance.hpp
+      title: Geometry/Distance.hpp
     - icon: ':warning:'
-      path: Geometry/Dot.cpp
-      title: Geometry/Dot.cpp
+      path: Geometry/Dot.hpp
+      title: Geometry/Dot.hpp
     - icon: ':warning:'
-      path: Geometry/InscribedCircle.cpp
-      title: Geometry/InscribedCircle.cpp
+      path: Geometry/InscribedCircle.hpp
+      title: Geometry/InscribedCircle.hpp
     - icon: ':warning:'
-      path: Geometry/Intersect.cpp
-      title: Geometry/Intersect.cpp
+      path: Geometry/Intersect.hpp
+      title: Geometry/Intersect.hpp
     - icon: ':warning:'
-      path: Geometry/MinimumBoundingCircle.cpp
-      title: Geometry/MinimumBoundingCircle.cpp
+      path: Geometry/MinimumBoundingCircle.hpp
+      title: Geometry/MinimumBoundingCircle.hpp
     - icon: ':warning:'
-      path: Geometry/Projection.cpp
-      title: Geometry/Projection.cpp
+      path: Geometry/Projection.hpp
+      title: Geometry/Projection.hpp
     - icon: ':warning:'
-      path: Geometry/Rotate.cpp
-      title: Geometry/Rotate.cpp
+      path: Geometry/Rotate.hpp
+      title: Geometry/Rotate.hpp
     - icon: ':warning:'
-      path: Geometry/Tangent.cpp
-      title: Geometry/Tangent.cpp
+      path: Geometry/Tangent.hpp
+      title: Geometry/Tangent.hpp
     - icon: ':warning:'
-      path: Geometry/include.cpp
-      title: Geometry/include.cpp
+      path: Geometry/include.hpp
+      title: Geometry/include.hpp
     - icon: ':warning:'
-      path: Geometry/template.cpp
-      title: Geometry/template.cpp
+      path: Geometry/template.hpp
+      title: Geometry/template.hpp
   - name: Geometry3D
     pages:
     - icon: ':warning:'
-      path: Geometry3D/all.cpp
-      title: Geometry3D/all.cpp
+      path: Geometry3D/all.hpp
+      title: Geometry3D/all.hpp
   - name: GeometryInt
     pages:
     - icon: ':warning:'
-      path: GeometryInt/Area2.cpp
-      title: GeometryInt/Area2.cpp
+      path: GeometryInt/Area2.hpp
+      title: GeometryInt/Area2.hpp
     - icon: ':warning:'
-      path: GeometryInt/ConvexHull.cpp
-      title: GeometryInt/ConvexHull.cpp
+      path: GeometryInt/ConvexHull.hpp
+      title: GeometryInt/ConvexHull.hpp
     - icon: ':warning:'
-      path: GeometryInt/CountLattice.cpp
-      title: GeometryInt/CountLattice.cpp
+      path: GeometryInt/CountLattice.hpp
+      title: GeometryInt/CountLattice.hpp
     - icon: ':warning:'
-      path: GeometryInt/template.cpp
-      title: GeometryInt/template.cpp
+      path: GeometryInt/template.hpp
+      title: GeometryInt/template.hpp
   - name: Graph
     pages:
-    - icon: ':heavy_check_mark:'
-      path: Graph/CycleDetection.cpp
-      title: Graph/CycleDetection.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph/Dijkstra.cpp
-      title: Graph/Dijkstra.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph/StronglyConnectedComponents.cpp
-      title: Graph/StronglyConnectedComponents.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph/WarshallFloyd.cpp
-      title: Graph/WarshallFloyd.cpp
+    - icon: ':x:'
+      path: Graph/CycleDetection.hpp
+      title: Graph/CycleDetection.hpp
+    - icon: ':x:'
+      path: Graph/Dijkstra.hpp
+      title: Graph/Dijkstra.hpp
+    - icon: ':x:'
+      path: Graph/StronglyConnectedComponents.hpp
+      title: Graph/StronglyConnectedComponents.hpp
+    - icon: ':x:'
+      path: Graph/WarshallFloyd.hpp
+      title: Graph/WarshallFloyd.hpp
   - name: Graph2
     pages:
     - icon: ':warning:'
-      path: Graph2/ChromaticNumber.cpp
-      title: Graph2/ChromaticNumber.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/CycleDetection.cpp
-      title: Graph2/CycleDetection.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/Dijkstra.cpp
+      path: Graph2/ChromaticNumber.hpp
+      title: Graph2/ChromaticNumber.hpp
+    - icon: ':x:'
+      path: Graph2/CycleDetection.hpp
+      title: Graph2/CycleDetection.hpp
+    - icon: ':x:'
+      path: Graph2/Dijkstra.hpp
       title: Dijkstra
-    - icon: ':heavy_check_mark:'
-      path: Graph2/Eppstein.cpp
+    - icon: ':x:'
+      path: Graph2/Eppstein.hpp
       title: Eppstein's Algorithm (K-Shortest-Walk)
     - icon: ':warning:'
-      path: Graph2/GraphRelabel.cpp
-      title: Graph2/GraphRelabel.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/GraphTemplate.cpp
-      title: Graph2/GraphTemplate.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/HeavyLightDecomposition.cpp
+      path: Graph2/GraphRelabel.hpp
+      title: Graph2/GraphRelabel.hpp
+    - icon: ':x:'
+      path: Graph2/GraphTemplate.hpp
+      title: Graph2/GraphTemplate.hpp
+    - icon: ':x:'
+      path: Graph2/HeavyLightDecomposition.hpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':heavy_check_mark:'
-      path: Graph2/LowLink.cpp
+    - icon: ':x:'
+      path: Graph2/LowLink.hpp
       title: Low Link
     - icon: ':warning:'
-      path: Graph2/Namori.cpp
+      path: Graph2/Namori.hpp
       title: Namori
     - icon: ':warning:'
-      path: Graph2/RangeEdgeGraph.cpp
+      path: Graph2/RangeEdgeGraph.hpp
       title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
-    - icon: ':heavy_check_mark:'
-      path: Graph2/Rerooting.cpp
-      title: Graph2/Rerooting.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/StronglyConnectedComponents.cpp
+    - icon: ':x:'
+      path: Graph2/Rerooting.hpp
+      title: Graph2/Rerooting.hpp
+    - icon: ':x:'
+      path: Graph2/StronglyConnectedComponents.hpp
       title: Strongly Connected Components
-    - icon: ':heavy_check_mark:'
-      path: Graph2/TreeDiameter.cpp
-      title: Graph2/TreeDiameter.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/TwoEdgeConnectedComponents.cpp
-      title: Graph2/TwoEdgeConnectedComponents.cpp
+    - icon: ':x:'
+      path: Graph2/TreeDiameter.hpp
+      title: Graph2/TreeDiameter.hpp
+    - icon: ':x:'
+      path: Graph2/TwoEdgeConnectedComponents.hpp
+      title: Graph2/TwoEdgeConnectedComponents.hpp
     - icon: ':warning:'
-      path: Graph2/WeightedMaximumIndependentSet.cpp
-      title: Graph2/WeightedMaximumIndependentSet.cpp
-    - icon: ':heavy_check_mark:'
-      path: Graph2/Yen.cpp
+      path: Graph2/WeightedMaximumIndependentSet.hpp
+      title: Graph2/WeightedMaximumIndependentSet.hpp
+    - icon: ':x:'
+      path: Graph2/Yen.hpp
       title: Yen's Algorithm (K-Shortest-Path)
   - name: Heap
     pages:
     - icon: ':heavy_check_mark:'
-      path: Heap/LeftistHeap.cpp
+      path: Heap/LeftistHeap.hpp
       title: Leftist Heap
     - icon: ':warning:'
-      path: Heap/PersistentLeftistHeap.cpp
-      title: Heap/PersistentLeftistHeap.cpp
+      path: Heap/PersistentLeftistHeap.hpp
+      title: Heap/PersistentLeftistHeap.hpp
   - name: Math
     pages:
-    - icon: ':heavy_check_mark:'
-      path: Math/AndConvolution.cpp
-      title: Math/AndConvolution.cpp
+    - icon: ':x:'
+      path: Math/AndConvolution.hpp
+      title: Math/AndConvolution.hpp
     - icon: ':warning:'
-      path: Math/BinaryBasis.cpp
-      title: Math/BinaryBasis.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/Factorize.cpp
-      title: Math/Factorize.cpp
+      path: Math/BinaryBasis.hpp
+      title: Math/BinaryBasis.hpp
+    - icon: ':x:'
+      path: Math/Factorize.hpp
+      title: Math/Factorize.hpp
     - icon: ':warning:'
-      path: Math/FactorizeQueries.cpp
+      path: Math/FactorizeQueries.hpp
       title: "osa_k\u6CD5 (Factorization Queries)"
-    - icon: ':heavy_check_mark:'
-      path: Math/FormalPowerSeriesNaive.cpp
-      title: Math/FormalPowerSeriesNaive.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/Garner.cpp
+    - icon: ':x:'
+      path: Math/FormalPowerSeriesNaive.hpp
+      title: Math/FormalPowerSeriesNaive.hpp
+    - icon: ':x:'
+      path: Math/Garner.hpp
       title: "Garner (\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406)"
     - icon: ':warning:'
-      path: Math/GcdConvolution.cpp
-      title: Math/GcdConvolution.cpp
+      path: Math/GcdConvolution.hpp
+      title: Math/GcdConvolution.hpp
     - icon: ':warning:'
-      path: Math/HighlyCompositeNumber.cpp
-      title: Math/HighlyCompositeNumber.cpp
+      path: Math/HighlyCompositeNumber.hpp
+      title: Math/HighlyCompositeNumber.hpp
     - icon: ':warning:'
-      path: Math/LinearEquation_F2.cpp
-      title: Math/LinearEquation_F2.cpp
+      path: Math/LinearEquation_F2.hpp
+      title: Math/LinearEquation_F2.hpp
     - icon: ':warning:'
-      path: Math/LinearEquation_double.cpp
-      title: Math/LinearEquation_double.cpp
+      path: Math/LinearEquation_double.hpp
+      title: Math/LinearEquation_double.hpp
     - icon: ':warning:'
-      path: Math/ManhattanSquareSum.cpp
-      title: Math/ManhattanSquareSum.cpp
+      path: Math/ManhattanSquareSum.hpp
+      title: Math/ManhattanSquareSum.hpp
     - icon: ':warning:'
-      path: Math/NTTmodint.cpp
-      title: Math/NTTmodint.cpp
+      path: Math/NTTmodint.hpp
+      title: Math/NTTmodint.hpp
     - icon: ':warning:'
-      path: Math/OrConvolution.cpp
-      title: Math/OrConvolution.cpp
+      path: Math/OrConvolution.hpp
+      title: Math/OrConvolution.hpp
     - icon: ':warning:'
-      path: Math/PollardRho.cpp
-      title: Math/PollardRho.cpp
+      path: Math/PollardRho.hpp
+      title: Math/PollardRho.hpp
     - icon: ':warning:'
-      path: Math/PolynomialRestore_double.cpp
-      title: Math/PolynomialRestore_double.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/Precalc.cpp
+      path: Math/PolynomialRestore_double.hpp
+      title: Math/PolynomialRestore_double.hpp
+    - icon: ':question:'
+      path: Math/Precalc.hpp
       title: Precalc (Twelvefold way)
-    - icon: ':heavy_check_mark:'
-      path: Math/Sieve.cpp
+    - icon: ':x:'
+      path: Math/Sieve.hpp
       title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
-    - icon: ':heavy_check_mark:'
-      path: Math/XorConvolution.cpp
-      title: Math/XorConvolution.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/ceil_floor.cpp
-      title: Math/ceil_floor.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/inv_mod.cpp
-      title: Math/inv_mod.cpp
-    - icon: ':heavy_check_mark:'
-      path: Math/log_mod.cpp
+    - icon: ':x:'
+      path: Math/XorConvolution.hpp
+      title: Math/XorConvolution.hpp
+    - icon: ':x:'
+      path: Math/ceil_floor.hpp
+      title: Math/ceil_floor.hpp
+    - icon: ':x:'
+      path: Math/inv_mod.hpp
+      title: Math/inv_mod.hpp
+    - icon: ':x:'
+      path: Math/log_mod.hpp
       title: "\u96E2\u6563\u5BFE\u6570 (log mod)"
-    - icon: ':heavy_check_mark:'
-      path: Math/pow_mod.cpp
-      title: Math/pow_mod.cpp
+    - icon: ':x:'
+      path: Math/pow_mod.hpp
+      title: Math/pow_mod.hpp
   - name: Other
     pages:
-    - icon: ':heavy_check_mark:'
-      path: Other/CyclePartition.cpp
-      title: Other/CyclePartition.cpp
-    - icon: ':heavy_check_mark:'
-      path: Other/Dice.cpp
-      title: Other/Dice.cpp
+    - icon: ':x:'
+      path: Other/CyclePartition.hpp
+      title: Other/CyclePartition.hpp
+    - icon: ':x:'
+      path: Other/Dice.hpp
+      title: Other/Dice.hpp
     - icon: ':warning:'
-      path: Other/EnumerateCombination.cpp
-      title: Other/EnumerateCombination.cpp
+      path: Other/EnumerateCombination.hpp
+      title: Other/EnumerateCombination.hpp
     - icon: ':warning:'
-      path: Other/EnumerateDivision.cpp
-      title: Other/EnumerateDivision.cpp
+      path: Other/EnumerateDivision.hpp
+      title: Other/EnumerateDivision.hpp
     - icon: ':heavy_check_mark:'
-      path: Other/EnumerateSubset.cpp
+      path: Other/EnumerateSubset.hpp
       title: "\u90E8\u5206\u96C6\u5408\u306E\u5217\u6319 (Enumerate Subset)"
     - icon: ':heavy_check_mark:'
-      path: Other/Parser.cpp
-      title: Other/Parser.cpp
+      path: Other/Parser.hpp
+      title: Other/Parser.hpp
     - icon: ':warning:'
-      path: Other/RandomNumberGenerator.cpp
-      title: Other/RandomNumberGenerator.cpp
+      path: Other/RandomNumberGenerator.hpp
+      title: Other/RandomNumberGenerator.hpp
   - name: SAT
     pages:
     - icon: ':warning:'
-      path: SAT/HornSAT.cpp
-      title: SAT/HornSAT.cpp
+      path: SAT/HornSAT.hpp
+      title: SAT/HornSAT.hpp
   - name: SegmentTree
     pages:
-    - icon: ':heavy_check_mark:'
-      path: SegmentTree/KineticSegmentTree.cpp
-      title: SegmentTree/KineticSegmentTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: SegmentTree/LazySegmentTree.cpp
+    - icon: ':x:'
+      path: SegmentTree/KineticSegmentTree.hpp
+      title: SegmentTree/KineticSegmentTree.hpp
+    - icon: ':x:'
+      path: SegmentTree/LazySegmentTree.hpp
       title: Lazy Segment Tree
-    - icon: ':heavy_check_mark:'
-      path: SegmentTree/SegmentTree.cpp
+    - icon: ':x:'
+      path: SegmentTree/SegmentTree.hpp
       title: Segment Tree
-    - icon: ':heavy_check_mark:'
-      path: SegmentTree/SegmentTreeBeats.cpp
+    - icon: ':x:'
+      path: SegmentTree/SegmentTreeBeats.hpp
       title: Segment Tree Beats
   - name: Sort
     pages:
     - icon: ':warning:'
-      path: Sort/MergeSort.cpp
-      title: Sort/MergeSort.cpp
+      path: Sort/MergeSort.hpp
+      title: Sort/MergeSort.hpp
   - name: String
     pages:
     - icon: ':heavy_check_mark:'
-      path: String/PalindromicTree.cpp
-      title: String/PalindromicTree.cpp
+      path: String/PalindromicTree.hpp
+      title: String/PalindromicTree.hpp
     - icon: ':heavy_check_mark:'
-      path: String/RollingHash.cpp
-      title: String/RollingHash.cpp
+      path: String/RollingHash.hpp
+      title: String/RollingHash.hpp
+    - icon: ':x:'
+      path: String/SuffixArray.hpp
+      title: String/SuffixArray.hpp
     - icon: ':heavy_check_mark:'
-      path: String/SuffixArray.cpp
-      title: String/SuffixArray.cpp
-    - icon: ':heavy_check_mark:'
-      path: String/Trie.cpp
-      title: String/Trie.cpp
+      path: String/Trie.hpp
+      title: String/Trie.hpp
   - name: Tree
     pages:
+    - icon: ':x:'
+      path: Tree/LazyLinkCutTree.hpp
+      title: Tree/LazyLinkCutTree.hpp
+    - icon: ':x:'
+      path: Tree/LinkCutTree.hpp
+      title: Tree/LinkCutTree.hpp
     - icon: ':heavy_check_mark:'
-      path: Tree/LazyLinkCutTree.cpp
-      title: Tree/LazyLinkCutTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: Tree/LinkCutTree.cpp
-      title: Tree/LinkCutTree.cpp
-    - icon: ':heavy_check_mark:'
-      path: Tree/TreeHash.cpp
-      title: Tree/TreeHash.cpp
+      path: Tree/TreeHash.hpp
+      title: Tree/TreeHash.hpp
   - name: UnionFind
     pages:
     - icon: ':warning:'
-      path: UnionFind/DynamicConnectivityOffline.cpp
-      title: UnionFind/DynamicConnectivityOffline.cpp
+      path: UnionFind/DynamicConnectivityOffline.hpp
+      title: UnionFind/DynamicConnectivityOffline.hpp
     - icon: ':warning:'
-      path: UnionFind/PartiallyPersistentUnionFind.cpp
-      title: UnionFind/PartiallyPersistentUnionFind.cpp
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/UnionFind.cpp
-      title: UnionFind/UnionFind.cpp
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/UnionFindUndo.cpp
-      title: UnionFind/UnionFindUndo.cpp
-    - icon: ':heavy_check_mark:'
-      path: UnionFind/WeightedUnionFind.cpp
-      title: UnionFind/WeightedUnionFind.cpp
+      path: UnionFind/PartiallyPersistentUnionFind.hpp
+      title: UnionFind/PartiallyPersistentUnionFind.hpp
+    - icon: ':question:'
+      path: UnionFind/UnionFind.hpp
+      title: UnionFind/UnionFind.hpp
+    - icon: ':x:'
+      path: UnionFind/UnionFindUndo.hpp
+      title: UnionFind/UnionFindUndo.hpp
+    - icon: ':x:'
+      path: UnionFind/WeightedUnionFind.hpp
+      title: UnionFind/WeightedUnionFind.hpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
-      path: template.cpp
-      title: template.cpp
+    - icon: ':question:'
+      path: template.hpp
+      title: template.hpp
   - name: tips
     pages:
     - icon: ':warning:'
-      path: tips/AlienDP.cpp
+      path: tips/AlienDP.hpp
       title: Alien DP
     - icon: ':warning:'
-      path: tips/CountSubpermutation.cpp
+      path: tips/CountSubpermutation.hpp
       title: "\u9806\u5217\u3067\u3042\u308B\u9023\u7D9A\u90E8\u5206\u5217\u306E\u6570\
         \u3048\u4E0A\u3052"
     - icon: ':warning:'
-      path: tips/JOI-Candies.cpp
+      path: tips/JOI-Candies.hpp
       title: "JOI \u98F4"
   - name: type
     pages:
     - icon: ':warning:'
-      path: type/Fraction.cpp
-      title: type/Fraction.cpp
-    - icon: ':heavy_check_mark:'
-      path: type/Matrix.cpp
-      title: type/Matrix.cpp
+      path: type/Fraction.hpp
+      title: type/Fraction.hpp
+    - icon: ':x:'
+      path: type/Matrix.hpp
+      title: type/Matrix.hpp
     - icon: ':warning:'
-      path: type/int128.cpp
-      title: type/int128.cpp
-    - icon: ':heavy_check_mark:'
-      path: type/modint.cpp
-      title: type/modint.cpp
+      path: type/int128.hpp
+      title: type/int128.hpp
+    - icon: ':question:'
+      path: type/modint.hpp
+      title: type/modint.hpp
   verificationCategories:
   - name: test
     pages:
@@ -465,196 +465,196 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_A.test.cpp
       title: test/AOJ_DPL_5_A.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_B.test.cpp
       title: test/AOJ_DPL_5_B.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_C.test.cpp
       title: test/AOJ_DPL_5_C.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_D.test.cpp
       title: test/AOJ_DPL_5_D.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_E.test.cpp
       title: test/AOJ_DPL_5_E.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_F.test.cpp
       title: test/AOJ_DPL_5_F.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_G.test.cpp
       title: test/AOJ_DPL_5_G.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_H.test.cpp
       title: test/AOJ_DPL_5_H.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_I.test.cpp
       title: test/AOJ_DPL_5_I.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_J.test.cpp
       title: test/AOJ_DPL_5_J.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_K.test.cpp
       title: test/AOJ_DPL_5_K.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DPL_5_L.test.cpp
       title: test/AOJ_DPL_5_L.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DSL_2_A.test.cpp
       title: test/AOJ_DSL_2_A.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_DSL_2_B.test.cpp
       title: test/AOJ_DSL_2_B.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_GRL_1_A.test.cpp
       title: test/AOJ_GRL_1_A.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_GRL_3_A.test.cpp
       title: test/AOJ_GRL_3_A.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_ITP_Dice_III.test.cpp
       title: test/AOJ_ITP_Dice_III.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/AOJ_NTL_1_A.test.cpp
       title: test/AOJ_NTL_1_A.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Bitwise_And_Convolution.test.cpp
       title: test/yosupo_Bitwise_And_Convolution.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
       title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_CycleDetection.test.cpp
       title: test/yosupo_CycleDetection.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_CycleDetection2.test.cpp
       title: test/yosupo_CycleDetection2.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_DiscreteLog.test.cpp
       title: test/yosupo_DiscreteLog.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
       title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_KSW.test.cpp
       title: test/yosupo_KSW.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Line_Add_Get_Min.test.cpp
       title: test/yosupo_Line_Add_Get_Min.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
       title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Rectangle_Sum.test.cpp
       title: test/yosupo_Rectangle_Sum.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Set_Xor_Min.test.cpp
       title: test/yosupo_Set_Xor_Min.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Shortest_Path.test.cpp
       title: test/yosupo_Shortest_Path.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Static_Range_Inversions_Query.test.cpp
       title: test/yosupo_Static_Range_Inversions_Query.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_SuffixArray.test.cpp
       title: test/yosupo_SuffixArray.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_TECC.test.cpp
       title: test/yosupo_TECC.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_TreeDiameter.test.cpp
       title: test/yosupo_TreeDiameter.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Unionfind.test.cpp
       title: test/yosupo_Unionfind.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_det.test.cpp
       title: test/yosupo_det.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_queue_operate_all_composite.test.cpp
       title: test/yosupo_queue_operate_all_composite.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo_scc2.test.cpp
       title: test/yosupo_scc2.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki1249.test.cpp
       title: test/yuki1249.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki1249_lct.test.cpp
       title: test/yuki1249_lct.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki1601.test.cpp
       title: test/yuki1601.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki1917.test.cpp
       title: test/yuki1917.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki1948.test.cpp
       title: test/yuki1948.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki2017.test.cpp
       title: test/yuki2017.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki2577.test.cpp
       title: test/yuki2577.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki2600.test.cpp
       title: test/yuki2600.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki2855.test.cpp
       title: test/yuki2855.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki3784.test.cpp
       title: test/yuki3784.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki4227.test.cpp
       title: test/yuki4227.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki4374.test.cpp
       title: test/yuki4374.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki4459.test.cpp
       title: test/yuki4459.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki447.test.cpp
       title: test/yuki447.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki473.test.cpp
       title: test/yuki473.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5061.test.cpp
       title: test/yuki5061.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5125.test.cpp
       title: test/yuki5125.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5398.test.cpp
       title: test/yuki5398.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5398_2.test.cpp
       title: test/yuki5398_2.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki5764.test.cpp
       title: test/yuki5764.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yuki899.test.cpp
       title: test/yuki899.test.cpp
 layout: toppage

@@ -1,27 +1,27 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph2/CycleDetection.cpp
-    title: Graph2/CycleDetection.cpp
-  - icon: ':heavy_check_mark:'
-    path: Graph2/GraphTemplate.cpp
-    title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Graph2/CycleDetection.hpp
+    title: Graph2/CycleDetection.hpp
+  - icon: ':x:'
+    path: Graph2/GraphTemplate.hpp
+    title: Graph2/GraphTemplate.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/cycle_detection
     links:
     - https://judge.yosupo.jp/problem/cycle_detection
   bundledCode: "#line 1 \"test/yosupo_CycleDetection2.test.cpp\"\n#define PROBLEM\
-    \ \"https://judge.yosupo.jp/problem/cycle_detection\"\n\n#line 1 \"template.cpp\"\
+    \ \"https://judge.yosupo.jp/problem/cycle_detection\"\n\n#line 1 \"template.hpp\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
     #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
     \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
@@ -35,7 +35,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_CycleDetection2.test.cpp\"\n\n#line\
-    \ 1 \"Graph2/GraphTemplate.cpp\"\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.cpp\n\
+    \ 1 \"Graph2/GraphTemplate.hpp\"\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -50,7 +50,7 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/CycleDetection.cpp\"\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/CycleDetection.hpp\"\
     \n\ntemplate<typename T>\nvector<int> CycleDetection(Graph<T> &g){\n    int n=(int)g.size();\n\
     \    vector<int> check(n,0),cyc,pre(n,-1);\n\n    function<bool(int)> dfs=[&](int\
     \ cur){\n        check[cur]=1;\n        for(auto &to:g[cur]){\n            if(check[to]==0){\n\
@@ -71,7 +71,7 @@ data:
     \    cout<<ans.size()<<\"\\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return\
     \ 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/cycle_detection\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../Graph2/CycleDetection.cpp\"\n\nsigned main(){\n\
+    \ \"../template.hpp\"\n\n#include \"../Graph2/CycleDetection.hpp\"\n\nsigned main(){\n\
     \    int n,m;cin>>n>>m;\n    Graph g(n);\n    map<pair<int,int>,int> id;\n   \
     \ rep(i,m){\n        int u,v;cin>>u>>v;\n        id[{u,v}]=i;\n        g.add_directed_edge(u,v);\n\
     \    }\n    auto res=CycleDetection(g);\n    if(res.empty()){\n        cout<<-1<<endl;\n\
@@ -80,14 +80,14 @@ data:
     \  p=res[i];\n    }\n    ans.push_back(id[{p,res[0]}]);\n    cout<<ans.size()<<\"\
     \\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Graph2/CycleDetection.cpp
-  - Graph2/GraphTemplate.cpp
+  - template.hpp
+  - Graph2/CycleDetection.hpp
+  - Graph2/GraphTemplate.hpp
   isVerificationFile: true
   path: test/yosupo_CycleDetection2.test.cpp
   requiredBy: []
-  timestamp: '2021-07-04 13:54:07+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_CycleDetection2.test.cpp
 layout: document

@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Tree/LinkCutTree.cpp
-    title: Tree/LinkCutTree.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Tree/LinkCutTree.hpp
+    title: Tree/LinkCutTree.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum
@@ -19,7 +19,7 @@ data:
     - https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum
   bundledCode: "#line 1 \"test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp\"\n\
     #define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp\"\
-    \n\n#line 1 \"Tree/LinkCutTree.cpp\"\ntemplate<typename Monoid>\nstruct LinkCutTree{\n\
+    \n\n#line 1 \"Tree/LinkCutTree.hpp\"\ntemplate<typename Monoid>\nstruct LinkCutTree{\n\
     \n    using F=function<Monoid(Monoid,Monoid)>;\n    using G=function<Monoid(Monoid)>;\n\
     \n    LinkCutTree(int n,F f,Monoid e,G flip=nullptr):f(f),e(e),flip(flip){\n \
     \       for(int i=0;i<n;i++) nodes.push_back(new Node(e,i));\n    }\n\n    LinkCutTree(const\
@@ -116,7 +116,7 @@ data:
     \        int u,v;cin>>u>>v;\n            cout<<lct.query(u,v)<<endl;\n       \
     \ }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../Tree/LinkCutTree.cpp\"\n\nsigned\
+    \n\n#include \"../template.hpp\"\n\n#include \"../Tree/LinkCutTree.hpp\"\n\nsigned\
     \ main(){\n    int n,q;cin>>n>>q;\n    vector<ll> v(n);\n    cin>>v;\n\n    LinkCutTree<ll>\
     \ lct(v,[](ll a,ll b){return a+b;},0);\n\n    rep(i,n-1){\n        int u,v;cin>>u>>v;\n\
     \        lct.link(u,v);\n    }\n\n    while(q--){\n        int type;cin>>type;\n\
@@ -126,13 +126,13 @@ data:
     \        int u,v;cin>>u>>v;\n            cout<<lct.query(u,v)<<endl;\n       \
     \ }\n    }\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Tree/LinkCutTree.cpp
+  - template.hpp
+  - Tree/LinkCutTree.hpp
   isVerificationFile: true
   path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-04-27 00:20:12+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
 layout: document

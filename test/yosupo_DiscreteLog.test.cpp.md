@@ -1,30 +1,30 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Math/inv_mod.cpp
-    title: Math/inv_mod.cpp
-  - icon: ':heavy_check_mark:'
-    path: Math/log_mod.cpp
+  - icon: ':x:'
+    path: Math/inv_mod.hpp
+    title: Math/inv_mod.hpp
+  - icon: ':x:'
+    path: Math/log_mod.hpp
     title: "\u96E2\u6563\u5BFE\u6570 (log mod)"
-  - icon: ':heavy_check_mark:'
-    path: Math/pow_mod.cpp
-    title: Math/pow_mod.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Math/pow_mod.hpp
+    title: Math/pow_mod.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/discrete_logarithm_mod
     links:
     - https://judge.yosupo.jp/problem/discrete_logarithm_mod
   bundledCode: "#line 1 \"test/yosupo_DiscreteLog.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/discrete_logarithm_mod\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -37,12 +37,12 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_DiscreteLog.test.cpp\"\n\n#line 1 \"\
-    Math/inv_mod.cpp\"\nll inv_mod(ll a,ll m){\n    ll b=m,u=1,v=0,t;\n    while(b){\n\
+    Math/inv_mod.hpp\"\nll inv_mod(ll a,ll m){\n    ll b=m,u=1,v=0,t;\n    while(b){\n\
     \        t=a/b;\n        swap(a-=t*b,b);swap(u-=t*v,v);\n    }\n    u%=m;\n  \
-    \  if(u<0) u+=m;\n    return u;\n}\n#line 1 \"Math/pow_mod.cpp\"\n// a^n (mod\
+    \  if(u<0) u+=m;\n    return u;\n}\n#line 1 \"Math/pow_mod.hpp\"\n// a^n (mod\
     \ m)\nll pow_mod(ll a,ll n,ll m){\n    ll ret=1;\n    while(n){\n        if(n&1)\
     \ ret=ret*a%m;\n        a=(a*a)%m;\n        n/=2;\n    }\n    return ret;\n}\n\
-    #line 3 \"Math/log_mod.cpp\"\n\n// https://qiita.com/suisen_cp/items/d597c8ec576ae32ee2d7\n\
+    #line 3 \"Math/log_mod.hpp\"\n\n// https://qiita.com/suisen_cp/items/d597c8ec576ae32ee2d7\n\
     // \u6700\u5C0F\u306E\u975E\u8CA0\u6574\u6570x\u3092\u8FD4\u3059\n// a ^ x = b\
     \ mod m\nll log_mod(ll a,ll b,ll m){\n    auto BSGS=[](ll a,ll b,ll m){\n    \
     \    ll sq_m=sqrt(m)+1;\n\n        // baby-step\n        unordered_map<ll,ll>\
@@ -60,20 +60,20 @@ data:
     \ =? \"<<b<<endl;\n}\n\nsigned main(){\n    int q;cin>>q;\n    while(q--) solve();\n\
     \    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/discrete_logarithm_mod\"\
-    \n\n#include \"./template.cpp\"\n\n#include \"../Math/log_mod.cpp\"\n\nvoid solve(){\n\
+    \n\n#include \"./template.hpp\"\n\n#include \"../Math/log_mod.hpp\"\n\nvoid solve(){\n\
     \    ll a,b,m;cin>>a>>b>>m;\n    ll k=log_mod(a,b,m);\n    cout<<k<<endl;\n  \
     \  // cout<<\"a^res \"<<pow_mod(a,k,m)<<\" =? \"<<b<<endl;\n}\n\nsigned main(){\n\
     \    int q;cin>>q;\n    while(q--) solve();\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - Math/log_mod.cpp
-  - Math/inv_mod.cpp
-  - Math/pow_mod.cpp
+  - template.hpp
+  - Math/log_mod.hpp
+  - Math/inv_mod.hpp
+  - Math/pow_mod.hpp
   isVerificationFile: true
   path: test/yosupo_DiscreteLog.test.cpp
   requiredBy: []
-  timestamp: '2021-02-27 00:20:16+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_DiscreteLog.test.cpp
 layout: document

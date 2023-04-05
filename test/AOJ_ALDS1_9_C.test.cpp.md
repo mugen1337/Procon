@@ -2,11 +2,11 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: Heap/LeftistHeap.cpp
+    path: Heap/LeftistHeap.hpp
     title: Leftist Heap
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -18,7 +18,7 @@ data:
     links:
     - https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C
   bundledCode: "#line 1 \"test/AOJ_ALDS1_9_C.test.cpp\"\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_9_C.test.cpp\"\n\n#line 1 \"Heap/LeftistHeap.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_9_C.test.cpp\"\n\n#line 1 \"Heap/LeftistHeap.hpp\"\
     \ntemplate<typename T,bool less=true>\nstruct LeftistHeap{\n    struct Node{\n\
     \        Node *l,*r;\n        int s;\n        T val;\n        Node(T val):l(nullptr),r(nullptr),s(1),val(val){}\n\
     \    };\n    Node *root;\n    LeftistHeap(Node *t=nullptr):root(t){}\n\n    Node\
@@ -47,18 +47,18 @@ data:
     ){\n            int x;cin>>x;\n            que.push(x);\n        }else{\n    \
     \        cout<<que.pop()<<endl;\n        }\n    }\n    return 0;\n}\n\n"
   code: "#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../Heap/LeftistHeap.cpp\"\n\n\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../Heap/LeftistHeap.hpp\"\n\n\n\
     signed main(){\n    LeftistHeap<int,false> que;\n\n    string s;\n    while(cin>>s,s!=\"\
     end\"){\n        if(s==\"insert\"){\n            int x;cin>>x;\n            que.push(x);\n\
     \        }else{\n            cout<<que.pop()<<endl;\n        }\n    }\n    return\
     \ 0;\n}\n\n"
   dependsOn:
-  - template.cpp
-  - Heap/LeftistHeap.cpp
+  - template.hpp
+  - Heap/LeftistHeap.hpp
   isVerificationFile: true
   path: test/AOJ_ALDS1_9_C.test.cpp
   requiredBy: []
-  timestamp: '2021-09-20 14:34:24+09:00'
+  timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_ALDS1_9_C.test.cpp

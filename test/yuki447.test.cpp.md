@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Math/Garner.cpp
+  - icon: ':x:'
+    path: Math/Garner.hpp
     title: "Garner (\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406)"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://yukicoder.me/problems/447
     links:
     - https://yukicoder.me/problems/447
   bundledCode: "#line 1 \"test/yuki447.test.cpp\"\n#define PROBLEM \"https://yukicoder.me/problems/447\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yuki447.test.cpp\"\n\n#line 1 \"Math/Garner.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yuki447.test.cpp\"\n\n#line 1 \"Math/Garner.hpp\"\
     \n// (val, mod)\npair<ll,ll> Garner(const vector<ll> &rems,const vector<ll> &mods){\n\
     \    // {g, x}, g=gcd(a,b), xa = g (mod b)\n    function<pair<ll,ll>(ll,ll)> gcd_inv=[](ll\
     \ a,ll b){\n        a%=b;\n        if(a<0) a+=b;\n        if(a==0) return make_pair(b,0ll);\n\
@@ -46,19 +46,19 @@ data:
     \n\nsigned main(){\n\n    vector<ll> r(3),m(3);\n    rep(i,3) cin>>r[i]>>m[i];\n\
     \n    auto p=Garner(r,m);\n    if(p.second==0) cout<<-1<<endl;\n    else if(p.first==0)\
     \ cout<<p.second<<endl;\n    else cout<<p.first<<endl;\n    return 0;\n}\n"
-  code: "#define PROBLEM \"https://yukicoder.me/problems/447\"\n\n#include \"../template.cpp\"\
-    \n\n#include \"../Math/Garner.cpp\"\n\nsigned main(){\n\n    vector<ll> r(3),m(3);\n\
+  code: "#define PROBLEM \"https://yukicoder.me/problems/447\"\n\n#include \"../template.hpp\"\
+    \n\n#include \"../Math/Garner.hpp\"\n\nsigned main(){\n\n    vector<ll> r(3),m(3);\n\
     \    rep(i,3) cin>>r[i]>>m[i];\n\n    auto p=Garner(r,m);\n    if(p.second==0)\
     \ cout<<-1<<endl;\n    else if(p.first==0) cout<<p.second<<endl;\n    else cout<<p.first<<endl;\n\
     \    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Math/Garner.cpp
+  - template.hpp
+  - Math/Garner.hpp
   isVerificationFile: true
   path: test/yuki447.test.cpp
   requiredBy: []
-  timestamp: '2021-03-03 02:40:37+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yuki447.test.cpp
 layout: document

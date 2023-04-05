@@ -2,12 +2,12 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DP/LongestCommonSubsequence.cpp
+    path: DP/LongestCommonSubsequence.hpp
     title: "Longest Common Subsequence (\u6700\u9577\u5171\u901A\u90E8\u5206\u5217\
       )"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -19,7 +19,7 @@ data:
     links:
     - https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C
   bundledCode: "#line 1 \"test/AOJ_ALDS1_10_c.test.cpp\"\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -31,7 +31,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_10_c.test.cpp\"\n\n#line 1 \"DP/LongestCommonSubsequence.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_10_c.test.cpp\"\n\n#line 1 \"DP/LongestCommonSubsequence.hpp\"\
     \ntemplate<typename S>\nS LongestCommonSubsequence(S a,S b){\n    int n=(int)a.size(),m=(int)b.size();\n\
     \    vector<vector<int>> dp(n+1,vector<int>(m+1,0)),pre(n+1,vector<int>(m+1,-1));\n\
     \    for(int i=0;i<=n;i++)for(int j=0;j<=m;j++){\n        if(i<n and j<m and a[i]==b[j]){\n\
@@ -46,17 +46,17 @@ data:
     \ cout<<res<<endl;\n    cout<<res.size()<<endl;\n}\n\nsigned main(){\n    int\
     \ q;cin>>q;\n    while(q--) solve();\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DP/LongestCommonSubsequence.cpp\"\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DP/LongestCommonSubsequence.hpp\"\
     \n\nvoid solve(){\n    string a,b;cin>>a>>b;\n    auto res=LongestCommonSubsequence(a,b);\n\
     \    // cout<<res<<endl;\n    cout<<res.size()<<endl;\n}\n\nsigned main(){\n \
     \   int q;cin>>q;\n    while(q--) solve();\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DP/LongestCommonSubsequence.cpp
+  - template.hpp
+  - DP/LongestCommonSubsequence.hpp
   isVerificationFile: true
   path: test/AOJ_ALDS1_10_c.test.cpp
   requiredBy: []
-  timestamp: '2021-03-28 16:19:14+09:00'
+  timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_ALDS1_10_c.test.cpp

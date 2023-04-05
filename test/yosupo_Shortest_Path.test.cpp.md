@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph/Dijkstra.cpp
-    title: Graph/Dijkstra.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Graph/Dijkstra.hpp
+    title: Graph/Dijkstra.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/shortest_path
     links:
     - https://judge.yosupo.jp/problem/shortest_path
   bundledCode: "#line 1 \"test/yosupo_Shortest_Path.test.cpp\"\n#define PROBLEM \"\
-    https://judge.yosupo.jp/problem/shortest_path\"\n\n#line 1 \"template.cpp\"\n\
+    https://judge.yosupo.jp/problem/shortest_path\"\n\n#line 1 \"template.hpp\"\n\
     #include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
     #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
     \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Shortest_Path.test.cpp\"\n\n#line 1\
-    \ \"Graph/Dijkstra.cpp\"\ntemplate<typename T>\nstruct Dijkstra{\n    const T\
+    \ \"Graph/Dijkstra.hpp\"\ntemplate<typename T>\nstruct Dijkstra{\n    const T\
     \ TINF=numeric_limits<T>::max();\n    using P=pair<T,int>;\n    int n;\n    vector<vector<P>>\
     \ G;\n    vector<T> d;\n    vector<int> prev;\n  \n    Dijkstra(int n):n(n),G(vector<vector<P>>(n)){}\n\
     \    void init(){\n        d.assign(n,TINF);\n        prev.assign(n,-1);\n   \
@@ -55,7 +55,7 @@ data:
     \        for(int i=1;i<(int)p.size();i++){\n            cout<<k<<\" \"<<p[i]<<endl;\n\
     \            k=p[i];\n        }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../Graph/Dijkstra.cpp\"\n\nsigned main(){\n\
+    \ \"../template.hpp\"\n\n#include \"../Graph/Dijkstra.hpp\"\n\nsigned main(){\n\
     \    int n,m,s,t;cin>>n>>m>>s>>t;\n    Dijkstra<ll> d(n);\n    rep(i,m){\n   \
     \     int u,v;ll c;cin>>u>>v>>c;\n        d.add_edge(u,v,c);\n    }\n    d.build(s);\n\
     \    auto p=d.get_path(t);\n    if(p.empty()) cout<<-1<<endl;\n    else{\n   \
@@ -63,13 +63,13 @@ data:
     \ for(int i=1;i<(int)p.size();i++){\n            cout<<k<<\" \"<<p[i]<<endl;\n\
     \            k=p[i];\n        }\n    }\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Graph/Dijkstra.cpp
+  - template.hpp
+  - Graph/Dijkstra.hpp
   isVerificationFile: true
   path: test/yosupo_Shortest_Path.test.cpp
   requiredBy: []
-  timestamp: '2021-01-09 19:35:23+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Shortest_Path.test.cpp
 layout: document

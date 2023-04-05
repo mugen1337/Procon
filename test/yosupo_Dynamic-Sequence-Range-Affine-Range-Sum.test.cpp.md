@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: BinarySearchTree/ImplicitTreapWithLazy.cpp
-    title: BinarySearchTree/ImplicitTreapWithLazy.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
-  - icon: ':heavy_check_mark:'
-    path: type/modint.cpp
-    title: type/modint.cpp
+  - icon: ':x:'
+    path: BinarySearchTree/ImplicitTreapWithLazy.hpp
+    title: BinarySearchTree/ImplicitTreapWithLazy.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
+  - icon: ':question:'
+    path: type/modint.hpp
+    title: type/modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum
@@ -22,7 +22,7 @@ data:
     - https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum
   bundledCode: "#line 1 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -35,7 +35,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
-    \n\n#line 1 \"BinarySearchTree/ImplicitTreapWithLazy.cpp\"\ntemplate<typename\
+    \n\n#line 1 \"BinarySearchTree/ImplicitTreapWithLazy.hpp\"\ntemplate<typename\
     \ Monoid,typename OperatorMonoid>\nstruct ImplicitTreap{\n\n    private:\n\n \
     \   inline int xorshift(){\n        static int x=122312555;\n        static int\
     \ y=336261662;\n        static int z=558127122;\n        static int w=917277772;\n\
@@ -96,7 +96,7 @@ data:
     \ ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n      \
     \  return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
     };\n#line 6 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\n\
-    \n#line 1 \"type/modint.cpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long\
+    \n#line 1 \"type/modint.hpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long\
     \ x;\n    ModInt():x(0){}\n    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n\
     \    ModInt &operator+=(const ModInt &p){\n        if((x+=p.x)>=Mod) x-=Mod;\n\
     \        return *this;\n    }\n    ModInt &operator-=(const ModInt &p){\n    \
@@ -132,8 +132,8 @@ data:
     \            cout<<seg.query(l,r).first<<endl;\n        }\n    }\n    return 0;\n\
     }\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../BinarySearchTree/ImplicitTreapWithLazy.cpp\"\
-    \n\n#include \"../type/modint.cpp\"\nusing mint=ModInt<998244353>;\n\nusing M=pair<mint,mint>;\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../BinarySearchTree/ImplicitTreapWithLazy.hpp\"\
+    \n\n#include \"../type/modint.hpp\"\nusing mint=ModInt<998244353>;\n\nusing M=pair<mint,mint>;\n\
     using OM=pair<mint,mint>;\nconst M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M\
     \ a,M b){\n    return M(a.first+b.first,a.second+b.second);\n}\nM segg(M a,OM\
     \ b){\n    return M(a.first*b.first+a.second*b.second,a.second);\n}\nOM segh(OM\
@@ -148,14 +148,14 @@ data:
     \        }else{\n            int l,r;cin>>l>>r;\n            cout<<seg.query(l,r).first<<endl;\n\
     \        }\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - BinarySearchTree/ImplicitTreapWithLazy.cpp
-  - type/modint.cpp
+  - template.hpp
+  - BinarySearchTree/ImplicitTreapWithLazy.hpp
+  - type/modint.hpp
   isVerificationFile: true
   path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-04-25 22:30:39+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
 layout: document

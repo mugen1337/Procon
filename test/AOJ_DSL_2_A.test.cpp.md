@@ -1,25 +1,25 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/BinaryTrieMonoid.cpp
+  - icon: ':x:'
+    path: DataStructure/BinaryTrieMonoid.hpp
     title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\u4F5C\
       \u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A
   bundledCode: "#line 1 \"test/AOJ_DSL_2_A.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -31,7 +31,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_2_A.test.cpp\"\n\n#line 1 \"DataStructure/BinaryTrieMonoid.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_2_A.test.cpp\"\n\n#line 1 \"DataStructure/BinaryTrieMonoid.hpp\"\
     \ntemplate<typename BitType,int MAXLOG,typename Monoid>\nstruct BinaryTrieMonoid{\n\
     \    private:\n    struct Node{\n        Node *nxt[2];\n        Monoid val;\n\
     \        Node(Monoid val):nxt{nullptr,nullptr},val(val){}\n    };\n\n    Node\
@@ -58,19 +58,19 @@ data:
     \    while(q--){\n        int c;ll x,y;cin>>c>>x>>y;\n        if(c==0) trie.update(x,y);\n\
     \        if(c==1) cout<<trie.query(x,y+1)<<endl;\n    }\n\n    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/BinaryTrieMonoid.cpp\"\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DataStructure/BinaryTrieMonoid.hpp\"\
     \n\nsigned main(){\n    int n,q;cin>>n>>q;\n    BinaryTrieMonoid<int,18,ll> trie([&](ll\
     \ a,ll b){return (a<b?a:b);},(1ll<<31)-1);\n    while(q--){\n        int c;ll\
     \ x,y;cin>>c>>x>>y;\n        if(c==0) trie.update(x,y);\n        if(c==1) cout<<trie.query(x,y+1)<<endl;\n\
     \    }\n\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DataStructure/BinaryTrieMonoid.cpp
+  - template.hpp
+  - DataStructure/BinaryTrieMonoid.hpp
   isVerificationFile: true
   path: test/AOJ_DSL_2_A.test.cpp
   requiredBy: []
-  timestamp: '2021-01-16 17:21:45+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_DSL_2_A.test.cpp
 layout: document

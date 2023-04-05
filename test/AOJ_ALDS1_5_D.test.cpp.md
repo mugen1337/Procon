@@ -2,11 +2,11 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DP/InversionNumber.cpp
+    path: DP/InversionNumber.hpp
     title: "Inversion Number (\u8EE2\u5012\u6570)"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -18,7 +18,7 @@ data:
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_D
   bundledCode: "#line 1 \"test/AOJ_ALDS1_5_D.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_D\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_5_D.test.cpp\"\n\n#line 1 \"DP/InversionNumber.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_ALDS1_5_D.test.cpp\"\n\n#line 1 \"DP/InversionNumber.hpp\"\
     \ntemplate<typename T>\nlong long InversionNumber(vector<T> v){\n    vector<T>\
     \ ord=v;\n    sort(begin(ord),end(ord));\n    ord.erase(unique(begin(ord),end(ord)),end(ord));\n\
     \    vector<long long> bit(ord.size()+1,0);\n    long long ret=0;\n    for(int\
@@ -40,16 +40,16 @@ data:
     \n\nsigned main(){\n    int n;cin>>n;\n    vector<int> a(n);\n    cin>>a;\n  \
     \  cout<<InversionNumber(a)<<endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_D\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DP/InversionNumber.cpp\"\n\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DP/InversionNumber.hpp\"\n\n\
     signed main(){\n    int n;cin>>n;\n    vector<int> a(n);\n    cin>>a;\n    cout<<InversionNumber(a)<<endl;\n\
     \    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DP/InversionNumber.cpp
+  - template.hpp
+  - DP/InversionNumber.hpp
   isVerificationFile: true
   path: test/AOJ_ALDS1_5_D.test.cpp
   requiredBy: []
-  timestamp: '2021-02-01 03:28:09+09:00'
+  timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_ALDS1_5_D.test.cpp

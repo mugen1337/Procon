@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/SlidingWindowAgregation.cpp
-    title: DataStructure/SlidingWindowAgregation.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: DataStructure/SlidingWindowAgregation.hpp
+    title: DataStructure/SlidingWindowAgregation.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/queue_operate_all_composite
@@ -19,7 +19,7 @@ data:
     - https://judge.yosupo.jp/problem/queue_operate_all_composite
   bundledCode: "#line 1 \"test/yosupo_queue_operate_all_composite.test.cpp\"\n#define\
     \ PROBLEM \"https://judge.yosupo.jp/problem/queue_operate_all_composite\"\n\n\
-    #line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n#define\
+    #line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n#define\
     \ ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v)\
     \ cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\n\
     using ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_queue_operate_all_composite.test.cpp\"\
-    \n\n#line 1 \"DataStructure/SlidingWindowAgregation.cpp\"\n// Monoid Sliding-Window-AGregation\n\
+    \n\n#line 1 \"DataStructure/SlidingWindowAgregation.hpp\"\n// Monoid Sliding-Window-AGregation\n\
     template<typename Monoid>\nstruct SWAG{\n    using F=function<Monoid(Monoid,Monoid)>;\n\
     \    const F f;\n    const Monoid e;\n    stack<pair<Monoid,Monoid>> fr,ba;\n\
     \    SWAG(const F f,const Monoid &e):f(f),e(e){}\n    Monoid get(){\n        Monoid\
@@ -55,7 +55,7 @@ data:
     \            auto p=que.get();\n            cout<<(p.first*x%998244353+p.second)%998244353<<endl;\n\
     \        }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/queue_operate_all_composite\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DataStructure/SlidingWindowAgregation.cpp\"\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DataStructure/SlidingWindowAgregation.hpp\"\
     \n\n\nsigned main(){    \n    auto swagfunc=[](pair<ll,ll> p1,pair<ll,ll> p2){\n\
     \        return make_pair(p1.first*p2.first%998244353,(p2.first*p1.second%998244353+p2.second)%998244353);\n\
     \    };\n\n    SWAG<pair<ll,ll>> que(swagfunc,make_pair(1ll,0ll));\n\n    int\
@@ -65,13 +65,13 @@ data:
     \            auto p=que.get();\n            cout<<(p.first*x%998244353+p.second)%998244353<<endl;\n\
     \        }\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - DataStructure/SlidingWindowAgregation.cpp
+  - template.hpp
+  - DataStructure/SlidingWindowAgregation.hpp
   isVerificationFile: true
   path: test/yosupo_queue_operate_all_composite.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 13:44:10+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_queue_operate_all_composite.test.cpp
 layout: document

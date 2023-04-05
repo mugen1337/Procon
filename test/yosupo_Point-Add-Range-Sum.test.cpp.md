@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: SegmentTree/SegmentTree.cpp
+  - icon: ':x:'
+    path: SegmentTree/SegmentTree.hpp
     title: Segment Tree
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/point_add_range_sum
     links:
     - https://judge.yosupo.jp/problem/point_add_range_sum
   bundledCode: "#line 1 \"test/yosupo_Point-Add-Range-Sum.test.cpp\"\n#define PROBLEM\
-    \ \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n\n#line 1 \"template.cpp\"\
+    \ \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n\n#line 1 \"template.hpp\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
     #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
     \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Point-Add-Range-Sum.test.cpp\"\n\n\
-    #line 1 \"SegmentTree/SegmentTree.cpp\"\ntemplate<typename Monoid>\nstruct SegmentTree{\n\
+    #line 1 \"SegmentTree/SegmentTree.hpp\"\ntemplate<typename Monoid>\nstruct SegmentTree{\n\
     \    using F=function<Monoid(Monoid,Monoid)>;\n\n    private:\n    int sz;\n \
     \   vector<Monoid> seg;\n\n    Monoid query(int a,int b,int k,int l,int r){\n\
     \        if(a<=l and r<=b)   return seg[k];\n        if(b<=l or r<=a)    return\
@@ -75,7 +75,7 @@ data:
     \         int l,r;cin>>l>>r;\n            cout<<seg.query(l,r)<<endl;\n      \
     \  }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n\
-    \n#include \"../template.cpp\"\n\n#include \"../SegmentTree/SegmentTree.cpp\"\n\
+    \n#include \"../template.hpp\"\n\n#include \"../SegmentTree/SegmentTree.hpp\"\n\
     \nsigned main(){\n    int n,q;cin>>n>>q;\n\n    auto segfunc=[](ll a,ll b){\n\
     \        return a+b;\n    };\n    \n    SegmentTree<ll> seg(n,segfunc,0);\n  \
     \  rep(i,n){\n        ll a;cin>>a;\n        seg.set(i,a);\n    }\n    seg.build();\n\
@@ -84,13 +84,13 @@ data:
     \       }\n        else{\n            int l,r;cin>>l>>r;\n            cout<<seg.query(l,r)<<endl;\n\
     \        }\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - SegmentTree/SegmentTree.cpp
+  - template.hpp
+  - SegmentTree/SegmentTree.hpp
   isVerificationFile: true
   path: test/yosupo_Point-Add-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-04-19 13:27:55+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Point-Add-Range-Sum.test.cpp
 layout: document

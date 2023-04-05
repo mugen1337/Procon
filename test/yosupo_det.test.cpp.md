@@ -1,27 +1,27 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
-  - icon: ':heavy_check_mark:'
-    path: type/Matrix.cpp
-    title: type/Matrix.cpp
-  - icon: ':heavy_check_mark:'
-    path: type/modint.cpp
-    title: type/modint.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
+  - icon: ':x:'
+    path: type/Matrix.hpp
+    title: type/Matrix.hpp
+  - icon: ':question:'
+    path: type/modint.hpp
+    title: type/modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/matrix_det
     links:
     - https://judge.yosupo.jp/problem/matrix_det
   bundledCode: "#line 1 \"test/yosupo_det.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/matrix_det\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -33,7 +33,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yosupo_det.test.cpp\"\n\n#line 1 \"type/modint.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yosupo_det.test.cpp\"\n\n#line 1 \"type/modint.hpp\"\
     \ntemplate<ll Mod>\nstruct ModInt{\n    long long x;\n    ModInt():x(0){}\n  \
     \  ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n    ModInt &operator+=(const\
     \ ModInt &p){\n        if((x+=p.x)>=Mod) x-=Mod;\n        return *this;\n    }\n\
@@ -54,7 +54,7 @@ data:
     \ ostream &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend\
     \ istream &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 6 \"test/yosupo_det.test.cpp\"\
-    \nusing mint=ModInt<998244353>;\n\n#line 1 \"type/Matrix.cpp\"\ntemplate<typename\
+    \nusing mint=ModInt<998244353>;\n\n#line 1 \"type/Matrix.hpp\"\ntemplate<typename\
     \ T>\nstruct Matrix{\n    vector<vector<T>> a;\n\n    Matrix(){}\n    Matrix(int\
     \ n):a(n,vector<T>(n,0)){}\n    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\n\
     \    int h()const{return (int)a.size();}\n    int w()const{return (int)a[0].size();}\n\
@@ -88,19 +88,19 @@ data:
     \n\nsigned main(){\n    int n;cin>>n;\n    Matrix<mint> mat(n);\n    rep(i,n)rep(j,n)\
     \ cin>>mat[i][j];\n    cout<<mat.det()<<endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/matrix_det\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../type/modint.cpp\"\nusing mint=ModInt<998244353>;\n\
-    \n#include \"../type/Matrix.cpp\"\n\nsigned main(){\n    int n;cin>>n;\n    Matrix<mint>\
+    \ \"../template.hpp\"\n\n#include \"../type/modint.hpp\"\nusing mint=ModInt<998244353>;\n\
+    \n#include \"../type/Matrix.hpp\"\n\nsigned main(){\n    int n;cin>>n;\n    Matrix<mint>\
     \ mat(n);\n    rep(i,n)rep(j,n) cin>>mat[i][j];\n    cout<<mat.det()<<endl;\n\
     \    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - type/modint.cpp
-  - type/Matrix.cpp
+  - template.hpp
+  - type/modint.hpp
+  - type/Matrix.hpp
   isVerificationFile: true
   path: test/yosupo_det.test.cpp
   requiredBy: []
-  timestamp: '2021-04-12 16:17:19+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_det.test.cpp
 layout: document

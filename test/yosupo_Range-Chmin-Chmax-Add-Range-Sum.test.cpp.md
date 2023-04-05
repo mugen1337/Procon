@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: SegmentTree/SegmentTreeBeats.cpp
+  - icon: ':x:'
+    path: SegmentTree/SegmentTreeBeats.hpp
     title: Segment Tree Beats
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
@@ -19,7 +19,7 @@ data:
     - https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum
   bundledCode: "#line 1 \"test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp\"\n\
     #define PROBLEM \"https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp\"\
-    \n\n#line 1 \"SegmentTree/SegmentTreeBeats.cpp\"\ntemplate<typename T>\nstruct\
+    \n\n#line 1 \"SegmentTree/SegmentTreeBeats.hpp\"\ntemplate<typename T>\nstruct\
     \ SegmentTreeBeats{\n    private:\n\n    const T inf=numeric_limits<T>::max()/4;\n\
     \    vector<T> mx,smx,mxc,mi,smi,mic,sum,lval,ladd;\n    int sz;\n    // smx[k]<x<mx[k]\u306E\
     \u90E8\u5206\u306E\u66F4\u65B0\n    void update_node_max(int k,T x){\n       \
@@ -112,7 +112,7 @@ data:
     \            seg.add(l,r,b);\n        }else{\n            cout<<seg.query_sum(l,r)<<endl;\n\
     \        }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../SegmentTree/SegmentTreeBeats.cpp\"\
+    \n\n#include \"../template.hpp\"\n\n#include \"../SegmentTree/SegmentTreeBeats.hpp\"\
     \n\nsigned main(){\n    int n,q;cin>>n>>q;\n    SegmentTreeBeats<ll> seg(n);\n\
     \    rep(i,n){\n        ll a;cin>>a;seg.set(i,a);\n    }\n    seg.build();\n \
     \   while(q--){\n        int t,l,r;cin>>t>>l>>r;\n        if(t==0){\n        \
@@ -121,13 +121,13 @@ data:
     \            ll b;cin>>b;\n            seg.add(l,r,b);\n        }else{\n     \
     \       cout<<seg.query_sum(l,r)<<endl;\n        }\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - SegmentTree/SegmentTreeBeats.cpp
+  - template.hpp
+  - SegmentTree/SegmentTreeBeats.hpp
   isVerificationFile: true
   path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-03 23:38:23+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
 layout: document

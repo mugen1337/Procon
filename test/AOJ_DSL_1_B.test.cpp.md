@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: UnionFind/WeightedUnionFind.cpp
-    title: UnionFind/WeightedUnionFind.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: UnionFind/WeightedUnionFind.hpp
+    title: UnionFind/WeightedUnionFind.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B
     links:
     - https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B
   bundledCode: "#line 1 \"test/AOJ_DSL_1_B.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_1_B.test.cpp\"\n\n#line 1 \"UnionFind/WeightedUnionFind.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_DSL_1_B.test.cpp\"\n\n#line 1 \"UnionFind/WeightedUnionFind.hpp\"\
     \ntemplate<typename T>\nstruct WeightedUnionFind{\n    int con;\n    vector<int>\
     \ par,siz;\n    vector<T> h;// height, h[root]=0\n    WeightedUnionFind(int n):con(n),par(n),siz(n,1),h(n,T(0)){\n\
     \        iota(begin(par),end(par),0);\n    }\n    int root(int x){\n        if(x==par[x])\
@@ -51,20 +51,20 @@ data:
     \        }else{\n            int u,v,w;cin>>u>>v>>w;\n            uf.unite(u,v,w);\n\
     \        }\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B\"\n\n\
-    #include \"../template.cpp\"\n\n#include \"../UnionFind/WeightedUnionFind.cpp\"\
+    #include \"../template.hpp\"\n\n#include \"../UnionFind/WeightedUnionFind.hpp\"\
     \n\nsigned main(){\n    int n,q;cin>>n>>q;\n    WeightedUnionFind<int> uf(n);\n\
     \    while(q--){\n        int t;cin>>t;\n        if(t){\n            int x,y;cin>>x>>y;\n\
     \            if(!uf.sameroot(x,y)) cout<<\"?\"<<endl;\n            else cout<<-uf.diff(x,y)<<endl;\n\
     \        }else{\n            int u,v,w;cin>>u>>v>>w;\n            uf.unite(u,v,w);\n\
     \        }\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - UnionFind/WeightedUnionFind.cpp
+  - template.hpp
+  - UnionFind/WeightedUnionFind.hpp
   isVerificationFile: true
   path: test/AOJ_DSL_1_B.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:35:48+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_DSL_1_B.test.cpp
 layout: document

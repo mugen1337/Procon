@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Tree/LazyLinkCutTree.cpp
-    title: Tree/LazyLinkCutTree.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Tree/LazyLinkCutTree.hpp
+    title: Tree/LazyLinkCutTree.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://yukicoder.me/problems/1249
     links:
     - https://yukicoder.me/problems/1249
   bundledCode: "#line 1 \"test/yuki1249_lct.test.cpp\"\n#define PROBLEM \"https://yukicoder.me/problems/1249\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yuki1249_lct.test.cpp\"\n\n#line 1 \"Tree/LazyLinkCutTree.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yuki1249_lct.test.cpp\"\n\n#line 1 \"Tree/LazyLinkCutTree.hpp\"\
     \ntemplate<typename Monoid,typename OperatorMonoid=Monoid>\nstruct LazyLinkCutTree{\n\
     \n    using F=function<Monoid(Monoid,Monoid)>;\n    using G=function<Monoid(Monoid,OperatorMonoid)>;\n\
     \    using H=function<OperatorMonoid(OperatorMonoid,OperatorMonoid)>;\n    using\
@@ -110,8 +110,8 @@ data:
     \    }\n\n    int q;cin>>q;\n    ll ans=0;\n    while(q--){\n        int a,b;cin>>a>>b;a--,b--;\n\
     \        ans+=lct.query(a,b).first;\n        lct.update(a,b,1);\n    }\n    cout<<ans<<endl;\n\
     \    return 0;\n}\n"
-  code: "#define PROBLEM \"https://yukicoder.me/problems/1249\"\n\n#include \"../template.cpp\"\
-    \n\n#include \"../Tree/LazyLinkCutTree.cpp\"\n\nsigned main(){\n    int n;cin>>n;\n\
+  code: "#define PROBLEM \"https://yukicoder.me/problems/1249\"\n\n#include \"../template.hpp\"\
+    \n\n#include \"../Tree/LazyLinkCutTree.hpp\"\n\nsigned main(){\n    int n;cin>>n;\n\
     \n    auto f=[&](pair<ll,ll> a,pair<ll,ll> b){\n        return make_pair(a.first+b.first,a.second+b.second);\n\
     \    };\n    auto g=[&](pair<ll,ll> a,ll b){\n        return make_pair(a.first+a.second*b,a.second);\n\
     \    };\n    auto h=[&](ll a,ll b){\n        return a+b;\n    };\n\n    vector<pair<ll,ll>>\
@@ -121,13 +121,13 @@ data:
     \        ans+=lct.query(a,b).first;\n        lct.update(a,b,1);\n    }\n    cout<<ans<<endl;\n\
     \    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - Tree/LazyLinkCutTree.cpp
+  - template.hpp
+  - Tree/LazyLinkCutTree.hpp
   isVerificationFile: true
   path: test/yuki1249_lct.test.cpp
   requiredBy: []
-  timestamp: '2021-04-27 00:13:00+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yuki1249_lct.test.cpp
 layout: document

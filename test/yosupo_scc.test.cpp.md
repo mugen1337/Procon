@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph/StronglyConnectedComponents.cpp
-    title: Graph/StronglyConnectedComponents.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Graph/StronglyConnectedComponents.hpp
+    title: Graph/StronglyConnectedComponents.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/scc
     links:
     - https://judge.yosupo.jp/problem/scc
   bundledCode: "#line 1 \"test/yosupo_scc.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/yosupo_scc.test.cpp\"\n\n#line 1 \"Graph/StronglyConnectedComponents.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/yosupo_scc.test.cpp\"\n\n#line 1 \"Graph/StronglyConnectedComponents.hpp\"\
     \nstruct StronglyConnectedComponents{\n    private:\n    vector<vector<int>> g,rg;\n\
     \    vector<int> check;\n    void dfs(int cur,vector<int> &ord){\n        for(auto\
     \ &to:g[cur])if(!check[to]){\n            check[to]=true;\n            dfs(to,ord);\n\
@@ -54,21 +54,21 @@ data:
     \\n\";\n    rep(i,(int)scc.group.size()){\n        cout<<scc.group[i].size();\n\
     \        for(auto x:scc.group[i]) cout<<\" \"<<x;\n        cout<<\"\\n\";\n  \
     \  }\n    return 0;\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\n\n#include \"../template.cpp\"\
-    \n\n#include \"../Graph/StronglyConnectedComponents.cpp\"\n\nsigned main(){\n\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\n\n#include \"../template.hpp\"\
+    \n\n#include \"../Graph/StronglyConnectedComponents.hpp\"\n\nsigned main(){\n\
     \    int n,m;cin>>n>>m;\n    vector<vector<int>> g(n);\n    rep(i,m){\n      \
     \  int u,v;cin>>u>>v;\n        g[u].push_back(v);\n    }\n\n    StronglyConnectedComponents\
     \ scc(g);\n    scc.build();\n    cout<<scc.group.size()<<\"\\n\";\n    rep(i,(int)scc.group.size()){\n\
     \        cout<<scc.group[i].size();\n        for(auto x:scc.group[i]) cout<<\"\
     \ \"<<x;\n        cout<<\"\\n\";\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - Graph/StronglyConnectedComponents.cpp
+  - template.hpp
+  - Graph/StronglyConnectedComponents.hpp
   isVerificationFile: true
   path: test/yosupo_scc.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:24:26+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_scc.test.cpp
 layout: document

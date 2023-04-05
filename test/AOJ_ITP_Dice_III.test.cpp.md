@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Other/Dice.cpp
-    title: Other/Dice.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Other/Dice.hpp
+    title: Other/Dice.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_C
     links:
     - https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_C
   bundledCode: "#line 1 \"test/AOJ_ITP_Dice_III.test.cpp\"\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_C\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -31,7 +31,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/AOJ_ITP_Dice_III.test.cpp\"\n\n#line 1 \"\
-    Other/Dice.cpp\"\ntemplate<typename T>\nstruct Dice{\n    //left, right, front,\
+    Other/Dice.hpp\"\ntemplate<typename T>\nstruct Dice{\n    //left, right, front,\
     \ back, down, up\n    T l,r,f,b,d,u;\n\n    void RollF(){ // y-- (next, d <- f)\n\
     \        int tmp=d; d=f; f=u; u=b; b=tmp;\n    }\n\n    void RollB(){ // y++ (next,\
     \ d <- b)\n        int tmp=d; d=b; b=u; u=f; f=tmp;\n    }\n\n    void RollL(){\
@@ -48,17 +48,17 @@ data:
     \    cin>>B.u>>B.f>>B.r>>B.l>>B.b>>B.d;\n    cout<<(same_dice(A,B)?\"Yes\":\"\
     No\")<<endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_C\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../Other/Dice.cpp\"\n\nsigned main(){\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../Other/Dice.hpp\"\n\nsigned main(){\n\
     \    Dice<int> A,B;\n    cin>>A.u>>A.f>>A.r>>A.l>>A.b>>A.d;\n    cin>>B.u>>B.f>>B.r>>B.l>>B.b>>B.d;\n\
     \    cout<<(same_dice(A,B)?\"Yes\":\"No\")<<endl;\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - Other/Dice.cpp
+  - template.hpp
+  - Other/Dice.hpp
   isVerificationFile: true
   path: test/AOJ_ITP_Dice_III.test.cpp
   requiredBy: []
-  timestamp: '2021-11-08 21:24:42+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_ITP_Dice_III.test.cpp
 layout: document

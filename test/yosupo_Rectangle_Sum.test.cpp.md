@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/RangeTree.cpp
+  - icon: ':x:'
+    path: DataStructure/RangeTree.hpp
     title: "Range Tree (\u9818\u57DF\u6728)"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/rectangle_sum
     links:
     - https://judge.yosupo.jp/problem/rectangle_sum
   bundledCode: "#line 1 \"test/yosupo_Rectangle_Sum.test.cpp\"\n#define PROBLEM \"\
-    https://judge.yosupo.jp/problem/rectangle_sum\"\n\n#line 1 \"template.cpp\"\n\
+    https://judge.yosupo.jp/problem/rectangle_sum\"\n\n#line 1 \"template.hpp\"\n\
     #include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
     #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
     \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Rectangle_Sum.test.cpp\"\n\n#line 1\
-    \ \"DataStructure/RangeTree.cpp\"\n// Range Tree (Weighted)\ntemplate<typename\
+    \ \"DataStructure/RangeTree.hpp\"\n// Range Tree (Weighted)\ntemplate<typename\
     \ Tx,typename Ty,typename VAL=int>\nstruct RangeTree{\n    private:\n    vector<vector<Ty>>\
     \ seg;\n    vector<vector<VAL>> sum;\n    vector<Tx> x;\n    int sz;\n\n    void\
     \ build(vector<tuple<Tx,Ty,VAL>> &v){\n        sort(begin(v),end(v));\n      \
@@ -71,19 +71,19 @@ data:
     \ x1,y1,x2,y2;cin>>x1>>y1>>x2>>y2;\n        cout<<seg.query(x1,y1,x2,y2)<<\"\\\
     n\";\n    }\n\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/rectangle_sum\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../DataStructure/RangeTree.cpp\"\n\nsigned\
+    \ \"../template.hpp\"\n\n#include \"../DataStructure/RangeTree.hpp\"\n\nsigned\
     \ main(){\n    int n,q;cin>>n>>q;\n    vector<tuple<int,int,ll>> v;\n    rep(i,n){\n\
     \        int x,y;ll w;cin>>x>>y>>w;\n        v.emplace_back(x,y,w);\n    }\n\n\
     \    RangeTree<int,int,ll> seg(v);\n\n\n    while(q--){\n        int x1,y1,x2,y2;cin>>x1>>y1>>x2>>y2;\n\
     \        cout<<seg.query(x1,y1,x2,y2)<<\"\\n\";\n    }\n\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - DataStructure/RangeTree.cpp
+  - template.hpp
+  - DataStructure/RangeTree.hpp
   isVerificationFile: true
   path: test/yosupo_Rectangle_Sum.test.cpp
   requiredBy: []
-  timestamp: '2021-01-12 16:43:06+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Rectangle_Sum.test.cpp
 layout: document

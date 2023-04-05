@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: UnionFind/UnionFind.cpp
-    title: UnionFind/UnionFind.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: UnionFind/UnionFind.hpp
+    title: UnionFind/UnionFind.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
   bundledCode: "#line 1 \"test/yosupo_Unionfind.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -31,7 +31,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Unionfind.test.cpp\"\n\n#line 1 \"\
-    UnionFind/UnionFind.cpp\"\nstruct UnionFind{\n    private:\n    vector<int> par,siz;\n\
+    UnionFind/UnionFind.hpp\"\nstruct UnionFind{\n    private:\n    vector<int> par,siz;\n\
     \n    public:\n    int con;\n    UnionFind(int n):par(n),siz(n,1),con(n){\n  \
     \      iota(begin(par),end(par),0);\n    }\n    int root(int x){\n        return\
     \ (par[x]==x?x:(par[x]=root(par[x])));\n    }\n    bool sameroot(int x,int y){\n\
@@ -44,18 +44,18 @@ data:
     \    if(t) cout<<uf.sameroot(u,v)<<endl;\n        else  uf.unite(u,v);\n    }\n\
     \    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../UnionFind/UnionFind.cpp\"\n\nsigned main(){\n\
+    \ \"../template.hpp\"\n\n#include \"../UnionFind/UnionFind.hpp\"\n\nsigned main(){\n\
     \    int n,q;cin>>n>>q;\n    UnionFind uf(n);\n    while(q--){\n        int t,u,v;cin>>t>>u>>v;\n\
     \        if(t) cout<<uf.sameroot(u,v)<<endl;\n        else  uf.unite(u,v);\n \
     \   }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - UnionFind/UnionFind.cpp
+  - template.hpp
+  - UnionFind/UnionFind.hpp
   isVerificationFile: true
   path: test/yosupo_Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 16:08:06+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Unionfind.test.cpp
 layout: document

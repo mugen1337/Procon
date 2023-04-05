@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Algorithm/Mo.cpp
-    title: Algorithm/Mo.cpp
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/BinaryIndexedTree.cpp
-    title: DataStructure/BinaryIndexedTree.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Algorithm/Mo.hpp
+    title: Algorithm/Mo.hpp
+  - icon: ':x:'
+    path: DataStructure/BinaryIndexedTree.hpp
+    title: DataStructure/BinaryIndexedTree.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/static_range_inversions_query
@@ -22,7 +22,7 @@ data:
     - https://judge.yosupo.jp/problem/static_range_inversions_query
   bundledCode: "#line 1 \"test/yosupo_Static_Range_Inversions_Query.test.cpp\"\n#define\
     \ PROBLEM \"https://judge.yosupo.jp/problem/static_range_inversions_query\"\n\n\
-    #line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n#define\
+    #line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n#define\
     \ ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v)\
     \ cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\n\
     using ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -35,8 +35,8 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Static_Range_Inversions_Query.test.cpp\"\
-    \n\n#line 1 \"Algorithm/Mo.cpp\"\n/*\nrefs : https://beet-aizu.github.io/library/algorithm/mo.cpp\n\
-    \       https://ei1333.github.io/library/other/mo.cpp\n*/\nstruct Mo{\n    using\
+    \n\n#line 1 \"Algorithm/Mo.hpp\"\n/*\nrefs : https://beet-aizu.github.io/library/algorithm/mo.hpp\n\
+    \       https://ei1333.github.io/library/other/mo.hpp\n*/\nstruct Mo{\n    using\
     \ F=function<void(int)>;\n    int n,idx,ql,qr;\n    vector<pair<int,int>> query;\n\
     \    vector<int> ord;\n    // [l,r) \n    // add_left  : l-1\u3092\u8DB3\u3059\
     , add_right : r\u3092\u8DB3\u3059\n    // erase_left: l\u3092\u6D88\u3059,  erase_right:\
@@ -62,7 +62,7 @@ data:
     \ add_right(qr++);\n        while(ql<query[cur].first)  erase_left(ql++);\n  \
     \      while(qr>query[cur].second) erase_right(--qr);\n        return cur;\n \
     \   }\n};\n#line 6 \"test/yosupo_Static_Range_Inversions_Query.test.cpp\"\n\n\
-    #line 1 \"DataStructure/BinaryIndexedTree.cpp\"\ntemplate<typename T>\nstruct\
+    #line 1 \"DataStructure/BinaryIndexedTree.hpp\"\ntemplate<typename T>\nstruct\
     \ BinaryIndexedTree{\n    vector<T> data;\n    BinaryIndexedTree()=default;\n\
     \    BinaryIndexedTree(int sz):data(sz+1,0){}\n    BinaryIndexedTree(const vector<T>\
     \ &a):data(a.size()+1,0){\n        for(int i=0;i<(int)a.size();i++)data[i+1]=a[i];\n\
@@ -89,8 +89,8 @@ data:
     \        ans[j]=res;\n    }\n\n    for(auto &x:ans) cout<<x<<\"\\n\";\n    return\
     \ 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/static_range_inversions_query\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../Algorithm/Mo.cpp\"\n\n#include\
-    \ \"../DataStructure/BinaryIndexedTree.cpp\"\n\n\nsigned main(){\n    int n,q;cin>>n>>q;\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../Algorithm/Mo.hpp\"\n\n#include\
+    \ \"../DataStructure/BinaryIndexedTree.hpp\"\n\n\nsigned main(){\n    int n,q;cin>>n>>q;\n\
     \    vector<int> a(n);\n    cin>>a;\n\n    auto comp=a;\n    sort(ALL(comp));\n\
     \    comp.erase(unique(ALL(comp)),end(comp));\n    rep(i,n) a[i]=lower_bound(ALL(comp),a[i])-begin(comp);\n\
     \n    BinaryIndexedTree<ll> seg(n+10);\n    \n    ll res=0;\n    auto add_left=[&](int\
@@ -104,14 +104,14 @@ data:
     \        ans[j]=res;\n    }\n\n    for(auto &x:ans) cout<<x<<\"\\n\";\n    return\
     \ 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Algorithm/Mo.cpp
-  - DataStructure/BinaryIndexedTree.cpp
+  - template.hpp
+  - Algorithm/Mo.hpp
+  - DataStructure/BinaryIndexedTree.hpp
   isVerificationFile: true
   path: test/yosupo_Static_Range_Inversions_Query.test.cpp
   requiredBy: []
-  timestamp: '2021-04-19 13:27:55+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Static_Range_Inversions_Query.test.cpp
 layout: document

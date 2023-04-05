@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: SegmentTree/KineticSegmentTree.cpp
-    title: SegmentTree/KineticSegmentTree.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: SegmentTree/KineticSegmentTree.hpp
+    title: SegmentTree/KineticSegmentTree.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/line_add_get_min
     links:
     - https://judge.yosupo.jp/problem/line_add_get_min
   bundledCode: "#line 1 \"test/yosupo_Line_Add_Get_Min.test.cpp\"\n#define PROBLEM\
-    \ \"https://judge.yosupo.jp/problem/line_add_get_min\"\n\n#line 1 \"template.cpp\"\
+    \ \"https://judge.yosupo.jp/problem/line_add_get_min\"\n\n#line 1 \"template.hpp\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n#define ALL(x) begin(x),end(x)\n\
     #define rep(i,n) for(int i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto\
     \ x:v){cout<<x<<' ';}cout<<endl;\n#define mod 1000000007\nusing ll=long long;\n\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Line_Add_Get_Min.test.cpp\"\n\n#line\
-    \ 1 \"SegmentTree/KineticSegmentTree.cpp\"\n/*\nupdate(i, a, b)\n    set A[i]\
+    \ 1 \"SegmentTree/KineticSegmentTree.hpp\"\n/*\nupdate(i, a, b)\n    set A[i]\
     \ = a and B[i] = b\n    O(log N)\nquery(l, r)\n    return min{l <= i < r} A[i]\
     \ * T + B[i]\n    O(log N)\nheaten(new_T)\n    set T = new_temp (! current_T <\
     \ new_T)\n    O((log N) ^ 2) Amortized\n\nRef : \nhttps://codeforces.com/blog/entry/82094\n\
@@ -83,7 +83,7 @@ data:
     \        KST.heaten(x);\n        ans[qidx] = KST.query(0, r);\n    }\n\n    for(ll\
     \ &x : ans) cout << x << \"\\n\";\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/line_add_get_min\"\n\n\
-    #include \"../template.cpp\"\n\n#include \"../SegmentTree/KineticSegmentTree.cpp\"\
+    #include \"../template.hpp\"\n\n#include \"../SegmentTree/KineticSegmentTree.hpp\"\
     \n\nsigned main(){\n    int N, Q; cin >> N >> Q;\n\n    KineticSegmentTree<ll>\
     \ KST(N + Q, -2e9);\n    rep(i, N){\n        ll a, b; cin >> a >> b;\n       \
     \ KST.update(i, a, b);\n    }\n\n    int R = N, qs = 0;\n    vector<tuple<int,\
@@ -97,13 +97,13 @@ data:
     \     ans[qidx] = KST.query(0, r);\n    }\n\n    for(ll &x : ans) cout << x <<\
     \ \"\\n\";\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - SegmentTree/KineticSegmentTree.cpp
+  - template.hpp
+  - SegmentTree/KineticSegmentTree.hpp
   isVerificationFile: true
   path: test/yosupo_Line_Add_Get_Min.test.cpp
   requiredBy: []
-  timestamp: '2023-01-04 01:04:01+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Line_Add_Get_Min.test.cpp
 layout: document

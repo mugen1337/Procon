@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: UnionFind/UnionFindUndo.cpp
-    title: UnionFind/UnionFindUndo.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: UnionFind/UnionFindUndo.hpp
+    title: UnionFind/UnionFindUndo.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
   bundledCode: "#line 1 \"test/yosupo_Unionfind_undo.test.cpp\"\n#define PROBLEM \"\
-    https://judge.yosupo.jp/problem/unionfind\"\n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\n\
+    https://judge.yosupo.jp/problem/unionfind\"\n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\n\
     using namespace std;\n#define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int\
     \ i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n\
     #define mod 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst\
@@ -32,7 +32,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Unionfind_undo.test.cpp\"\n\n#line\
-    \ 1 \"UnionFind/UnionFindUndo.cpp\"\n// \u7D4C\u8DEF\u5727\u7E2E\u306A\u3057\uFF0C\
+    \ 1 \"UnionFind/UnionFindUndo.hpp\"\n// \u7D4C\u8DEF\u5727\u7E2E\u306A\u3057\uFF0C\
     \u30DE\u30FC\u30B8\u30C6\u30AF\u3067unite\uFF0C\u30AF\u30A8\u30EA\u6BCEO(logN)\n\
     struct UnionFindUndo{\n    int con;\n    vector<int> data;\n    stack<tuple<int,int,bool>>\
     \ history;\n    UnionFindUndo(int sz){\n        con=sz;\n        data.assign(sz,-1);\n\
@@ -54,18 +54,18 @@ data:
     \        if(t) cout<<uf.sameroot(u,v)<<endl;\n        else uf.unite(u,v);\n  \
     \  }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../UnionFind/UnionFindUndo.cpp\"\n\nsigned\
+    \ \"../template.hpp\"\n\n#include \"../UnionFind/UnionFindUndo.hpp\"\n\nsigned\
     \ main(){\n    int n,q;cin>>n>>q;\n    UnionFindUndo uf(n);\n    while(q--){\n\
     \        int t,u,v;cin>>t>>u>>v;\n        if(t) cout<<uf.sameroot(u,v)<<endl;\n\
     \        else uf.unite(u,v);\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - UnionFind/UnionFindUndo.cpp
+  - template.hpp
+  - UnionFind/UnionFindUndo.hpp
   isVerificationFile: true
   path: test/yosupo_Unionfind_undo.test.cpp
   requiredBy: []
-  timestamp: '2021-01-04 00:45:32+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Unionfind_undo.test.cpp
 layout: document

@@ -1,24 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: DataStructure/BinaryTrie.cpp
+  - icon: ':x:'
+    path: DataStructure/BinaryTrie.hpp
     title: Binary Trie
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/set_xor_min
     links:
     - https://judge.yosupo.jp/problem/set_xor_min
   bundledCode: "#line 1 \"test/yosupo_Set_Xor_Min.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/set_xor_min\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -31,7 +31,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_Set_Xor_Min.test.cpp\"\n\n#line 1 \"\
-    DataStructure/BinaryTrie.cpp\"\ntemplate<typename BitType,int MAXLOG,typename\
+    DataStructure/BinaryTrie.hpp\"\ntemplate<typename BitType,int MAXLOG,typename\
     \ C=int>\nstruct BinaryTrie{\n    private:\n    struct Node{\n        Node *nxt[2];\n\
     \        C cnt;\n        Node():nxt{nullptr,nullptr},cnt(0){}\n    };\n\n    Node\
     \ *root;\n\n    Node *find(BitType bit,BitType xor_val=0){\n        Node *cur=root;\n\
@@ -67,20 +67,20 @@ data:
     \     }else{\n            cout<<trie.min_element(x)<<\"\\n\";\n        }\n   \
     \ }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/set_xor_min\"\n\n#include\
-    \ \"../template.cpp\"\n\n#include \"../DataStructure/BinaryTrie.cpp\"\n\nsigned\
+    \ \"../template.hpp\"\n\n#include \"../DataStructure/BinaryTrie.hpp\"\n\nsigned\
     \ main(){\n    BinaryTrie<int,31> trie;\n    int q;cin>>q;\n    while(q--){\n\
     \        int t,x;cin>>t>>x;\n        if(t==0){\n            if(trie.count(x)==0)\
     \ trie.add(x);\n        }else if(t==1){\n            if(trie.count(x)) trie.erase(x,1);\n\
     \        }else{\n            cout<<trie.min_element(x)<<\"\\n\";\n        }\n\
     \    }\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DataStructure/BinaryTrie.cpp
+  - template.hpp
+  - DataStructure/BinaryTrie.hpp
   isVerificationFile: true
   path: test/yosupo_Set_Xor_Min.test.cpp
   requiredBy: []
-  timestamp: '2021-01-16 01:13:53+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Set_Xor_Min.test.cpp
 layout: document

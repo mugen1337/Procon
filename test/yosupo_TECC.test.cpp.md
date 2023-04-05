@@ -1,30 +1,30 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph2/GraphTemplate.cpp
-    title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
-    path: Graph2/LowLink.cpp
+  - icon: ':x:'
+    path: Graph2/GraphTemplate.hpp
+    title: Graph2/GraphTemplate.hpp
+  - icon: ':x:'
+    path: Graph2/LowLink.hpp
     title: Low Link
-  - icon: ':heavy_check_mark:'
-    path: Graph2/TwoEdgeConnectedComponents.cpp
-    title: Graph2/TwoEdgeConnectedComponents.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Graph2/TwoEdgeConnectedComponents.hpp
+    title: Graph2/TwoEdgeConnectedComponents.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/two_edge_connected_components
     links:
     - https://judge.yosupo.jp/problem/two_edge_connected_components
   bundledCode: "#line 1 \"test/yosupo_TECC.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -36,8 +36,8 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 1 \"Graph2/GraphTemplate.cpp\"\n// graph template\n\
-    // ref : https://ei1333.github.io/library/graph/graph-template.cpp\ntemplate<typename\
+    \   return is;\n}\n\n#line 1 \"Graph2/GraphTemplate.hpp\"\n// graph template\n\
+    // ref : https://ei1333.github.io/library/graph/graph-template.hpp\ntemplate<typename\
     \ T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n    Edge()=default;\n\
     \    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -52,7 +52,7 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/LowLink.cpp\"\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/LowLink.hpp\"\
     \n\ntemplate<typename T>\nstruct LowLink{\n    Graph<T> &g;\n    vector<int> ord,low;\n\
     \    vector<int> art;// articulation (true/false)\n    vector<Edge<T>> bridge;\n\
     \n    LowLink(Graph<T> &g):g(g){\n        ord.assign(g.V,-1);\n        low.assign(g.V,-1);\n\
@@ -67,7 +67,7 @@ data:
     \                }\n                else{\n                    low[cur]=min(low[cur],ord[e]);\n\
     \                }\n            }\n            if(pre==-1) art_f|=(ch>1);\n  \
     \          art[cur]=art_f;\n            return ;\n        };\n        for(int\
-    \ i=0;i<g.V;i++)if(ord[i]<0) dfs(-1,i);\n    }\n};\n#line 2 \"Graph2/TwoEdgeConnectedComponents.cpp\"\
+    \ i=0;i<g.V;i++)if(ord[i]<0) dfs(-1,i);\n    }\n};\n#line 2 \"Graph2/TwoEdgeConnectedComponents.hpp\"\
     \n\n/*\n\u4E8C\u91CD\u8FBA\u9023\u7D50\u6210\u5206\u5206\u89E3\u3092\u3057\uFF0C\
     \u9802\u70B9\u3092group\u306B\u5206\u3051\u308B\ngroup[i] : \u30B0\u30EB\u30FC\
     \u30D7i\u304C\u6301\u3064\u9802\u70B9\u756A\u53F7\nbelong[i] : \u9802\u70B9i\u304C\
@@ -87,21 +87,21 @@ data:
     \        cout<<w.size();\n        for(auto &x:w) cout<<\" \"<<x;\n        cout<<\"\
     \\n\";\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/two_edge_connected_components\"\
-    \n\n#include \"../template.cpp\"\n#include \"../Graph2/TwoEdgeConnectedComponents.cpp\"\
+    \n\n#include \"../template.hpp\"\n#include \"../Graph2/TwoEdgeConnectedComponents.hpp\"\
     \n\nsigned main(){\n    int N,M;cin>>N>>M;\n    Graph<int> G(N);\n    G.read(M,0);\n\
     \n    TwoEdgeConnectedComponents<int> TECC(G);\n    cout<<TECC.group.size()<<\"\
     \\n\";\n    for(auto &w:TECC.group){\n        cout<<w.size();\n        for(auto\
     \ &x:w) cout<<\" \"<<x;\n        cout<<\"\\n\";\n    }\n    return 0;\n}"
   dependsOn:
-  - template.cpp
-  - Graph2/TwoEdgeConnectedComponents.cpp
-  - Graph2/LowLink.cpp
-  - Graph2/GraphTemplate.cpp
+  - template.hpp
+  - Graph2/TwoEdgeConnectedComponents.hpp
+  - Graph2/LowLink.hpp
+  - Graph2/GraphTemplate.hpp
   isVerificationFile: true
   path: test/yosupo_TECC.test.cpp
   requiredBy: []
-  timestamp: '2021-08-01 02:50:35+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_TECC.test.cpp
 layout: document

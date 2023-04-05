@@ -2,11 +2,11 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DP/LargestRectangle.cpp
+    path: DP/LargestRectangle.hpp
     title: "Largest Rectangle (\u6700\u5927\u9577\u65B9\u5F62)"
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -18,7 +18,7 @@ data:
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_3_C&lang=ja
   bundledCode: "#line 1 \"test/AOJ_DPL_3_c.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_3_C&lang=ja\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -30,7 +30,7 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_DPL_3_c.test.cpp\"\n\n#line 1 \"DP/LargestRectangle.cpp\"\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_DPL_3_c.test.cpp\"\n\n#line 1 \"DP/LargestRectangle.hpp\"\
     \ntemplate<typename INT>\nINT LargestRectangle(vector<INT> v){\n    int n=(int)v.size();\n\
     \    INT inf=numeric_limits<INT>::max()/2;\n    stack<pair<INT,INT>> st;\n   \
     \ st.emplace(-inf,-1);// \u3070\u3093\u307A\u3044\u3093\n    INT ret=0;\n    for(int\
@@ -42,16 +42,16 @@ data:
     \    vector<ll> v(n);\n    cin>>v;\n    cout<<LargestRectangle(v)<<endl;\n   \
     \ return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_3_C&lang=ja\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../DP/LargestRectangle.cpp\"\n\n\
+    \n\n#include \"../template.hpp\"\n\n#include \"../DP/LargestRectangle.hpp\"\n\n\
     signed main(){\n    int n;cin>>n;\n    vector<ll> v(n);\n    cin>>v;\n    cout<<LargestRectangle(v)<<endl;\n\
     \    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - DP/LargestRectangle.cpp
+  - template.hpp
+  - DP/LargestRectangle.hpp
   isVerificationFile: true
   path: test/AOJ_DPL_3_c.test.cpp
   requiredBy: []
-  timestamp: '2021-01-24 02:17:51+09:00'
+  timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_3_c.test.cpp

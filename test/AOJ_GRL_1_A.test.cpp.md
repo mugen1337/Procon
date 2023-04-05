@@ -1,27 +1,27 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph2/Dijkstra.cpp
+  - icon: ':x:'
+    path: Graph2/Dijkstra.hpp
     title: Dijkstra
-  - icon: ':heavy_check_mark:'
-    path: Graph2/GraphTemplate.cpp
-    title: Graph2/GraphTemplate.cpp
-  - icon: ':heavy_check_mark:'
-    path: template.cpp
-    title: template.cpp
+  - icon: ':x:'
+    path: Graph2/GraphTemplate.hpp
+    title: Graph2/GraphTemplate.hpp
+  - icon: ':question:'
+    path: template.hpp
+    title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja
   bundledCode: "#line 1 \"test/AOJ_GRL_1_A.test.cpp\"\n#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja\"\
-    \n\n#line 1 \"template.cpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
+    \n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace std;\n\
     #define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int i=0;i<(n);i++)\n#define\
     \ debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n#define mod\
     \ 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst ll LINF=1001002003004005006ll;\n\
@@ -33,8 +33,8 @@ data:
     \ T>\nostream &operator<<(ostream &os,const vector<T>&v){\n    for(int i=0;i<(int)v.size();i++)\
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
-    \   return is;\n}\n\n#line 4 \"test/AOJ_GRL_1_A.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.cpp\"\
-    \n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.cpp\n\
+    \   return is;\n}\n\n#line 4 \"test/AOJ_GRL_1_A.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.hpp\"\
+    \n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -49,7 +49,7 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Dijkstra.cpp\"\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Dijkstra.hpp\"\
     \n\ntemplate<typename T>\nstruct Dijkstra{\n    const T inf;\n    Graph<T> g;\n\
     \    vector<T> d;\n    vector<int> prev,eid;\n    \n    Dijkstra(Graph<T> g):inf(numeric_limits<T>::max()/4),g(g){}\n\
     \n    vector<T> build(int st){\n        d.assign(g.V,inf);\n        prev.assign(g.V,-1);\n\
@@ -68,19 +68,19 @@ data:
     \    Dijkstra dij(g);\n    for(auto x:dij.build(s)){\n        if(x==dij.inf) cout<<\"\
     INF\"<<endl;\n        else cout<<x<<endl;\n    }\n    return 0;\n}\n"
   code: "#define PROBLEM \"http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja\"\
-    \n\n#include \"../template.cpp\"\n\n#include \"../Graph2/Dijkstra.cpp\"\n\nsigned\
+    \n\n#include \"../template.hpp\"\n\n#include \"../Graph2/Dijkstra.hpp\"\n\nsigned\
     \ main(){\n    int n,m,s;cin>>n>>m>>s;\n    Graph<ll> g(n);\n    g.read(m,0,true,true);\n\
     \    Dijkstra dij(g);\n    for(auto x:dij.build(s)){\n        if(x==dij.inf) cout<<\"\
     INF\"<<endl;\n        else cout<<x<<endl;\n    }\n    return 0;\n}\n"
   dependsOn:
-  - template.cpp
-  - Graph2/Dijkstra.cpp
-  - Graph2/GraphTemplate.cpp
+  - template.hpp
+  - Graph2/Dijkstra.hpp
+  - Graph2/GraphTemplate.hpp
   isVerificationFile: true
   path: test/AOJ_GRL_1_A.test.cpp
   requiredBy: []
-  timestamp: '2021-09-30 23:03:26+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-04-05 23:10:22+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ_GRL_1_A.test.cpp
 layout: document
