@@ -1,6 +1,6 @@
 ---
 title: Precalc (Twelvefold way)
-documentation_of: //Math/Precalc.cpp
+documentation_of: //Math/Precalc.hpp
 ---
 
 ## 概要  

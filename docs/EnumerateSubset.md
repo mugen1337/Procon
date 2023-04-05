@@ -1,6 +1,6 @@
 ---
 title: 部分集合の列挙 (Enumerate Subset)
-documentation_of: //Other/EnumerateSubset.cpp
+documentation_of: //Other/EnumerateSubset.hpp
 ---
 
 ## 概要  

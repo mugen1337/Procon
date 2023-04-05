@@ -1,6 +1,6 @@
 ---
 title: Longest Common Subsequence (最長共通部分列)
-documentation_of: //DP/LongestCommonSubsequence.cpp
+documentation_of: //DP/LongestCommonSubsequence.hpp
 ---
 
 ## 概要  

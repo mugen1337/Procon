@@ -1,6 +1,6 @@
 ---
 title: Dijkstra
-documentation_of: //Graph2/Dijkstra.cpp
+documentation_of: //Graph2/Dijkstra.hpp
 ---
 
 # 概要  

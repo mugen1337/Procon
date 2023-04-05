@@ -1,6 +1,6 @@
 ---
 title: Heavy Light Decomposition (HL分解)
-documentation_of: //Graph2/HeavyLightDecomposition.cpp
+documentation_of: //Graph2/HeavyLightDecomposition.hpp
 ---
 
 # 概要  

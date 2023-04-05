@@ -1,6 +1,6 @@
 ---
 title: Segment Tree
-documentation_of: //SegmentTree/SegmentTree.cpp
+documentation_of: //SegmentTree/SegmentTree.hpp
 ---
 
 ## 概要  

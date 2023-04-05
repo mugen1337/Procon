@@ -1,6 +1,6 @@
 ---
 title: Low Link
-documentation_of: //Graph2/LowLink.cpp
+documentation_of: //Graph2/LowLink.hpp
 ---
 
 ## 概要  

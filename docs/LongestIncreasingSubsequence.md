@@ -1,6 +1,6 @@
 ---
 title: Longest Increasing Subsequence (最長増加部分列)
-documentation_of: //DP/LongestIncreasingSubsequence.cpp
+documentation_of: //DP/LongestIncreasingSubsequence.hpp
 ---
 
 ## 概要  

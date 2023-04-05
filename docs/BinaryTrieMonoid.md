@@ -1,6 +1,6 @@
 ---
 title: Binary Trie Monoid (必要なところだけ作るセグメント木)
-documentation_of: //DataStructure/BinaryTrieMonoid.cpp
+documentation_of: //DataStructure/BinaryTrieMonoid.hpp
 ---
 
 ## 概要  

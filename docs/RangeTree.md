@@ -1,6 +1,6 @@
 ---
 title: Range Tree (領域木)
-documentation_of: //DataStructure/RangeTree.cpp
+documentation_of: //DataStructure/RangeTree.hpp
 ---
 
 ## 概要  

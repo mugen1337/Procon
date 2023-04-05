@@ -1,6 +1,6 @@
 ---
 title: オフライン 削除可能 Convex Hull Trick  
-documentation_of: //DataStructure/DeletableLiChaoTreeOffline.cpp
+documentation_of: //DataStructure/DeletableLiChaoTreeOffline.hpp
 ---
 
 ## 概要  

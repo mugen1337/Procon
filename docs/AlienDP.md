@@ -1,6 +1,6 @@
 ---
 title: Alien DP
-documentation_of: //tips/AlienDP.cpp
+documentation_of: //tips/AlienDP.hpp
 ---
 
 ## 概要  

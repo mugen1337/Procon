@@ -1,6 +1,6 @@
 ---
 title: osa_k法 (Factorization Queries)
-documentation_of: //Math/FactorizeQueries.cpp
+documentation_of: //Math/FactorizeQueries.hpp
 ---
 
 ## 概要  

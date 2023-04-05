@@ -1,6 +1,6 @@
 ---
 title: Inversion Number (転倒数)
-documentation_of: //DP/InversionNumber.cpp
+documentation_of: //DP/InversionNumber.hpp
 ---
 
 ## 概要  

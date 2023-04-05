@@ -1,6 +1,6 @@
 ---
 title: 順列である連続部分列の数え上げ
-documentation_of: //tips/CountSubpermutation.cpp
+documentation_of: //tips/CountSubpermutation.hpp
 ---
 
 ## 概要  

@@ -1,6 +1,6 @@
 ---
 title: 区間をセットで管理するやつ
-documentation_of: //DataStructure/RangeSet.cpp
+documentation_of: //DataStructure/RangeSet.hpp
 ---
 
 ## 概要  

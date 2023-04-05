@@ -1,6 +1,6 @@
 ---
 title: Eppstein's Algorithm (K-Shortest-Walk)
-documentation_of: //Graph2/Eppstein.cpp
+documentation_of: //Graph2/Eppstein.hpp
 ---
 
 ## 概要  

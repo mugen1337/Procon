@@ -1,6 +1,6 @@
 ---
 title: Namori
-documentation_of: //Graph2/Namori.cpp
+documentation_of: //Graph2/Namori.hpp
 ---
 
 # 概要  

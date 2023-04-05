@@ -1,6 +1,6 @@
 ---
 title: Link Cut Tree
-documentation_of: //Graph2/LinkCutTree.cpp
+documentation_of: //Graph2/LinkCutTree.hpp
 ---
 
 # 概要  
@@ -23,7 +23,7 @@ Link Cut Tree
 # ref
 https://www.slideshare.net/iwiwi/2-12188845
 https://ei1333.hateblo.jp/entry/2018/05/29/011140
-https://sotanishy.github.io/competitive-programming-library/tree/link_cut_tree.cpp
+https://sotanishy.github.io/competitive-programming-library/tree/link_cut_tree.hpp
 
 # todo
 部分木クエリについての理解
