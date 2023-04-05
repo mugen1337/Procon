@@ -1,9 +1,9 @@
 #define ERROR 1e-4
 #define PROBLEM "https://yukicoder.me/problems/4227"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/Yen.cpp"
+#include "../Graph2/Yen.hpp"
 
 signed main(){
     int n,m,k;cin>>n>>m>>k;

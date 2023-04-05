@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/2577"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/RectangleUnion.cpp"
+#include "../DataStructure/RectangleUnion.hpp"
 
 signed main(){
     int n;cin>>n;

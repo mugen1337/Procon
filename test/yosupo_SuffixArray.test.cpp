@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/suffixarray"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../String/SuffixArray.cpp"
+#include "../String/SuffixArray.hpp"
 
 signed main(){
     string s;cin>>s;

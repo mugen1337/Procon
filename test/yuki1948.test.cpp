@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/1948"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/LiChaoTree.cpp"
+#include "../DataStructure/LiChaoTree.hpp"
 
 signed main(){
     int n;cin>>n;

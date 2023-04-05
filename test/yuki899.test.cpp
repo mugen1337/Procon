@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/899"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../SegmentTree/LazySegmentTree.cpp"
+#include "../SegmentTree/LazySegmentTree.hpp"
 
 // range set range min
 using M=ll;

@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 // scc.belong[i]  : strongly connected components i belongs 
 // scc.group[i]   : vertice i-th strongly connected component has
 // scc.compressed : compressed Graph, DAG

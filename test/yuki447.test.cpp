@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/447"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Math/Garner.cpp"
+#include "../Math/Garner.hpp"
 
 signed main(){
 

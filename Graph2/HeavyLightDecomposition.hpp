@@ -1,7 +1,7 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 /*
 ref : https://ferin-tech.hatenablog.com/entry/2019/11/21/HL%E5%88%86%E8%A7%A3%E3%81%AE%E5%AE%9F%E8%A3%85
-      https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.cpp
+      https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.hpp
 
 HLD 
     各頂点から頂点を扱いやすいように並び替えた時の番号への写像を考える

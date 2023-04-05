@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/5398"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../BinarySearchTree/SplayTree.cpp"
+#include "../BinarySearchTree/SplayTree.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

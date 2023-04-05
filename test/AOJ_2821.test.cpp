@@ -1,9 +1,9 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/2821"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Tree/TreeHash.cpp"
-#include "../UnionFind/UnionFind.cpp"
+#include "../Tree/TreeHash.hpp"
+#include "../UnionFind/UnionFind.hpp"
 
 signed main(){
     TreeHasher th(300010);

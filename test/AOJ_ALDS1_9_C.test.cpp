@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Heap/LeftistHeap.cpp"
+#include "../Heap/LeftistHeap.hpp"
 
 
 signed main(){

@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/1249"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Tree/LazyLinkCutTree.cpp"
+#include "../Tree/LazyLinkCutTree.hpp"
 
 signed main(){
     int n;cin>>n;

@@ -1,10 +1,10 @@
 #define PROBLEM "https://yukicoder.me/problems/1249"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/HeavyLightDecomposition.cpp"
+#include "../Graph2/HeavyLightDecomposition.hpp"
 
-#include "../SegmentTree/LazySegmentTree.cpp"
+#include "../SegmentTree/LazySegmentTree.hpp"
 
 using M=pair<ll,ll>;
 using OM=ll;

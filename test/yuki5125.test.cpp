@@ -1,12 +1,12 @@
 #define PROBLEM "https://yukicoder.me/problems/5125"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Other/CyclePartition.cpp"
+#include "../Other/CyclePartition.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
-#include "../Math/Precalc.cpp"
+#include "../Math/Precalc.hpp"
 
 using mint=ModInt<998244353>;
 Precalc<mint> F(500000);

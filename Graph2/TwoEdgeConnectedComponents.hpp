@@ -1,4 +1,4 @@
-#include "./LowLink.cpp"
+#include "./LowLink.hpp"
 
 /*
 二重辺連結成分分解をし，頂点をgroupに分ける

@@ -1,6 +1,6 @@
 /*
-refs : https://beet-aizu.github.io/library/algorithm/mo.cpp
-       https://ei1333.github.io/library/other/mo.cpp
+refs : https://beet-aizu.github.io/library/algorithm/mo.hpp
+       https://ei1333.github.io/library/other/mo.hpp
 */
 struct Mo{
     using F=function<void(int)>;

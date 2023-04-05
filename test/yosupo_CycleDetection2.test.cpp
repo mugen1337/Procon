@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/cycle_detection"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/CycleDetection.cpp"
+#include "../Graph2/CycleDetection.hpp"
 
 signed main(){
     int n,m;cin>>n>>m;

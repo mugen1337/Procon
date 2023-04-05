@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../SegmentTree/SegmentTree.cpp"
+#include "../SegmentTree/SegmentTree.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

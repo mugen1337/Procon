@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Tree/LinkCutTree.cpp"
+#include "../Tree/LinkCutTree.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

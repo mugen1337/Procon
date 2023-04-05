@@ -1,12 +1,12 @@
 #define PROBLEM "https://yukicoder.me/problems/1917"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
 using mint=ModInt<1000000007>;
 
-#include "../Math/Precalc.cpp"
+#include "../Math/Precalc.hpp"
 
 Precalc<mint> F(1000010);
 

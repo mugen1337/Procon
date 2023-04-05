@@ -1,9 +1,9 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/2292"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../String/RollingHash.cpp"
-#include "../String/PalindromicTree.cpp"
+#include "../String/RollingHash.hpp"
+#include "../String/PalindromicTree.hpp"
 
 signed main(){
     string s,t;cin>>s>>t;

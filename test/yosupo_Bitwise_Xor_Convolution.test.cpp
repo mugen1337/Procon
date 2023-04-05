@@ -1,10 +1,10 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/bitwise_xor_convolution"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
-#include "../Math/XorConvolution.cpp"
+#include "../Math/XorConvolution.hpp"
 
 using mint=ModInt<998244353>;
 

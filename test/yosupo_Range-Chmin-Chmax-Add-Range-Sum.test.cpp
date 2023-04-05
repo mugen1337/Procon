@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../SegmentTree/SegmentTreeBeats.cpp"
+#include "../SegmentTree/SegmentTreeBeats.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

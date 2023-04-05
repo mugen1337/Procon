@@ -1,10 +1,10 @@
 #define PROBLEM "https://yukicoder.me/problems/2017"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
-#include "../Math/Precalc.cpp"
-#include "../Math/FormalPowerSeriesNaive.cpp"
+#include "../type/modint.hpp"
+#include "../Math/Precalc.hpp"
+#include "../Math/FormalPowerSeriesNaive.hpp"
 
 using mint=ModInt<1000000007>;
 Precalc<mint> F(500000);

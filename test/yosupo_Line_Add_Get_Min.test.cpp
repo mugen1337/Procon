@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/line_add_get_min"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../SegmentTree/KineticSegmentTree.cpp"
+#include "../SegmentTree/KineticSegmentTree.hpp"
 
 signed main(){
     int N, Q; cin >> N >> Q;

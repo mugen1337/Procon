@@ -1,5 +1,5 @@
-#include "./GraphTemplate.cpp"
-#include "../UnionFind/UnionFind.cpp"
+#include "./GraphTemplate.hpp"
+#include "../UnionFind/UnionFind.hpp"
 
 template<typename T>
 vector<Graph<T>> GraphRelabel(Graph<T> G){

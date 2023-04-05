@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 
 /*
 verify: https://onlinejudge.u-aizu.ac.jp/beta/review.html#ACPC2021Day2/5917572

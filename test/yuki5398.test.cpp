@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/5398"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../BinarySearchTree/ImplicitTreapWithLazy.cpp"
+#include "../BinarySearchTree/ImplicitTreapWithLazy.hpp"
 
 ll f(ll a,ll b){
     return a+b;

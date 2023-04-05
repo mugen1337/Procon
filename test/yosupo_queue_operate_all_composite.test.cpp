@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/queue_operate_all_composite"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/SlidingWindowAgregation.cpp"
+#include "../DataStructure/SlidingWindowAgregation.hpp"
 
 
 signed main(){    

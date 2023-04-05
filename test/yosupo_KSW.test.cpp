@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/k_shortest_walk"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/Eppstein.cpp"
+#include "../Graph2/Eppstein.hpp"
 
 signed main(){
     int n,m,s,t,k;cin>>n>>m>>s>>t>>k;

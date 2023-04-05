@@ -1,8 +1,8 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/0109"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Other/Parser.cpp"
+#include "../Other/Parser.hpp"
 
 Parser<int> parse;
 

@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1379"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Other/EnumerateSubset.cpp"
+#include "../Other/EnumerateSubset.hpp"
 
 signed main(){
     int n;cin>>n;

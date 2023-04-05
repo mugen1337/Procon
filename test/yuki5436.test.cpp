@@ -1,10 +1,10 @@
 #define PROBLEM "https://yukicoder.me/problems/5436"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/Rerooting.cpp"
+#include "../Graph2/Rerooting.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
 using mint=ModInt<1000000007>;
 

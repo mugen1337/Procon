@@ -1,5 +1,5 @@
-#include "./inv_mod.cpp"
-#include "./pow_mod.cpp"
+#include "./inv_mod.hpp"
+#include "./pow_mod.hpp"
 
 // https://qiita.com/suisen_cp/items/d597c8ec576ae32ee2d7
 // 最小の非負整数xを返す

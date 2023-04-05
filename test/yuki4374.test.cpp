@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/4374"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../SegmentTree/LazySegmentTree.cpp"
+#include "../SegmentTree/LazySegmentTree.hpp"
 
 using tp=tuple<ll,ll,ll>;
 

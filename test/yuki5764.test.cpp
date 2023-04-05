@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/5764"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph/WarshallFloyd.cpp"
+#include "../Graph/WarshallFloyd.hpp"
 
 signed main(){
     int n,m;cin>>n>>m;

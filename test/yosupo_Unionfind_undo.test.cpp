@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../UnionFind/UnionFindUndo.cpp"
+#include "../UnionFind/UnionFindUndo.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

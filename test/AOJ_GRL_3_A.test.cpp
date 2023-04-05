@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_3_A"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/LowLink.cpp"
+#include "../Graph2/LowLink.hpp"
 
 signed main(){
     int n,m;cin>>n>>m;

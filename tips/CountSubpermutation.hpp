@@ -1,8 +1,8 @@
 // https://codeforces.com/problemset/problem/1175/F
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Other/RandomNumberGenerator.cpp"
+#include "../Other/RandomNumberGenerator.hpp"
 
 // 1-indexed permutation
 ll Subpermutations(vector<int> v){

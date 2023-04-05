@@ -1,10 +1,10 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/static_range_inversions_query"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Algorithm/Mo.cpp"
+#include "../Algorithm/Mo.hpp"
 
-#include "../DataStructure/BinaryIndexedTree.cpp"
+#include "../DataStructure/BinaryIndexedTree.hpp"
 
 
 signed main(){

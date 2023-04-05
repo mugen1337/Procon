@@ -1,5 +1,5 @@
 // https://yukicoder.me/submissions/644671
-// https://ei1333.github.io/library/structure/others/slope-queue.cpp
+// https://ei1333.github.io/library/structure/others/slope-queue.hpp
 // https://maspypy.com/slope-trick-1-%e8%a7%a3%e8%aa%ac%e7%b7%a8
 // ex)
 // f(x) <- min_{y<=x+k} f(y)

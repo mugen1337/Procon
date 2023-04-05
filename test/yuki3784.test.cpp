@@ -1,16 +1,16 @@
 #define PROBLEM "https://yukicoder.me/problems/3784"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DP/LongestIncreasingSubsequence.cpp"
+#include "../DP/LongestIncreasingSubsequence.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
 using mint=ModInt<1000000007>;
 
-#include "../DataStructure/BinaryTrieMonoid.cpp"
+#include "../DataStructure/BinaryTrieMonoid.hpp"
 
-#include "../SegmentTree/SegmentTree.cpp"
+#include "../SegmentTree/SegmentTree.hpp"
 
 int f(int a,int b){
     return max(a,b);

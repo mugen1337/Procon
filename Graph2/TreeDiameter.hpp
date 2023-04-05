@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 
 template<typename T>
 pair<T,vector<int>> TreeDiameter(const Graph<T> &g){

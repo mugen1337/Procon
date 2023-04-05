@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 
 /*
 verified : https://codeforces.com/contest/786/submission/131901643

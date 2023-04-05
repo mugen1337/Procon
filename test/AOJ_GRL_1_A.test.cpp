@@ -1,8 +1,8 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/Dijkstra.cpp"
+#include "../Graph2/Dijkstra.hpp"
 
 signed main(){
     int n,m,s;cin>>n>>m>>s;
