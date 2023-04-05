@@ -211,7 +211,7 @@ data:
       title: Low Link
     - icon: ':warning:'
       path: Graph2/Namori.cpp
-      title: Graph2/Namori.cpp
+      title: Namori
     - icon: ':warning:'
       path: Graph2/RangeEdgeGraph.cpp
       title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
@@ -339,6 +339,9 @@ data:
       title: SAT/HornSAT.cpp
   - name: SegmentTree
     pages:
+    - icon: ':heavy_check_mark:'
+      path: SegmentTree/KineticSegmentTree.cpp
+      title: SegmentTree/KineticSegmentTree.cpp
     - icon: ':heavy_check_mark:'
       path: SegmentTree/LazySegmentTree.cpp
       title: Lazy Segment Tree
@@ -540,6 +543,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_KSW.test.cpp
       title: test/yosupo_KSW.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo_Line_Add_Get_Min.test.cpp
+      title: test/yosupo_Line_Add_Get_Min.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp

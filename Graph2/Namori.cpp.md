@@ -90,8 +90,13 @@ data:
   verifiedWith: []
 documentation_of: Graph2/Namori.cpp
 layout: document
-redirect_from:
-- /library/Graph2/Namori.cpp
-- /library/Graph2/Namori.cpp.html
-title: Graph2/Namori.cpp
+title: Namori
 ---
+
+# 概要  
+Namori Graphを管理
+
+# 仕様  
+- forest[i] : loop_vertex[i]からぶら下がる木
+- loop_vertex[i] - loop_edge[i] - loop_vertex[i+1]
+
