@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/discrete_logarithm_mod"
 
-#include "./template.cpp"
+#include "./template.hpp"
 
-#include "../Math/log_mod.cpp"
+#include "../Math/log_mod.hpp"
 
 void solve(){
     ll a,b,m;cin>>a>>b>>m;

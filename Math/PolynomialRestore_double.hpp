@@ -1,4 +1,4 @@
-#include "./LinearEquation_double.cpp"
+#include "./LinearEquation_double.hpp"
 
 // f(x) = a_0 + a_1 * x .. .a_d * x^d
 // O(d ^ 3)

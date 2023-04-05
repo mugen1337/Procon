@@ -1,6 +1,6 @@
 ---
 title: 区間に辺を張るテク
-documentation_of: //Graph2/RangeEdgeGraph.cpp
+documentation_of: //Graph2/RangeEdgeGraph.hpp
 ---
 
 ## 概要  

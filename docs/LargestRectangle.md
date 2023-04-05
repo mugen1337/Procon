@@ -1,6 +1,6 @@
 ---
 title: Largest Rectangle (最大長方形)
-documentation_of: //DP/LargestRectangle.cpp
+documentation_of: //DP/LargestRectangle.hpp
 ---
 
 ## 概要  

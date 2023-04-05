@@ -1,10 +1,10 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/bitwise_and_convolution"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
-#include "../Math/AndConvolution.cpp"
+#include "../Math/AndConvolution.hpp"
 
 using mint=ModInt<998244353>;
 

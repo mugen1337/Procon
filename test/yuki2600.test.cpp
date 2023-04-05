@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/2600"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/AbsoluteSum.cpp"
+#include "../DataStructure/AbsoluteSum.hpp"
 
 
 signed main(){

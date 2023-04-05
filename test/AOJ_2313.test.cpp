@@ -1,8 +1,8 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2313"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Flow/Dinic.cpp"
+#include "../Flow/Dinic.hpp"
 
 
 signed main(){

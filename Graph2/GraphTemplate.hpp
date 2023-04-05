@@ -1,5 +1,5 @@
 // graph template
-// ref : https://ei1333.github.io/library/graph/graph-template.cpp
+// ref : https://ei1333.github.io/library/graph/graph-template.hpp
 template<typename T=int>
 struct Edge{
     int from,to;

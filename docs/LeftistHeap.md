@@ -1,6 +1,6 @@
 ---
 title: Leftist Heap
-documentation_of: //Heap/LeftistHeap.cpp
+documentation_of: //Heap/LeftistHeap.hpp
 ---
 
 ## 概要  

@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 
 template<typename T,typename GT=int>
 struct Rerooting{

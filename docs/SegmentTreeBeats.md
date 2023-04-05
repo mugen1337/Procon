@@ -1,6 +1,6 @@
 ---
 title: Segment Tree Beats
-documentation_of: //SegmentTree/SegmentTreeBeats.cpp
+documentation_of: //SegmentTree/SegmentTreeBeats.hpp
 ---
 
 ## 概要  

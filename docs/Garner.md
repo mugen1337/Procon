@@ -1,6 +1,6 @@
 ---
 title: Garner (中国剰余定理)
-documentation_of: //Math/Garner.cpp
+documentation_of: //Math/Garner.hpp
 ---
 
 # 概要  

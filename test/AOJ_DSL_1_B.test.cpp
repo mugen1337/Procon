@@ -1,8 +1,8 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../UnionFind/WeightedUnionFind.cpp"
+#include "../UnionFind/WeightedUnionFind.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

@@ -1,12 +1,12 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2863"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
-#include "../String/Trie.cpp"
+#include "../String/Trie.hpp"
 
-#include "../String/RollingHash.cpp"
+#include "../String/RollingHash.hpp"
 
 using mint=ModInt<1000000007>;
 

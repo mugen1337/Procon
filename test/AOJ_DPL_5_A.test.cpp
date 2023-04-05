@@ -1,10 +1,10 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_5_A"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
-#include "../Math/Precalc.cpp"
+#include "../Math/Precalc.hpp"
 
 using mint=ModInt<1000000007>;
 

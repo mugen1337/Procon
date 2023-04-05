@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/2855"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Math/Sieve.cpp"
+#include "../Math/Sieve.hpp"
 
 signed main(){
     int n;cin>>n;

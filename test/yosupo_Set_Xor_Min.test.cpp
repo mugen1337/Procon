@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/set_xor_min"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/BinaryTrie.cpp"
+#include "../DataStructure/BinaryTrie.hpp"
 
 signed main(){
     BinaryTrie<int,31> trie;

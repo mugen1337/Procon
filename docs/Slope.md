@@ -1,6 +1,6 @@
 ---
 title: Slope
-documentation_of: //DataStructure/Slope.cpp
+documentation_of: //DataStructure/Slope.hpp
 ---
 
 ## 概要  
@@ -21,5 +21,5 @@ operator(a)はO(N)なので注意
 
 ## ref  
 https://yukicoder.me/submissions/644671  
-https://ei1333.github.io/library/structure/others/slope-queue.cpp  
+https://ei1333.github.io/library/structure/others/slope-queue.hpp  
 https://maspypy.com/slope-trick-1-%e8%a7%a3%e8%aa%ac%e7%b7%a8  

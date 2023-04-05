@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/1601"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/RangeSet.cpp"
+#include "../DataStructure/RangeSet.hpp"
 
 signed main(){
     ll d,q;cin>>d>>q;

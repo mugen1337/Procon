@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/shortest_path"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph/Dijkstra.cpp"
+#include "../Graph/Dijkstra.hpp"
 
 signed main(){
     int n,m,s,t;cin>>n>>m>>s>>t;

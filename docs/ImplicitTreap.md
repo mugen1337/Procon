@@ -1,6 +1,6 @@
 ---
 title: Implicit Treap
-documentation_of: //BinarySearchTree/ImplicitTreap.cpp
+documentation_of: //BinarySearchTree/ImplicitTreap.hpp
 ---
 
 ## 概要  

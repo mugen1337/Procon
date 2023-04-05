@@ -1,4 +1,4 @@
-#include "./GraphTemplate.cpp"
+#include "./GraphTemplate.hpp"
 
 // 有向グラフ向け
 // 無向グラフでやりたいなら辺のidxが独立になるように振りなおす
@@ -6,7 +6,7 @@
 // vector ( pair(cost, pathの辺番号のリスト) ), k個ない時に注意
 /*
 ref: https://qiita.com/nariaki3551/items/821dc6ffdc552d3d5f22
-     https://ei1333.github.io/library/graph/shortest-path/k-shortest-path.cpp
+     https://ei1333.github.io/library/graph/shortest-path/k-shortest-path.hpp
 */
 template<typename T>
 vector<pair<T,vector<int>>> Yen(Graph<T> g,int s,int t,int k){

@@ -1,12 +1,12 @@
 #define PROBLEM "https://yukicoder.me/problems/473"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 
 using mint=ModInt<1000000007>;
 
-#include "../Math/FormalPowerSeriesNaive.cpp"
+#include "../Math/FormalPowerSeriesNaive.hpp"
 
 using FPS=FormalPowerSeriesNaive<mint>;
 

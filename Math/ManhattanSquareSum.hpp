@@ -1,5 +1,5 @@
-#include "../type/modint.cpp"
-#include "../SegmentTree/SegmentTree.cpp"
+#include "../type/modint.hpp"
+#include "../SegmentTree/SegmentTree.hpp"
 
 using mint=ModInt<998244353>;
 

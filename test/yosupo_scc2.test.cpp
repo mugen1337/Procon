@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/scc"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Graph2/StronglyConnectedComponents.cpp"
+#include "../Graph2/StronglyConnectedComponents.hpp"
 
 signed main(){
     int n,m;cin>>n>>m;

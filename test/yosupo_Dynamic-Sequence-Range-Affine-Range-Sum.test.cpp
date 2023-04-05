@@ -1,10 +1,10 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../BinarySearchTree/ImplicitTreapWithLazy.cpp"
+#include "../BinarySearchTree/ImplicitTreapWithLazy.hpp"
 
-#include "../type/modint.cpp"
+#include "../type/modint.hpp"
 using mint=ModInt<998244353>;
 
 using M=pair<mint,mint>;

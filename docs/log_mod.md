@@ -1,6 +1,6 @@
 ---
 title: 離散対数 (log mod)
-documentation_of: //Math/log_mod.cpp
+documentation_of: //Math/log_mod.hpp
 ---
 
 ## 概要  

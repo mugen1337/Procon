@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/two_edge_connected_components"
 
-#include "../template.cpp"
-#include "../Graph2/TwoEdgeConnectedComponents.cpp"
+#include "../template.hpp"
+#include "../Graph2/TwoEdgeConnectedComponents.hpp"
 
 signed main(){
     int N,M;cin>>N>>M;

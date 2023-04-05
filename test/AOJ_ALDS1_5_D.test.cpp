@@ -1,8 +1,8 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_D"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DP/InversionNumber.cpp"
+#include "../DP/InversionNumber.hpp"
 
 signed main(){
     int n;cin>>n;

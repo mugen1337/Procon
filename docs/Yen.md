@@ -1,6 +1,6 @@
 ---
 title: Yen's Algorithm (K-Shortest-Path)
-documentation_of: //Graph2/Yen.cpp
+documentation_of: //Graph2/Yen.hpp
 ---
 
 ## 概要  

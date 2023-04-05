@@ -1,6 +1,6 @@
 ---
 title: エラトステネスの篩
-documentation_of: //Math/Sieve.cpp
+documentation_of: //Math/Sieve.hpp
 ---
 
 ## 概要  

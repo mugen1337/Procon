@@ -1,5 +1,5 @@
 /*
-https://ei1333.github.io/library/string/suffix-array.cpp
+https://ei1333.github.io/library/string/suffix-array.hpp
 SA[i] := S[i ~ |S|)
 */
 struct SuffixArray{

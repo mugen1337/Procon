@@ -1,6 +1,6 @@
 ---
 title: Strongly Connected Components
-documentation_of: //Graph2/StronglyConnectedComponents.cpp
+documentation_of: //Graph2/StronglyConnectedComponents.hpp
 ---
 
 ## 概要  

@@ -1,8 +1,8 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_3_C&lang=ja"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DP/LargestRectangle.cpp"
+#include "../DP/LargestRectangle.hpp"
 
 signed main(){
     int n;cin>>n;

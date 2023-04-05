@@ -1,8 +1,8 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/BinaryTrieMonoid.cpp"
+#include "../DataStructure/BinaryTrieMonoid.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

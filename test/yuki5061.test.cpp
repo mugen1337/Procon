@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/5061"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/Slope.cpp"
+#include "../DataStructure/Slope.hpp"
              
 #pragma GCC target("avx2")
 #pragma GCC optimize("O3")

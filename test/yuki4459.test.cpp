@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/4459"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Math/ceil_floor.cpp"
+#include "../Math/ceil_floor.hpp"
 
 
 template< typename T >

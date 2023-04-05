@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DP/LongestCommonSubsequence.cpp"
+#include "../DP/LongestCommonSubsequence.hpp"
 
 void solve(){
     string a,b;cin>>a>>b;

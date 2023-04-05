@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/rectangle_sum"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../DataStructure/RangeTree.cpp"
+#include "../DataStructure/RangeTree.hpp"
 
 signed main(){
     int n,q;cin>>n>>q;

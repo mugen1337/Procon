@@ -1,6 +1,6 @@
 ---
 title: JOI 飴
-documentation_of: //tips/JOI-Candies.cpp
+documentation_of: //tips/JOI-Candies.hpp
 ---
 
 # 概要  

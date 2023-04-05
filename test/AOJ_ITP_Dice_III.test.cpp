@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_C"
 
-#include "../template.cpp"
+#include "../template.hpp"
 
-#include "../Other/Dice.cpp"
+#include "../Other/Dice.hpp"
 
 signed main(){
     Dice<int> A,B;
