@@ -47,10 +47,10 @@ data:
     - icon: ':x:'
       path: DataStructure/BinaryIndexedTree.hpp
       title: DataStructure/BinaryIndexedTree.hpp
-    - icon: ':x:'
+    - icon: ':question:'
       path: DataStructure/BinaryTrie.hpp
       title: Binary Trie
-    - icon: ':x:'
+    - icon: ':question:'
       path: DataStructure/BinaryTrieMonoid.hpp
       title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\
         \u4F5C\u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
@@ -191,7 +191,7 @@ data:
     - icon: ':x:'
       path: Graph2/CycleDetection.hpp
       title: Graph2/CycleDetection.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/Dijkstra.hpp
       title: Dijkstra
     - icon: ':x:'
@@ -200,13 +200,13 @@ data:
     - icon: ':warning:'
       path: Graph2/GraphRelabel.hpp
       title: Graph2/GraphRelabel.hpp
-    - icon: ':x:'
+    - icon: ':question:'
       path: Graph2/GraphTemplate.hpp
       title: Graph2/GraphTemplate.hpp
     - icon: ':x:'
       path: Graph2/HeavyLightDecomposition.hpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':x:'
+    - icon: ':question:'
       path: Graph2/LowLink.hpp
       title: Low Link
     - icon: ':warning:'
@@ -249,7 +249,7 @@ data:
     - icon: ':warning:'
       path: Math/BinaryBasis.hpp
       title: Math/BinaryBasis.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Math/Factorize.hpp
       title: Math/Factorize.hpp
     - icon: ':warning:'
@@ -314,7 +314,7 @@ data:
     - icon: ':x:'
       path: Other/CyclePartition.hpp
       title: Other/CyclePartition.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Other/Dice.hpp
       title: Other/Dice.hpp
     - icon: ':warning:'
@@ -395,7 +395,7 @@ data:
     - icon: ':x:'
       path: UnionFind/UnionFindUndo.hpp
       title: UnionFind/UnionFindUndo.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: UnionFind/WeightedUnionFind.hpp
       title: UnionFind/WeightedUnionFind.hpp
   - name: .
@@ -465,58 +465,58 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_A.test.cpp
       title: test/AOJ_DPL_5_A.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_B.test.cpp
       title: test/AOJ_DPL_5_B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_C.test.cpp
       title: test/AOJ_DPL_5_C.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_D.test.cpp
       title: test/AOJ_DPL_5_D.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_E.test.cpp
       title: test/AOJ_DPL_5_E.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_F.test.cpp
       title: test/AOJ_DPL_5_F.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_G.test.cpp
       title: test/AOJ_DPL_5_G.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_H.test.cpp
       title: test/AOJ_DPL_5_H.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_I.test.cpp
       title: test/AOJ_DPL_5_I.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_J.test.cpp
       title: test/AOJ_DPL_5_J.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_K.test.cpp
       title: test/AOJ_DPL_5_K.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DPL_5_L.test.cpp
       title: test/AOJ_DPL_5_L.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_1_B.test.cpp
       title: test/AOJ_DSL_1_B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_2_A.test.cpp
       title: test/AOJ_DSL_2_A.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_DSL_2_B.test.cpp
       title: test/AOJ_DSL_2_B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_GRL_1_A.test.cpp
       title: test/AOJ_GRL_1_A.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_GRL_3_A.test.cpp
       title: test/AOJ_GRL_3_A.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_ITP_Dice_III.test.cpp
       title: test/AOJ_ITP_Dice_III.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ_NTL_1_A.test.cpp
       title: test/AOJ_NTL_1_A.test.cpp
     - icon: ':x:'

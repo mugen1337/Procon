@@ -4,7 +4,7 @@ data:
   - icon: ':x:'
     path: Graph2/Eppstein.hpp
     title: Eppstein's Algorithm (K-Shortest-Walk)
-  - icon: ':x:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   - icon: ':question:'

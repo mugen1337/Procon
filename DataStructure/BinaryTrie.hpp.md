@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_B.test.cpp
     title: test/AOJ_DSL_2_B.test.cpp
   - icon: ':x:'
@@ -11,7 +11,7 @@ data:
     title: test/yosupo_Set_Xor_Min.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/BinaryTrie.hpp\"\ntemplate<typename BitType,int\
@@ -78,10 +78,10 @@ data:
   path: DataStructure/BinaryTrie.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/AOJ_DSL_2_B.test.cpp
   - test/yosupo_Set_Xor_Min.test.cpp
+  - test/AOJ_DSL_2_B.test.cpp
 documentation_of: DataStructure/BinaryTrie.hpp
 layout: document
 title: Binary Trie

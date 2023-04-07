@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: DataStructure/BinaryTrie.hpp
     title: Binary Trie
   - icon: ':question:'

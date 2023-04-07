@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy:
@@ -9,7 +9,7 @@ data:
     path: Graph2/TwoEdgeConnectedComponents.hpp
     title: Graph2/TwoEdgeConnectedComponents.hpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_3_A.test.cpp
     title: test/AOJ_GRL_3_A.test.cpp
   - icon: ':x:'
@@ -17,7 +17,7 @@ data:
     title: test/yosupo_TECC.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph2/GraphTemplate.hpp\"\n// graph template\n// ref :\
@@ -75,10 +75,10 @@ data:
   requiredBy:
   - Graph2/TwoEdgeConnectedComponents.hpp
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/yosupo_TECC.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
+  - test/yosupo_TECC.test.cpp
 documentation_of: Graph2/LowLink.hpp
 layout: document
 title: Low Link

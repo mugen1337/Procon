@@ -168,8 +168,8 @@ data:
   timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - test/yuki473.test.cpp
   - test/yuki2017.test.cpp
+  - test/yuki473.test.cpp
 documentation_of: Math/FormalPowerSeriesNaive.hpp
 layout: document
 redirect_from:

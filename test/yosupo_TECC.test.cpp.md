@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
-  - icon: ':x:'
+  - icon: ':question:'
     path: Graph2/LowLink.hpp
     title: Low Link
   - icon: ':x:'

@@ -121,8 +121,8 @@ data:
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yuki899.test.cpp
-  - test/yuki1249.test.cpp
   - test/yuki4374.test.cpp
+  - test/yuki1249.test.cpp
 documentation_of: SegmentTree/LazySegmentTree.hpp
 layout: document
 title: Lazy Segment Tree

@@ -4,7 +4,7 @@ data:
   - icon: ':x:'
     path: Graph2/CycleDetection.hpp
     title: Graph2/CycleDetection.hpp
-  - icon: ':x:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   - icon: ':question:'

@@ -6,37 +6,37 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_A.test.cpp
     title: test/AOJ_DPL_5_A.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_B.test.cpp
     title: test/AOJ_DPL_5_B.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_C.test.cpp
     title: test/AOJ_DPL_5_C.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_D.test.cpp
     title: test/AOJ_DPL_5_D.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_E.test.cpp
     title: test/AOJ_DPL_5_E.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_F.test.cpp
     title: test/AOJ_DPL_5_F.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_G.test.cpp
     title: test/AOJ_DPL_5_G.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_H.test.cpp
     title: test/AOJ_DPL_5_H.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_I.test.cpp
     title: test/AOJ_DPL_5_I.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_J.test.cpp
     title: test/AOJ_DPL_5_J.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_K.test.cpp
     title: test/AOJ_DPL_5_K.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DPL_5_L.test.cpp
     title: test/AOJ_DPL_5_L.test.cpp
   - icon: ':x:'
@@ -164,21 +164,21 @@ data:
   timestamp: '2023-04-05 23:10:22+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/AOJ_DPL_5_C.test.cpp
-  - test/AOJ_DPL_5_A.test.cpp
-  - test/AOJ_DPL_5_B.test.cpp
-  - test/AOJ_DPL_5_L.test.cpp
-  - test/AOJ_DPL_5_G.test.cpp
-  - test/AOJ_DPL_5_I.test.cpp
-  - test/AOJ_DPL_5_F.test.cpp
-  - test/AOJ_DPL_5_J.test.cpp
-  - test/AOJ_DPL_5_H.test.cpp
-  - test/yuki1917.test.cpp
-  - test/AOJ_DPL_5_D.test.cpp
-  - test/AOJ_DPL_5_K.test.cpp
-  - test/yuki2017.test.cpp
   - test/yuki5125.test.cpp
+  - test/AOJ_DPL_5_K.test.cpp
+  - test/AOJ_DPL_5_I.test.cpp
+  - test/AOJ_DPL_5_A.test.cpp
+  - test/AOJ_DPL_5_J.test.cpp
+  - test/AOJ_DPL_5_G.test.cpp
+  - test/AOJ_DPL_5_F.test.cpp
+  - test/AOJ_DPL_5_H.test.cpp
   - test/AOJ_DPL_5_E.test.cpp
+  - test/yuki2017.test.cpp
+  - test/AOJ_DPL_5_C.test.cpp
+  - test/AOJ_DPL_5_L.test.cpp
+  - test/AOJ_DPL_5_D.test.cpp
+  - test/AOJ_DPL_5_B.test.cpp
+  - test/yuki1917.test.cpp
 documentation_of: Math/Precalc.hpp
 layout: document
 title: Precalc (Twelvefold way)

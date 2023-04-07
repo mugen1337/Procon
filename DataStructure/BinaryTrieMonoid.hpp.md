@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_A.test.cpp
     title: test/AOJ_DSL_2_A.test.cpp
   - icon: ':x:'
@@ -11,7 +11,7 @@ data:
     title: test/yuki3784.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/BinaryTrieMonoid.hpp\"\ntemplate<typename\
@@ -63,7 +63,7 @@ data:
   path: DataStructure/BinaryTrieMonoid.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/AOJ_DSL_2_A.test.cpp
   - test/yuki3784.test.cpp
