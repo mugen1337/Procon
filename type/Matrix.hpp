@@ -1,7 +1,26 @@
 template<typename T>
 struct Matrix{
+
+private:
     vector<vector<T>> a;
 
+    Matrix matMulImpl(const Matrix &lhs, const Matrix &rhs)
+    {
+        Matrix ret(lhs.h(), rhs.w());
+        for (int i = 0; i < lhs.h(); i++)
+        {
+            for (int j = 0; j < lhs.w(); j++)
+            {
+                for (int k = 0; k < rhs.w(); k++)
+                {
+                    ret[i][k] += lhs[i][j] * rhs[j][k];
+                }
+            }
+        }
+        return ret;
+    }
+
+public:
     Matrix(){}
     Matrix(int n):a(n,vector<T>(n,0)){}
     Matrix(int h,int w):a(h,vector<T>(w,0)){}
@@ -34,10 +53,8 @@ struct Matrix{
     }
     Matrix &operator*=(const Matrix &rhs){
         assert(w()==rhs.h());
-        vector<vector<T>> res(h(),vector<T>(rhs.w()));
-        for(int i=0;i<h();i++)for(int j=0;j<rhs.w();j++)for(int k=0;k<w();k++)
-            res[i][j]=res[i][j]+(*this)[i][k]*rhs[k][j];
-        swap(a,res);
+        Matrix res = matMulImpl(*this, rhs);
+        swap(a, res.a);
         return (*this);
     }
     Matrix operator+(const Matrix &rhs)const{return Matrix(*this)+=rhs;}
