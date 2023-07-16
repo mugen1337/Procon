@@ -96,26 +96,29 @@ data:
     \ ret(size());\n        auto ite=begin(ret);\n        dump(root,ite);\n      \
     \  return ret;\n    }\n\n    Monoid operator[](int idx){return query(idx,idx+1);}\n\
     };\n#line 6 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\n\
-    \n#line 1 \"type/modint.hpp\"\ntemplate<ll Mod>\nstruct ModInt{\n    long long\
-    \ x;\n    ModInt():x(0){}\n    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n\
-    \    ModInt &operator+=(const ModInt &p){\n        if((x+=p.x)>=Mod) x-=Mod;\n\
-    \        return *this;\n    }\n    ModInt &operator-=(const ModInt &p){\n    \
-    \    if((x+=Mod-p.x)>=Mod)x-=Mod;\n        return *this;\n    }\n    ModInt &operator*=(const\
-    \ ModInt &p){\n        x=(int)(1ll*x*p.x%Mod);\n        return *this;\n    }\n\
-    \    ModInt &operator/=(const ModInt &p){\n        (*this)*=p.inverse();\n   \
-    \     return *this;\n    }\n    ModInt operator-()const{return ModInt(-x);}\n\
-    \    ModInt operator+(const ModInt &p)const{return ModInt(*this)+=p;}\n    ModInt\
-    \ operator-(const ModInt &p)const{return ModInt(*this)-=p;}\n    ModInt operator*(const\
-    \ ModInt &p)const{return ModInt(*this)*=p;}\n    ModInt operator/(const ModInt\
-    \ &p)const{return ModInt(*this)/=p;}\n    bool operator==(const ModInt &p)const{return\
-    \ x==p.x;}\n    bool operator!=(const ModInt &p)const{return x!=p.x;}\n    ModInt\
-    \ inverse()const{\n        int a=x,b=Mod,u=1,v=0,t;\n        while(b>0){\n   \
-    \         t=a/b;\n            swap(a-=t*b,b);swap(u-=t*v,v);\n        }\n    \
-    \    return ModInt(u);\n    }\n    ModInt pow(long long n)const{\n        ModInt\
-    \ ret(1),mul(x);\n        while(n>0){\n            if(n&1) ret*=mul;\n       \
-    \     mul*=mul;n>>=1;\n        }\n        return ret;\n    }\n    friend ostream\
-    \ &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend istream\
-    \ &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
+    \n#line 1 \"type/modint.hpp\"\ntemplate<int Mod>\nstruct ModInt{\n    int x;\n\
+    \    ModInt():x(0){}\n    ModInt(int y): x (y >= 0 ? y % Mod : (Mod - (-y) % Mod)\
+    \ % Mod){}\n    ModInt(long long y){\n        if (y >= 0)\n        {\n       \
+    \     x = (int)(y % (ll)(Mod));\n        }\n        else\n        {\n        \
+    \    int tmp = (int)((-y) % (ll)Mod);\n            x = (Mod - tmp) % Mod;\n  \
+    \      }\n    }\n    ModInt &operator+=(const ModInt &p){\n        if((x += p.x)\
+    \ >= Mod) x -= Mod;\n        return *this;\n    }\n    ModInt &operator-=(const\
+    \ ModInt &p){\n        if((x += Mod - p.x) >= Mod) x -= Mod;\n        return *this;\n\
+    \    }\n    ModInt &operator*=(const ModInt &p){\n        x = (int)(1ll * x *\
+    \ p.x % Mod);\n        return *this;\n    }\n    ModInt &operator/=(const ModInt\
+    \ &p){\n        (*this) *= p.inverse();\n        return *this;\n    }\n    ModInt\
+    \ operator-()const{return ModInt(-x);}\n    ModInt operator+(const ModInt &p)const{return\
+    \ ModInt(*this)+=p;}\n    ModInt operator-(const ModInt &p)const{return ModInt(*this)-=p;}\n\
+    \    ModInt operator*(const ModInt &p)const{return ModInt(*this)*=p;}\n    ModInt\
+    \ operator/(const ModInt &p)const{return ModInt(*this)/=p;}\n    bool operator==(const\
+    \ ModInt &p)const{return x==p.x;}\n    bool operator!=(const ModInt &p)const{return\
+    \ x!=p.x;}\n    ModInt inverse()const{\n        int a = x, b = Mod ,u = 1, v =\
+    \ 0, t;\n        while(b>0){\n            t=a/b;\n            swap(a-=t*b,b);swap(u-=t*v,v);\n\
+    \        }\n        return ModInt(u);\n    }\n    ModInt pow(long long n)const{\n\
+    \        ModInt ret(1),mul(x);\n        while(n>0){\n            if(n&1) ret*=mul;\n\
+    \            mul*=mul;n>>=1;\n        }\n        return ret;\n    }\n    friend\
+    \ ostream &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend\
+    \ istream &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 8 \"test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp\"\
     \nusing mint=ModInt<998244353>;\n\nusing M=pair<mint,mint>;\nusing OM=pair<mint,mint>;\n\
     const M M1=M(0,0);\nconst OM OM0=OM(1,0);\nM segf(M a,M b){\n    return M(a.first+b.first,a.second+b.second);\n\
@@ -154,7 +157,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-16 21:56:51+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

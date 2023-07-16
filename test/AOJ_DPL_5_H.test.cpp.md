@@ -34,25 +34,29 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/AOJ_DPL_5_H.test.cpp\"\n\n#line 1 \"type/modint.hpp\"\
-    \ntemplate<ll Mod>\nstruct ModInt{\n    long long x;\n    ModInt():x(0){}\n  \
-    \  ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}\n    ModInt &operator+=(const\
-    \ ModInt &p){\n        if((x+=p.x)>=Mod) x-=Mod;\n        return *this;\n    }\n\
-    \    ModInt &operator-=(const ModInt &p){\n        if((x+=Mod-p.x)>=Mod)x-=Mod;\n\
-    \        return *this;\n    }\n    ModInt &operator*=(const ModInt &p){\n    \
-    \    x=(int)(1ll*x*p.x%Mod);\n        return *this;\n    }\n    ModInt &operator/=(const\
-    \ ModInt &p){\n        (*this)*=p.inverse();\n        return *this;\n    }\n \
-    \   ModInt operator-()const{return ModInt(-x);}\n    ModInt operator+(const ModInt\
-    \ &p)const{return ModInt(*this)+=p;}\n    ModInt operator-(const ModInt &p)const{return\
-    \ ModInt(*this)-=p;}\n    ModInt operator*(const ModInt &p)const{return ModInt(*this)*=p;}\n\
-    \    ModInt operator/(const ModInt &p)const{return ModInt(*this)/=p;}\n    bool\
-    \ operator==(const ModInt &p)const{return x==p.x;}\n    bool operator!=(const\
-    \ ModInt &p)const{return x!=p.x;}\n    ModInt inverse()const{\n        int a=x,b=Mod,u=1,v=0,t;\n\
-    \        while(b>0){\n            t=a/b;\n            swap(a-=t*b,b);swap(u-=t*v,v);\n\
-    \        }\n        return ModInt(u);\n    }\n    ModInt pow(long long n)const{\n\
-    \        ModInt ret(1),mul(x);\n        while(n>0){\n            if(n&1) ret*=mul;\n\
-    \            mul*=mul;n>>=1;\n        }\n        return ret;\n    }\n    friend\
-    \ ostream &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend\
-    \ istream &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
+    \ntemplate<int Mod>\nstruct ModInt{\n    int x;\n    ModInt():x(0){}\n    ModInt(int\
+    \ y): x (y >= 0 ? y % Mod : (Mod - (-y) % Mod) % Mod){}\n    ModInt(long long\
+    \ y){\n        if (y >= 0)\n        {\n            x = (int)(y % (ll)(Mod));\n\
+    \        }\n        else\n        {\n            int tmp = (int)((-y) % (ll)Mod);\n\
+    \            x = (Mod - tmp) % Mod;\n        }\n    }\n    ModInt &operator+=(const\
+    \ ModInt &p){\n        if((x += p.x) >= Mod) x -= Mod;\n        return *this;\n\
+    \    }\n    ModInt &operator-=(const ModInt &p){\n        if((x += Mod - p.x)\
+    \ >= Mod) x -= Mod;\n        return *this;\n    }\n    ModInt &operator*=(const\
+    \ ModInt &p){\n        x = (int)(1ll * x * p.x % Mod);\n        return *this;\n\
+    \    }\n    ModInt &operator/=(const ModInt &p){\n        (*this) *= p.inverse();\n\
+    \        return *this;\n    }\n    ModInt operator-()const{return ModInt(-x);}\n\
+    \    ModInt operator+(const ModInt &p)const{return ModInt(*this)+=p;}\n    ModInt\
+    \ operator-(const ModInt &p)const{return ModInt(*this)-=p;}\n    ModInt operator*(const\
+    \ ModInt &p)const{return ModInt(*this)*=p;}\n    ModInt operator/(const ModInt\
+    \ &p)const{return ModInt(*this)/=p;}\n    bool operator==(const ModInt &p)const{return\
+    \ x==p.x;}\n    bool operator!=(const ModInt &p)const{return x!=p.x;}\n    ModInt\
+    \ inverse()const{\n        int a = x, b = Mod ,u = 1, v = 0, t;\n        while(b>0){\n\
+    \            t=a/b;\n            swap(a-=t*b,b);swap(u-=t*v,v);\n        }\n \
+    \       return ModInt(u);\n    }\n    ModInt pow(long long n)const{\n        ModInt\
+    \ ret(1),mul(x);\n        while(n>0){\n            if(n&1) ret*=mul;\n       \
+    \     mul*=mul;n>>=1;\n        }\n        return ret;\n    }\n    friend ostream\
+    \ &operator<<(ostream &os,const ModInt &p){return os<<p.x;}\n    friend istream\
+    \ &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 6 \"test/AOJ_DPL_5_H.test.cpp\"\
     \n\n#line 1 \"Math/Precalc.hpp\"\ntemplate<typename T>\nstruct Precalc{\n    vector<T>\
     \ fact,finv,inv;\n    int Mod;\n    Precalc(int MX):fact(MX),finv(MX),inv(MX),Mod(T::get_mod()){\n\
@@ -121,7 +125,7 @@ data:
   isVerificationFile: true
   path: test/AOJ_DPL_5_H.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-16 21:56:51+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ_DPL_5_H.test.cpp

@@ -12,17 +12,17 @@ data:
   attributes:
     links: []
   bundledCode: "#line 1 \"Other/EnumerateSubset.hpp\"\nvector< int > enumerate_subset(int\
-    \ S){\n    vector< int > ret;\n    int sub = S;\n    while (sub > 0)\n    {\n\
+    \ S)\n{\n    vector< int > ret;\n    int sub = S;\n    while (sub > 0)\n    {\n\
     \        ret.push_back(sub);\n        sub = (sub - 1) & S;\n    }\n    return\
     \ ret;\n}\n"
-  code: "vector< int > enumerate_subset(int S){\n    vector< int > ret;\n    int sub\
-    \ = S;\n    while (sub > 0)\n    {\n        ret.push_back(sub);\n        sub =\
-    \ (sub - 1) & S;\n    }\n    return ret;\n}"
+  code: "vector< int > enumerate_subset(int S)\n{\n    vector< int > ret;\n    int\
+    \ sub = S;\n    while (sub > 0)\n    {\n        ret.push_back(sub);\n        sub\
+    \ = (sub - 1) & S;\n    }\n    return ret;\n}\n"
   dependsOn: []
   isVerificationFile: false
   path: Other/EnumerateSubset.hpp
   requiredBy: []
-  timestamp: '2023-07-16 20:47:40+09:00'
+  timestamp: '2023-07-16 21:56:51+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_1379.test.cpp
