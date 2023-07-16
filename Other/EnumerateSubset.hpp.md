@@ -11,21 +11,18 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Other/EnumerateSubset.hpp\"\nvector<int> enumerate_subset(int\
-    \ bit,bool include_bit_empty=false){\n    vector<int> ret;\n    int subset=(bit-1)&bit;\n\
-    \    do{\n        ret.push_back(subset);\n        subset=(subset-1)&bit;\n   \
-    \ }while(subset!=0);\n    if(include_bit_empty){\n        ret.push_back(0);\n\
-    \        if(0!=bit) ret.push_back(bit);\n    }\n    return ret;\n}\n"
-  code: "vector<int> enumerate_subset(int bit,bool include_bit_empty=false){\n   \
-    \ vector<int> ret;\n    int subset=(bit-1)&bit;\n    do{\n        ret.push_back(subset);\n\
-    \        subset=(subset-1)&bit;\n    }while(subset!=0);\n    if(include_bit_empty){\n\
-    \        ret.push_back(0);\n        if(0!=bit) ret.push_back(bit);\n    }\n  \
-    \  return ret;\n}"
+  bundledCode: "#line 1 \"Other/EnumerateSubset.hpp\"\nvector< int > enumerate_subset(int\
+    \ S){\n    vector< int > ret;\n    int sub = S;\n    while (sub > 0)\n    {\n\
+    \        ret.push_back(sub);\n        sub = (sub - 1) & S;\n    }\n    return\
+    \ ret;\n}\n"
+  code: "vector< int > enumerate_subset(int S){\n    vector< int > ret;\n    int sub\
+    \ = S;\n    while (sub > 0)\n    {\n        ret.push_back(sub);\n        sub =\
+    \ (sub - 1) & S;\n    }\n    return ret;\n}"
   dependsOn: []
   isVerificationFile: false
   path: Other/EnumerateSubset.hpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-16 20:47:40+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_1379.test.cpp

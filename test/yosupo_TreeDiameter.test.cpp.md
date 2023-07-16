@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   - icon: ':heavy_check_mark:'
     path: Graph2/TreeDiameter.hpp
     title: Graph2/TreeDiameter.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

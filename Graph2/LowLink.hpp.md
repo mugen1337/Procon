@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy:

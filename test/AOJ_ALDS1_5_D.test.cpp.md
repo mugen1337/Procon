@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: DP/InversionNumber.hpp
     title: "Inversion Number (\u8EE2\u5012\u6570)"
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

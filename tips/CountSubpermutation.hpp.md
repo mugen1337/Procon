@@ -4,7 +4,7 @@ data:
   - icon: ':warning:'
     path: Other/RandomNumberGenerator.hpp
     title: Other/RandomNumberGenerator.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

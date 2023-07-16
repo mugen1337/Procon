@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Math/Precalc.hpp
     title: Precalc (Twelvefold way)
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.hpp
     title: type/modint.hpp
   _extendedRequiredBy: []

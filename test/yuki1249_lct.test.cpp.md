@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Tree/LazyLinkCutTree.hpp
     title: Tree/LazyLinkCutTree.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

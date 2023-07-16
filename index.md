@@ -14,10 +14,10 @@ data:
     - icon: ':warning:'
       path: BinarySearchTree/ImplicitTreap.hpp
       title: Implicit Treap
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: BinarySearchTree/ImplicitTreapWithLazy.hpp
       title: BinarySearchTree/ImplicitTreapWithLazy.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: BinarySearchTree/SplayTree.hpp
       title: BinarySearchTree/SplayTree.hpp
     - icon: ':warning:'
@@ -180,7 +180,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.hpp
       title: Graph/StronglyConnectedComponents.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/WarshallFloyd.hpp
       title: Graph/WarshallFloyd.hpp
   - name: Graph2
@@ -200,7 +200,7 @@ data:
     - icon: ':warning:'
       path: Graph2/GraphRelabel.hpp
       title: Graph2/GraphRelabel.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/GraphTemplate.hpp
       title: Graph2/GraphTemplate.hpp
     - icon: ':heavy_check_mark:'
@@ -215,7 +215,7 @@ data:
     - icon: ':warning:'
       path: Graph2/RangeEdgeGraph.hpp
       title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/Rerooting.hpp
       title: Graph2/Rerooting.hpp
     - icon: ':heavy_check_mark:'
@@ -288,7 +288,7 @@ data:
     - icon: ':warning:'
       path: Math/PolynomialRestore_double.hpp
       title: Math/PolynomialRestore_double.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Math/Precalc.hpp
       title: Precalc (Twelvefold way)
     - icon: ':heavy_check_mark:'
@@ -311,7 +311,7 @@ data:
       title: Math/pow_mod.hpp
   - name: Other
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Other/CyclePartition.hpp
       title: Other/CyclePartition.hpp
     - icon: ':heavy_check_mark:'
@@ -342,7 +342,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: SegmentTree/KineticSegmentTree.hpp
       title: SegmentTree/KineticSegmentTree.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: SegmentTree/LazySegmentTree.hpp
       title: Lazy Segment Tree
     - icon: ':heavy_check_mark:'
@@ -400,7 +400,7 @@ data:
       title: UnionFind/WeightedUnionFind.hpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
   - name: tips
@@ -426,7 +426,7 @@ data:
     - icon: ':warning:'
       path: type/int128.hpp
       title: type/int128.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: type/modint.hpp
       title: type/modint.hpp
   verificationCategories:
@@ -639,22 +639,22 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yuki5061.test.cpp
       title: test/yuki5061.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5125.test.cpp
       title: test/yuki5125.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5398.test.cpp
       title: test/yuki5398.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5398_2.test.cpp
       title: test/yuki5398_2.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5436.test.cpp
       title: test/yuki5436.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki5764.test.cpp
       title: test/yuki5764.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yuki899.test.cpp
       title: test/yuki899.test.cpp
 layout: toppage

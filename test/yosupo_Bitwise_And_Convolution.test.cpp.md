@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Math/AndConvolution.hpp
     title: Math/AndConvolution.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.hpp
     title: type/modint.hpp
   _extendedRequiredBy: []

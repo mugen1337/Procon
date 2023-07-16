@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: BinarySearchTree/ImplicitTreapWithLazy.hpp
     title: BinarySearchTree/ImplicitTreapWithLazy.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: type/modint.hpp
     title: type/modint.hpp
   _extendedRequiredBy: []

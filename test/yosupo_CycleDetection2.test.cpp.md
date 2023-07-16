@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/CycleDetection.hpp
     title: Graph2/CycleDetection.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

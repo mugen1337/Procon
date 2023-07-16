@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: String/SuffixArray.hpp
     title: String/SuffixArray.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

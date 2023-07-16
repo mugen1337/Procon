@@ -214,27 +214,27 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki5061.test.cpp
     title: test/yuki5061.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki5125.test.cpp
     title: test/yuki5125.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki5398.test.cpp
     title: test/yuki5398.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki5398_2.test.cpp
     title: test/yuki5398_2.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki5764.test.cpp
     title: test/yuki5764.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\nusing namespace\
@@ -269,7 +269,7 @@ data:
   requiredBy:
   - tips/CountSubpermutation.hpp
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yuki2600.test.cpp
   - test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp

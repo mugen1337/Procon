@@ -4,10 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph2/Eppstein.hpp
     title: Eppstein's Algorithm (K-Shortest-Walk)
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
