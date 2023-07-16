@@ -1,22 +1,33 @@
-template<ll Mod>
+template<int Mod>
 struct ModInt{
-    long long x;
+    int x;
     ModInt():x(0){}
-    ModInt(long long y):x(y>=0?y%Mod:(Mod-(-y)%Mod)%Mod){}
+    ModInt(int y): x (y >= 0 ? y % Mod : (Mod - (-y) % Mod) % Mod){}
+    ModInt(long long y){
+        if (y >= 0)
+        {
+            x = (int)(y % (ll)(Mod));
+        }
+        else
+        {
+            int tmp = (int)((-y) % (ll)Mod);
+            x = (Mod - tmp) % Mod;
+        }
+    }
     ModInt &operator+=(const ModInt &p){
-        if((x+=p.x)>=Mod) x-=Mod;
+        if((x += p.x) >= Mod) x -= Mod;
         return *this;
     }
     ModInt &operator-=(const ModInt &p){
-        if((x+=Mod-p.x)>=Mod)x-=Mod;
+        if((x += Mod - p.x) >= Mod) x -= Mod;
         return *this;
     }
     ModInt &operator*=(const ModInt &p){
-        x=(int)(1ll*x*p.x%Mod);
+        x = (int)(1ll * x * p.x % Mod);
         return *this;
     }
     ModInt &operator/=(const ModInt &p){
-        (*this)*=p.inverse();
+        (*this) *= p.inverse();
         return *this;
     }
     ModInt operator-()const{return ModInt(-x);}
@@ -27,7 +38,7 @@ struct ModInt{
     bool operator==(const ModInt &p)const{return x==p.x;}
     bool operator!=(const ModInt &p)const{return x!=p.x;}
     ModInt inverse()const{
-        int a=x,b=Mod,u=1,v=0,t;
+        int a = x, b = Mod ,u = 1, v = 0, t;
         while(b>0){
             t=a/b;
             swap(a-=t*b,b);swap(u-=t*v,v);

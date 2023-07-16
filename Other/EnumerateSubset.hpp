@@ -1,4 +1,5 @@
-vector< int > enumerate_subset(int S){
+vector< int > enumerate_subset(int S)
+{
     vector< int > ret;
     int sub = S;
     while (sub > 0)
