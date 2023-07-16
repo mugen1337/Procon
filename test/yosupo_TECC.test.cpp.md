@@ -4,10 +4,10 @@ data:
   - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.hpp
     title: Low Link
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/TwoEdgeConnectedComponents.hpp
     title: Graph2/TwoEdgeConnectedComponents.hpp
   - icon: ':question:'
@@ -15,9 +15,9 @@ data:
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/two_edge_connected_components
@@ -101,7 +101,7 @@ data:
   path: test/yosupo_TECC.test.cpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_TECC.test.cpp
 layout: document

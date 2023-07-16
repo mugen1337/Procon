@@ -6,12 +6,12 @@ data:
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://atcoder.jp/contests/abc135/submissions/19684261
@@ -94,7 +94,7 @@ data:
   path: Graph2/StronglyConnectedComponents.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_scc2.test.cpp
 documentation_of: Graph2/StronglyConnectedComponents.hpp

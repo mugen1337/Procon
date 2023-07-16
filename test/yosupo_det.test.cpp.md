@@ -4,7 +4,7 @@ data:
   - icon: ':question:'
     path: template.hpp
     title: template.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: type/Matrix.hpp
     title: type/Matrix.hpp
   - icon: ':question:'
@@ -12,9 +12,9 @@ data:
     title: type/modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/matrix_det
@@ -55,22 +55,26 @@ data:
     \ istream &operator>>(istream &is,ModInt &a){long long t;is>>t;a=ModInt<Mod>(t);return\
     \ (is);}\n    static int get_mod(){return Mod;}\n};\n#line 6 \"test/yosupo_det.test.cpp\"\
     \nusing mint=ModInt<998244353>;\n\n#line 1 \"type/Matrix.hpp\"\ntemplate<typename\
-    \ T>\nstruct Matrix{\n    vector<vector<T>> a;\n\n    Matrix(){}\n    Matrix(int\
-    \ n):a(n,vector<T>(n,0)){}\n    Matrix(int h,int w):a(h,vector<T>(w,0)){}\n\n\
-    \    int h()const{return (int)a.size();}\n    int w()const{return (int)a[0].size();}\n\
-    \n    const vector<T> &operator[](int k)const{\n        return a.at(k);// reference\
-    \   \n    }\n    vector<T> &operator[](int k){\n        return a.at(k);\n    }\n\
-    \n    Matrix id(int n){\n        Matrix ret(n);\n        for(int i=0;i<n;i++)\
-    \ ret[i][i]=1;\n        return ret;\n    }\n\n    Matrix &operator+=(const Matrix\
-    \ &rhs){\n        assert(h()==rhs.h() and w()==rhs.w());\n        for(int i=0;i<h();i++)for(int\
-    \ j=0;j<w();j++) (*this)[i][j]+=rhs[i][j];\n        return (*this);\n    }\n \
-    \   Matrix &operator-=(const Matrix &rhs){\n        assert(h()==rhs.h() and w()==rhs.w());\n\
-    \        for(int i=0;i<h();i++)for(int j=0;j<w();j++) (*this)[i][j]-=rhs[i][j];\n\
-    \        return (*this);\n    }\n    Matrix &operator*=(const Matrix &rhs){\n\
-    \        assert(w()==rhs.h());\n        vector<vector<T>> res(h(),vector<T>(rhs.w()));\n\
-    \        for(int i=0;i<h();i++)for(int j=0;j<rhs.w();j++)for(int k=0;k<w();k++)\n\
-    \            res[i][j]=res[i][j]+(*this)[i][k]*rhs[k][j];\n        swap(a,res);\n\
-    \        return (*this);\n    }\n    Matrix operator+(const Matrix &rhs)const{return\
+    \ T>\nstruct Matrix{\n\nprivate:\n    vector<vector<T>> a;\n\n    Matrix matMulImpl(const\
+    \ Matrix &lhs, const Matrix &rhs)\n    {\n        Matrix ret(lhs.h(), rhs.w());\n\
+    \        for (int i = 0; i < lhs.h(); i++)\n        {\n            for (int j\
+    \ = 0; j < lhs.w(); j++)\n            {\n                for (int k = 0; k < rhs.w();\
+    \ k++)\n                {\n                    ret[i][k] += lhs[i][j] * rhs[j][k];\n\
+    \                }\n            }\n        }\n        return ret;\n    }\n\npublic:\n\
+    \    Matrix(){}\n    Matrix(int n):a(n,vector<T>(n,0)){}\n    Matrix(int h,int\
+    \ w):a(h,vector<T>(w,0)){}\n\n    int h()const{return (int)a.size();}\n    int\
+    \ w()const{return (int)a[0].size();}\n\n    const vector<T> &operator[](int k)const{\n\
+    \        return a.at(k);// reference   \n    }\n    vector<T> &operator[](int\
+    \ k){\n        return a.at(k);\n    }\n\n    Matrix id(int n){\n        Matrix\
+    \ ret(n);\n        for(int i=0;i<n;i++) ret[i][i]=1;\n        return ret;\n  \
+    \  }\n\n    Matrix &operator+=(const Matrix &rhs){\n        assert(h()==rhs.h()\
+    \ and w()==rhs.w());\n        for(int i=0;i<h();i++)for(int j=0;j<w();j++) (*this)[i][j]+=rhs[i][j];\n\
+    \        return (*this);\n    }\n    Matrix &operator-=(const Matrix &rhs){\n\
+    \        assert(h()==rhs.h() and w()==rhs.w());\n        for(int i=0;i<h();i++)for(int\
+    \ j=0;j<w();j++) (*this)[i][j]-=rhs[i][j];\n        return (*this);\n    }\n \
+    \   Matrix &operator*=(const Matrix &rhs){\n        assert(w()==rhs.h());\n  \
+    \      Matrix res = matMulImpl(*this, rhs);\n        swap(a, res.a);\n       \
+    \ return (*this);\n    }\n    Matrix operator+(const Matrix &rhs)const{return\
     \ Matrix(*this)+=rhs;}\n    Matrix operator-(const Matrix &rhs)const{return Matrix(*this)-=rhs;}\n\
     \    Matrix operator*(const Matrix &rhs)const{return Matrix(*this)*=rhs;}\n\n\
     \    Matrix pow(long long k){\n        Matrix ret=Matrix::id(h());\n        Matrix\
@@ -99,8 +103,8 @@ data:
   isVerificationFile: true
   path: test/yosupo_det.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-07-16 14:01:34+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_det.test.cpp
 layout: document

@@ -5,19 +5,19 @@ data:
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/TwoEdgeConnectedComponents.hpp
     title: Graph2/TwoEdgeConnectedComponents.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_3_A.test.cpp
     title: test/AOJ_GRL_3_A.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_TECC.test.cpp
     title: test/yosupo_TECC.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph2/GraphTemplate.hpp\"\n// graph template\n// ref :\
@@ -75,7 +75,7 @@ data:
   requiredBy:
   - Graph2/TwoEdgeConnectedComponents.hpp
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ_GRL_3_A.test.cpp
   - test/yosupo_TECC.test.cpp

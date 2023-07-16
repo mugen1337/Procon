@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Math/XorConvolution.hpp
     title: Math/XorConvolution.hpp
   - icon: ':question:'
@@ -12,9 +12,9 @@ data:
     title: type/modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/bitwise_xor_convolution
@@ -82,7 +82,7 @@ data:
   path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_Bitwise_Xor_Convolution.test.cpp
 layout: document

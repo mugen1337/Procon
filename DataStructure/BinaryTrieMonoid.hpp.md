@@ -6,12 +6,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_DSL_2_A.test.cpp
     title: test/AOJ_DSL_2_A.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yuki3784.test.cpp
     title: test/yuki3784.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/BinaryTrieMonoid.hpp\"\ntemplate<typename\
@@ -63,10 +63,10 @@ data:
   path: DataStructure/BinaryTrieMonoid.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJ_DSL_2_A.test.cpp
   - test/yuki3784.test.cpp
+  - test/AOJ_DSL_2_A.test.cpp
 documentation_of: DataStructure/BinaryTrieMonoid.hpp
 layout: document
 title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\u4F5C\

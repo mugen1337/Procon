@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: SegmentTree/LazySegmentTree.hpp
     title: Lazy Segment Tree
   - icon: ':question:'

@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
   - icon: ':x:'
@@ -11,7 +11,7 @@ data:
     title: test/yuki5398.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"BinarySearchTree/ImplicitTreapWithLazy.hpp\"\ntemplate<typename\
@@ -140,7 +140,7 @@ data:
   path: BinarySearchTree/ImplicitTreapWithLazy.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/yuki5398.test.cpp
   - test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp

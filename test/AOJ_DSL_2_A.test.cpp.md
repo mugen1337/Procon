@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: DataStructure/BinaryTrieMonoid.hpp
     title: "Binary Trie Monoid (\u5FC5\u8981\u306A\u3068\u3053\u308D\u3060\u3051\u4F5C\
       \u308B\u30BB\u30B0\u30E1\u30F3\u30C8\u6728)"
