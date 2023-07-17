@@ -1,3 +1,6 @@
+#ifndef GRAPH_TEMPLATE_
+#define GRAPH_TEMPLATE_
+
 // graph template
 // ref : https://ei1333.github.io/library/graph/graph-template.hpp
 template<typename T=int>
@@ -48,3 +51,5 @@ struct Graph{
         }
     }
 };
+
+#endif /* GRAPH_TEMPLATE_ */
