@@ -52,7 +52,8 @@ struct SegmentTree{
 
     F f;
     Monoid M0;// モノイドの元
-    SegmentTree(int n,F f,Monoid M0):f(f),M0(M0){
+    SegmentTree(int n, F f_, Monoid M0_) : f(f_), M0(M0_)
+    {
         sz=1;
         while(sz<n)sz<<=1;
         seg.assign(2*sz,M0);
