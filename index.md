@@ -194,6 +194,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph2/Dijkstra.hpp
       title: Dijkstra
+    - icon: ':warning:'
+      path: Graph2/DoublingLowestCommonAncestor.hpp
+      title: Graph2/DoublingLowestCommonAncestor.hpp
     - icon: ':heavy_check_mark:'
       path: Graph2/Eppstein.hpp
       title: Eppstein's Algorithm (K-Shortest-Walk)

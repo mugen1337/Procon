@@ -34,7 +34,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_scc2.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.hpp\"\
-    \n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
+    \n\n\n\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -49,10 +49,10 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/StronglyConnectedComponents.hpp\"\
-    \n// scc.belong[i]  : strongly connected components i belongs \n// scc.group[i]\
-    \   : vertice i-th strongly connected component has\n// scc.compressed : compressed\
-    \ Graph, DAG\n// Longest Path verified : https://atcoder.jp/contests/abc135/submissions/19684261\n\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n\n\n#line 2\
+    \ \"Graph2/StronglyConnectedComponents.hpp\"\n// scc.belong[i]  : strongly connected\
+    \ components i belongs \n// scc.group[i]   : vertice i-th strongly connected component\
+    \ has\n// scc.compressed : compressed Graph, DAG\n// Longest Path verified : https://atcoder.jp/contests/abc135/submissions/19684261\n\
     template<typename T=int>\nstruct StronglyConnectedComponents{\n    private:\n\
     \    Graph<T> g,rg;\n    vector<int> check;\n    void dfs(int cur,vector<int>\
     \ &ord){\n        for(auto &to:g[cur])if(!check[to]){\n            check[to]=true;\n\
@@ -96,7 +96,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_scc2.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-17 18:02:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_scc2.test.cpp

@@ -35,7 +35,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_CycleDetection2.test.cpp\"\n\n#line\
-    \ 1 \"Graph2/GraphTemplate.hpp\"\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
+    \ 1 \"Graph2/GraphTemplate.hpp\"\n\n\n\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -50,26 +50,26 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/CycleDetection.hpp\"\
-    \n\ntemplate<typename T>\nvector<int> CycleDetection(Graph<T> &g){\n    int n=(int)g.size();\n\
-    \    vector<int> check(n,0),cyc,pre(n,-1);\n\n    function<bool(int)> dfs=[&](int\
-    \ cur){\n        check[cur]=1;\n        for(auto &to:g[cur]){\n            if(check[to]==0){\n\
-    \                pre[to]=cur;\n                if(dfs(to)) return true;\n    \
-    \        }else if(check[to]==1){// detect\n                int v=cur;\n      \
-    \          while(v!=to){\n                    cyc.push_back(v);\n            \
-    \        v=pre[v];\n                }\n                cyc.push_back(v);\n   \
-    \             return true;\n            }\n        }\n        check[cur]=2;\n\
-    \        return false;\n    };\n\n    for(int i=0;i<n;i++){\n        if(check[i]==0){\n\
-    \            if(dfs(i)){\n                reverse(begin(cyc),end(cyc));\n    \
-    \            return cyc;\n            }\n        }\n    }\n    return {};\n}\n\
-    #line 6 \"test/yosupo_CycleDetection2.test.cpp\"\n\nsigned main(){\n    int n,m;cin>>n>>m;\n\
-    \    Graph g(n);\n    map<pair<int,int>,int> id;\n    rep(i,m){\n        int u,v;cin>>u>>v;\n\
-    \        id[{u,v}]=i;\n        g.add_directed_edge(u,v);\n    }\n    auto res=CycleDetection(g);\n\
-    \    if(res.empty()){\n        cout<<-1<<endl;\n        return 0;\n    }\n   \
-    \ int p=res[0];\n    vector<int> ans;\n    for(int i=1;i<(int)res.size();i++){\n\
-    \        ans.push_back(id[{p,res[i]}]);\n        p=res[i];\n    }\n    ans.push_back(id[{p,res[0]}]);\n\
-    \    cout<<ans.size()<<\"\\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return\
-    \ 0;\n}\n"
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n\n\n#line 2\
+    \ \"Graph2/CycleDetection.hpp\"\n\ntemplate<typename T>\nvector<int> CycleDetection(Graph<T>\
+    \ &g){\n    int n=(int)g.size();\n    vector<int> check(n,0),cyc,pre(n,-1);\n\n\
+    \    function<bool(int)> dfs=[&](int cur){\n        check[cur]=1;\n        for(auto\
+    \ &to:g[cur]){\n            if(check[to]==0){\n                pre[to]=cur;\n\
+    \                if(dfs(to)) return true;\n            }else if(check[to]==1){//\
+    \ detect\n                int v=cur;\n                while(v!=to){\n        \
+    \            cyc.push_back(v);\n                    v=pre[v];\n              \
+    \  }\n                cyc.push_back(v);\n                return true;\n      \
+    \      }\n        }\n        check[cur]=2;\n        return false;\n    };\n\n\
+    \    for(int i=0;i<n;i++){\n        if(check[i]==0){\n            if(dfs(i)){\n\
+    \                reverse(begin(cyc),end(cyc));\n                return cyc;\n\
+    \            }\n        }\n    }\n    return {};\n}\n#line 6 \"test/yosupo_CycleDetection2.test.cpp\"\
+    \n\nsigned main(){\n    int n,m;cin>>n>>m;\n    Graph g(n);\n    map<pair<int,int>,int>\
+    \ id;\n    rep(i,m){\n        int u,v;cin>>u>>v;\n        id[{u,v}]=i;\n     \
+    \   g.add_directed_edge(u,v);\n    }\n    auto res=CycleDetection(g);\n    if(res.empty()){\n\
+    \        cout<<-1<<endl;\n        return 0;\n    }\n    int p=res[0];\n    vector<int>\
+    \ ans;\n    for(int i=1;i<(int)res.size();i++){\n        ans.push_back(id[{p,res[i]}]);\n\
+    \        p=res[i];\n    }\n    ans.push_back(id[{p,res[0]}]);\n    cout<<ans.size()<<\"\
+    \\n\";\n    for(auto e:ans) cout<<e<<\"\\n\";\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/cycle_detection\"\n\n#include\
     \ \"../template.hpp\"\n\n#include \"../Graph2/CycleDetection.hpp\"\n\nsigned main(){\n\
     \    int n,m;cin>>n>>m;\n    Graph g(n);\n    map<pair<int,int>,int> id;\n   \
@@ -86,7 +86,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_CycleDetection2.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-17 18:02:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_CycleDetection2.test.cpp

@@ -34,7 +34,7 @@ data:
     \ os<<v[i]<<(i+1==(int)v.size()?\"\":\" \");\n    return os;\n}\ntemplate<typename\
     \ T>\nistream &operator>>(istream &is,vector<T>&v){\n    for(T &x:v)is>>x;\n \
     \   return is;\n}\n\n#line 4 \"test/yosupo_KSW.test.cpp\"\n\n#line 1 \"Graph2/GraphTemplate.hpp\"\
-    \n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
+    \n\n\n\n// graph template\n// ref : https://ei1333.github.io/library/graph/graph-template.hpp\n\
     template<typename T=int>\nstruct Edge{\n    int from,to;\n    T w;\n    int idx;\n\
     \    Edge()=default;\n    Edge(int from,int to,T w=1,int idx=-1):from(from),to(to),w(w),idx(idx){}\n\
     \    operator int() const{return to;}\n};\n\ntemplate<typename T=int>\nstruct\
@@ -49,11 +49,11 @@ data:
     \ pad=-1,bool weighted=false,bool directed=false){\n        for(int i=0;i<m;i++){\n\
     \            int u,v;cin>>u>>v;\n            u+=pad,v+=pad;\n            T w=T(1);\n\
     \            if(weighted) cin>>w;\n            if(directed) add_directed_edge(u,v,w);\n\
-    \            else         add_edge(u,v,w);\n        }\n    }\n};\n#line 2 \"Graph2/Eppstein.hpp\"\
-    \n\ntemplate<typename T>\nstruct PersistentLeftistHeapNode{\n    PersistentLeftistHeapNode\
-    \ *l,*r;\n    int s;\n    T val;\n    PersistentLeftistHeapNode(T val):l(nullptr),r(nullptr),s(1),val(val){}\n\
-    };\n\ntemplate<typename T,bool less=true>\nstruct PersistentLeftistHeap{\n   \
-    \ PersistentLeftistHeapNode<T> *root;\n    PersistentLeftistHeap(PersistentLeftistHeapNode<T>\
+    \            else         add_edge(u,v,w);\n        }\n    }\n};\n\n\n#line 2\
+    \ \"Graph2/Eppstein.hpp\"\n\ntemplate<typename T>\nstruct PersistentLeftistHeapNode{\n\
+    \    PersistentLeftistHeapNode *l,*r;\n    int s;\n    T val;\n    PersistentLeftistHeapNode(T\
+    \ val):l(nullptr),r(nullptr),s(1),val(val){}\n};\n\ntemplate<typename T,bool less=true>\n\
+    struct PersistentLeftistHeap{\n    PersistentLeftistHeapNode<T> *root;\n    PersistentLeftistHeap(PersistentLeftistHeapNode<T>\
     \ *t=nullptr):root(t){}\n\n    PersistentLeftistHeapNode<T> *meld(PersistentLeftistHeapNode<T>\
     \ *a,PersistentLeftistHeapNode<T> *b){\n        if(!a or !b) return (a?a:b);\n\
     \        if((a->val>b->val)^(!less)) swap(a,b);\n        a=new PersistentLeftistHeapNode(*a);\n\
@@ -113,7 +113,7 @@ data:
   isVerificationFile: true
   path: test/yosupo_KSW.test.cpp
   requiredBy: []
-  timestamp: '2023-04-05 23:10:22+09:00'
+  timestamp: '2023-07-17 18:02:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo_KSW.test.cpp
