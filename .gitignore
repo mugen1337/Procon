@@ -1,3 +1,4 @@
 *.out
 00*
-
+work/*.cpp
+work/*.exe
