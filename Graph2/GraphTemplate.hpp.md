@@ -26,7 +26,7 @@ data:
   - icon: ':warning:'
     path: Graph2/RangeEdgeGraph.hpp
     title: "\u533A\u9593\u306B\u8FBA\u3092\u5F35\u308B\u30C6\u30AF"
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/Rerooting.hpp
     title: Graph2/Rerooting.hpp
   - icon: ':heavy_check_mark:'
@@ -41,7 +41,7 @@ data:
   - icon: ':warning:'
     path: Graph2/WeightedMaximumIndependentSet.hpp
     title: Graph2/WeightedMaximumIndependentSet.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/Yen.hpp
     title: Yen's Algorithm (K-Shortest-Path)
   _extendedVerifiedWith:
@@ -69,15 +69,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki4227.test.cpp
     title: test/yuki4227.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki5436.test.cpp
     title: test/yuki5436.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/graph-template.hpp
@@ -120,33 +120,33 @@ data:
   isVerificationFile: false
   path: Graph2/GraphTemplate.hpp
   requiredBy:
-  - Graph2/DoublingLowestCommonAncestor.hpp
-  - Graph2/Yen.hpp
-  - Graph2/Rerooting.hpp
-  - Graph2/GraphRelabel.hpp
-  - Graph2/TreeDiameter.hpp
-  - Graph2/HeavyLightDecomposition.hpp
-  - Graph2/CycleDetection.hpp
-  - Graph2/LowLink.hpp
-  - Graph2/StronglyConnectedComponents.hpp
-  - Graph2/TwoEdgeConnectedComponents.hpp
-  - Graph2/Eppstein.hpp
   - Graph2/Dijkstra.hpp
+  - Graph2/TreeDiameter.hpp
+  - Graph2/Rerooting.hpp
+  - Graph2/HeavyLightDecomposition.hpp
   - Graph2/RangeEdgeGraph.hpp
+  - Graph2/LowLink.hpp
+  - Graph2/Eppstein.hpp
   - Graph2/WeightedMaximumIndependentSet.hpp
+  - Graph2/CycleDetection.hpp
+  - Graph2/StronglyConnectedComponents.hpp
+  - Graph2/GraphRelabel.hpp
+  - Graph2/DoublingLowestCommonAncestor.hpp
+  - Graph2/TwoEdgeConnectedComponents.hpp
+  - Graph2/Yen.hpp
   timestamp: '2023-07-17 18:02:31+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/yuki4227.test.cpp
+  - test/yuki1249.test.cpp
   - test/yosupo_scc2.test.cpp
   - test/AOJ_GRL_3_A.test.cpp
   - test/yosupo_TECC.test.cpp
+  - test/yosupo_TreeDiameter.test.cpp
+  - test/yuki4227.test.cpp
+  - test/yuki5436.test.cpp
   - test/AOJ_GRL_1_A.test.cpp
   - test/yosupo_KSW.test.cpp
-  - test/yosupo_TreeDiameter.test.cpp
-  - test/yuki5436.test.cpp
   - test/yosupo_CycleDetection2.test.cpp
-  - test/yuki1249.test.cpp
 documentation_of: Graph2/GraphTemplate.hpp
 layout: document
 redirect_from:

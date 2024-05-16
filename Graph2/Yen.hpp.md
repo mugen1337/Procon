@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki4227.test.cpp
     title: test/yuki4227.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/shortest-path/k-shortest-path.hpp
@@ -129,7 +129,7 @@ data:
   path: Graph2/Yen.hpp
   requiredBy: []
   timestamp: '2023-07-17 18:02:31+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yuki4227.test.cpp
 documentation_of: Graph2/Yen.hpp

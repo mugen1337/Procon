@@ -9,12 +9,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
     title: test/yosupo_Point-Add-Range-Sum.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki3784.test.cpp
     title: test/yuki3784.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links:
     - http://codeforces.com/contest/914/submission/107505449
@@ -96,10 +96,10 @@ data:
   requiredBy:
   - Math/ManhattanSquareSum.hpp
   timestamp: '2023-07-17 17:05:54+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/yuki3784.test.cpp
   - test/yosupo_Point-Add-Range-Sum.test.cpp
+  - test/yuki3784.test.cpp
 documentation_of: SegmentTree/SegmentTree.hpp
 layout: document
 title: Segment Tree

@@ -6,15 +6,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki4374.test.cpp
     title: test/yuki4374.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki899.test.cpp
     title: test/yuki899.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"SegmentTree/LazySegmentTree.hpp\"\ntemplate<typename Monoid,\
@@ -118,11 +118,11 @@ data:
   path: SegmentTree/LazySegmentTree.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/yuki4374.test.cpp
-  - test/yuki899.test.cpp
   - test/yuki1249.test.cpp
+  - test/yuki899.test.cpp
+  - test/yuki4374.test.cpp
 documentation_of: SegmentTree/LazySegmentTree.hpp
 layout: document
 title: Lazy Segment Tree

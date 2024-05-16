@@ -3,15 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki2017.test.cpp
     title: test/yuki2017.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki473.test.cpp
     title: test/yuki473.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - http://q.c.titech.ac.jp/docs/progs/polynomial_division.html
@@ -166,10 +166,10 @@ data:
   path: Math/FormalPowerSeriesNaive.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - test/yuki473.test.cpp
   - test/yuki2017.test.cpp
+  - test/yuki473.test.cpp
 documentation_of: Math/FormalPowerSeriesNaive.hpp
 layout: document
 redirect_from:
