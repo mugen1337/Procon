@@ -8,10 +8,32 @@ https://codeforces.com/profile/mugen1337
 
 ## 環境
 
-- VSCode, clangd
+- WSL
+- VSCode
+- (clangd)
 
 ## 提出・コンテストでの活用
 
-- workディレクトリでコンテスト向けに作業することを想定
-- `bundle-clip.sh a.cpp` ようにすると、ライブラリ展開し、クリップボードへ貯める
-  - `online-judge-tools` が前提
+workディレクトリでコンテスト向けに作業することを想定
+
+### compile
+
+```sh
+g++ a.cpp -I ../
+```
+### oj-bundle
+
+`bundle-clip.sh a.cpp` ようにすると、ライブラリ展開し、クリップボードへ貯める
+
+```sh
+pip3 install online-judge-verify-helper
+```
+### bashrc
+
+追記  
+2個目は wsl から clip.exe 触るため
+
+```sh
+export PATH="/home/{userName}/.local/bin:$PATH"
+export PATH="/mnt/c/Windows/System32:$PATH"
+```
