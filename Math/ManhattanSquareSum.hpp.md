@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: SegmentTree/SegmentTree.hpp
     title: Segment Tree
   - icon: ':question:'

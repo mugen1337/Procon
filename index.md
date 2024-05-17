@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: Algorithm
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Algorithm/Mo.hpp
       title: Algorithm/Mo.hpp
     - icon: ':warning:'
@@ -14,7 +14,7 @@ data:
     - icon: ':warning:'
       path: BinarySearchTree/ImplicitTreap.hpp
       title: Implicit Treap
-    - icon: ':x:'
+    - icon: ':question:'
       path: BinarySearchTree/ImplicitTreapWithLazy.hpp
       title: BinarySearchTree/ImplicitTreapWithLazy.hpp
     - icon: ':x:'
@@ -44,10 +44,10 @@ data:
     - icon: ':x:'
       path: DataStructure/AbsoluteSum.hpp
       title: DataStructure/AbsoluteSum.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryIndexedTree.hpp
       title: DataStructure/BinaryIndexedTree.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/BinaryTrie.hpp
       title: Binary Trie
     - icon: ':question:'
@@ -71,13 +71,13 @@ data:
       path: DataStructure/RangeSet.hpp
       title: "\u533A\u9593\u3092\u30BB\u30C3\u30C8\u3067\u7BA1\u7406\u3059\u308B\u3084\
         \u3064"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/RangeTree.hpp
       title: "Range Tree (\u9818\u57DF\u6728)"
     - icon: ':x:'
       path: DataStructure/RectangleUnion.hpp
       title: DataStructure/RectangleUnion.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/SlidingWindowAgregation.hpp
       title: DataStructure/SlidingWindowAgregation.hpp
     - icon: ':x:'
@@ -171,13 +171,13 @@ data:
       title: GeometryInt/template.hpp
   - name: Graph
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/CycleDetection.hpp
       title: Graph/CycleDetection.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/Dijkstra.hpp
       title: Graph/Dijkstra.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/StronglyConnectedComponents.hpp
       title: Graph/StronglyConnectedComponents.hpp
     - icon: ':x:'
@@ -188,7 +188,7 @@ data:
     - icon: ':warning:'
       path: Graph2/ChromaticNumber.hpp
       title: Graph2/ChromaticNumber.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/CycleDetection.hpp
       title: Graph2/CycleDetection.hpp
     - icon: ':heavy_check_mark:'
@@ -197,7 +197,7 @@ data:
     - icon: ':warning:'
       path: Graph2/DoublingLowestCommonAncestor.hpp
       title: Graph2/DoublingLowestCommonAncestor.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/Eppstein.hpp
       title: Eppstein's Algorithm (K-Shortest-Walk)
     - icon: ':warning:'
@@ -209,7 +209,7 @@ data:
     - icon: ':x:'
       path: Graph2/HeavyLightDecomposition.hpp
       title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/LowLink.hpp
       title: Low Link
     - icon: ':warning:'
@@ -224,10 +224,10 @@ data:
     - icon: ':x:'
       path: Graph2/StronglyConnectedComponents.hpp
       title: Strongly Connected Components
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/TreeDiameter.hpp
       title: Graph2/TreeDiameter.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph2/TwoEdgeConnectedComponents.hpp
       title: Graph2/TwoEdgeConnectedComponents.hpp
     - icon: ':warning:'
@@ -303,13 +303,13 @@ data:
     - icon: ':x:'
       path: Math/ceil_floor.hpp
       title: Math/ceil_floor.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Math/inv_mod.hpp
       title: Math/inv_mod.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Math/log_mod.hpp
       title: "\u96E2\u6563\u5BFE\u6570 (log mod)"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Math/pow_mod.hpp
       title: Math/pow_mod.hpp
   - name: Other
@@ -342,16 +342,16 @@ data:
       title: SAT/HornSAT.hpp
   - name: SegmentTree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: SegmentTree/KineticSegmentTree.hpp
       title: SegmentTree/KineticSegmentTree.hpp
     - icon: ':x:'
       path: SegmentTree/LazySegmentTree.hpp
       title: Lazy Segment Tree
-    - icon: ':x:'
+    - icon: ':question:'
       path: SegmentTree/SegmentTree.hpp
       title: Segment Tree
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: SegmentTree/SegmentTreeBeats.hpp
       title: Segment Tree Beats
   - name: Sort
@@ -367,7 +367,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: String/RollingHash.hpp
       title: String/RollingHash.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: String/SuffixArray.hpp
       title: String/SuffixArray.hpp
     - icon: ':heavy_check_mark:'
@@ -378,7 +378,7 @@ data:
     - icon: ':x:'
       path: Tree/LazyLinkCutTree.hpp
       title: Tree/LazyLinkCutTree.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Tree/LinkCutTree.hpp
       title: Tree/LinkCutTree.hpp
     - icon: ':heavy_check_mark:'
@@ -392,10 +392,10 @@ data:
     - icon: ':warning:'
       path: UnionFind/PartiallyPersistentUnionFind.hpp
       title: UnionFind/PartiallyPersistentUnionFind.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFind.hpp
       title: UnionFind/UnionFind.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: UnionFind/UnionFindUndo.hpp
       title: UnionFind/UnionFindUndo.hpp
     - icon: ':heavy_check_mark:'
@@ -423,7 +423,7 @@ data:
     - icon: ':warning:'
       path: type/Fraction.hpp
       title: type/Fraction.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: type/Matrix.hpp
       title: type/Matrix.hpp
     - icon: ':warning:'
@@ -528,67 +528,67 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
       title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_CycleDetection.test.cpp
       title: test/yosupo_CycleDetection.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_CycleDetection2.test.cpp
       title: test/yosupo_CycleDetection2.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_DiscreteLog.test.cpp
       title: test/yosupo_DiscreteLog.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
       title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
       title: test/yosupo_Dynamic_Tree_Vertex_Add_Path_Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_KSW.test.cpp
       title: test/yosupo_KSW.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Line_Add_Get_Min.test.cpp
       title: test/yosupo_Line_Add_Get_Min.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Point-Add-Range-Sum.test.cpp
       title: test/yosupo_Point-Add-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
       title: test/yosupo_Range-Chmin-Chmax-Add-Range-Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Rectangle_Sum.test.cpp
       title: test/yosupo_Rectangle_Sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Set_Xor_Min.test.cpp
       title: test/yosupo_Set_Xor_Min.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Shortest_Path.test.cpp
       title: test/yosupo_Shortest_Path.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Static_Range_Inversions_Query.test.cpp
       title: test/yosupo_Static_Range_Inversions_Query.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_SuffixArray.test.cpp
       title: test/yosupo_SuffixArray.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_TECC.test.cpp
       title: test/yosupo_TECC.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_TreeDiameter.test.cpp
       title: test/yosupo_TreeDiameter.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind.test.cpp
       title: test/yosupo_Unionfind.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_Unionfind_undo.test.cpp
       title: test/yosupo_Unionfind_undo.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_det.test.cpp
       title: test/yosupo_det.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_queue_operate_all_composite.test.cpp
       title: test/yosupo_queue_operate_all_composite.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo_scc.test.cpp
       title: test/yosupo_scc.test.cpp
     - icon: ':x:'

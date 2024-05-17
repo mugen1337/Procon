@@ -51,10 +51,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo_Bitwise_Xor_Convolution.test.cpp
     title: test/yosupo_Bitwise_Xor_Convolution.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
     title: test/yosupo_Dynamic-Sequence-Range-Affine-Range-Sum.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_det.test.cpp
     title: test/yosupo_det.test.cpp
   - icon: ':x:'

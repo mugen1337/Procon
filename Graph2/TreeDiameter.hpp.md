@@ -6,12 +6,12 @@ data:
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph2/GraphTemplate.hpp\"\n\n\n\n// graph template\n//\
@@ -55,7 +55,7 @@ data:
   path: Graph2/TreeDiameter.hpp
   requiredBy: []
   timestamp: '2023-07-17 18:02:31+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_TreeDiameter.test.cpp
 documentation_of: Graph2/TreeDiameter.hpp

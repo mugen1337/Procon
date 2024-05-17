@@ -6,12 +6,12 @@ data:
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://qiita.com/hotman78/items/42534a01c4bd05ed5e1e
@@ -130,7 +130,7 @@ data:
   path: Graph2/Eppstein.hpp
   requiredBy: []
   timestamp: '2023-07-17 18:02:31+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo_KSW.test.cpp
 documentation_of: Graph2/Eppstein.hpp

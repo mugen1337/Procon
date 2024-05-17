@@ -4,7 +4,7 @@ data:
   - icon: ':question:'
     path: Graph2/GraphTemplate.hpp
     title: Graph2/GraphTemplate.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Graph2/LowLink.hpp
     title: Low Link
   - icon: ':question:'
