@@ -1,4 +1,4 @@
-#include"bits/stdc++.h"
+#include<bits/stdc++.h>
 using namespace std;
 #define ALL(x) begin(x),end(x)
 #define rep(i,n) for(int i=0;i<(n);i++)

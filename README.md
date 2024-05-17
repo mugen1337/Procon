@@ -12,4 +12,6 @@ https://codeforces.com/profile/mugen1337
 
 ## 提出・コンテストでの活用
 
-- TODO: ライブラリを展開し、単一ファイルにする方法を書く
+- workディレクトリでコンテスト向けに作業することを想定
+- `bundle-clip.sh a.cpp` ようにすると、ライブラリ展開し、クリップボードへ貯める
+  - `online-judge-tools` が前提
