@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/CycleDetection.hpp
     title: Graph2/CycleDetection.hpp
   - icon: ':heavy_check_mark:'
@@ -11,16 +11,16 @@ data:
   - icon: ':warning:'
     path: Graph2/DoublingLowestCommonAncestor.hpp
     title: Graph2/DoublingLowestCommonAncestor.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/Eppstein.hpp
     title: Eppstein's Algorithm (K-Shortest-Walk)
   - icon: ':warning:'
     path: Graph2/GraphRelabel.hpp
     title: Graph2/GraphRelabel.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/HeavyLightDecomposition.hpp
     title: "Heavy Light Decomposition (HL\u5206\u89E3)"
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Graph2/LowLink.hpp
     title: Low Link
   - icon: ':warning:'
@@ -29,13 +29,13 @@ data:
   - icon: ':x:'
     path: Graph2/Rerooting.hpp
     title: Graph2/Rerooting.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/StronglyConnectedComponents.hpp
     title: Strongly Connected Components
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/TreeDiameter.hpp
     title: Graph2/TreeDiameter.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Graph2/TwoEdgeConnectedComponents.hpp
     title: Graph2/TwoEdgeConnectedComponents.hpp
   - icon: ':warning:'
@@ -51,22 +51,22 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/AOJ_GRL_3_A.test.cpp
     title: test/AOJ_GRL_3_A.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_CycleDetection2.test.cpp
     title: test/yosupo_CycleDetection2.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_KSW.test.cpp
     title: test/yosupo_KSW.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_TECC.test.cpp
     title: test/yosupo_TECC.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_TreeDiameter.test.cpp
     title: test/yosupo_TreeDiameter.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_scc2.test.cpp
     title: test/yosupo_scc2.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
   - icon: ':x:'

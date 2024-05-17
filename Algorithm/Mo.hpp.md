@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_Static_Range_Inversions_Query.test.cpp
     title: test/yosupo_Static_Range_Inversions_Query.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://beet-aizu.github.io/library/algorithm/mo.hpp
@@ -71,7 +71,7 @@ data:
   path: Algorithm/Mo.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo_Static_Range_Inversions_Query.test.cpp
 documentation_of: Algorithm/Mo.hpp

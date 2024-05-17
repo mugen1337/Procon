@@ -1,48 +1,24 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: UnionFind/UnionFindUndo.hpp
     title: UnionFind/UnionFindUndo.hpp
-  - icon: ':question:'
-    path: bits/stdc++.h
-    title: bits/stdc++.h
   - icon: ':question:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
   bundledCode: "#line 1 \"test/yosupo_Unionfind_undo.test.cpp\"\n#define PROBLEM \"\
-    https://judge.yosupo.jp/problem/unionfind\"\n\n#line 1 \"bits/stdc++.h\"\n// C\n\
-    #ifndef _GLIBCXX_NO_ASSERT\n#include <cassert>\n#endif\n#include <cctype>\n#include\
-    \ <cerrno>\n#include <cfloat>\n#include <ciso646>\n#include <climits>\n#include\
-    \ <clocale>\n#include <cmath>\n#include <csetjmp>\n#include <csignal>\n#include\
-    \ <cstdarg>\n#include <cstddef>\n#include <cstdio>\n#include <cstdlib>\n#include\
-    \ <cstring>\n#include <ctime>\n\n#if __cplusplus >= 201103L\n#include <ccomplex>\n\
-    #include <cfenv>\n#include <cinttypes>\n#include <cstdalign>\n#include <cstdbool>\n\
-    #include <cstdint>\n#include <ctgmath>\n#include <cwchar>\n#include <cwctype>\n\
-    #endif\n\n// C++\n#include <algorithm>\n#include <bitset>\n#include <complex>\n\
-    #include <deque>\n#include <exception>\n#include <fstream>\n#include <functional>\n\
-    #include <iomanip>\n#include <ios>\n#include <iosfwd>\n#include <iostream>\n#include\
-    \ <istream>\n#include <iterator>\n#include <limits>\n#include <list>\n#include\
-    \ <locale>\n#include <map>\n#include <memory>\n#include <new>\n#include <numeric>\n\
-    #include <ostream>\n#include <queue>\n#include <set>\n#include <sstream>\n#include\
-    \ <stack>\n#include <stdexcept>\n#include <streambuf>\n#include <string>\n#include\
-    \ <typeinfo>\n#include <utility>\n#include <valarray>\n#include <vector>\n\n#if\
-    \ __cplusplus >= 201103L\n#include <array>\n#include <atomic>\n#include <chrono>\n\
-    #include <condition_variable>\n#include <forward_list>\n#include <future>\n#include\
-    \ <initializer_list>\n#include <mutex>\n#include <random>\n#include <ratio>\n\
-    #include <regex>\n#include <scoped_allocator>\n#include <system_error>\n#include\
-    \ <thread>\n#include <tuple>\n#include <typeindex>\n#include <type_traits>\n#include\
-    \ <unordered_map>\n#include <unordered_set>\n#endif\n#line 2 \"template.hpp\"\n\
+    https://judge.yosupo.jp/problem/unionfind\"\n\n#line 1 \"template.hpp\"\n#include<bits/stdc++.h>\n\
     using namespace std;\n#define ALL(x) begin(x),end(x)\n#define rep(i,n) for(int\
     \ i=0;i<(n);i++)\n#define debug(v) cout<<#v<<\":\";for(auto x:v){cout<<x<<' ';}cout<<endl;\n\
     #define mod 1000000007\nusing ll=long long;\nconst int INF=1000000000;\nconst\
@@ -84,13 +60,12 @@ data:
     \        else uf.unite(u,v);\n    }\n    return 0;\n}"
   dependsOn:
   - template.hpp
-  - bits/stdc++.h
   - UnionFind/UnionFindUndo.hpp
   isVerificationFile: true
   path: test/yosupo_Unionfind_undo.test.cpp
   requiredBy: []
-  timestamp: '2024-05-15 18:03:09+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-05-17 14:55:36+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo_Unionfind_undo.test.cpp
 layout: document

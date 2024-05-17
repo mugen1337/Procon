@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Math/inv_mod.hpp
     title: Math/inv_mod.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Math/pow_mod.hpp
     title: Math/pow_mod.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_DiscreteLog.test.cpp
     title: test/yosupo_DiscreteLog.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://qiita.com/suisen_cp/items/d597c8ec576ae32ee2d7
@@ -58,7 +58,7 @@ data:
   path: Math/log_mod.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo_DiscreteLog.test.cpp
 documentation_of: Math/log_mod.hpp

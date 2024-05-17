@@ -3,7 +3,7 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
   - icon: ':x:'
@@ -14,7 +14,7 @@ data:
     title: test/yuki899.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"SegmentTree/LazySegmentTree.hpp\"\ntemplate<typename Monoid,\
@@ -118,7 +118,7 @@ data:
   path: SegmentTree/LazySegmentTree.hpp
   requiredBy: []
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yuki1249.test.cpp
   - test/yuki899.test.cpp

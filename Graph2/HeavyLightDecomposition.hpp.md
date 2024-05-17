@@ -6,12 +6,12 @@ data:
     title: Graph2/GraphTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yuki1249.test.cpp
     title: test/yuki1249.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://ei1333.github.io/library/graph/tree/heavy-light-decomposition.hpp
@@ -123,7 +123,7 @@ data:
   path: Graph2/HeavyLightDecomposition.hpp
   requiredBy: []
   timestamp: '2023-07-17 18:02:31+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yuki1249.test.cpp
 documentation_of: Graph2/HeavyLightDecomposition.hpp

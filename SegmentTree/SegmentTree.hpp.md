@@ -6,7 +6,7 @@ data:
     path: Math/ManhattanSquareSum.hpp
     title: Math/ManhattanSquareSum.hpp
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_Point-Add-Range-Sum.test.cpp
     title: test/yosupo_Point-Add-Range-Sum.test.cpp
   - icon: ':x:'
@@ -14,7 +14,7 @@ data:
     title: test/yuki3784.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - http://codeforces.com/contest/914/submission/107505449
@@ -96,7 +96,7 @@ data:
   requiredBy:
   - Math/ManhattanSquareSum.hpp
   timestamp: '2023-07-17 17:05:54+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo_Point-Add-Range-Sum.test.cpp
   - test/yuki3784.test.cpp

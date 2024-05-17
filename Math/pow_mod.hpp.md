@@ -2,16 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Math/log_mod.hpp
     title: "\u96E2\u6563\u5BFE\u6570 (log mod)"
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/yosupo_DiscreteLog.test.cpp
     title: test/yosupo_DiscreteLog.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/pow_mod.hpp\"\n// a^n (mod m)\nll pow_mod(ll a,ll n,ll\
@@ -26,7 +26,7 @@ data:
   requiredBy:
   - Math/log_mod.hpp
   timestamp: '2023-04-05 23:10:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo_DiscreteLog.test.cpp
 documentation_of: Math/pow_mod.hpp
